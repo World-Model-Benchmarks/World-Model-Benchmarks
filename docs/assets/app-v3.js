@@ -84,7 +84,7 @@
     const phaseThree = document.querySelector(".timeline-insight:nth-child(3) p");
     if (phaseThree) {
       phaseThree.innerHTML =
-        '<strong>31 new benchmarks in 2025</strong>, raising the cumulative corpus to <strong>53</strong>.; target coverage includes 8 spatial, 16 physical, and 11 control.';
+        '<strong>31 new benchmarks in 2025</strong>, raising the cumulative corpus to <strong>53</strong>.';
     }
 
     const phaseFour = document.querySelector(".timeline-insight:nth-child(4) p");
