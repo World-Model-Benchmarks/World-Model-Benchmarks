@@ -1,9 +1,9 @@
 {
   "title": "A Survey of World Model Benchmarks",
-  "version": "July 2026 manuscript snapshot",
+  "version": "July 30, 2026 manuscript snapshot",
   "framework": "Target–Protocol–Metrics–Data",
-  "total": 88,
-  "crossCategory": 49,
+  "total": 95,
+  "crossCategory": 58,
   "protocolLabels": {
     "OL": "Open-Loop Evaluation",
     "CL": "Closed-Loop Interaction"

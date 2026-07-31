@@ -6,19 +6,19 @@
   <title>A Survey of World Model Benchmarks</title>
   <meta name="description" content="An interactive project page and benchmark explorer for A Survey of World Model Benchmarks, organized by Evaluation Target, Evaluation Protocol, Evaluation Metrics, and Evaluation Data.">
   <meta name="theme-color" content="#f8f9ff">
-  <link rel="canonical" href="https://axbhb.github.io/world-model-evaluation-survey/">
+  <link rel="canonical" href="https://world-model-benchmarks.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="World Model Benchmarks Survey">
   <meta property="og:title" content="A Survey of World Model Benchmarks">
-  <meta property="og:description" content="Explore 88 world-model benchmarks through the Target–Protocol–Metrics–Data taxonomy.">
-  <meta property="og:url" content="https://axbhb.github.io/world-model-evaluation-survey/">
-  <meta property="og:image" content="https://axbhb.github.io/world-model-evaluation-survey/assets/social-preview.svg">
+  <meta property="og:description" content="Explore 95 world-model benchmarks through the Target–Protocol–Metrics–Data taxonomy.">
+  <meta property="og:url" content="https://world-model-benchmarks.github.io/">
+  <meta property="og:image" content="https://world-model-benchmarks.github.io/assets/social-preview.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="A Survey of World Model Benchmarks">
   <meta name="twitter:description" content="An interactive benchmark-centric map of world-model evaluation across target, protocol, metrics, and data.">
-  <meta name="twitter:image" content="https://axbhb.github.io/world-model-evaluation-survey/assets/social-preview.svg">
+  <meta name="twitter:image" content="https://world-model-benchmarks.github.io/assets/social-preview.svg">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,8 +29,8 @@
     "datePublished": "2026",
     "inLanguage": "en",
     "isAccessibleForFree": true,
-    "url": "https://axbhb.github.io/world-model-evaluation-survey/",
-    "image": "https://axbhb.github.io/world-model-evaluation-survey/assets/social-preview.svg",
+    "url": "https://world-model-benchmarks.github.io/",
+    "image": "https://world-model-benchmarks.github.io/assets/social-preview.svg",
     "author": {"@type": "Organization", "name": "Anonymous Authors"},
     "keywords": ["world models", "benchmark evaluation", "evaluation metrics", "evaluation data", "video generation", "embodied AI", "interactive evaluation"]
   }
@@ -53,7 +53,7 @@
         <a href="#community">Community</a>
         <a href="#citation">Citation</a>
       </nav>
-      <a class="nav-github" href="https://github.com/axbhb/world-model-evaluation-survey" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      <a class="nav-github" href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
@@ -68,11 +68,11 @@
           <p class="hero-lead">An evaluation-centric view of <strong>what capability is evaluated</strong>, <strong>how the model is evaluated</strong>, <strong>which metrics are used</strong>, and <strong>where the data come from</strong>.</p>
           <p class="authors">Anonymous Authors</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://github.com/axbhb/world-model-evaluation-survey/blob/main/Readme.md" target="_blank" rel="noreferrer">Benchmark list</a>
+            <a class="button button-primary" href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks/blob/main/Readme.md" target="_blank" rel="noreferrer">Benchmark list</a>
             <a class="button" href="#benchmarks">Explore benchmarks</a>
-            <a class="button" href="https://github.com/axbhb/world-model-evaluation-survey" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-          <div class="snapshot-note"><span class="status-dot"></span> Latest manuscript snapshot · 88 benchmarks · 49 cross-category · checked July 2026</div>
+          <div class="snapshot-note"><span class="status-dot"></span> Latest manuscript snapshot · 95 benchmarks · 58 cross-category · checked July 30, 2026</div>
         </div>
 
         <div class="hero-visual" aria-label="Target, protocol, metrics, and data framework illustration">
@@ -132,7 +132,7 @@
           </svg>
         </div>
       </div>
-      <div class="stat-strip" aria-label="Survey statistics"><div><strong id="stat-total">88</strong><span>representative benchmarks</span></div><div><strong id="stat-cross">49</strong><span>cross-category benchmarks</span></div><div><strong>7</strong><span>evaluation targets</span></div><div><strong>2 / 2</strong><span>protocol classes / metric levels</span></div><div><strong>4</strong><span>evaluation data sources</span></div></div></section>
+      <div class="stat-strip" aria-label="Survey statistics"><div><strong id="stat-total">95</strong><span>representative benchmarks</span></div><div><strong id="stat-cross">58</strong><span>cross-category benchmarks</span></div><div><strong>7</strong><span>evaluation targets</span></div><div><strong>2 / 2</strong><span>protocol classes / metric levels</span></div><div><strong>4</strong><span>evaluation data sources</span></div></div></section>
 
     <section class="section" id="overview">
       <div class="section-heading split-heading">
@@ -244,29 +244,29 @@
           <li class="timeline-insight">
             <span class="timeline-stage-number" aria-hidden="true">1</span>
             <div>
-              <h3>Early benchmarks mainly focus on visual &amp; temporal quality, physical plausibility, and causal reasoning.</h3>
-              <p><strong>14/14 pre-2024 benchmarks</strong> cover visual/temporal quality, physical plausibility, or causal reasoning.</p>
+              <h3>Early benchmarks mainly focus on physical plausibility and causal reasoning.</h3>
+              <p><strong>13 cumulative benchmarks by 2023</strong>, concentrated in physical and causal evaluation.</p>
             </div>
           </li>
           <li class="timeline-insight">
             <span class="timeline-stage-number" aria-hidden="true">2</span>
             <div>
               <h3>From 2024 onward, control fidelity &amp; interactive dynamics and functional utility begin to emerge.</h3>
-              <p>First appearing in 2024: <strong>6 control</strong> and <strong>2 utility</strong> benchmarks.</p>
+              <p><strong>9 new benchmarks in 2024</strong>, including broader control and functional-utility evaluation.</p>
             </div>
           </li>
           <li class="timeline-insight">
             <span class="timeline-stage-number" aria-hidden="true">3</span>
             <div>
               <h3>In 2025, benchmark growth accelerates, with broader coverage of spatial consistency, physical plausibility, and control fidelity.</h3>
-              <p><strong>32 new in 2025 (2.7× 2024)</strong>; target coverage includes 8 spatial, 16 physical, and 11 control.</p>
+              <p><strong>31 new benchmarks in 2025</strong>, raising the cumulative corpus to <strong>53</strong>.</p>
             </div>
           </li>
           <li class="timeline-insight">
             <span class="timeline-stage-number" aria-hidden="true">4</span>
             <div>
               <h3>By 2026, long-horizon memory &amp; persistence and functional utility become prominent frontier directions.</h3>
-              <p>2026 contributes <strong>11/14 long-horizon</strong> and <strong>6/10 utility</strong> benchmarks.</p>
+              <p><strong>42 new benchmarks in 2026</strong>, bringing the corpus to <strong>95</strong>.</p>
             </div>
           </li>
         </ol>
@@ -277,7 +277,7 @@
     <section class="section benchmark-section" id="benchmarks">
       <div class="section-heading split-heading benchmark-heading">
         <div><p class="eyebrow">Benchmark Explorer</p><h2>Browse the latest paper snapshot.</h2></div>
-        <p>Search and filter the 88 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.</p>
+        <p>Search and filter the 95 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.</p>
       </div>
 
       <div class="explorer-shell">
@@ -321,7 +321,7 @@
             <label class="sort-control"><span>Sort</span><select id="benchmark-sort"><option value="recent">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>
           </div>
           <div id="active-filters" class="active-filters" aria-live="polite"></div>
-          <div class="result-row"><p><strong id="result-count">88</strong> results</p><p class="legend-note"><span class="cross-symbol">△</span> cross-category in the survey</p></div>
+          <div class="result-row"><p><strong id="result-count">95</strong> results</p><p class="legend-note"><span class="cross-symbol">△</span> cross-category in the survey</p></div>
           <div id="benchmark-grid" class="benchmark-grid"></div>
           <div id="empty-state" class="empty-state" hidden><h3>No benchmarks match these filters.</h3><p>Try removing one or more filters or changing the search query.</p><button class="button" id="empty-clear" type="button">Reset explorer</button></div>
         </div>
@@ -340,13 +340,13 @@
           <span class="community-icon" aria-hidden="true">＋</span>
           <h3>Suggest a benchmark</h3>
           <p>Share a paper, benchmark suite, project page, and your suggested Target–Protocol–Metrics–Data coding.</p>
-          <a href="https://github.com/axbhb/world-model-evaluation-survey/issues/new?title=Benchmark%20suggestion%3A%20&body=Benchmark%20name%3A%0APaper%20URL%3A%0ACode%20URL%3A%0ASuggested%20target%3A%0ASuggested%20protocol%3A%0ASuggested%20metrics%3A%0ASuggested%20data%20source%3A%0A" target="_blank" rel="noreferrer">Open a suggestion <span>↗</span></a>
+          <a href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks/issues/new?title=Benchmark%20suggestion%3A%20&body=Benchmark%20name%3A%0APaper%20URL%3A%0ACode%20URL%3A%0ASuggested%20target%3A%0ASuggested%20protocol%3A%0ASuggested%20metrics%3A%0ASuggested%20data%20source%3A%0A" target="_blank" rel="noreferrer">Open a suggestion <span>↗</span></a>
         </article>
         <article>
           <span class="community-icon" aria-hidden="true">✓</span>
           <h3>Correct metadata</h3>
           <p>Flag an incorrect year, domain, protocol, metric level, data source, title, category, or link.</p>
-          <a href="https://github.com/axbhb/world-model-evaluation-survey/issues/new?title=Metadata%20correction%3A%20&body=Benchmark%3A%0AField%20to%20correct%3A%0ACurrent%20value%3A%0AProposed%20value%3A%0ASource%3A%0A" target="_blank" rel="noreferrer">Report a correction <span>↗</span></a>
+          <a href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks/issues/new?title=Metadata%20correction%3A%20&body=Benchmark%3A%0AField%20to%20correct%3A%0ACurrent%20value%3A%0AProposed%20value%3A%0ASource%3A%0A" target="_blank" rel="noreferrer">Report a correction <span>↗</span></a>
         </article>
         <article>
           <span class="community-icon" aria-hidden="true">⌘</span>
@@ -379,9 +379,9 @@
 
   <footer class="site-footer">
     <div><strong>A Survey of World Model Benchmarks</strong><span>Target · Protocol · Metrics · Data</span></div>
-    <div class="footer-links"><a href="#top">Back to top</a><a href="https://github.com/axbhb/world-model-evaluation-survey/blob/main/Readme.md" target="_blank" rel="noreferrer">Benchmark list</a><a href="assets/benchmarks.json" target="_blank">Data manifest</a><a href="https://github.com/axbhb/world-model-evaluation-survey" target="_blank" rel="noreferrer">GitHub</a></div>
+    <div class="footer-links"><a href="#top">Back to top</a><a href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks/blob/main/Readme.md" target="_blank" rel="noreferrer">Benchmark list</a><a href="assets/benchmarks.json" target="_blank">Data manifest</a><a href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks" target="_blank" rel="noreferrer">GitHub</a></div>
   </footer>
 
-  <script src="assets/app-v3.js?v=6" defer></script>
+  <script src="assets/app-v3.js?v=7" defer></script>
 </body>
 </html>

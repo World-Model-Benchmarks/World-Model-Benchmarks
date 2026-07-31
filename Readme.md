@@ -1,8 +1,8 @@
 # A Survey of World Model Benchmarks
 
-[![Project Page](https://img.shields.io/badge/Project-Page-5965d8)](https://axbhb.github.io/world-model-evaluation-survey/) [![Benchmarks](https://img.shields.io/badge/Benchmarks-88-2f8f63)](https://axbhb.github.io/world-model-evaluation-survey/#benchmarks)
+[![Project Page](https://img.shields.io/badge/Project-Page-5965d8)](https://world-model-benchmarks.github.io/) [![Benchmarks](https://img.shields.io/badge/Benchmarks-95-2f8f63)](https://world-model-benchmarks.github.io/#benchmarks)
 
-This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **88 representative benchmarks** published from **2018–2026**; **49** span more than one evaluation-target category. The corpus was last checked in July 2026.
+This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **95 representative benchmarks** published from **2018–2026**; **58** span more than one evaluation-target category. The corpus was last checked on July 30, 2026.
 
 The category membership below follows the latest survey taxonomy and Figure 4. Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. `△` marks a benchmark assigned to more than one top-level evaluation target.
 
@@ -23,12 +23,12 @@ Each table is designed as a literature index rather than a copy of Tables 3–9:
 | Evaluation target | Benchmarks |
 |:--|--:|
 | Visual & Temporal Quality | 24 |
-| Spatial & State Consistency | 25 |
-| Long-Horizon Memory & State Persistence | 14 |
-| Physical Plausibility | 44 |
-| Causal & Counterfactual Reasoning | 27 |
-| Control Fidelity & Interactive Dynamics | 33 |
-| Functional Utility | 10 |
+| Spatial & State Consistency | 31 |
+| Long-Horizon Memory & State Persistence | 19 |
+| Physical Plausibility | 53 |
+| Causal & Counterfactual Reasoning | 32 |
+| Control Fidelity & Interactive Dynamics | 40 |
+| Functional Utility | 13 |
 
 Counts overlap because cross-category benchmarks appear in more than one top-level target.
 
@@ -36,10 +36,6 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 | Article | Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
-| [**FETV**](https://scholar.google.com/scholar?q=FETV%3A%20A%20benchmark%20for%20fine-grained%20evaluation%20of%20open-domain%20text-to-video%20generation) | 2023 | NeurIPS Datasets and Benchmarks | [Code](https://github.com/llyx97/FETV) | - |
-| [**VBench △**](https://scholar.google.com/scholar?q=VBench%3A%20Comprehensive%20benchmark%20suite%20for%20video%20generative%20models) | 2024 | CVPR | [Code](https://github.com/Vchitect/VBench) | [Project Page](https://vchitect.github.io/VBench-project/) |
-| [**VBench++ △**](https://arxiv.org/abs/2411.13503) | 2024 | IEEE TPAMI | [Code](https://github.com/Vchitect/VBench) | [Project Page](https://vchitect.github.io/VBench-project/) |
-| [**EvalCrafter**](https://scholar.google.com/scholar?q=EvalCrafter%3A%20Benchmarking%20and%20evaluating%20large%20video%20generation%20models) | 2024 | CVPR | [Code](https://github.com/evalcrafter/EvalCrafter) | [Project Page](https://evalcrafter.github.io/) |
 | [**ChronoMagic-Bench**](https://scholar.google.com/scholar?q=ChronoMagic-Bench%3A%20A%20benchmark%20for%20metamorphic%20evaluation%20of%20text-to-time-lapse%20video%20generation) | 2024 | NeurIPS Datasets and Benchmarks Spotlight | [Code](https://github.com/PKU-YuanGroup/ChronoMagic-Bench) | [Project Page](https://pku-yuangroup.github.io/ChronoMagic-Bench/) |
 | [**WorldScore △**](https://scholar.google.com/scholar?q=WorldScore%3A%20A%20unified%20evaluation%20benchmark%20for%20world%20generation) | 2025 | ICCV | [Code](https://github.com/haoyi-duan/WorldScore) | [Project Page](https://haoyi-duan.github.io/WorldScore/) |
 | [**VMBench**](https://arxiv.org/abs/2503.10076) | 2025 | ICCV | [Code](https://github.com/AMAP-ML/VMBench) | [Project Page](https://amap-ml.github.io/VMBench-Website/) |
@@ -60,13 +56,15 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**RBench △**](https://arxiv.org/abs/2601.15282) | 2026 | ICML | [Code](https://github.com/DAGroup-PKU/ReVidgen) | [Project Page](https://dagroup-pku.github.io/ReVidgen.github.io/) |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | [Code](https://github.com/SHI-Labs/physical-ai-bench) | - |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | [Code](https://github.com/amap-cvlab/ABot-PhysWorld) | - |
+| [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - |
+| [**CrashTwin △**](https://arxiv.org/abs/2606.28757) | 2026 | arXiv | - | - |
+| [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - |
+| [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - |
 
 ## Spatial and State Consistency
 
 | Article | Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
-| [**VBench △**](https://scholar.google.com/scholar?q=VBench%3A%20Comprehensive%20benchmark%20suite%20for%20video%20generative%20models) | 2024 | CVPR | [Code](https://github.com/Vchitect/VBench) | [Project Page](https://vchitect.github.io/VBench-project/) |
-| [**VBench++ △**](https://arxiv.org/abs/2411.13503) | 2024 | IEEE TPAMI | [Code](https://github.com/Vchitect/VBench) | [Project Page](https://vchitect.github.io/VBench-project/) |
 | [**WorldMark △**](https://arxiv.org/abs/2604.21686) | 2026 | arXiv | [Code](https://github.com/alaya-studio/WorldMark) | [Project Page](https://alaya-studio.github.io/WorldMark/) |
 | [**GameWorld Score △**](https://arxiv.org/abs/2506.18701) | 2025 | arXiv | [Code](https://github.com/SkyworkAI/Matrix-Game) | [Project Page](https://matrix-game-homepage.github.io/) |
 | [**EWMBench △**](https://arxiv.org/abs/2505.09694) | 2025 | BMVC | [Code](https://github.com/AgibotTech/EWMBench) | - |
@@ -90,6 +88,14 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**MVP △**](https://arxiv.org/abs/2506.09987) | 2025 | arXiv | [Code](https://github.com/facebookresearch/minimal_video_pairs) | [Project Page](https://ai.meta.com/research/publications/a-shortcut-aware-video-qa-benchmark-for-physical-understanding-via-minimal-video-pairs/) |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | [Code](https://github.com/SHI-Labs/physical-ai-bench) | - |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | [Code](https://github.com/amap-cvlab/ABot-PhysWorld) | - |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - |
+| [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - |
+| [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - |
+| [**CrashTwin △**](https://arxiv.org/abs/2606.28757) | 2026 | arXiv | - | - |
+| [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - |
+| [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - |
+| [**MiraBench △**](https://arxiv.org/abs/2605.29360) | 2026 | arXiv | - | - |
+| [**Chess-World-Model △**](https://arxiv.org/abs/2605.30100) | 2026 | arXiv | - | - |
 
 ## Long-Horizon Memory and State Persistence
 
@@ -109,6 +115,11 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WoW-World-Eval △**](https://arxiv.org/abs/2601.04137) | 2026 | arXiv | - | - |
 | [**RBench △**](https://arxiv.org/abs/2601.15282) | 2026 | ICML | [Code](https://github.com/DAGroup-PKU/ReVidgen) | [Project Page](https://dagroup-pku.github.io/ReVidgen.github.io/) |
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - |
+| [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - |
+| [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - |
+| [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - |
+| [**Chess-World-Model △**](https://arxiv.org/abs/2605.30100) | 2026 | arXiv | - | - |
 
 ## Physical Plausibility
 
@@ -158,6 +169,15 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**MVP △**](https://arxiv.org/abs/2506.09987) | 2025 | arXiv | [Code](https://github.com/facebookresearch/minimal_video_pairs) | [Project Page](https://ai.meta.com/research/publications/a-shortcut-aware-video-qa-benchmark-for-physical-understanding-via-minimal-video-pairs/) |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | [Code](https://github.com/SHI-Labs/physical-ai-bench) | - |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | [Code](https://github.com/amap-cvlab/ABot-PhysWorld) | - |
+| [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - |
+| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - |
+| [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - |
+| [**CrashTwin △**](https://arxiv.org/abs/2606.28757) | 2026 | arXiv | - | - |
+| [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - |
+| [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - |
+| [**MiraBench △**](https://arxiv.org/abs/2605.29360) | 2026 | arXiv | - | - |
+| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - |
 
 ## Causal and Counterfactual Reasoning
 
@@ -186,6 +206,8 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WoW-World-Eval △**](https://arxiv.org/abs/2601.04137) | 2026 | arXiv | - | - |
 | [**RBench △**](https://arxiv.org/abs/2601.15282) | 2026 | ICML | [Code](https://github.com/DAGroup-PKU/ReVidgen) | [Project Page](https://dagroup-pku.github.io/ReVidgen.github.io/) |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | [Code](https://github.com/SHI-Labs/physical-ai-bench) | - |
+| [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - |
+| [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - |
 
 ### Counterfactual Reasoning over Intervened Worlds
 
@@ -204,6 +226,10 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**CRONOS △**](https://arxiv.org/abs/2605.23699) | 2026 | arXiv | - | - |
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - |
 | [**MVP △**](https://arxiv.org/abs/2506.09987) | 2025 | arXiv | [Code](https://github.com/facebookresearch/minimal_video_pairs) | [Project Page](https://ai.meta.com/research/publications/a-shortcut-aware-video-qa-benchmark-for-physical-understanding-via-minimal-video-pairs/) |
+| [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - |
+| [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - |
+| [**MiraBench △**](https://arxiv.org/abs/2605.29360) | 2026 | arXiv | - | - |
+| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - |
 
 ## Control Fidelity and Interactive Dynamics
 
@@ -211,7 +237,6 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 | Article | Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
-| [**T2V-CompBench**](https://scholar.google.com/scholar?q=T2VCompBench%3A%20A%20comprehensive%20benchmark%20for%20compositional%20textto-video%20generation) | 2025 | CVPR | [Code](https://github.com/KaiyueSun98/T2V-CompBench) | - |
 | [**TC-Bench △**](https://arxiv.org/abs/2406.08656) | 2024 | ACL Findings | [Code](https://github.com/weixi-feng/TC-Bench) | [Project Page](https://weixi-feng.github.io/tc-bench/) |
 | [**StoryEval**](https://arxiv.org/abs/2412.16211) | 2024 | CVPR | [Code](https://github.com/ypwang61/StoryEval) | [Project Page](https://ypwang61.github.io/project/StoryEval/) |
 | [**VideoPhy △**](https://arxiv.org/abs/2406.03520) | 2024 | ICLR | [Code](https://github.com/Hritikbansal/videophy) | - |
@@ -234,6 +259,12 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**RBench △**](https://arxiv.org/abs/2601.15282) | 2026 | ICML | [Code](https://github.com/DAGroup-PKU/ReVidgen) | [Project Page](https://dagroup-pku.github.io/ReVidgen.github.io/) |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | [Code](https://github.com/SHI-Labs/physical-ai-bench) | - |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | [Code](https://github.com/amap-cvlab/ABot-PhysWorld) | - |
+| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - |
+| [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - |
+| [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - |
+| [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - |
+| [**MiraBench △**](https://arxiv.org/abs/2605.29360) | 2026 | arXiv | - | - |
+| [**Chess-World-Model △**](https://arxiv.org/abs/2605.30100) | 2026 | arXiv | - | - |
 
 ### Interactive Action Fidelity
 
@@ -249,6 +280,8 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**RoboWM-Bench △**](https://arxiv.org/abs/2604.19092) | 2026 | CVPR | [Code](https://github.com/fffstrong/RoboWM-Bench) | [Project Page](https://robowm-bench.github.io/RoboWM-Bench/) |
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | [Code](https://github.com/tsinghua-fib-lab/WorldArena) | [Project Page](https://world-arena.ai/) |
 | [**WorldOlympiad △**](https://arxiv.org/abs/2606.11129) | 2026 | arXiv | - | - |
+| [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - |
+| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - |
 
 ## Functional Utility
 
@@ -264,6 +297,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | Article | Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | [Code](https://github.com/tsinghua-fib-lab/WorldArena) | [Project Page](https://world-arena.ai/) |
+| [**WMBench**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - |
 
 ### World Model as Planner
 
@@ -279,6 +313,8 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | [Code](https://github.com/MBZUAI-IFM/WR-Arena) | - |
 | [**WoW-World-Eval △**](https://arxiv.org/abs/2601.04137) | 2026 | arXiv | - | - |
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - |
+| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - |
 
 ### World Model as Interactive Training Environment
 
@@ -290,4 +326,4 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 - [`docs/assets/benchmarks.json`](docs/assets/benchmarks.json): canonical benchmark, target, sub-target, protocol, metric, data-source, year, and domain metadata
 - [`docs/assets/metadata.json`](docs/assets/metadata.json): taxonomy labels and release-window definitions
-- [Interactive project page](https://axbhb.github.io/world-model-evaluation-survey/)
+- [Interactive project page](https://world-model-benchmarks.github.io/)
