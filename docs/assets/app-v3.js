@@ -48,11 +48,11 @@
 
     const stats = [...document.querySelectorAll(".stat-strip > div")];
     if (stats[0]) {
-      setTextIfChanged(stats[0].querySelector("strong"), "95");
+      setTextIfChanged(stats[0].querySelector("strong"), "106");
       setTextIfChanged(stats[0].querySelector("span"), "representative benchmarks");
     }
     if (stats[1]) {
-      setTextIfChanged(stats[1].querySelector("strong"), "58");
+      setTextIfChanged(stats[1].querySelector("strong"), "66");
       setTextIfChanged(stats[1].querySelector("span"), "cross-category benchmarks");
     }
     if (stats[3]) {
@@ -64,7 +64,7 @@
 
     const snapshot = document.querySelector(".snapshot-note");
     if (snapshot) {
-      snapshot.innerHTML = '<span class="status-dot"></span> Latest manuscript snapshot · 95 benchmarks · 58 cross-category · checked July 30, 2026';
+      snapshot.innerHTML = '<span class="status-dot"></span> Latest manuscript snapshot · 106 benchmarks · 66 cross-category · checked August 27, 2026';
     }
 
     const cards = [...document.querySelectorAll(".principle-card")];
@@ -90,17 +90,17 @@
     const phaseFour = document.querySelector(".timeline-insight:nth-child(4) p");
     if (phaseFour) {
       phaseFour.innerHTML =
-        '<strong>42 new benchmarks in 2026</strong>, bringing the corpus to <strong>95</strong>.';
+        '<strong>53 new benchmarks in 2026</strong>, bringing the corpus to <strong>106</strong>.';
     }
 
     const benchmarkSummary = document.querySelector("#benchmarks .benchmark-heading > p");
     if (benchmarkSummary) {
       benchmarkSummary.textContent =
-        "Search and filter the 95 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.";
+        "Search and filter the 106 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.";
     }
 
     const resultCount = document.querySelector("#result-count");
-    if (resultCount && resultCount.textContent !== "95") resultCount.textContent = "95";
+    if (resultCount && resultCount.textContent !== "106") resultCount.textContent = "106";
 
     const communityMetricCopy = [...document.querySelectorAll(".community-grid article p")]
       .find((node) => node.textContent.includes("metric family"));
@@ -144,7 +144,7 @@
   }
 
   async function loadCanonicalExplorer() {
-    const sourceUrl = new URL("app-v3-core.js?v=9", document.currentScript?.src || document.baseURI);
+    const sourceUrl = new URL("app-v3-core.js?v=10", document.currentScript?.src || document.baseURI);
     const response = await fetch(sourceUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status} while loading explorer core`);
 
