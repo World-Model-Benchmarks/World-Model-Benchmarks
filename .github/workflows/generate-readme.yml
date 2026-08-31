@@ -32,6 +32,75 @@ jobs:
       - name: Generate the latest benchmark snapshot
         run: python scripts/generate_readme_index.py
 
+      - name: Synchronize the public author list
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("docs/index.html")
+          text = path.read_text(encoding="utf-8")
+
+          display_authors = (
+              "Zheng Zhang, Zhixiang Guo, Yuan Si, Siyuan Liang, Shunyu Liu, "
+              "Weibo Gao, Song Wang, Leszek Rutkowski, Giuseppe Valenzise, "
+              "Ming-Hsuan Yang, Lin William Cong, M. Jamal Deen, Sally Cripps, "
+              "Dacheng Tao"
+          )
+          bibtex_authors = (
+              "Zheng Zhang and Zhixiang Guo and Yuan Si and Siyuan Liang and "
+              "Shunyu Liu and Weibo Gao and Song Wang and Leszek Rutkowski and "
+              "Giuseppe Valenzise and Ming-Hsuan Yang and Lin William Cong and "
+              "M. Jamal Deen and Sally Cripps and Dacheng Tao"
+          )
+          jsonld_authors = '''    "author": [
+              {"@type": "Person", "name": "Zheng Zhang"},
+              {"@type": "Person", "name": "Zhixiang Guo"},
+              {"@type": "Person", "name": "Yuan Si"},
+              {"@type": "Person", "name": "Siyuan Liang"},
+              {"@type": "Person", "name": "Shunyu Liu"},
+              {"@type": "Person", "name": "Weibo Gao"},
+              {"@type": "Person", "name": "Song Wang"},
+              {"@type": "Person", "name": "Leszek Rutkowski"},
+              {"@type": "Person", "name": "Giuseppe Valenzise"},
+              {"@type": "Person", "name": "Ming-Hsuan Yang"},
+              {"@type": "Person", "name": "Lin William Cong"},
+              {"@type": "Person", "name": "M. Jamal Deen"},
+              {"@type": "Person", "name": "Sally Cripps"},
+              {"@type": "Person", "name": "Dacheng Tao"}
+            ],'''
+
+          replacements = [
+              (
+                  '    "author": {"@type": "Organization", "name": "Anonymous Authors"},',
+                  jsonld_authors,
+              ),
+              (
+                  '<p class="authors">Anonymous Authors</p>',
+                  f'<p class="authors">{display_authors}</p>',
+              ),
+              (
+                  '<p>The public author list and manuscript identifier can be updated here when the paper is released.</p>',
+                  '<p>The author list below follows the final manuscript; the publication identifier can be updated when available.</p>',
+              ),
+              (
+                  '  author  = {Anonymous Authors},',
+                  f'  author  = {{{bibtex_authors}}},',
+              ),
+          ]
+
+          for old, new in replacements:
+              count = text.count(old)
+              if count != 1:
+                  raise RuntimeError(f"Expected one occurrence of {old!r}; found {count}")
+              text = text.replace(old, new)
+
+          if "Anonymous Authors" in text:
+              raise RuntimeError("Anonymous author placeholder remains in docs/index.html")
+
+          path.write_text(text, encoding="utf-8")
+          PY
+
       - name: Commit generated repository and website files
         shell: bash
         run: |
@@ -42,5 +111,5 @@ jobs:
           git config user.name "axbhb"
           git config user.email "144993397+axbhb@users.noreply.github.com"
           git add Readme.md docs scripts/generate_readme_index.py
-          git commit -m "Update benchmark corpus to August 2026 snapshot"
+          git commit -m "Synchronize survey website and public author list"
           git push
