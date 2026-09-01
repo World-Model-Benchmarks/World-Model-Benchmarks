@@ -7,8 +7,8 @@ const TARGETS = [
   "Control Fidelity & Interactive Dynamics",
   "Functional Utility",
 ];
-const PROTOCOLS = ["OL", "CR", "CL"];
-const METRICS = ["A", "J", "O"];
+const PROTOCOLS = ["OL", "CL"];
+const METRICS = ["P", "O"];
 const EVALUATION_DATA = ["RWD", "SBG", "SPTC", "HCP"];
 const TARGET_COLORS = {
   "Visual & Temporal Quality": "#6f63d9",
@@ -615,7 +615,7 @@ function setupEvents() {
     const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
     const link = document.createElement("a");
     link.href = url;
-    link.download = "world-model-benchmarks-august-2026.json";
+    link.download = "world-model-benchmarks-2026-08-31.json";
     document.body.append(link);
     link.click();
     link.remove();

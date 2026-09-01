@@ -1,1 +1,849 @@
-[{"id":"phyworldbench","shortName":"PhyWorldBench","title":"PhyWorldBench: A comprehensive evaluation of physical realism in text-to-video models","ref":64,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility","Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2507.13428","arxivId":"2507.13428","reference":"J. Gu, X. Liu, Y. Zeng, A. Nagarajan, F. Zhu, D. Hong, Y. Fan, Q. Yan, K. Zhou, M.-Y. Liu, and X. E. Wang, “PhyWorldBench: A comprehensive evaluation of physical realism in text-to-video models,” arXiv:2507.13428, 2025."},{"id":"scalable-policy-eval","shortName":"Scalable Policy Eval","title":"Scalable policy evaluation with video world models","ref":95,"year":2025,"venue":"arXiv","domains":["embodied"],"protocols":["CL"],"realWorldExecution":true,"evidence":["A","J","O"],"dataConstruction":["HRS"],"targets":["Functional Utility"],"subtargets":["Policy Evaluator"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2511.11520","arxivId":"2511.11520","reference":"W.-C. Tseng, J. Gu, Q. Zhang, H. Mao, M.-Y. Liu, F. Shkurti, and L. Yen-Chen, “Scalable policy evaluation with video world models,” arXiv:2511.11520, 2025."},{"id":"smallworlds","shortName":"SmallWorlds","title":"SmallWorlds: Assessing dynamics understanding of world models in isolated environments","ref":47,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Long-Horizon Memory & State Persistence"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2511.23465","arxivId":"2511.23465","reference":"X. Li, Z. Xia, W. Lu, C. Hao, and Y. Chen, “SmallWorlds: Assessing dynamics understanding of world models in isolated environments,” arXiv preprint arXiv:2511.23465, 2025."},{"id":"t2v-compbench","shortName":"T2V-CompBench","title":"T2VCompBench: A comprehensive benchmark for compositional textto-video generation","ref":85,"year":2025,"venue":"CVPR","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=T2VCompBench%3A%20A%20comprehensive%20benchmark%20for%20compositional%20textto-video%20generation","arxivId":null,"reference":"K. Sun, K. Huang, X. Liu, Y. Wu, Z. Xu, Z. Li, and X. Liu, “T2VCompBench: A comprehensive benchmark for compositional textto-video generation,” CVPR, 2025."},{"id":"t2vphysbench","shortName":"T2VPhysBench","title":"T2VPhysBench: A first-principles benchmark for physical consistency in text-to-video generation","ref":61,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2505.00337","arxivId":"2505.00337","reference":"X. Guo, J. Huo, Z. Shi, Z. Song, J. Zhang, and J. Zhao, “T2VPhysBench: A first-principles benchmark for physical consistency in text-to-video generation,” arXiv:2505.00337, 2025."},{"id":"t2vworldbench","shortName":"T2VWorldBench","title":"T2VWorldBench: A benchmark for evaluating world knowledge in text-to-video generation","ref":65,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2507.18107","arxivId":"2507.18107","reference":"Y. Chen, X. Guo, Z. Shi, Z. Song, and J. Zhang, “T2VWorldBench: A benchmark for evaluating world knowledge in text-to-video generation,” arXiv:2507.18107, 2025."},{"id":"vact","shortName":"VACT","title":"Vact: A video automatic causal testing system and a benchmark","ref":74,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2503.06163","arxivId":"2503.06163","reference":"H. Yang, Q. Zheng, Y. Gao, Y. Yang, Y. He, Z. Lin, and M. Zhang, “Vact: A video automatic causal testing system and a benchmark,” arXiv preprint arXiv:2503.06163, 2025."},{"id":"vbench-2-0","shortName":"VBench-2.0","title":"VBench2.0: Advancing video generation benchmark suite for intrinsic faithfulness","ref":67,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2503.21755","arxivId":"2503.21755","reference":"D. Zheng, Z. Huang, H. Liu, K. Zou, Y. He, F. Zhang, L. Gu, Y. Zhang, J. He, W.-S. Zheng, Y. Qiao, and Z. Liu, “VBench2.0: Advancing video generation benchmark suite for intrinsic faithfulness,” arXiv:2503.21755, 2025."},{"id":"vcrbench","shortName":"VCRBench","title":"VCRBench: Exploring long-form causal reasoning capabilities of large video language models","ref":83,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2505.08455","arxivId":"2505.08455","reference":"P. Sarkar and A. Etemad, “VCRBench: Exploring long-form causal reasoning capabilities of large video language models,” arXiv:2505.08455, 2025."},{"id":"videophy-2","shortName":"VideoPhy-2","title":"VideoPhy-2: A challenging action-centric physical commonsense evaluation in video generation","ref":59,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility","Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2503.06800","arxivId":"2503.06800","reference":"H. Bansal, C. Peng, Y. Bitton, R. Goldenberg, A. Grover, and K.- W. Chang, “VideoPhy-2: A challenging action-centric physical commonsense evaluation in video generation,” arXiv:2503.06800, 2025."},{"id":"vmbench","shortName":"VMBench","title":"VMBench: A benchmark for perceptionaligned video motion generation","ref":30,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2503.10076","arxivId":"2503.10076","reference":"X. Ling, C. Zhu, M. Wu, H. Li, X. Feng, C. Yang, A. Hao, J. Zhu, J. Wu, and X. Chu, “VMBench: A benchmark for perceptionaligned video motion generation,” arXiv:2503.10076, 2025."},{"id":"world-in-world","shortName":"World-in-World","title":"World-inWorld: World models in a closed-loop world","ref":17,"year":2025,"venue":"arXiv","domains":["embodied"],"protocols":["CL"],"realWorldExecution":false,"evidence":["A","J","O"],"dataConstruction":["HRS"],"targets":["Functional Utility"],"subtargets":["Planner"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2510.18135","arxivId":"2510.18135","reference":"J. Zhang, M. Jiang, N. Dai, T. Lu, A. Uzunoglu, S. Zhang, Y. Wei, J. Wang, V. M. Patel, P. P. Liang, D. Khashabi, C. Peng, R. Chellappa, T. Shu, A. Yuille, Y. Du, and J. Chen, “World-inWorld: World models in a closed-loop world,” arXiv:2510.18135, 2025."},{"id":"worldmodelbench","shortName":"WorldModelBench","title":"WorldModelBench: Judging video generation models as world models","ref":66,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2502.20694","arxivId":"2502.20694","reference":"D. Li, Y. Fang, Y. Chen, S. Yang, S. Cao, J. Wong, M. Luo, X. Wang, H. Yin, J. E. Gonzalez, I. Stoica, S. Han, and Y. Lu, “WorldModelBench: Judging video generation models as world models,” arXiv:2502.20694, 2025."},{"id":"worldprediction","shortName":"WorldPrediction","title":"WorldPrediction: A benchmark for high-level world modeling and long-horizon procedural planning","ref":46,"year":2025,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Long-Horizon Memory & State Persistence","Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2506.04363","arxivId":"2506.04363","reference":"D. Chen, W. Chung, Y. Bang, Z. Ji, and P. Fung, “WorldPrediction: A benchmark for high-level world modeling and long-horizon procedural planning,” arXiv:2506.04363, 2025."},{"id":"worldscore","shortName":"WorldScore","title":"WorldScore: A unified evaluation benchmark for world generation","ref":29,"year":2025,"venue":"ICCV","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["HRS"],"targets":["Visual & Temporal Quality","Spatial & State Consistency","Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=WorldScore%3A%20A%20unified%20evaluation%20benchmark%20for%20world%20generation","arxivId":null,"reference":"H. Duan, H.-X. Yu, S. Chen, L. Fei-Fei, and J. Wu, “WorldScore: A unified evaluation benchmark for world generation,” ICCV, 2025."},{"id":"act-bench","shortName":"ACT-Bench","title":"ACTBench: Towards action controllable world models for autonomous driving","ref":90,"year":2024,"venue":"arXiv","domains":["driving"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2412.05337","arxivId":"2412.05337","reference":"H. Arai, K. Ishihara, T. Takahashi, and Y. Yamaguchi, “ACTBench: Towards action controllable world models for autonomous driving,” arXiv preprint arXiv:2412.05337, 2024."},{"id":"chronomagic-bench","shortName":"ChronoMagic-Bench","title":"ChronoMagic-Bench: A benchmark for metamorphic evaluation of text-to-time-lapse video generation","ref":28,"year":2024,"venue":"NeurIPS D&B Spotlight","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=ChronoMagic-Bench%3A%20A%20benchmark%20for%20metamorphic%20evaluation%20of%20text-to-time-lapse%20video%20generation","arxivId":null,"reference":"S. Yuan, J. Huang, Y. Xu, Y. Liu, S. Zhang, Y. Shi, R. Zhu, X. Cheng, J. Luo, and L. Yuan, “ChronoMagic-Bench: A benchmark for metamorphic evaluation of text-to-time-lapse video generation,” NeurIPS Datasets and Benchmarks Spotlight, 2024."},{"id":"contphy","shortName":"ContPhy","title":"ContPhy: Continuum physical concept learning and reasoning from videos","ref":56,"year":2024,"venue":"ICML","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=ContPhy%3A%20Continuum%20physical%20concept%20learning%20and%20reasoning%20from%20videos","arxivId":null,"reference":"Z. Zheng, X. Yan, Z. Chen, J. Wang, Q. Z. E. Lim, J. B. Tenenbaum, and C. Gan, “ContPhy: Continuum physical concept learning and reasoning from videos,” ICML, 2024."},{"id":"eva-bench","shortName":"EVA-Bench","title":"EVA: An embodied world model for future video anticipation","ref":96,"year":2024,"venue":"arXiv","domains":["embodied"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["HRS"],"targets":["Functional Utility"],"subtargets":["Planner"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2410.15461","arxivId":"2410.15461","reference":"X. Chi, C.-K. Fan, H. Zhang, X. Qi, R. Zhang, A. Chen, C. min Chan, W. Xue, Q. Liu, S. Zhang, and Y. Guo, “EVA: An embodied world model for future video anticipation,” arXiv:2410.15461, 2024."},{"id":"evalcrafter","shortName":"EvalCrafter","title":"EvalCrafter: Benchmarking and evaluating large video generation models","ref":27,"year":2024,"venue":"CVPR","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=EvalCrafter%3A%20Benchmarking%20and%20evaluating%20large%20video%20generation%20models","arxivId":null,"reference":"Y. Liu, X. Cun, X. Liu, X. Wang, Y. Zhang, H. Chen, Y. Liu, T. Zeng, R. Chan, and Y. Shan, “EvalCrafter: Benchmarking and evaluating large video generation models,” in CVPR, 2024."},{"id":"phygenbench","shortName":"PhyGenBench","title":"Towards world simulator: Crafting physical commonsense-based benchmark for video generation","ref":60,"year":2024,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility","Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2410.05363","arxivId":"2410.05363","reference":"F. Meng, J. Liao, X. Tan, W. Shao, Q. Lu, K. Zhang, Y. Cheng, D. Li, Y. Qiao, and P. Luo, “Towards world simulator: Crafting physical commonsense-based benchmark for video generation,” arXiv:2410.05363, 2024."}]
+[
+  {
+    "id": "mbench",
+    "shortName": "MBench",
+    "title": "Mbench: A comprehensive benchmark on memory capability for video world models",
+    "ref": 109,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.00793",
+    "arxivId": "2606.00793",
+    "reference": "S. Zhang, Z. Zhang, S. Huang, Z. Tang, H. Wang, C. Dai, M. Chen, Y. Li, Y. Li, Y. Chen, H. Liu, C. Li, J. Lyu, and Y. Duan, “Mbench: A comprehensive benchmark on memory capability for video world models,” arXiv preprint arXiv:2606.00793, 2026."
+  },
+  {
+    "id": "stevo-bench",
+    "shortName": "STEVO-Bench",
+    "title": "Out of sight, out of mind? evaluating state evolution in video world models",
+    "ref": 110,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2603.13215",
+    "arxivId": "2603.13215",
+    "reference": "Z. Ma, M. Liufu, and G. Gkioxari, “Out of sight, out of mind? evaluating state evolution in video world models,” arXiv preprint arXiv:2603.13215, 2026."
+  },
+  {
+    "id": "causalspatial",
+    "shortName": "CausalSpatial",
+    "title": "CausalSpatial: A Benchmark for Object-Centric Causal Spatial Reasoning",
+    "ref": 111,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "image"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2601.13304",
+    "arxivId": "2601.13304",
+    "reference": "CausalSpatial: A Benchmark for Object-Centric Causal Spatial Reasoning, arXiv:2601.13304, 2026."
+  },
+  {
+    "id": "what-if-world",
+    "shortName": "What-If World",
+    "title": "What-if world: A causal benchmark for general world models in embodied scenarios",
+    "ref": 112,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "driving",
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2605.27589",
+    "arxivId": "2605.27589",
+    "reference": "K. Cai, R. Song, J. Zhang, K. Zhang, P. Bodapati, A. Yu, F. Suya, M. Rostami, J. Ma, and Y. Tian, “What-if world: A causal benchmark for general world models in embodied scenarios,” arXiv preprint arXiv:2605.27589, 2026."
+  },
+  {
+    "id": "hoca-bench",
+    "shortName": "HOCA-Bench",
+    "title": "Hoca-bench: Beyond semantic perception to predictive world modeling via hegelian ontological-causal anomalies",
+    "ref": 113,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2602.19571",
+    "arxivId": "2602.19571",
+    "reference": "C. Liu, Y. Ye, Q. Zhou, X. Tan, M. Luo, Z. Qiu, W. Peng, and Z. Cai, “Hoca-bench: Beyond semantic perception to predictive world modeling via hegelian ontological-causal anomalies,” arXiv preprint arXiv:2602.19571, 2026."
+  },
+  {
+    "id": "autumnbench",
+    "shortName": "AutumnBench",
+    "title": "Benchmarking World-Model Learning (introduces AutumnBench)",
+    "ref": 114,
+    "year": 2025,
+    "venue": "ICML",
+    "domains": [
+      "game"
+    ],
+    "protocols": [
+      "CL"
+    ],
+    "metrics": [
+      "P",
+      "O"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Causal & Counterfactual Reasoning",
+      "Functional Utility"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation",
+      "Planner"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2510.19788",
+    "arxivId": "2510.19788",
+    "reference": "A. Warrier et al., “Benchmarking World-Model Learning,” arXiv:2510.19788, 2025."
+  },
+  {
+    "id": "mvp",
+    "shortName": "MVP",
+    "title": "A Shortcut-Aware Video-QA Benchmark for Physical Understanding via Minimal Video Pairs",
+    "ref": 115,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2506.09987",
+    "arxivId": "2506.09987",
+    "reference": "B. Krojer et al., “A Shortcut-Aware Video-QA Benchmark for Physical Understanding via Minimal Video Pairs,” arXiv:2506.09987, 2025."
+  },
+  {
+    "id": "contactworld",
+    "shortName": "ContactWorld",
+    "title": "ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation",
+    "ref": 116,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "CL"
+    ],
+    "metrics": [
+      "P",
+      "O"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility",
+      "Functional Utility"
+    ],
+    "subtargets": [
+      "Planner"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.13877",
+    "arxivId": "2606.13877",
+    "reference": "ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation, arXiv:2606.13877, 2026."
+  },
+  {
+    "id": "scratchworld",
+    "shortName": "ScratchWorld",
+    "title": "ScratchWorld: Evaluating if World Models Compute Executable Consequences",
+    "ref": 117,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "game"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.31689",
+    "arxivId": "2606.31689",
+    "reference": "ScratchWorld: Evaluating if World Models Compute Executable Consequences, arXiv:2606.31689, 2026."
+  },
+  {
+    "id": "mirabench",
+    "shortName": "MiraBench",
+    "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
+    "ref": 118,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2605.29360",
+    "arxivId": "2605.29360",
+    "reference": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models, arXiv:2605.29360, 2026."
+  },
+  {
+    "id": "chess-world-model",
+    "shortName": "Chess-World-Model",
+    "title": "Chess-World-Model: A 10M-Game Benchmark for Exact State Tracking from Chess Move Sequences",
+    "ref": 119,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "game"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2605.30100",
+    "arxivId": "2605.30100",
+    "reference": "Chess-World-Model: A 10M-Game Benchmark for Exact State Tracking from Chess Move Sequences, arXiv:2605.30100, 2026."
+  },
+  {
+    "id": "intphys-2",
+    "shortName": "IntPhys 2",
+    "title": "IntPhys 2: Benchmarking intuitive physics understanding in complex synthetic environments",
+    "ref": 120,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2506.09849",
+    "arxivId": "2506.09849",
+    "reference": "F. Bordes, Q. Garrido, J. T. Kao, A. Williams, M. Rabbat, and E. Dupoux, “IntPhys 2: Benchmarking intuitive physics understanding in complex synthetic environments,” arXiv:2506.09849, 2025."
+  },
+  {
+    "id": "smallworlds",
+    "shortName": "SmallWorlds",
+    "title": "SmallWorlds: Assessing dynamics understanding of world models in isolated environments",
+    "ref": 121,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2511.23465",
+    "arxivId": "2511.23465",
+    "reference": "X. Li, Z. Xia, W. Lu, C. Hao, and Y. Chen, “SmallWorlds: Assessing dynamics understanding of world models in isolated environments,” arXiv preprint arXiv:2511.23465, 2025."
+  },
+  {
+    "id": "vbench-2-0",
+    "shortName": "VBench-2.0",
+    "title": "VBench2.0: Advancing video generation benchmark suite for intrinsic faithfulness",
+    "ref": 122,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2503.21755",
+    "arxivId": "2503.21755",
+    "reference": "D. Zheng, Z. Huang, H. Liu, K. Zou, Y. He, F. Zhang, L. Gu, Y. Zhang, J. He, W.-S. Zheng, Y. Qiao, and Z. Liu, “VBench2.0: Advancing video generation benchmark suite for intrinsic faithfulness,” arXiv:2503.21755, 2025."
+  },
+  {
+    "id": "worldbench",
+    "shortName": "WorldBench",
+    "title": "WorldBench: Disambiguating physics for diagnostic evaluation of world models",
+    "ref": 123,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2601.21282",
+    "arxivId": "2601.21282",
+    "reference": "R. Upadhyay, H. Zhang, J. Solomon, A. Agrawal, P. Boreddy, S. S. Narayana, Y. Ba, A. Wong, C. M. de Melo, and A. Kadambi, “WorldBench: Disambiguating physics for diagnostic evaluation of world models,” arXiv:2601.21282, 2026."
+  },
+  {
+    "id": "worldprediction",
+    "shortName": "WorldPrediction",
+    "title": "WorldPrediction: A benchmark for high-level world modeling and long-horizon procedural planning",
+    "ref": 124,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Long-Horizon Memory & State Persistence",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2506.04363",
+    "arxivId": "2506.04363",
+    "reference": "D. Chen, W. Chung, Y. Bang, Z. Ji, and P. Fung, “WorldPrediction: A benchmark for high-level world modeling and long-horizon procedural planning,” arXiv:2506.04363, 2025."
+  },
+  {
+    "id": "exphy",
+    "shortName": "ExPhy",
+    "title": "ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting",
+    "ref": 125,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2608.20009",
+    "arxivId": "2608.20009",
+    "reference": "R. Wang et al., “ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting,” arXiv:2608.20009, 2026."
+  },
+  {
+    "id": "cophy",
+    "shortName": "CoPhy",
+    "title": "CoPhy: Counterfactual learning of physical dynamics",
+    "ref": 126,
+    "year": 2020,
+    "venue": "ICLR",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics",
+    "arxivId": null,
+    "reference": "F. Baradel, N. Neverova, J. Mille, G. Mori, and C. Wolf, “CoPhy: Counterfactual learning of physical dynamics,” ICLR, 2020."
+  },
+  {
+    "id": "phyre",
+    "shortName": "PHYRE",
+    "title": "PHYRE: A new benchmark for physical reasoning",
+    "ref": 127,
+    "year": 2019,
+    "venue": "NeurIPS",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "CL"
+    ],
+    "metrics": [
+      "O"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=PHYRE%3A%20A%20new%20benchmark%20for%20physical%20reasoning",
+    "arxivId": null,
+    "reference": "A. Bakhtin, L. van der Maaten, J. Johnson, L. Gustafson, and R. Girshick, “PHYRE: A new benchmark for physical reasoning,” in NeurIPS, 2019."
+  },
+  {
+    "id": "craft",
+    "shortName": "CRAFT",
+    "title": "CRAFT: A benchmark for causal reasoning about forces and interactions",
+    "ref": 128,
+    "year": 2022,
+    "venue": "Findings of ACL",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions",
+    "arxivId": null,
+    "reference": "T. Ates, M. S¸. Ates¸o˘glu, C¸ . Yi˘git, I. Kesen, M. Kobas, E. Erdem, A. Erdem, T. Goksun, and D. Yuret, “CRAFT: A benchmark for causal reasoning about forces and interactions,” Findings of ACL, 2022."
+  },
+  {
+    "id": "physion-plus-plus",
+    "shortName": "Physion++",
+    "title": "Physion++: Evaluating physical scene understanding that requires online inference of different physical properties",
+    "ref": 129,
+    "year": 2023,
+    "venue": "NeurIPS",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=Physion%2B%2B%3A%20Evaluating%20physical%20scene%20understanding%20that%20requires%20online%20inference%20of%20different%20physical%20properties",
+    "arxivId": null,
+    "reference": "H.-Y. Tung, M. Ding, Z. Chen, D. Bear, C. Gan, J. B. Tenenbaum, D. L. Yamins, J. E. Fan, and K. A. Smith, “Physion++: Evaluating physical scene understanding that requires online inference of different physical properties,” NeurIPS, 2023."
+  },
+  {
+    "id": "comphy",
+    "shortName": "ComPhy",
+    "title": "ComPhy: Compositional physical reasoning of objects and events from videos",
+    "ref": 130,
+    "year": 2022,
+    "venue": "ICLR",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=ComPhy%3A%20Compositional%20physical%20reasoning%20of%20objects%20and%20events%20from%20videos",
+    "arxivId": null,
+    "reference": "Z. Chen, K. Yi, Y. Li, M. Ding, A. Torralba, J. B. Tenenbaum, and C. Gan, “ComPhy: Compositional physical reasoning of objects and events from videos,” in ICLR, 2022."
+  },
+  {
+    "id": "contphy",
+    "shortName": "ContPhy",
+    "title": "ContPhy: Continuum physical concept learning and reasoning from videos",
+    "ref": 131,
+    "year": 2024,
+    "venue": "ICML",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=ContPhy%3A%20Continuum%20physical%20concept%20learning%20and%20reasoning%20from%20videos",
+    "arxivId": null,
+    "reference": "Z. Zheng, X. Yan, Z. Chen, J. Wang, Q. Z. E. Lim, J. B. Tenenbaum, and C. Gan, “ContPhy: Continuum physical concept learning and reasoning from videos,” ICML, 2024."
+  },
+  {
+    "id": "phycobench",
+    "shortName": "PhyCoBench",
+    "title": "A physical coherence benchmark for evaluating video generation models via optical flow-guided frame prediction",
+    "ref": 132,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2502.05503",
+    "arxivId": "2502.05503",
+    "reference": "Y. Chen, X. Zhu, and T. Li, “A physical coherence benchmark for evaluating video generation models via optical flow-guided frame prediction,” arXiv:2502.05503, 2025."
+  },
+  {
+    "id": "videophy",
+    "shortName": "VideoPhy",
+    "title": "VideoPhy: Evaluating physical commonsense for video generation",
+    "ref": 133,
+    "year": 2024,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2406.03520",
+    "arxivId": "2406.03520",
+    "reference": "H. Bansal, Z. Lin, T. Xie, Z. Zong, M. Yarom, Y. Bitton, C. Jiang, Y. Sun, K.-W. Chang, and A. Grover, “VideoPhy: Evaluating physical commonsense for video generation,” arXiv:2406.03520, 2024."
+  },
+  {
+    "id": "videophy-2",
+    "shortName": "VideoPhy-2",
+    "title": "VideoPhy-2: A challenging action-centric physical commonsense evaluation in video generation",
+    "ref": 134,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2503.06800",
+    "arxivId": "2503.06800",
+    "reference": "H. Bansal, C. Peng, Y. Bitton, R. Goldenberg, A. Grover, and K.- W. Chang, “VideoPhy-2: A challenging action-centric physical commonsense evaluation in video generation,” arXiv:2503.06800, 2025."
+  },
+  {
+    "id": "phygenbench",
+    "shortName": "PhyGenBench",
+    "title": "Towards world simulator: Crafting physical commonsense-based benchmark for video generation",
+    "ref": 135,
+    "year": 2024,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2410.05363",
+    "arxivId": "2410.05363",
+    "reference": "F. Meng, J. Liao, X. Tan, W. Shao, Q. Lu, K. Zhang, Y. Cheng, D. Li, Y. Qiao, and P. Luo, “Towards world simulator: Crafting physical commonsense-based benchmark for video generation,” arXiv:2410.05363, 2024."
+  }
+]
