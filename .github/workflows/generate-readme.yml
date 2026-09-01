@@ -2,9 +2,8 @@ name: Generate README and website snapshot
 
 on:
   push:
-    branches: ["main", "sync-pdf-2026-08-31"]
+    branches: ["main"]
     paths:
-      - "scripts/apply_pdf_table_fields.py"
       - "scripts/generate_readme_index.py"
       - "scripts/sync_latest_survey.py"
       - ".github/workflows/generate-readme.yml"
@@ -31,9 +30,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Integrate every PDF table field
-        run: python scripts/apply_pdf_table_fields.py
-
       - name: Generate the latest benchmark snapshot
         run: python scripts/generate_readme_index.py
 
@@ -50,5 +46,5 @@ jobs:
           git config user.name "axbhb"
           git config user.email "144993397+axbhb@users.noreply.github.com"
           git add Readme.md docs scripts/generate_readme_index.py scripts/sync_latest_survey.py
-          git commit -m "Validate every benchmark field against Tables 3-9"
+          git commit -m "Align benchmark corpus with August 31, 2026 PDF"
           git push
