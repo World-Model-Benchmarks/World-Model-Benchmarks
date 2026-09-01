@@ -3,7 +3,7 @@
     "id": "robowm-bench",
     "shortName": "RoboWM-Bench",
     "title": "RoboWM-Bench: A benchmark for evaluating world models in robotic manipulation",
-    "ref": 35,
+    "ref": 38,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -37,7 +37,7 @@
     "id": "world-in-world",
     "shortName": "World-in-World",
     "title": "World-inWorld: World models in a closed-loop world",
-    "ref": 38,
+    "ref": 42,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -67,7 +67,7 @@
     "id": "intphys",
     "shortName": "IntPhys",
     "title": "IntPhys: A framework and benchmark for visual intuitive physics reasoning",
-    "ref": 39,
+    "ref": 43,
     "year": 2018,
     "venue": "arXiv",
     "domains": [
@@ -96,7 +96,7 @@
     "id": "clevrer",
     "shortName": "CLEVRER",
     "title": "CLEVRER: Collision events for video representation and reasoning",
-    "ref": 40,
+    "ref": 44,
     "year": 2020,
     "venue": "ICLR",
     "domains": [
@@ -128,7 +128,7 @@
     "id": "physion",
     "shortName": "Physion",
     "title": "Physion: Evaluating physical prediction from vision in humans and machines",
-    "ref": 41,
+    "ref": 45,
     "year": 2021,
     "venue": "NeurIPS D&B",
     "domains": [
@@ -159,7 +159,7 @@
     "id": "mind",
     "shortName": "MIND",
     "title": "Mind: Benchmarking memory consistency and action control in world models",
-    "ref": 42,
+    "ref": 46,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -193,7 +193,7 @@
     "id": "worldolympiad",
     "shortName": "WorldOlympiad",
     "title": "WorldOlympiad: Can your world model survive a triathlon?",
-    "ref": 43,
+    "ref": 47,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -226,7 +226,7 @@
     "id": "worldarena",
     "shortName": "WorldArena",
     "title": "WorldArena: A unified benchmark for evaluating perception and functional utility of embodied world models",
-    "ref": 44,
+    "ref": 48,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -267,7 +267,7 @@
     "id": "worldarena-2-0",
     "shortName": "WorldArena 2.0",
     "title": "Worldarena 2.0: Extending embodied world model benchmarking on modality, functionality and platform",
-    "ref": 45,
+    "ref": 49,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -307,7 +307,7 @@
     "id": "chronomagic-bench",
     "shortName": "ChronoMagic-Bench",
     "title": "ChronoMagic-Bench: A benchmark for metamorphic evaluation of text-to-time-lapse video generation",
-    "ref": 64,
+    "ref": 68,
     "year": 2024,
     "venue": "NeurIPS D&B Spotlight",
     "domains": [
@@ -338,7 +338,7 @@
     "id": "worldscore",
     "shortName": "WorldScore",
     "title": "WorldScore: A unified evaluation benchmark for world generation",
-    "ref": 65,
+    "ref": 69,
     "year": 2025,
     "venue": "ICCV",
     "domains": [
@@ -372,7 +372,7 @@
     "id": "vmbench",
     "shortName": "VMBench",
     "title": "VMBench: A benchmark for perceptionaligned video motion generation",
-    "ref": 66,
+    "ref": 70,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -404,7 +404,7 @@
     "id": "ewmbench",
     "shortName": "EWMBench",
     "title": "EWMBench: Evaluating scene, motion, and semantic quality in embodied world models",
-    "ref": 67,
+    "ref": 71,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -439,7 +439,7 @@
     "id": "gameworld-score",
     "shortName": "GameWorld Score",
     "title": "Matrix-Game: Interactive world foundation model",
-    "ref": 68,
+    "ref": 72,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -474,7 +474,7 @@
     "id": "worldmark",
     "shortName": "WorldMark",
     "title": "WorldMark: A unified benchmark suite for interactive video world models",
-    "ref": 69,
+    "ref": 73,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -510,7 +510,7 @@
     "id": "4dworldbench",
     "shortName": "4DWorldBench",
     "title": "4DWorldBench: A comprehensive evaluation framework for 3d/4d world generation models",
-    "ref": 70,
+    "ref": 74,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -545,7 +545,7 @@
     "id": "worldlens",
     "shortName": "WorldLens",
     "title": "WorldLens: Full-spectrum evaluations of driving world models in real world",
-    "ref": 71,
+    "ref": 75,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -582,7 +582,7 @@
     "id": "drivinggen",
     "shortName": "DrivingGen",
     "title": "Drivinggen: A comprehensive benchmark for generative video world models in autonomous driving",
-    "ref": 72,
+    "ref": 76,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -617,7 +617,7 @@
     "id": "pedestrian-sim",
     "shortName": "PEDRA",
     "title": "Pedra: Evaluating the realism of pedestrian dynamics in video generation",
-    "ref": 73,
+    "ref": 77,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -650,7 +650,7 @@
     "id": "gen-vire",
     "shortName": "Gen-ViRe",
     "title": "Can world simulators reason? Gen-ViRe: A generative visual reasoning benchmark",
-    "ref": 74,
+    "ref": 78,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -683,7 +683,7 @@
     "id": "iworld-bench",
     "shortName": "iWorld-Bench",
     "title": "iWorld-Bench: A benchmark for interactive world models with a unified action generation framework",
-    "ref": 75,
+    "ref": 79,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -717,7 +717,7 @@
     "id": "wow-world-eval",
     "shortName": "WoW-World-Eval",
     "title": "Wow, Wo, Val! A Comprehensive Embodied World Model Evaluation Turing Test",
-    "ref": 76,
+    "ref": 80,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -758,7 +758,7 @@
     "id": "rbench",
     "shortName": "RBench",
     "title": "Rethinking Video Generation Model for the Embodied World",
-    "ref": 77,
+    "ref": 81,
     "year": 2026,
     "venue": "ICML",
     "domains": [
@@ -796,7 +796,7 @@
     "id": "pai-bench",
     "shortName": "PAI-Bench",
     "title": "PAI-Bench: A Comprehensive Benchmark for Physical AI",
-    "ref": 78,
+    "ref": 82,
     "year": 2025,
     "venue": "CVPR",
     "domains": [
@@ -833,7 +833,7 @@
     "id": "ezs-bench",
     "shortName": "EZS-Bench",
     "title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment (introduces EZS-Bench)",
-    "ref": 79,
+    "ref": 83,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -868,7 +868,7 @@
     "id": "worldroambench",
     "shortName": "WorldRoamBench",
     "title": "WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models",
-    "ref": 80,
+    "ref": 84,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -900,41 +900,5 @@
     "paperUrl": "https://arxiv.org/abs/2606.31672",
     "arxivId": "2606.31672",
     "reference": "WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models, arXiv:2606.31672, 2026."
-  },
-  {
-    "id": "memobench",
-    "shortName": "MemoBench",
-    "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
-    "ref": 81,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Long-Horizon Memory & State Persistence",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2606.27537",
-    "arxivId": "2606.27537",
-    "reference": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments, arXiv:2606.27537, 2026."
   }
 ]

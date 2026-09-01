@@ -1,9 +1,67 @@
 [
   {
+    "id": "pdi-bench",
+    "shortName": "PDI-Bench",
+    "title": "Quantitative video world model evaluation for geometric-consistency",
+    "ref": 111,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2605.15185",
+    "arxivId": "2605.15185",
+    "reference": "J. Wu, Y. Pi, Y. Zhang, Y. Li, and X. Zou, “Quantitative video world model evaluation for geometric-consistency,” arXiv preprint arXiv:2605.15185, 2026."
+  },
+  {
+    "id": "loopnav",
+    "shortName": "LoopNav",
+    "title": "Loopnav: Benchmarking spatial consistency in world models",
+    "ref": 112,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "game"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2505.22976",
+    "arxivId": "2505.22976",
+    "reference": "K. Lian, S. Cai, Y. Liang, and A. Liu, “Loopnav: Benchmarking spatial consistency in world models,” arXiv preprint arXiv:2505.22976, 2025."
+  },
+  {
     "id": "mbench",
     "shortName": "MBench",
     "title": "Mbench: A comprehensive benchmark on memory capability for video world models",
-    "ref": 109,
+    "ref": 113,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -36,7 +94,7 @@
     "id": "stevo-bench",
     "shortName": "STEVO-Bench",
     "title": "Out of sight, out of mind? evaluating state evolution in video world models",
-    "ref": 110,
+    "ref": 114,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -68,7 +126,7 @@
     "id": "causalspatial",
     "shortName": "CausalSpatial",
     "title": "CausalSpatial: A Benchmark for Object-Centric Causal Spatial Reasoning",
-    "ref": 111,
+    "ref": 115,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -100,7 +158,7 @@
     "id": "what-if-world",
     "shortName": "What-If World",
     "title": "What-if world: A causal benchmark for general world models in embodied scenarios",
-    "ref": 112,
+    "ref": 116,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -135,7 +193,7 @@
     "id": "hoca-bench",
     "shortName": "HOCA-Bench",
     "title": "Hoca-bench: Beyond semantic perception to predictive world modeling via hegelian ontological-causal anomalies",
-    "ref": 113,
+    "ref": 117,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -167,7 +225,7 @@
     "id": "autumnbench",
     "shortName": "AutumnBench",
     "title": "Benchmarking World-Model Learning (introduces AutumnBench)",
-    "ref": 114,
+    "ref": 118,
     "year": 2025,
     "venue": "ICML",
     "domains": [
@@ -202,7 +260,7 @@
     "id": "mvp",
     "shortName": "MVP",
     "title": "A Shortcut-Aware Video-QA Benchmark for Physical Understanding via Minimal Video Pairs",
-    "ref": 115,
+    "ref": 119,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -234,7 +292,7 @@
     "id": "contactworld",
     "shortName": "ContactWorld",
     "title": "ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation",
-    "ref": 116,
+    "ref": 120,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -268,7 +326,7 @@
     "id": "scratchworld",
     "shortName": "ScratchWorld",
     "title": "ScratchWorld: Evaluating if World Models Compute Executable Consequences",
-    "ref": 117,
+    "ref": 121,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -302,7 +360,7 @@
     "id": "mirabench",
     "shortName": "MiraBench",
     "title": "MiraBench: Evaluating Action-Conditioned Reliability in Robotic World Models",
-    "ref": 118,
+    "ref": 122,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -336,7 +394,7 @@
     "id": "chess-world-model",
     "shortName": "Chess-World-Model",
     "title": "Chess-World-Model: A 10M-Game Benchmark for Exact State Tracking from Chess Move Sequences",
-    "ref": 119,
+    "ref": 123,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -368,7 +426,7 @@
     "id": "intphys-2",
     "shortName": "IntPhys 2",
     "title": "IntPhys 2: Benchmarking intuitive physics understanding in complex synthetic environments",
-    "ref": 120,
+    "ref": 124,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -397,7 +455,7 @@
     "id": "smallworlds",
     "shortName": "SmallWorlds",
     "title": "SmallWorlds: Assessing dynamics understanding of world models in isolated environments",
-    "ref": 121,
+    "ref": 125,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -427,7 +485,7 @@
     "id": "vbench-2-0",
     "shortName": "VBench-2.0",
     "title": "VBench2.0: Advancing video generation benchmark suite for intrinsic faithfulness",
-    "ref": 122,
+    "ref": 126,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -459,7 +517,7 @@
     "id": "worldbench",
     "shortName": "WorldBench",
     "title": "WorldBench: Disambiguating physics for diagnostic evaluation of world models",
-    "ref": 123,
+    "ref": 127,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -488,7 +546,7 @@
     "id": "worldprediction",
     "shortName": "WorldPrediction",
     "title": "WorldPrediction: A benchmark for high-level world modeling and long-horizon procedural planning",
-    "ref": 124,
+    "ref": 128,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -519,7 +577,7 @@
     "id": "exphy",
     "shortName": "ExPhy",
     "title": "ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting",
-    "ref": 125,
+    "ref": 129,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -548,7 +606,7 @@
     "id": "cophy",
     "shortName": "CoPhy",
     "title": "CoPhy: Counterfactual learning of physical dynamics",
-    "ref": 126,
+    "ref": 130,
     "year": 2020,
     "venue": "ICLR",
     "domains": [
@@ -579,7 +637,7 @@
     "id": "phyre",
     "shortName": "PHYRE",
     "title": "PHYRE: A new benchmark for physical reasoning",
-    "ref": 127,
+    "ref": 131,
     "year": 2019,
     "venue": "NeurIPS",
     "domains": [
@@ -607,7 +665,7 @@
     "id": "craft",
     "shortName": "CRAFT",
     "title": "CRAFT: A benchmark for causal reasoning about forces and interactions",
-    "ref": 128,
+    "ref": 132,
     "year": 2022,
     "venue": "Findings of ACL",
     "domains": [
@@ -639,7 +697,7 @@
     "id": "physion-plus-plus",
     "shortName": "Physion++",
     "title": "Physion++: Evaluating physical scene understanding that requires online inference of different physical properties",
-    "ref": 129,
+    "ref": 133,
     "year": 2023,
     "venue": "NeurIPS",
     "domains": [
@@ -667,7 +725,7 @@
     "id": "comphy",
     "shortName": "ComPhy",
     "title": "ComPhy: Compositional physical reasoning of objects and events from videos",
-    "ref": 130,
+    "ref": 134,
     "year": 2022,
     "venue": "ICLR",
     "domains": [
@@ -698,7 +756,7 @@
     "id": "contphy",
     "shortName": "ContPhy",
     "title": "ContPhy: Continuum physical concept learning and reasoning from videos",
-    "ref": 131,
+    "ref": 135,
     "year": 2024,
     "venue": "ICML",
     "domains": [
@@ -729,7 +787,7 @@
     "id": "phycobench",
     "shortName": "PhyCoBench",
     "title": "A physical coherence benchmark for evaluating video generation models via optical flow-guided frame prediction",
-    "ref": 132,
+    "ref": 136,
     "year": 2025,
     "venue": "arXiv",
     "domains": [
@@ -752,98 +810,5 @@
     "paperUrl": "https://arxiv.org/abs/2502.05503",
     "arxivId": "2502.05503",
     "reference": "Y. Chen, X. Zhu, and T. Li, “A physical coherence benchmark for evaluating video generation models via optical flow-guided frame prediction,” arXiv:2502.05503, 2025."
-  },
-  {
-    "id": "videophy",
-    "shortName": "VideoPhy",
-    "title": "VideoPhy: Evaluating physical commonsense for video generation",
-    "ref": 133,
-    "year": 2024,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC"
-    ],
-    "targets": [
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2406.03520",
-    "arxivId": "2406.03520",
-    "reference": "H. Bansal, Z. Lin, T. Xie, Z. Zong, M. Yarom, Y. Bitton, C. Jiang, Y. Sun, K.-W. Chang, and A. Grover, “VideoPhy: Evaluating physical commonsense for video generation,” arXiv:2406.03520, 2024."
-  },
-  {
-    "id": "videophy-2",
-    "shortName": "VideoPhy-2",
-    "title": "VideoPhy-2: A challenging action-centric physical commonsense evaluation in video generation",
-    "ref": 134,
-    "year": 2025,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC"
-    ],
-    "targets": [
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2503.06800",
-    "arxivId": "2503.06800",
-    "reference": "H. Bansal, C. Peng, Y. Bitton, R. Goldenberg, A. Grover, and K.- W. Chang, “VideoPhy-2: A challenging action-centric physical commonsense evaluation in video generation,” arXiv:2503.06800, 2025."
-  },
-  {
-    "id": "phygenbench",
-    "shortName": "PhyGenBench",
-    "title": "Towards world simulator: Crafting physical commonsense-based benchmark for video generation",
-    "ref": 135,
-    "year": 2024,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC"
-    ],
-    "targets": [
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2410.05363",
-    "arxivId": "2410.05363",
-    "reference": "F. Meng, J. Liao, X. Tan, W. Shao, Q. Lu, K. Zhang, Y. Cheng, D. Li, Y. Qiao, and P. Luo, “Towards world simulator: Crafting physical commonsense-based benchmark for video generation,” arXiv:2410.05363, 2024."
   }
 ]

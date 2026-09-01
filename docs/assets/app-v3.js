@@ -34,7 +34,7 @@
 
     const stats = [...document.querySelectorAll(".stat-strip > div")];
     if (stats[0]) {
-      setTextIfChanged(stats[0].querySelector("strong"), "106");
+      setTextIfChanged(stats[0].querySelector("strong"), "102");
       setTextIfChanged(stats[0].querySelector("span"), "representative benchmarks");
     }
     if (stats[1]) {
@@ -47,13 +47,13 @@
     }
 
     const snapshot = document.querySelector(".snapshot-note");
-    if (snapshot) snapshot.innerHTML = '<span class="status-dot"></span> Latest manuscript snapshot · 106 benchmarks · 85 cross-category · checked August 31, 2026';
+    if (snapshot) snapshot.innerHTML = '<span class="status-dot"></span> Latest manuscript snapshot · 102 benchmarks · 85 cross-category · checked August 31, 2026';
 
     const benchmarkSummary = document.querySelector("#benchmarks .benchmark-heading > p");
-    if (benchmarkSummary) benchmarkSummary.textContent = "Search and filter the 106 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.";
+    if (benchmarkSummary) benchmarkSummary.textContent = "Search and filter the 102 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.";
 
     const resultCount = document.querySelector("#result-count");
-    if (resultCount && resultCount.textContent !== "106") resultCount.textContent = "106";
+    if (resultCount && resultCount.textContent !== "102") resultCount.textContent = "102";
     const chart = document.querySelector("#timeline-chart");
     if (chart) chart.setAttribute("aria-label", "Unique benchmark totals by release window");
     const clearPeriod = document.querySelector("#clear-year");
@@ -79,7 +79,7 @@
   }
 
   async function loadCanonicalExplorer() {
-    const sourceUrl = new URL("app-v3-core.js?v=11", document.currentScript?.src || document.baseURI);
+    const sourceUrl = new URL("app-v3-core.js?v=12", document.currentScript?.src || document.baseURI);
     const response = await fetch(sourceUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status} while loading explorer core`);
     new Function(await response.text())();
