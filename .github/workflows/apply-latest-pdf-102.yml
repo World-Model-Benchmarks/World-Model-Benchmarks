@@ -1,0 +1,90 @@
+name: Apply latest 102-benchmark PDF snapshot
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/apply-latest-pdf-102.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-latest-pdf-102
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Assemble and verify the validated update payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/update-payload/part-* > /tmp/wmb-latest-102.tar.xz
+          echo '8cab99ddbdabf31a290cb81c33690a5db1271548554e37c1fab7726b8661b578  /tmp/wmb-latest-102.tar.xz' | sha256sum --check
+          rm -rf /tmp/wmb-latest-102
+          mkdir -p /tmp/wmb-latest-102
+          tar -xJf /tmp/wmb-latest-102.tar.xz -C /tmp/wmb-latest-102
+          test -f /tmp/wmb-latest-102/docs/assets/benchmarks.json
+          test -f /tmp/wmb-latest-102/scripts/generate_readme_index.py
+          test -f /tmp/wmb-latest-102/scripts/sync_latest_survey.py
+
+      - name: Replace all repository and website outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -a /tmp/wmb-latest-102/. ./
+          rm -rf .github/update-payload
+          rm -f .github/workflows/apply-latest-pdf-102.yml
+          rm -f .github/workflows/pdf-alignment-main-once.yml
+          rm -f .github/workflows/pdf-alignment-repair.yml
+
+      - name: Regenerate and validate the latest PDF snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/generate_readme_index.py scripts/sync_latest_survey.py
+          python scripts/generate_readme_index.py
+          python scripts/sync_latest_survey.py
+          node --check docs/assets/app-v3-core.js
+          node --check docs/assets/app-v3.js
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path('docs/assets/benchmarks.json').read_text(encoding='utf-8'))
+          assert manifest['schemaVersion'] == 9
+          assert manifest['total'] == 102
+          assert manifest['crossCategory'] == 85
+          assert manifest['targetCounts']['Causal & Counterfactual Reasoning'] == 33
+          assert manifest['subtargetCounts']['Observation-Grounded Evaluation'] == 26
+          assert manifest['sourcePdfSha256'] == 'c96efe634f70b1297e281e36786dc6a5fedd3b747bf4fc57ad58583c69a50dad'
+          assert manifest['classificationFingerprint'] == 'e30cf7f9b7bf39cb03baa6b9cddcbeb593b5821e1ba85a82fddff0787c7e4935'
+          for removed in ('CATER', 'NExT-QA', 'IntentQA', 'VCRBench'):
+              assert removed not in manifest['records']
+          assert manifest['records']['WR-Arena'][3:5] == ['OL+CL', 'P+O']
+          print('Validated latest PDF-aligned manifest:', hashlib.sha256(Path('docs/assets/benchmarks.json').read_bytes()).hexdigest())
+          PY
+
+      - name: Commit the complete synchronized snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'world-model-benchmarks-bot'
+          git config user.email 'world-model-benchmarks-bot@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'The repository already matches the latest PDF snapshot.'
+          else
+            git commit -m 'Align repository and website with latest 102-benchmark PDF'
+            git push origin HEAD:main
+          fi
