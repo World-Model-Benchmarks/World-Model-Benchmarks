@@ -2,7 +2,7 @@ name: Generate README and website snapshot
 
 on:
   push:
-    branches: ["main", "sync-pdf-2026-08-31"]
+    branches: ["main"]
     paths:
       - "scripts/generate_readme_index.py"
       - "scripts/sync_latest_survey.py"
