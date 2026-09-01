@@ -1,0 +1,146 @@
+name: Apply latest-PDF benchmark alignment to main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/pdf-alignment-main-once.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pdf-alignment-main-once
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Obtain the validated corrected snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf /tmp/pdf-aligned /tmp/correction-source
+          mkdir -p /tmp/pdf-aligned
+          archive=/tmp/World-Model-Benchmarks-PDF-aligned.zip
+          checksum=/tmp/World-Model-Benchmarks-PDF-aligned.zip.sha256
+          if curl --fail --location --retry 8 --retry-all-errors \
+              -A 'Mozilla/5.0 GitHub-Actions' \
+              'https://filebin.net/oai-wmb-pdf-align-20260901-8f4c7e19/World-Model-Benchmarks-PDF-aligned.zip' \
+              -o "$archive" && \
+             curl --fail --location --retry 8 --retry-all-errors \
+              -A 'Mozilla/5.0 GitHub-Actions' \
+              'https://filebin.net/oai-wmb-pdf-align-20260901-8f4c7e19/World-Model-Benchmarks-PDF-aligned.zip.sha256' \
+              -o "$checksum"; then
+            cd /tmp
+            sha256sum --check "$(basename "$checksum")"
+            unzip -q "$archive" -d /tmp/pdf-aligned
+            SOURCE=$(find /tmp/pdf-aligned -type f -name benchmarks.json -path '*/docs/assets/benchmarks.json' -printf '%h/../..\n' | head -n 1)
+            SOURCE=$(realpath "$SOURCE")
+          else
+            echo 'Archive mirror unavailable; trying the correction branch.'
+            git clone --depth 1 --branch fix/pdf-aligned-benchmark-taxonomy \
+              https://github.com/World-Model-Benchmarks/World-Model-Benchmarks.git \
+              /tmp/correction-source
+            SOURCE=/tmp/correction-source
+          fi
+          test -f "$SOURCE/docs/assets/benchmarks.json"
+          python - "$SOURCE/docs/assets/benchmarks.json" <<'PY'
+          import json, sys
+          from pathlib import Path
+          m=json.loads(Path(sys.argv[1]).read_text(encoding='utf-8'))
+          assert m.get('schemaVersion',0) >= 8
+          assert m.get('sourcePdfSha256')
+          assert len(m['records']) == m['total']
+          PY
+          echo "$SOURCE" > /tmp/correction-source-path
+
+      - name: Replace every repository and website source of truth
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE=$(cat /tmp/correction-source-path)
+          paths=(
+            '.github/workflows/generate-readme.yml'
+            'Readme.md'
+            'docs/assets/benchmarks.json'
+            'docs/assets/benchmarks-1.json'
+            'docs/assets/benchmarks-2.json'
+            'docs/assets/benchmarks-3.json'
+            'docs/assets/benchmarks-4.json'
+            'docs/assets/metadata.json'
+            'docs/index.html'
+            'docs/assets/app-v3-core.js'
+            'docs/assets/app-v3.js'
+            'docs/robots.txt'
+            'docs/sitemap.xml'
+            'docs/deployment-status.txt'
+            'docs/assets/social-preview.svg'
+            'scripts/generate_readme_index.py'
+            'scripts/sync_latest_survey.py'
+          )
+          for path in "${paths[@]}"; do
+            test -f "$SOURCE/$path"
+            mkdir -p "$(dirname "$path")"
+            cp "$SOURCE/$path" "$path"
+          done
+          rm -f .github/workflows/pdf-alignment-main-once.yml
+
+      - name: Regenerate and validate all synchronized outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile scripts/generate_readme_index.py scripts/sync_latest_survey.py
+          python scripts/generate_readme_index.py
+          python scripts/sync_latest_survey.py
+          node --check docs/assets/app-v3-core.js
+          node --check docs/assets/app-v3.js
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('docs/assets/benchmarks.json').read_text(encoding='utf-8'))
+          assert m['schemaVersion'] >= 8 and m.get('sourcePdfSha256')
+          assert len(m['records']) == m['total']
+          assert sum(len([x for x in row[6].split('+') if x]) > 1 for row in m['records'].values()) == m['crossCategory']
+          for row in m['records'].values():
+              assert set(filter(None,row[3].split('+'))) <= {'OL','CL'}
+              assert set(filter(None,row[4].split('+'))) <= {'P','O'}
+              assert set(filter(None,row[5].split('+'))) <= {'RWD','SBG','SPTC','HCP'}
+          for i in range(1,5):
+              shard=json.loads(Path(f'docs/assets/benchmarks-{i}.json').read_text(encoding='utf-8'))
+              for item in shard:
+                  assert set(item['protocols']) <= {'OL','CL'}
+                  assert set(item['metrics']) <= {'P','O'}
+                  assert set(item['evaluationData']) <= {'RWD','SBG','SPTC','HCP'}
+                  assert not ({'evidence','dataConstruction','realWorldExecution'} & set(item))
+          base='https://world-model-benchmarks.github.io/World-Model-Benchmarks/'
+          index=Path('docs/index.html').read_text(encoding='utf-8')
+          assert f'<link rel="canonical" href="{base}">' in index
+          assert f'<meta property="og:url" content="{base}">' in index
+          assert base+'assets/social-preview.svg' in index
+          assert base+'sitemap.xml' in Path('docs/robots.txt').read_text(encoding='utf-8')
+          assert base in Path('docs/sitemap.xml').read_text(encoding='utf-8')
+          PY
+
+      - name: Commit all PDF-aligned corrections
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'world-model-benchmarks-bot'
+          git config user.email 'world-model-benchmarks-bot@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo 'Main already matches the latest PDF-aligned snapshot.'
+          else
+            git commit -m 'Align all benchmark classifications with latest survey PDF'
+            git push origin HEAD:main
+          fi
