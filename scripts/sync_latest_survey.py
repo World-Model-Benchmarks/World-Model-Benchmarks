@@ -20,7 +20,7 @@ SCHEMA_VERSION = 8
 SNAPSHOT_VERSION = "August 31, 2026 manuscript snapshot"
 SNAPSHOT_DATE = "2026-08-31"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
-EXPECTED_FINGERPRINT = "42c3efbc20e9f821e1e130a13d18fee7abb696b4ad293ef59f643148caec0008"
+EXPECTED_FINGERPRINT = "d38c6018cfb278050d00a39b06e44dc252bd40c6bb6c7a0c338e30e36be1572c"
 EXPECTED_TARGET_COUNTS = {
     "T1": 46,
     "T2": 55,
@@ -57,8 +57,9 @@ def split_codes(value: str) -> list[str]:
 
 
 def fingerprint(records: dict[str, list]) -> str:
+    """Hash every PDF-coded field in the compact benchmark records."""
     rows = [
-        f"{name}|{row[0]}|{row[6]}|{row[7]}"
+        f"{name}|" + "|".join(str(value) for value in row[:8])
         for name, row in sorted(records.items())
     ]
     return hashlib.sha256("\n".join(rows).encode("utf-8")).hexdigest()
@@ -86,8 +87,13 @@ def main() -> None:
     require(dict(target_counts) == EXPECTED_TARGET_COUNTS, f"Target counts differ from PDF: {target_counts}")
     require(dict(subtarget_counts) == EXPECTED_SUBTARGET_COUNTS, f"Sub-target counts differ from PDF: {subtarget_counts}")
     require(cross_count == CROSS_CATEGORY, f"Computed cross-category count is {cross_count}, expected 85")
-    require(fingerprint(records) == EXPECTED_FINGERPRINT, "Reference/category classification fingerprint differs from the PDF transcription")
-    require(manifest.get("classificationFingerprint") == EXPECTED_FINGERPRINT, "Manifest fingerprint is missing or stale")
+    require(fingerprint(records) == EXPECTED_FINGERPRINT, "Full PDF record fingerprint differs from the Tables 3–9 transcription")
+    require(manifest.get("classificationFingerprint") == EXPECTED_FINGERPRINT, "Manifest classification fingerprint is missing or stale")
+    require(manifest.get("recordFingerprint") == EXPECTED_FINGERPRINT, "Manifest record fingerprint is missing or stale")
+    require(manifest.get("fingerprintFields") == [
+        "benchmark", "reference", "year", "domain", "protocol",
+        "metrics", "data", "targets", "subtargets",
+    ], "Manifest fingerprint field declaration is missing or stale")
 
     for name, row in records.items():
         require(len(row) >= 8, f"Incomplete compact record: {name}")
@@ -131,7 +137,9 @@ def main() -> None:
 
     require(metadata["total"] == TOTAL and metadata["crossCategory"] == CROSS_CATEGORY, "metadata.json totals are stale")
     require(metadata["version"] == SNAPSHOT_VERSION and metadata["snapshotDate"] == SNAPSHOT_DATE, "metadata.json snapshot is stale")
-    require(metadata["classificationFingerprint"] == EXPECTED_FINGERPRINT, "metadata.json fingerprint differs")
+    require(metadata["classificationFingerprint"] == EXPECTED_FINGERPRINT, "metadata.json classification fingerprint differs")
+    require(metadata["recordFingerprint"] == EXPECTED_FINGERPRINT, "metadata.json record fingerprint differs")
+    require(metadata["fingerprintFields"] == manifest["fingerprintFields"], "metadata.json fingerprint fields differ")
 
     readme = README_PATH.read_text(encoding="utf-8")
     require("**106 representative benchmarks**" in readme, "README benchmark total is stale")
@@ -183,7 +191,7 @@ def main() -> None:
 
     print(
         "Validated the August 31, 2026 PDF snapshot: "
-        "106 benchmarks, 85 cross-category, exact Figure 4/Table 3–9 classification."
+        "106 benchmarks, 85 cross-category, and every Table 3–9 record field."
     )
 
 

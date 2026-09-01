@@ -204,24 +204,116 @@ REFS = {
     "CausalVQA": 158, "StoryEval": 159, "ACT-Bench": 160,
 }
 
-# The aggregate website record uses the union of tracks when a benchmark has
-# different protocol/metric levels in different tables or downstream roles.
-AGGREGATE_OVERRIDES = {
-    "WorldArena": {"protocol": "OL+CL", "metrics": "P+O", "data": "SBG"},
-    "WorldArena 2.0": {"protocol": "OL+CL", "metrics": "P+O", "data": "HCP"},
-    "WorldLens": {"protocol": "OL+CL", "metrics": "P+O", "data": "HCP"},
-    "WorldSimBench": {"protocol": "OL+CL", "metrics": "P+O", "data": "HCP"},
-    "WoW-World-Eval": {"protocol": "OL", "metrics": "P+O", "data": "HCP"},
-    "AutumnBench": {"protocol": "CL", "metrics": "P+O", "data": "SBG"},
-    "ContactWorld": {"protocol": "CL", "metrics": "P+O", "data": "HCP"},
-    "KineBench": {"protocol": "CL", "metrics": "P+O", "data": "HCP"},
-    "WMBench": {"protocol": "CL", "metrics": "P+O", "data": "HCP"},
-    "PHYRE": {"protocol": "CL", "metrics": "O", "data": "SBG"},
-    "RoboWM-Bench": {"protocol": "OL", "metrics": "O", "data": "HCP"},
-    "World-in-World": {"protocol": "CL", "metrics": "O", "data": "HCP"},
-    "EVA-Bench": {"protocol": "OL", "metrics": "O", "data": "HCP"},
-    "PlayWorld": {"protocol": "CL", "metrics": "P", "data": "HCP"},
-    "ReactSim-Bench": {"protocol": "CL", "metrics": "P", "data": "HCP"},
+# Year, domain, protocol, metric level, and data construction are transcribed
+# from Tables 3--9. For repeated functional-utility roles, protocol and metric
+# codes are the ordered union across the benchmark's table rows.
+ATTRIBUTES = {
+    'RoboWM-Bench': (2026, 'embodied', 'OL', 'O', 'HCP'),
+    'World-in-World': (2025, 'embodied', 'CL', 'O', 'HCP'),
+    'IntPhys': (2018, 'video', 'OL', 'P', 'SBG'),
+    'CLEVRER': (2020, 'video', 'OL', 'P', 'SBG'),
+    'Physion': (2021, 'video', 'OL', 'P', 'SBG'),
+    'MIND': (2026, 'video', 'OL', 'P', 'SBG'),
+    'WorldOlympiad': (2026, 'video', 'OL', 'P', 'HCP'),
+    'WorldArena': (2026, 'embodied', 'OL+CL', 'P+O', 'SBG'),
+    'WorldArena 2.0': (2026, 'embodied', 'OL+CL', 'P+O', 'HCP'),
+    'ChronoMagic-Bench': (2024, 'video', 'OL', 'P', 'SPTC'),
+    'WorldScore': (2025, 'video', 'OL', 'P', 'HCP'),
+    'VMBench': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'EWMBench': (2025, 'embodied', 'OL', 'P', 'HCP'),
+    'GameWorld Score': (2025, 'game', 'OL', 'P', 'SBG'),
+    'WorldMark': (2026, 'game+video', 'OL', 'P', 'HCP'),
+    '4DWorldBench': (2025, 'video', 'OL', 'P', 'HCP'),
+    'WorldLens': (2026, 'driving', 'OL+CL', 'P+O', 'HCP'),
+    'DrivingGen': (2026, 'driving', 'OL', 'P', 'RWD'),
+    'PEDRA': (2025, 'video', 'OL', 'P', 'RWD'),
+    'Gen-ViRe': (2025, 'video', 'OL', 'P', 'HCP'),
+    'iWorld-Bench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'WoW-World-Eval': (2026, 'embodied', 'OL', 'P+O', 'HCP'),
+    'RBench': (2026, 'embodied', 'OL', 'P', 'RWD'),
+    'PAI-Bench': (2025, 'video', 'OL', 'P', 'HCP'),
+    'EZS-Bench': (2026, 'embodied', 'OL', 'P', 'HCP'),
+    'WorldRoamBench': (2026, 'video+game', 'OL', 'P', 'HCP'),
+    'MemoBench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'RoboTrustBench': (2026, 'embodied', 'OL', 'P', 'HCP'),
+    'WorldExam': (2026, 'video', 'OL', 'P', 'HCP'),
+    'SurgWMBench': (2026, 'embodied', 'OL', 'P', 'RWD'),
+    'H2R-Bench': (2026, 'embodied', 'OL', 'P', 'HCP'),
+    'PlayWorld': (2026, 'game+video', 'CL', 'P', 'HCP'),
+    'XEWorld': (2026, 'embodied', 'OL', 'P', 'SBG'),
+    'HarnessEval-W': (2026, 'video', 'OL', 'P', 'HCP'),
+    'WorldEcho': (2026, 'embodied', 'OL', 'P', 'SBG'),
+    'ACWM-Phys': (2026, 'video', 'OL', 'P', 'SBG'),
+    'HTEWorld': (2026, 'embodied', 'OL', 'P', 'SBG'),
+    'RigidBench': (2026, 'video', 'OL', 'P', 'SBG'),
+    'MagicBench': (2025, 'video', 'OL', 'P', 'RWD'),
+    'MoveBench': (2025, 'video', 'OL', 'P', 'RWD'),
+    'Omni-WorldBench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'OSCBench': (2026, 'video', 'OL', 'P', 'SPTC'),
+    'T2VWorldBench': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'WMBench': (2026, 'embodied', 'CL', 'P+O', 'HCP'),
+    'WorldModelBench': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'WorldSimBench': (2024, 'game+driving+embodied', 'OL+CL', 'P+O', 'HCP'),
+    'Apple-π': (2026, 'video', 'OL', 'P', 'HCP'),
+    'TC-Bench': (2024, 'video', 'OL', 'P', 'HCP'),
+    'WBench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'CrashTwin': (2026, 'driving+video', 'OL', 'P', 'HCP'),
+    'EVA-Bench': (2024, 'embodied', 'OL', 'O', 'HCP'),
+    'WR-Arena': (2026, 'driving+embodied', 'OL', 'P', 'HCP'),
+    'PDI-Bench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'LoopNav': (2025, 'game', 'OL', 'P', 'SBG'),
+    'MBench': (2026, 'video', 'OL', 'P', 'RWD'),
+    'STEVO-Bench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'CausalSpatial': (2026, 'image', 'OL', 'P', 'SBG'),
+    'What-If World': (2026, 'driving+embodied', 'OL', 'P', 'RWD'),
+    'HOCA-Bench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'AutumnBench': (2025, 'game', 'CL', 'P+O', 'SBG'),
+    'MVP': (2025, 'video', 'OL', 'P', 'HCP'),
+    'ContactWorld': (2026, 'embodied', 'CL', 'P+O', 'HCP'),
+    'ScratchWorld': (2026, 'game', 'OL', 'P', 'HCP'),
+    'MiraBench': (2026, 'embodied', 'OL', 'P', 'HCP'),
+    'Chess-World-Model': (2026, 'game', 'OL', 'P', 'HCP'),
+    'IntPhys 2': (2025, 'video', 'OL', 'P', 'SBG'),
+    'SmallWorlds': (2025, 'video', 'OL', 'P', 'SBG'),
+    'VBench-2.0': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'WorldBench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'WorldPrediction': (2025, 'video', 'OL', 'P', 'RWD'),
+    'ExPhy': (2026, 'embodied', 'OL', 'P', 'SBG'),
+    'CoPhy': (2020, 'video', 'OL', 'P', 'SBG'),
+    'PHYRE': (2019, 'video', 'CL', 'O', 'SBG'),
+    'CRAFT': (2022, 'video', 'OL', 'P', 'SBG'),
+    'Physion++': (2023, 'video', 'OL', 'P', 'SBG'),
+    'ComPhy': (2022, 'video', 'OL', 'P', 'SBG'),
+    'ContPhy': (2024, 'video', 'OL', 'P', 'SBG'),
+    'PhyCoBench': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'VideoPhy': (2024, 'video', 'OL', 'P', 'SPTC'),
+    'VideoPhy-2': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'PhyGenBench': (2024, 'video', 'OL', 'P', 'SPTC'),
+    'T2VPhysBench': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'Physics-IQ': (2025, 'video', 'OL', 'P', 'RWD'),
+    'PhyWorldBench': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'Morpheus': (2025, 'video', 'OL', 'P', 'RWD'),
+    'DreamGen Bench': (2025, 'embodied', 'OL', 'P', 'HCP'),
+    'PhyGround': (2026, 'video', 'OL', 'P', 'SPTC'),
+    'Physion-Eval': (2026, 'video', 'OL', 'P', 'HCP'),
+    'CRONOS': (2026, 'video', 'OL', 'P', 'HCP'),
+    'VACT': (2025, 'video', 'OL', 'P', 'SPTC'),
+    'PhysicsMind': (2026, 'video', 'OL', 'P', 'HCP'),
+    'KineBench': (2026, 'embodied', 'CL', 'P+O', 'HCP'),
+    'ReactSim-Bench': (2026, 'driving', 'CL', 'P', 'HCP'),
+    'GAUGE': (2026, 'video', 'OL', 'P', 'HCP'),
+    'CaliBench': (2026, 'video', 'OL', 'P', 'HCP'),
+    'WorldSimProbe': (2026, 'embodied', 'OL', 'P', 'SBG'),
+    'CATER': (2020, 'video', 'OL', 'P', 'SBG'),
+    'NExT-QA': (2021, 'video', 'OL', 'P', 'RWD'),
+    'Causal-VidQA': (2022, 'video', 'OL', 'P', 'RWD'),
+    'IntentQA': (2023, 'video', 'OL', 'P', 'RWD'),
+    'ACQUIRED': (2023, 'video', 'OL', 'P', 'RWD'),
+    'MMWorld': (2025, 'video', 'OL', 'P', 'HCP'),
+    'VCRBench': (2025, 'video', 'OL', 'P', 'RWD'),
+    'CausalVQA': (2025, 'video', 'OL', 'P', 'RWD'),
+    'StoryEval': (2024, 'video', 'OL', 'P', 'SPTC'),
+    'ACT-Bench': (2024, 'driving', 'OL', 'P', 'RWD'),
 }
 
 LEGACY_JS_FILES = ["app-1.js", "app-2.js", "app-3.js", "app-v2.js"]
@@ -240,6 +332,11 @@ def validate_source_lists(record_names: set[str]) -> None:
         raise RuntimeError(
             f"Reference map mismatch: records-only={sorted(record_names - set(REFS))}; "
             f"refs-only={sorted(set(REFS) - record_names)}"
+        )
+    if set(ATTRIBUTES) != record_names:
+        raise RuntimeError(
+            f"Attribute map mismatch: records-only={sorted(record_names - set(ATTRIBUTES))}; "
+            f"attributes-only={sorted(set(ATTRIBUTES) - record_names)}"
         )
     listed = set().union(*(set(names) for names in TARGET_MEMBERS.values()))
     if listed != record_names:
@@ -267,8 +364,9 @@ def validate_source_lists(record_names: set[str]) -> None:
 
 
 def classification_fingerprint(records: dict[str, list]) -> str:
+    """Hash every PDF-coded field: reference, year, domain, protocol, metrics, data, and targets."""
     rows = [
-        f"{name}|{row[0]}|{row[6]}|{row[7]}"
+        f"{name}|" + "|".join(str(value) for value in row[:8])
         for name, row in sorted(records.items())
     ]
     return hashlib.sha256("\n".join(rows).encode("utf-8")).hexdigest()
@@ -310,12 +408,8 @@ def update_manifest() -> dict:
     for name, row in records.items():
         if len(row) < 8:
             row.extend([""] * (8 - len(row)))
-        row[0] = REFS[name]
-        override = AGGREGATE_OVERRIDES.get(name)
-        if override:
-            row[3] = override["protocol"]
-            row[4] = override["metrics"]
-            row[5] = override["data"]
+        year, domain, protocol, metrics, data = ATTRIBUTES[name]
+        row[:6] = [REFS[name], year, domain, protocol, metrics, data]
         row[6] = "+".join(ordered_codes(name, TARGET_MEMBERS))
         row[7] = "+".join(ordered_codes(name, SUBTARGET_MEMBERS))
 
@@ -343,6 +437,11 @@ def update_manifest() -> dict:
         )
 
     manifest["classificationFingerprint"] = classification_fingerprint(records)
+    manifest["recordFingerprint"] = manifest["classificationFingerprint"]
+    manifest["fingerprintFields"] = [
+        "benchmark", "reference", "year", "domain", "protocol",
+        "metrics", "data", "targets", "subtargets",
+    ]
     MANIFEST_PATH.write_text(
         json.dumps(manifest, ensure_ascii=False, separators=(",", ":")) + "\n",
         encoding="utf-8",
@@ -567,6 +666,8 @@ def write_metadata(manifest: dict) -> None:
         "targetCounts": manifest["targetCounts"],
         "subtargetCounts": manifest["subtargetCounts"],
         "classificationFingerprint": manifest["classificationFingerprint"],
+        "recordFingerprint": manifest["recordFingerprint"],
+        "fingerprintFields": manifest["fingerprintFields"],
         "dimensions": 4,
         "yearMin": 2018,
         "yearMax": 2026,

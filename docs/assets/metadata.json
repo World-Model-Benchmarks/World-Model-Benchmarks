@@ -76,7 +76,19 @@
     "Planner": 12,
     "Interactive Training Environment": 1
   },
-  "classificationFingerprint": "42c3efbc20e9f821e1e130a13d18fee7abb696b4ad293ef59f643148caec0008",
+  "classificationFingerprint": "d38c6018cfb278050d00a39b06e44dc252bd40c6bb6c7a0c338e30e36be1572c",
+  "recordFingerprint": "d38c6018cfb278050d00a39b06e44dc252bd40c6bb6c7a0c338e30e36be1572c",
+  "fingerprintFields": [
+    "benchmark",
+    "reference",
+    "year",
+    "domain",
+    "protocol",
+    "metrics",
+    "data",
+    "targets",
+    "subtargets"
+  ],
   "dimensions": 4,
   "yearMin": 2018,
   "yearMax": 2026,
