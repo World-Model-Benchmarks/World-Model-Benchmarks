@@ -1,50 +1,56 @@
-name: Generate README and website snapshot
+name: Generate README benchmark index
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
     paths:
-      - "scripts/generate_readme_index.py"
-      - "scripts/sync_latest_survey.py"
-      - ".github/workflows/generate-readme.yml"
+      - 'docs/assets/benchmarks.json'
+      - 'scripts/generate_readme_index.py'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: generate-readme-index-${{ github.ref }}
+  group: generate-readme-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Generate the latest benchmark snapshot
+      - name: Generate README and website outputs
         run: python scripts/generate_readme_index.py
 
       - name: Validate the generated snapshot
         run: python scripts/sync_latest_survey.py
 
-      - name: Commit generated repository and website files
-        shell: bash
+      - name: Commit generated files
         run: |
-          if git diff --quiet -- Readme.md docs scripts/generate_readme_index.py scripts/sync_latest_survey.py; then
-            echo "README, website, and benchmark data are already synchronized."
-            exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add \
+            Readme.md \
+            docs/assets/benchmarks.json \
+            docs/assets/benchmarks-1.json \
+            docs/assets/benchmarks-2.json \
+            docs/assets/benchmarks-3.json \
+            docs/assets/benchmarks-4.json \
+            docs/assets/metadata.json \
+            docs/assets/app.js \
+            docs/assets/app-v3.js \
+            docs/index.html \
+            docs/assets/social-preview.svg \
+            docs/deployment-status.txt
+          if git diff --cached --quiet; then
+            echo 'Generated files are already up to date.'
+          else
+            git commit -m 'Synchronize README and website with latest PDF snapshot'
+            git push
           fi
-          git config user.name "axbhb"
-          git config user.email "144993397+axbhb@users.noreply.github.com"
-          git add Readme.md docs scripts/generate_readme_index.py scripts/sync_latest_survey.py
-          git commit -m "Align benchmark corpus with August 31, 2026 PDF"
-          git push
