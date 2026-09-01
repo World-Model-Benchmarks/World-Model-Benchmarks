@@ -1,9 +1,10 @@
 {
   "title": "A Survey of World Model Benchmarks",
-  "version": "August 27, 2026 manuscript snapshot",
+  "version": "August 31, 2026 manuscript snapshot",
+  "snapshotDate": "2026-08-31",
   "framework": "Target–Protocol–Metrics–Data",
   "total": 106,
-  "crossCategory": 66,
+  "crossCategory": 85,
   "protocolLabels": {
     "OL": "Open-Loop Evaluation",
     "CL": "Closed-Loop Interaction"
@@ -53,6 +54,40 @@
         2026
       ]
     }
+  ],
+  "targetCounts": {
+    "Visual & Temporal Quality": 46,
+    "Spatial & State Consistency": 55,
+    "Long-Horizon Memory & State Persistence": 24,
+    "Physical Plausibility": 77,
+    "Causal & Counterfactual Reasoning": 37,
+    "Control Fidelity & Interactive Dynamics": 55,
+    "Functional Utility": 13
+  },
+  "subtargetCounts": {
+    "Visual Quality": 40,
+    "Temporal Quality": 40,
+    "Observation-Grounded Evaluation": 30,
+    "Intervention-Grounded Evaluation": 9,
+    "Pre-specified Control Fidelity": 40,
+    "Interactive Action Fidelity": 15,
+    "Data Engine": 2,
+    "Policy Evaluator": 2,
+    "Planner": 12,
+    "Interactive Training Environment": 1
+  },
+  "classificationFingerprint": "d38c6018cfb278050d00a39b06e44dc252bd40c6bb6c7a0c338e30e36be1572c",
+  "recordFingerprint": "d38c6018cfb278050d00a39b06e44dc252bd40c6bb6c7a0c338e30e36be1572c",
+  "fingerprintFields": [
+    "benchmark",
+    "reference",
+    "year",
+    "domain",
+    "protocol",
+    "metrics",
+    "data",
+    "targets",
+    "subtargets"
   ],
   "dimensions": 4,
   "yearMin": 2018,

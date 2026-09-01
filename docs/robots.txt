@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://axbhb.github.io/world-model-evaluation-survey/sitemap.xml
+Sitemap: https://world-model-benchmarks.github.io/World-Model-Benchmarks/sitemap.xml

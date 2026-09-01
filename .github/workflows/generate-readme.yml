@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "scripts/generate_readme_index.py"
+      - "scripts/sync_latest_survey.py"
       - ".github/workflows/generate-readme.yml"
   workflow_dispatch:
 
@@ -12,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: generate-readme-index
+  group: generate-readme-index-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -32,15 +33,18 @@ jobs:
       - name: Generate the latest benchmark snapshot
         run: python scripts/generate_readme_index.py
 
+      - name: Validate the generated snapshot
+        run: python scripts/sync_latest_survey.py
+
       - name: Commit generated repository and website files
         shell: bash
         run: |
-          if git diff --quiet -- Readme.md docs; then
-            echo "README and website data are already synchronized."
+          if git diff --quiet -- Readme.md docs scripts/generate_readme_index.py scripts/sync_latest_survey.py; then
+            echo "README, website, and benchmark data are already synchronized."
             exit 0
           fi
           git config user.name "axbhb"
           git config user.email "144993397+axbhb@users.noreply.github.com"
-          git add Readme.md docs scripts/generate_readme_index.py
-          git commit -m "Update benchmark corpus to August 2026 snapshot"
+          git add Readme.md docs scripts/generate_readme_index.py scripts/sync_latest_survey.py
+          git commit -m "Align benchmark corpus with August 31, 2026 PDF"
           git push

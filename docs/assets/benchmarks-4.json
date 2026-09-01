@@ -1,1 +1,758 @@
-[{"id":"storyeval","shortName":"StoryEval","title":"Is your world simulator a good story presenter? a consecutive events-based benchmark for future long video generation","ref":86,"year":2024,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2412.16211","arxivId":"2412.16211","reference":"Y. Wang, X. He, K. Wang, L. Ma, J. Yang, S. Wang, S. S. Du, and Y. Shen, “Is your world simulator a good story presenter? a consecutive events-based benchmark for future long video generation,” arXiv:2412.16211, 2024."},{"id":"tc-bench","shortName":"TC-Bench","title":"TCBench: Benchmarking temporal compositionality in text-to-video and image-to-video generation","ref":39,"year":2024,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI","RO"],"targets":["Visual & Temporal Quality","Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2406.08656","arxivId":"2406.08656","reference":"W. Feng, J. Li, M. Saxon, T. jui Fu, W. Chen, and W. Y. Wang, “TCBench: Benchmarking temporal compositionality in text-to-video and image-to-video generation,” arXiv:2406.08656, 2024."},{"id":"vbench","shortName":"VBench","title":"VBench: Comprehensive benchmark suite for video generative models","ref":14,"year":2024,"venue":"CVPR","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality","Spatial & State Consistency"],"subtargets":[],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=VBench%3A%20Comprehensive%20benchmark%20suite%20for%20video%20generative%20models","arxivId":null,"reference":"Z. Huang, Y. He, J. Yu, F. Zhang, C. Si, Y. Jiang, Y. Zhang, T. Wu, Q. Jin, N. Chanpaisit, Y. Wang, X. Chen, L. Wang, D. Lin, Y. Qiao, and Z. Liu, “VBench: Comprehensive benchmark suite for video generative models,” in CVPR, 2024."},{"id":"vbench-plus-plus","shortName":"VBench++","title":"VBench++: Comprehensive and versatile benchmark suite for video generative models","ref":26,"year":2024,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality","Spatial & State Consistency"],"subtargets":[],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2411.13503","arxivId":"2411.13503","reference":"Z. Huang, F. Zhang, X. Xu, Y. He, J. Yu, Z. Dong, Q. Ma, N. Chanpaisit, C. Si, Y. Jiang, Y. Wang, X. Chen, Y.-C. Chen, L. Wang, D. Lin, Y. Qiao, and Z. Liu, “VBench++: Comprehensive and versatile benchmark suite for video generative models,” arXiv:2411.13503, 2024."},{"id":"videophy","shortName":"VideoPhy","title":"VideoPhy: Evaluating physical commonsense for video generation","ref":58,"year":2024,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["J"],"dataConstruction":["CSI"],"targets":["Physical Plausibility","Control Fidelity & Interactive Dynamics"],"subtargets":["Pre-specified Control Fidelity"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2406.03520","arxivId":"2406.03520","reference":"H. Bansal, Z. Lin, T. Xie, Z. Zong, M. Yarom, Y. Bitton, C. Jiang, Y. Sun, K.-W. Chang, and A. Grover, “VideoPhy: Evaluating physical commonsense for video generation,” arXiv:2406.03520, 2024."},{"id":"videoscore","shortName":"VideoScore","title":"VideoScore: Building automatic metrics to simulate fine-grained human feedback for video generation","ref":15,"year":2024,"venue":"EMNLP","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=VideoScore%3A%20Building%20automatic%20metrics%20to%20simulate%20fine-grained%20human%20feedback%20for%20video%20generation","arxivId":null,"reference":"X. He, D. Jiang, G. Zhang, M. Ku, A. Soni, S. Siu, H. Chen, A. Chandra, Z. Jiang, A. Arulraj, K. Wang, Q. D. Do, Y. Ni, B. Lyu, Y. Narsupalli, R. Fan, Z. Lyu, Y. Lin, and W. Chen, “VideoScore: Building automatic metrics to simulate fine-grained human feedback for video generation,” in EMNLP, 2024."},{"id":"worldsimbench","shortName":"WorldSimBench","title":"WorldSimBench: Towards video generation models as world simulators","ref":92,"year":2024,"venue":"arXiv","domains":["game","driving","embodied"],"protocols":["OL","CL"],"realWorldExecution":false,"evidence":["A","J","O"],"dataConstruction":["CSI","HRS"],"targets":["Control Fidelity & Interactive Dynamics","Functional Utility"],"subtargets":["Interactive Action Fidelity","Planner"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2410.18072","arxivId":"2410.18072","reference":"Y. Qin, Z. Shi, J. Yu, X. Wang, E. Zhou, L. Li, Z. Yin, X. Liu, L. Sheng, J. Shao, L. Bai, W. Ouyang, and R. Zhang, “WorldSimBench: Towards video generation models as world simulators,” arXiv:2410.18072, 2024."},{"id":"acquired","shortName":"ACQUIRED","title":"ACQUIRED: A dataset for answering counterfactual questions in real-life videos","ref":84,"year":2023,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Causal & Counterfactual Reasoning"],"subtargets":["Counterfactual reasoning over intervened worlds"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2311.01620","arxivId":"2311.01620","reference":"T.-L. Wu, Z.-Y. Dou, Q. Hu, Y. Hou, N. R. Chandra, M. Freedman, R. M. Weischedel, and N. Peng, “ACQUIRED: A dataset for answering counterfactual questions in real-life videos,” arXiv:2311.01620, 2023."},{"id":"fetv","shortName":"FETV","title":"FETV: A benchmark for fine-grained evaluation of open-domain text-to-video generation","ref":25,"year":2023,"venue":"NeurIPS D&B","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A","J"],"dataConstruction":["CSI"],"targets":["Visual & Temporal Quality"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=FETV%3A%20A%20benchmark%20for%20fine-grained%20evaluation%20of%20open-domain%20text-to-video%20generation","arxivId":null,"reference":"Y. Liu, L. Li, S. Ren, R. Gao, S. Li, S. Chen, X. Sun, and L. Hou, “FETV: A benchmark for fine-grained evaluation of open-domain text-to-video generation,” NeurIPS Datasets and Benchmarks, 2023."},{"id":"intentqa","shortName":"IntentQA","title":"IntentQA: Context-aware video intent reasoning","ref":80,"year":2023,"venue":"ICCV","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=IntentQA%3A%20Context-aware%20video%20intent%20reasoning","arxivId":null,"reference":"J. Li, P. Wei, W. Han, and L. Fan, “IntentQA: Context-aware video intent reasoning,” in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2023."},{"id":"physion-plus-plus","shortName":"Physion++","title":"Physion++: Evaluating physical scene understanding that requires online inference of different physical properties","ref":54,"year":2023,"venue":"NeurIPS","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=Physion%2B%2B%3A%20Evaluating%20physical%20scene%20understanding%20that%20requires%20online%20inference%20of%20different%20physical%20properties","arxivId":null,"reference":"H.-Y. Tung, M. Ding, Z. Chen, D. Bear, C. Gan, J. B. Tenenbaum, D. L. Yamins, J. E. Fan, and K. A. Smith, “Physion++: Evaluating physical scene understanding that requires online inference of different physical properties,” NeurIPS, 2023."},{"id":"causal-vidqa","shortName":"Causal-VidQA","title":"From representation to reasoning: Towards both evidence and commonsense reasoning for video question-answering","ref":79,"year":2022,"venue":"arXiv","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":true,"paperUrl":"https://arxiv.org/abs/2205.14895","arxivId":"2205.14895","reference":"J. Li, L. Niu, and L. Zhang, “From representation to reasoning: Towards both evidence and commonsense reasoning for video question-answering,” arXiv:2205.14895, 2022."},{"id":"comphy","shortName":"ComPhy","title":"ComPhy: Compositional physical reasoning of objects and events from videos","ref":55,"year":2022,"venue":"ICLR","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility","Causal & Counterfactual Reasoning"],"subtargets":["Counterfactual reasoning over intervened worlds"],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=ComPhy%3A%20Compositional%20physical%20reasoning%20of%20objects%20and%20events%20from%20videos","arxivId":null,"reference":"Z. Chen, K. Yi, Y. Li, M. Ding, A. Torralba, J. B. Tenenbaum, and C. Gan, “ComPhy: Compositional physical reasoning of objects and events from videos,” in ICLR, 2022."},{"id":"craft","shortName":"CRAFT","title":"CRAFT: A benchmark for causal reasoning about forces and interactions","ref":53,"year":2022,"venue":"Findings of ACL","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility","Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions","arxivId":null,"reference":"T. Ates, M. S¸. Ates¸o˘glu, C¸ . Yi˘git, I. Kesen, M. Kobas, E. Erdem, A. Erdem, T. Goksun, and D. Yuret, “CRAFT: A benchmark for causal reasoning about forces and interactions,” Findings of ACL, 2022."},{"id":"next-qa","shortName":"NExT-QA","title":"NExT-QA: Next phase of question-answering to explaining temporal actions","ref":78,"year":2021,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["RO"],"targets":["Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/2105.08276","arxivId":"2105.08276","reference":"J. Xiao, X. Shang, A. Yao, and T.-S. Chua, “NExT-QA: Next phase of question-answering to explaining temporal actions,” arXiv:2105.08276, 2021."},{"id":"physion","shortName":"Physion","title":"Physion: Evaluating physical prediction from vision in humans and machines","ref":20,"year":2021,"venue":"NeurIPS D&B","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility","Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=Physion%3A%20Evaluating%20physical%20prediction%20from%20vision%20in%20humans%20and%20machines","arxivId":null,"reference":"D. M. Bear, E. Wang, D. Mrowca, F. J. Binder, H.-Y. F. Tung, R. Pramod, C. Holdaway, S. Tao, K. Smith, F.-Y. Sun, L. Fei-Fei, N. Kanwisher, J. B. Tenenbaum, D. L. Yamins, and J. E. Fan, “Physion: Evaluating physical prediction from vision in humans and machines,” NeurIPS Datasets and Benchmarks, 2021."},{"id":"cater","shortName":"CATER","title":"CATER: A diagnostic dataset for compositional actions and temporal reasoning","ref":77,"year":2020,"venue":"ICLR","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=CATER%3A%20A%20diagnostic%20dataset%20for%20compositional%20actions%20and%20temporal%20reasoning","arxivId":null,"reference":"R. Girdhar and D. Ramanan, “CATER: A diagnostic dataset for compositional actions and temporal reasoning,” ICLR, 2020."},{"id":"clevrer","shortName":"CLEVRER","title":"CLEVRER: Collision events for video representation and reasoning","ref":19,"year":2020,"venue":"ICLR","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility","Causal & Counterfactual Reasoning"],"subtargets":["Causal reasoning over observed worlds"],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning","arxivId":null,"reference":"K. Yi, C. Gan, Y. Li, P. Kohli, J. Wu, A. Torralba, and J. B. Tenenbaum, “CLEVRER: Collision events for video representation and reasoning,” in ICLR, 2020."},{"id":"cophy","shortName":"CoPhy","title":"CoPhy: Counterfactual learning of physical dynamics","ref":51,"year":2020,"venue":"ICLR","domains":["video"],"protocols":["CR"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility","Causal & Counterfactual Reasoning"],"subtargets":["Counterfactual reasoning over intervened worlds"],"crossCategory":true,"paperUrl":"https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics","arxivId":null,"reference":"F. Baradel, N. Neverova, J. Mille, G. Mori, and C. Wolf, “CoPhy: Counterfactual learning of physical dynamics,” ICLR, 2020."},{"id":"phyre","shortName":"PHYRE","title":"PHYRE: A new benchmark for physical reasoning","ref":52,"year":2019,"venue":"NeurIPS","domains":["video"],"protocols":["CL"],"realWorldExecution":false,"evidence":["A","O"],"dataConstruction":["SG"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://scholar.google.com/scholar?q=PHYRE%3A%20A%20new%20benchmark%20for%20physical%20reasoning","arxivId":null,"reference":"A. Bakhtin, L. van der Maaten, J. Johnson, L. Gustafson, and R. Girshick, “PHYRE: A new benchmark for physical reasoning,” in NeurIPS, 2019."},{"id":"intphys","shortName":"IntPhys","title":"IntPhys: A framework and benchmark for visual intuitive physics reasoning","ref":18,"year":2018,"venue":"arXiv","domains":["video"],"protocols":["OL"],"realWorldExecution":false,"evidence":["A"],"dataConstruction":["SG"],"targets":["Physical Plausibility"],"subtargets":[],"crossCategory":false,"paperUrl":"https://arxiv.org/abs/1803.07616","arxivId":"1803.07616","reference":"R. Riochet, M. Y. Castro, M. Bernard, A. Lerer, R. Fergus, V. Izard, and E. Dupoux, “IntPhys: A framework and benchmark for visual intuitive physics reasoning,” arXiv preprint arXiv:1803.07616, 2018."}]
+[
+  {
+    "id": "t2vphysbench",
+    "shortName": "T2VPhysBench",
+    "title": "T2VPhysBench: A first-principles benchmark for physical consistency in text-to-video generation",
+    "ref": 136,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2505.00337",
+    "arxivId": "2505.00337",
+    "reference": "X. Guo, J. Huo, Z. Shi, Z. Song, J. Zhang, and J. Zhao, “T2VPhysBench: A first-principles benchmark for physical consistency in text-to-video generation,” arXiv:2505.00337, 2025."
+  },
+  {
+    "id": "physics-iq",
+    "shortName": "Physics-IQ",
+    "title": "Do generative video models understand physical principles?",
+    "ref": 137,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2501.09038",
+    "arxivId": "2501.09038",
+    "reference": "S. Motamed, L. Culp, K. Swersky, P. Jaini, and R. Geirhos, “Do generative video models understand physical principles?” arXiv:2501.09038, 2025."
+  },
+  {
+    "id": "phyworldbench",
+    "shortName": "PhyWorldBench",
+    "title": "PhyWorldBench: A comprehensive evaluation of physical realism in text-to-video models",
+    "ref": 138,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2507.13428",
+    "arxivId": "2507.13428",
+    "reference": "J. Gu, X. Liu, Y. Zeng, A. Nagarajan, F. Zhu, D. Hong, Y. Fan, Q. Yan, K. Zhou, M.-Y. Liu, and X. E. Wang, “PhyWorldBench: A comprehensive evaluation of physical realism in text-to-video models,” arXiv:2507.13428, 2025."
+  },
+  {
+    "id": "morpheus",
+    "shortName": "Morpheus",
+    "title": "Morpheus: Benchmarking physical reasoning of video generative models with real physical experiments",
+    "ref": 139,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2504.02918",
+    "arxivId": "2504.02918",
+    "reference": "C. Zhang, D. Cherniavskii, A. Tragoudaras, A. Vozikis, T. Nijdam, D. W. Prinzhorn, M. Bodracska, N. Sebe, A. Zadaianchuk, and E. Gavves, “Morpheus: Benchmarking physical reasoning of video generative models with real physical experiments,” arXiv preprint arXiv:2504.02918, 2025."
+  },
+  {
+    "id": "dreamgen-bench",
+    "shortName": "DreamGen Bench",
+    "title": "DreamGen: Unlocking generalization in robot learning through video world models (introduces DreamGen Bench)",
+    "ref": 140,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2505.12705",
+    "arxivId": "2505.12705",
+    "reference": "J. Jang, S. Ye, Z. Lin, J. Xiang, J. Bjorck, Y. Fang, F. Hu, S. Huang, K. Kundalia, Y.-C. Lin, L. Magne, A. Mandlekar, A. Narayan, Y. L. Tan, G. Wang, J. Wang, Q. Wang, Y. Xu, X. Zeng, K. Zheng, R. Zheng, M.-Y. Liu, L. Zettlemoyer, D. Fox, J. Kautz, S. Reed, Y. Zhu, and L. Fan, “DreamGen: Unlocking generalization in robot learning through video world models (introduces DreamGen Bench),” arXiv:2505.12705, 2025."
+  },
+  {
+    "id": "phyground",
+    "shortName": "PhyGround",
+    "title": "Phyground: Benchmarking physical reasoning in generative world models",
+    "ref": 141,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2605.10806",
+    "arxivId": "2605.10806",
+    "reference": "J. Lin, A. Akbari, Y. He, L. Zhao, H. Zhang, A. Akbari, X. Xu, Z. Y. Lu, E. Nan, H. Deng, E. Yeh, S. Ostadabbas, Y. Fu, J. Dy, P. Zhao, and Y. Wang, “Phyground: Benchmarking physical reasoning in generative world models,” arXiv preprint arXiv:2605.10806, 2026."
+  },
+  {
+    "id": "physion-eval",
+    "shortName": "Physion-Eval",
+    "title": "Physion-eval: Evaluating physical realism in generated video via human reasoning",
+    "ref": 142,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2603.19607",
+    "arxivId": "2603.19607",
+    "reference": "Q. Zhang, P. Jing, H.-X. Yu, F. Ding, F. Nie, W. Wang, Y. Du, J. Zou, J. Wu, and B. Shuai, “Physion-eval: Evaluating physical realism in generated video via human reasoning,” arXiv preprint arXiv:2603.19607, 2026."
+  },
+  {
+    "id": "cronos",
+    "shortName": "CRONOS",
+    "title": "Cronos: Benchmarking counterfactual physical consistency in video models",
+    "ref": 143,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2605.23699",
+    "arxivId": "2605.23699",
+    "reference": "L. Begiristain, O. D¨unkel, and A. Kortylewski, “Cronos: Benchmarking counterfactual physical consistency in video models,” arXiv preprint arXiv:2605.23699, 2026."
+  },
+  {
+    "id": "vact",
+    "shortName": "VACT",
+    "title": "Vact: A video automatic causal testing system and a benchmark",
+    "ref": 144,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2503.06163",
+    "arxivId": "2503.06163",
+    "reference": "H. Yang, Q. Zheng, Y. Gao, Y. Yang, Y. He, Z. Lin, and M. Zhang, “Vact: A video automatic causal testing system and a benchmark,” arXiv preprint arXiv:2503.06163, 2025."
+  },
+  {
+    "id": "physicsmind",
+    "shortName": "PhysicsMind",
+    "title": "Physicsmind: Sim and real mechanics benchmarking for physical reasoning and prediction in foundational vlms and world models",
+    "ref": 145,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2601.16007",
+    "arxivId": "2601.16007",
+    "reference": "C.-W. Mak, G. Zhu, B. Zhang, H. Li, X. Chi, K. Zhang, Y. Wu, Y. He, C.-K. Fan, W. Lu, K. Ge, X. Fang, H. He, K. Lu, T. Xu, L. Zhang, Y. Ni, Y. Li, and S. Zhang, “Physicsmind: Sim and real mechanics benchmarking for physical reasoning and prediction in foundational vlms and world models,” arXiv preprint arXiv:2601.16007, 2026."
+  },
+  {
+    "id": "kinebench",
+    "shortName": "KineBench",
+    "title": "KineBench: Benchmarking Embodied World Models via IDM-Free Kinematic Grounding",
+    "ref": 146,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "CL"
+    ],
+    "metrics": [
+      "P",
+      "O"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics",
+      "Functional Utility"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity",
+      "Planner"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2607.19876",
+    "arxivId": "2607.19876",
+    "reference": "KineBench: Benchmarking Embodied World Models via IDM-Free Kinematic Grounding, arXiv:2607.19876, 2026."
+  },
+  {
+    "id": "reactsim-bench",
+    "shortName": "ReactSim-Bench",
+    "title": "ReactSim-Bench: Benchmarking Reactive Behavior World Model Simulation in Autonomous Driving",
+    "ref": 147,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "driving"
+    ],
+    "protocols": [
+      "CL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation",
+      "Interactive Action Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.14058",
+    "arxivId": "2606.14058",
+    "reference": "ReactSim-Bench: Benchmarking Reactive Behavior World Model Simulation in Autonomous Driving, arXiv:2606.14058, 2026."
+  },
+  {
+    "id": "gauge",
+    "shortName": "GAUGE",
+    "title": "GAUGE: A Measurement-Grounded Benchmark for Physical Fidelity in Simulation Engines and Video World Models",
+    "ref": 148,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2608.05948",
+    "arxivId": "2608.05948",
+    "reference": "S. Wang et al., “GAUGE: A Measurement-Grounded Benchmark for Physical Fidelity in Simulation Engines and Video World Models,” arXiv:2608.05948, 2026."
+  },
+  {
+    "id": "calibench",
+    "shortName": "CaliBench",
+    "title": "CaliBench: Are the Stochastic Dynamics of Video World Models Physically Calibrated?",
+    "ref": 149,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2608.16829",
+    "arxivId": "2608.16829",
+    "reference": "J. Sadeghi et al., “CaliBench: Are the Stochastic Dynamics of Video World Models Physically Calibrated?” arXiv:2608.16829, 2026."
+  },
+  {
+    "id": "worldsimprobe",
+    "shortName": "WorldSimProbe",
+    "title": "WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation",
+    "ref": 150,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2608.09298",
+    "arxivId": "2608.09298",
+    "reference": "P. Co et al., “WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation,” arXiv:2608.09298, 2026."
+  },
+  {
+    "id": "cater",
+    "shortName": "CATER",
+    "title": "CATER: A diagnostic dataset for compositional actions and temporal reasoning",
+    "ref": 151,
+    "year": 2020,
+    "venue": "ICLR",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=CATER%3A%20A%20diagnostic%20dataset%20for%20compositional%20actions%20and%20temporal%20reasoning",
+    "arxivId": null,
+    "reference": "R. Girdhar and D. Ramanan, “CATER: A diagnostic dataset for compositional actions and temporal reasoning,” ICLR, 2020."
+  },
+  {
+    "id": "next-qa",
+    "shortName": "NExT-QA",
+    "title": "NExT-QA: Next phase of question-answering to explaining temporal actions",
+    "ref": 152,
+    "year": 2021,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2105.08276",
+    "arxivId": "2105.08276",
+    "reference": "J. Xiao, X. Shang, A. Yao, and T.-S. Chua, “NExT-QA: Next phase of question-answering to explaining temporal actions,” arXiv:2105.08276, 2021."
+  },
+  {
+    "id": "causal-vidqa",
+    "shortName": "Causal-VidQA",
+    "title": "From representation to reasoning: Towards both evidence and commonsense reasoning for video question-answering",
+    "ref": 153,
+    "year": 2022,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2205.14895",
+    "arxivId": "2205.14895",
+    "reference": "J. Li, L. Niu, and L. Zhang, “From representation to reasoning: Towards both evidence and commonsense reasoning for video question-answering,” arXiv:2205.14895, 2022."
+  },
+  {
+    "id": "intentqa",
+    "shortName": "IntentQA",
+    "title": "IntentQA: Context-aware video intent reasoning",
+    "ref": 154,
+    "year": 2023,
+    "venue": "ICCV",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=IntentQA%3A%20Context-aware%20video%20intent%20reasoning",
+    "arxivId": null,
+    "reference": "J. Li, P. Wei, W. Han, and L. Fan, “IntentQA: Context-aware video intent reasoning,” in Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 2023."
+  },
+  {
+    "id": "acquired",
+    "shortName": "ACQUIRED",
+    "title": "ACQUIRED: A dataset for answering counterfactual questions in real-life videos",
+    "ref": 155,
+    "year": 2023,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2311.01620",
+    "arxivId": "2311.01620",
+    "reference": "T.-L. Wu, Z.-Y. Dou, Q. Hu, Y. Hou, N. R. Chandra, M. Freedman, R. M. Weischedel, and N. Peng, “ACQUIRED: A dataset for answering counterfactual questions in real-life videos,” arXiv:2311.01620, 2023."
+  },
+  {
+    "id": "mmworld",
+    "shortName": "MMWorld",
+    "title": "MMWorld: Towards multi-discipline multi-faceted world model evaluation in videos",
+    "ref": 156,
+    "year": 2025,
+    "venue": "ICLR",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=MMWorld%3A%20Towards%20multi-discipline%20multi-faceted%20world%20model%20evaluation%20in%20videos",
+    "arxivId": null,
+    "reference": "X. He, W. Feng, K. Zheng, Y. Lu, W. Zhu, J. Li, Y. Fan, J. Wang, L. Li, Z. Yang, K. Lin, W. Y. Wang, L. Wang, and X. E. Wang, “MMWorld: Towards multi-discipline multi-faceted world model evaluation in videos,” in ICLR, 2025."
+  },
+  {
+    "id": "vcrbench",
+    "shortName": "VCRBench",
+    "title": "VCRBench: Exploring long-form causal reasoning capabilities of large video language models",
+    "ref": 157,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2505.08455",
+    "arxivId": "2505.08455",
+    "reference": "P. Sarkar and A. Etemad, “VCRBench: Exploring long-form causal reasoning capabilities of large video language models,” arXiv:2505.08455, 2025."
+  },
+  {
+    "id": "causalvqa",
+    "shortName": "CausalVQA",
+    "title": "CausalVQA: A physically grounded causal reasoning benchmark for video models",
+    "ref": 158,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2506.09943",
+    "arxivId": "2506.09943",
+    "reference": "A. Foss, C. Evans, S. Mitts, K. Sinha, A. Rizvi, and J. T. Kao, “CausalVQA: A physically grounded causal reasoning benchmark for video models,” arXiv:2506.09943, 2025."
+  },
+  {
+    "id": "storyeval",
+    "shortName": "StoryEval",
+    "title": "Is your world simulator a good story presenter? a consecutive events-based benchmark for future long video generation",
+    "ref": 159,
+    "year": 2024,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SPTC"
+    ],
+    "targets": [
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2412.16211",
+    "arxivId": "2412.16211",
+    "reference": "Y. Wang, X. He, K. Wang, L. Ma, J. Yang, S. Wang, S. S. Du, and Y. Shen, “Is your world simulator a good story presenter? a consecutive events-based benchmark for future long video generation,” arXiv:2412.16211, 2024."
+  },
+  {
+    "id": "act-bench",
+    "shortName": "ACT-Bench",
+    "title": "ACTBench: Towards action controllable world models for autonomous driving",
+    "ref": 160,
+    "year": 2024,
+    "venue": "arXiv",
+    "domains": [
+      "driving"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2412.05337",
+    "arxivId": "2412.05337",
+    "reference": "H. Arai, K. Ishihara, T. Takahashi, and Y. Yamaguchi, “ACTBench: Towards action controllable world models for autonomous driving,” arXiv preprint arXiv:2412.05337, 2024."
+  }
+]

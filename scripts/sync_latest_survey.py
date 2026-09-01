@@ -1,22 +1,199 @@
 #!/usr/bin/env python3
+"""Validate the repository against the August 31, 2026 survey PDF."""
+from __future__ import annotations
+
 from collections import Counter
 from pathlib import Path
+import hashlib
 import json
-ROOT=Path(__file__).resolve().parents[1]
-m=json.loads((ROOT/'docs/assets/benchmarks.json').read_text(encoding='utf-8'))
-meta=json.loads((ROOT/'docs/assets/metadata.json').read_text(encoding='utf-8'))
-readme=(ROOT/'Readme.md').read_text(encoding='utf-8')
-assert m['total']==95 and m['crossCategory']==58 and len(m['records'])==95
-assert m['schemaVersion']==6
-assert sum(len(r[6].split('+'))>1 for r in m['records'].values())==58
-assert Counter(r[1] for r in m['records'].values())==Counter({2018:1,2019:1,2020:3,2021:2,2022:3,2023:3,2024:9,2025:31,2026:42})
-assert Counter(c for r in m['records'].values() for c in r[6].split('+') if c)==Counter({'T1':24,'T2':31,'T3':19,'T4':53,'T5':32,'T6':40,'T7':13})
-for n in ['WorldRoamBench','CrashTwin','MemoBench','RoboTrustBench','ContactWorld','ScratchWorld','MiraBench','Chess-World-Model','Apple-π','KineBench','ReactSim-Bench','WMBench']:
-    assert n in m['records'] and n in m['added']
-for n in ['FETV','VBench','VBench++','EvalCrafter','T2V-CompBench']:
-    assert n not in m['records'] and n in m['removed']
-assert meta['total']==95 and meta['crossCategory']==58
-assert '**95 representative benchmarks**' in readme and '**58** span' in readme
-assert '| Spatial & State Consistency | 31 |' in readme
-assert '| Functional Utility | 13 |' in readme
-print('Validated 95 benchmarks, 58 cross-category assignments, and the July 30, 2026 snapshot.')
+
+ROOT = Path(__file__).resolve().parents[1]
+ASSETS = ROOT / "docs" / "assets"
+MANIFEST_PATH = ASSETS / "benchmarks.json"
+METADATA_PATH = ASSETS / "metadata.json"
+README_PATH = ROOT / "Readme.md"
+INDEX_PATH = ROOT / "docs" / "index.html"
+
+TOTAL = 106
+CROSS_CATEGORY = 85
+SCHEMA_VERSION = 8
+SNAPSHOT_VERSION = "August 31, 2026 manuscript snapshot"
+SNAPSHOT_DATE = "2026-08-31"
+SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
+EXPECTED_FINGERPRINT = "d38c6018cfb278050d00a39b06e44dc252bd40c6bb6c7a0c338e30e36be1572c"
+EXPECTED_TARGET_COUNTS = {
+    "T1": 46,
+    "T2": 55,
+    "T3": 24,
+    "T4": 77,
+    "T5": 37,
+    "T6": 55,
+    "T7": 13,
+}
+EXPECTED_SUBTARGET_COUNTS = {
+    "S1": 40,
+    "S2": 40,
+    "S3": 30,
+    "S4": 9,
+    "S5": 40,
+    "S6": 15,
+    "S7": 2,
+    "S8": 2,
+    "S9": 12,
+    "S10": 1,
+}
+EXPECTED_RELEASE_WINDOWS = {
+    "2018–2021": 7,
+    "2022–2023": 6,
+    "2024": 9,
+    "2025": 31,
+    "2026": 53,
+}
+LEGACY_JS_FILES = ["app-1.js", "app-2.js", "app-3.js", "app-v2.js"]
+
+
+def split_codes(value: str) -> list[str]:
+    return [part for part in str(value or "").split("+") if part]
+
+
+def fingerprint(records: dict[str, list]) -> str:
+    """Hash every PDF-coded field in the compact benchmark records."""
+    rows = [
+        f"{name}|" + "|".join(str(value) for value in row[:8])
+        for name, row in sorted(records.items())
+    ]
+    return hashlib.sha256("\n".join(rows).encode("utf-8")).hexdigest()
+
+
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        raise AssertionError(message)
+
+
+def main() -> None:
+    manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    metadata = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
+    records = manifest["records"]
+
+    require(manifest["total"] == TOTAL and len(records) == TOTAL, "Corpus must contain 106 records")
+    require(manifest["crossCategory"] == CROSS_CATEGORY, "Cross-category total must be 85")
+    require(manifest["schemaVersion"] == SCHEMA_VERSION, "Schema version must be 8")
+    require(manifest["version"] == SNAPSHOT_VERSION, "Snapshot version is stale")
+    require(manifest["snapshotDate"] == SNAPSHOT_DATE, "Snapshot date is stale")
+
+    target_counts = Counter(code for row in records.values() for code in split_codes(row[6]))
+    subtarget_counts = Counter(code for row in records.values() for code in split_codes(row[7]))
+    cross_count = sum(len(split_codes(row[6])) > 1 for row in records.values())
+    require(dict(target_counts) == EXPECTED_TARGET_COUNTS, f"Target counts differ from PDF: {target_counts}")
+    require(dict(subtarget_counts) == EXPECTED_SUBTARGET_COUNTS, f"Sub-target counts differ from PDF: {subtarget_counts}")
+    require(cross_count == CROSS_CATEGORY, f"Computed cross-category count is {cross_count}, expected 85")
+    require(fingerprint(records) == EXPECTED_FINGERPRINT, "Full PDF record fingerprint differs from the Tables 3–9 transcription")
+    require(manifest.get("classificationFingerprint") == EXPECTED_FINGERPRINT, "Manifest classification fingerprint is missing or stale")
+    require(manifest.get("recordFingerprint") == EXPECTED_FINGERPRINT, "Manifest record fingerprint is missing or stale")
+    require(manifest.get("fingerprintFields") == [
+        "benchmark", "reference", "year", "domain", "protocol",
+        "metrics", "data", "targets", "subtargets",
+    ], "Manifest fingerprint field declaration is missing or stale")
+
+    for name, row in records.items():
+        require(len(row) >= 8, f"Incomplete compact record: {name}")
+        require(set(split_codes(row[3])) <= {"OL", "CL"}, f"Legacy/invalid protocol code for {name}: {row[3]}")
+        require(set(split_codes(row[4])) <= {"P", "O"}, f"Legacy/invalid metric code for {name}: {row[4]}")
+        require(set(split_codes(row[5])) <= {"RWD", "SBG", "SPTC", "HCP"}, f"Invalid data code for {name}: {row[5]}")
+        require(row[6], f"Benchmark has no top-level target: {name}")
+
+    window_counts = {
+        bin_info["label"]: sum(row[1] in bin_info["years"] for row in records.values())
+        for bin_info in manifest["timelineBins"]
+    }
+    require(window_counts == EXPECTED_RELEASE_WINDOWS, f"Release-window counts differ from Figure 2: {window_counts}")
+
+    shard_records: list[dict] = []
+    for index in range(1, 5):
+        path = ASSETS / f"benchmarks-{index}.json"
+        require(path.exists(), f"Missing shard: {path.name}")
+        shard_records.extend(json.loads(path.read_text(encoding="utf-8")))
+    shard_names = [item["shortName"] for item in shard_records]
+    require(len(shard_records) == TOTAL, f"Shards contain {len(shard_records)} records, expected 106")
+    require(len(set(shard_names)) == TOTAL, "Shard records are duplicated")
+    require(set(shard_names) == set(records), "Shard and manifest record sets differ")
+
+    target_labels = manifest["targetLabels"]
+    subtarget_labels = manifest["subtargetLabels"]
+    for item in shard_records:
+        name = item["shortName"]
+        row = records[name]
+        require(item["ref"] == row[0], f"Reference mismatch in shard for {name}")
+        require(item["year"] == row[1], f"Year mismatch in shard for {name}")
+        require(item["domains"] == split_codes(row[2]), f"Domain mismatch in shard for {name}")
+        require(item["protocols"] == split_codes(row[3]), f"Protocol mismatch in shard for {name}")
+        require(item["metrics"] == split_codes(row[4]), f"Metric mismatch in shard for {name}")
+        require(item["evaluationData"] == split_codes(row[5]), f"Data mismatch in shard for {name}")
+        require(item["targets"] == [target_labels[code] for code in split_codes(row[6])], f"Target mismatch in shard for {name}")
+        require(item["subtargets"] == [subtarget_labels[code] for code in split_codes(row[7])], f"Sub-target mismatch in shard for {name}")
+        require(item["crossCategory"] == (len(split_codes(row[6])) > 1), f"Cross-category flag mismatch for {name}")
+        for legacy_field in ("evidence", "dataConstruction", "realWorldExecution"):
+            require(legacy_field not in item, f"Legacy field {legacy_field} remains in shard record {name}")
+
+    require(metadata["total"] == TOTAL and metadata["crossCategory"] == CROSS_CATEGORY, "metadata.json totals are stale")
+    require(metadata["version"] == SNAPSHOT_VERSION and metadata["snapshotDate"] == SNAPSHOT_DATE, "metadata.json snapshot is stale")
+    require(metadata["classificationFingerprint"] == EXPECTED_FINGERPRINT, "metadata.json classification fingerprint differs")
+    require(metadata["recordFingerprint"] == EXPECTED_FINGERPRINT, "metadata.json record fingerprint differs")
+    require(metadata["fingerprintFields"] == manifest["fingerprintFields"], "metadata.json fingerprint fields differ")
+
+    readme = README_PATH.read_text(encoding="utf-8")
+    require("**106 representative benchmarks**" in readme, "README benchmark total is stale")
+    require("**85** span more than one" in readme, "README cross-category total is stale")
+    require("August 31, 2026" in readme and "August 27, 2026" not in readme, "README date is stale")
+    for label, count in (
+        ("Visual & Temporal Quality", 46),
+        ("Spatial & State Consistency", 55),
+        ("Long-Horizon Memory & State Persistence", 24),
+        ("Physical Plausibility", 77),
+        ("Causal & Counterfactual Reasoning", 37),
+        ("Control Fidelity & Interactive Dynamics", 55),
+        ("Functional Utility", 13),
+    ):
+        require(f"| {label} | {count} |" in readme, f"README count is wrong for {label}")
+    for heading in (
+        "### Visual Quality", "### Temporal Quality", "### Observation-Grounded Evaluation",
+        "### Intervention-Grounded Evaluation", "### Pre-specified Control Fidelity",
+        "### Interactive Action Fidelity", "### World Model as Data Engine",
+        "### World Model as Policy Evaluator", "### World Model as Planner",
+        "### World Model as Interactive Training Environment",
+    ):
+        require(heading in readme, f"README is missing {heading}")
+    require(SITE_URL in readme, "README project-page URL is wrong")
+
+    index = INDEX_PATH.read_text(encoding="utf-8")
+    require(f'<link rel="canonical" href="{SITE_URL}">' in index, "Canonical site URL is wrong")
+    require("106 benchmarks · 85 cross-category · checked August 31, 2026" in index, "Website snapshot note is stale")
+    require('id="stat-cross">85<' in index, "Website cross-category statistic is stale")
+    require("August 27, 2026" not in index and "66 cross-category" not in index, "Old website snapshot copy remains")
+
+    core_js = (ASSETS / "app-v3-core.js").read_text(encoding="utf-8")
+    wrapper_js = (ASSETS / "app-v3.js").read_text(encoding="utf-8")
+    app_js = (ASSETS / "app.js").read_text(encoding="utf-8")
+    require('const PROTOCOLS = ["OL", "CL"];' in core_js, "Explorer protocol taxonomy is stale")
+    require('const METRICS = ["P", "O"];' in core_js, "Explorer metric taxonomy is stale")
+    require('"CR"' not in core_js and '["A", "J", "O"]' not in core_js, "Legacy explorer codes remain")
+    require("85 cross-category" in wrapper_js and "August 31, 2026" in wrapper_js, "Explorer wrapper copy is stale")
+    require("app-v3.js?v=9" in app_js and "app-v2.js" not in app_js, "Fallback app loader is stale")
+
+    for filename in LEGACY_JS_FILES:
+        require(not (ASSETS / filename).exists(), f"Unused legacy script remains: {filename}")
+
+    robots = (ROOT / "docs" / "robots.txt").read_text(encoding="utf-8")
+    sitemap = (ROOT / "docs" / "sitemap.xml").read_text(encoding="utf-8")
+    require(f"Sitemap: {SITE_URL}sitemap.xml" in robots, "robots.txt sitemap URL is wrong")
+    require(f"<loc>{SITE_URL}</loc>" in sitemap, "sitemap.xml project URL is wrong")
+    require("axbhb.github.io" not in robots + sitemap, "Legacy deployment URL remains")
+
+    print(
+        "Validated the August 31, 2026 PDF snapshot: "
+        "106 benchmarks, 85 cross-category, and every Table 3–9 record field."
+    )
+
+
+if __name__ == "__main__":
+    main()
