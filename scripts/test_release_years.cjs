@@ -16,12 +16,12 @@ class Element {
   append(...items) { this.children.push(...items); }
   setAttribute(key, value) { this.attrs[key]=value; }
   addEventListener(key, value) { this.handlers[key]=value; }
+  querySelectorAll() { return []; }
 }
 const nodes = new Map();
 const document = {querySelector(key){if (!nodes.has(key)) nodes.set(key,new Element());return nodes.get(key);},querySelectorAll(){return [];},createElement(){return new Element();}};
 const source = fs.readFileSync(path.join(assets,'app-v3-core.js'),'utf8');
 const api = vm.runInNewContext(source.replace(/\ninit\(\);\s*$/, '\n') + '\n({state,normalizeCorpus,matchesPeriod,visibleItems,renderCards,buildTimeline})', {document,URLSearchParams,location:{search:'',pathname:'/',hash:''}});
-const plain = value => JSON.parse(JSON.stringify(value));
 api.state.metadata=manifest;
 api.state.benchmarks=api.normalizeCorpus(shards,manifest);
 assert.equal(api.state.benchmarks.length,102);

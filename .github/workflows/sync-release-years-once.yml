@@ -2,7 +2,7 @@ name: Synchronize September 7 PDF release years
 on:
   push:
     branches: [main]
-    paths: [".github/workflows/sync-release-years-once.yml"]
+    paths: [".github/workflows/sync-release-years-once.yml", "scripts/test_release_years.cjs"]
   workflow_dispatch:
 permissions:
   contents: write
