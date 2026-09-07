@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://world-model-benchmarks.github.io/World-Model-Benchmarks/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/scoped-coding.css?v=2026090702">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="World Model Benchmarks Survey">
   <meta property="og:title" content="A Survey of World Model Benchmarks">
@@ -87,7 +88,7 @@
             <a class="button" href="#benchmarks">Explore benchmarks</a>
             <a class="button" href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-          <div class="snapshot-note"><span class="status-dot"></span> Latest manuscript snapshot · 102 benchmarks · 85 cross-category · checked August 31, 2026</div>
+          <div class="snapshot-note"><span class="status-dot"></span> Latest manuscript snapshot · 102 benchmarks · 85 cross-category · checked August 31, 2026 · coding updated September 7, 2026</div>
         </div>
 
         <div class="hero-visual" aria-label="Target, protocol, metrics, and data framework illustration">
@@ -173,7 +174,7 @@
         <article class="principle-card metrics-card">
           <span class="card-index">03</span>
           <h3>Evaluation Metrics</h3>
-          <p>Separates prediction-level evidence from downstream outcome evidence.</p>
+          <p>Separates measurements of direct outputs from the performance or reliability of downstream functions. Closed-loop collection alone does not make a metric downstream.</p>
           <button class="text-action taxonomy-jump" data-scroll-target="taxonomy-metrics">View metrics <span>→</span></button>
         </article>
         <article class="principle-card data-card">
@@ -214,12 +215,16 @@
       <div class="matrix-shell">
         <div class="matrix-heading">
           <div><p class="eyebrow">Cross-dimensional map</p><h3>Evaluation Target × Protocol</h3></div>
-          <p>Counts overlap because benchmarks may appear under multiple targets and protocols.</p>
+          <p>Counts use only tracks relevant to each target. OL+CL is included in both columns; categories can overlap.</p>
         </div>
         <div class="matrix-scroll"><div id="taxonomy-matrix" class="matrix" aria-live="polite"></div></div>
       </div>
     </section>
 
+    <section class="section" aria-label="Target-specific metric evidence">
+      <div class="matrix-shell"><div class="matrix-heading"><div><p class="eyebrow">Cross-dimensional map</p><h3>Evaluation Target × Metrics</h3></div><p>Only tracks relevant to each target are counted. P+O appears in both columns.</p></div><div class="matrix-scroll"><div id="metrics-matrix" class="matrix" aria-live="polite"></div></div></div>
+      <!-- TARGET-SCOPED COVERAGE START --><div class="matrix-shell" id="protocol-evidence-coverage"><div class="matrix-heading"><div><p class="eyebrow">Manuscript Table 10</p><h3>Target-specific protocol and evidence coverage</h3></div></div><p>Each benchmark is counted once per row, using only tracks relevant to that target or role. Includes CL/O also counts OL+CL/P+O. Protocol and evidence columns are separate marginal counts.</p><div class="matrix-scroll"><table class="coverage-table"><thead><tr><th>Evaluation target</th><th>n</th><th>OL only</th><th>Includes CL</th><th>P only</th><th>Includes O</th></tr></thead><tbody><tr><th scope="row">Control Fidelity &amp; Interactive Dynamics</th><td>55</td><td>50 (90.9%)</td><td>5 (9.1%)</td><td>51 (92.7%)</td><td>4 (7.3%)</td></tr><tr><th scope="row">Pre-specified Control Fidelity</th><td>40</td><td>39 (97.5%)</td><td>1 (2.5%)</td><td>38 (95.0%)</td><td>2 (5.0%)</td></tr><tr><th scope="row">Interactive Action Fidelity</th><td>15</td><td>11 (73.3%)</td><td>4 (26.7%)</td><td>13 (86.7%)</td><td>2 (13.3%)</td></tr><tr><th scope="row">Functional Utility</th><td>13</td><td>3 (23.1%)</td><td>10 (76.9%)</td><td>0 (0.0%)</td><td>13 (100.0%)</td></tr></tbody></table></div></div><!-- TARGET-SCOPED COVERAGE END -->
+    </section>
     <section class="section timeline-section" id="timeline">
       <div class="section-heading split-heading">
         <div>
@@ -293,6 +298,7 @@
       <div class="section-heading split-heading benchmark-heading">
         <div><p class="eyebrow">Benchmark Explorer</p><h2>Browse the latest paper snapshot.</h2></div>
         <p>Search and filter the 102 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.</p>
+        <p class="scope-help">Protocol and metric filters use the selected target’s tracks. With no target selected, card labels summarize all listed tracks. Expand each card for the exact target/role coding.</p>
       </div>
 
       <div class="explorer-shell">
@@ -397,6 +403,6 @@
     <div class="footer-links"><a href="#top">Back to top</a><a href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks/blob/main/Readme.md" target="_blank" rel="noreferrer">Benchmark list</a><a href="assets/benchmarks.json" target="_blank">Data manifest</a><a href="https://github.com/World-Model-Benchmarks/World-Model-Benchmarks" target="_blank" rel="noreferrer">GitHub</a></div>
   </footer>
 
-  <script src="assets/app-v3.js?v=20260907" defer></script>
+  <script src="assets/app-v3.js?v=2026090702" defer></script>
 </body>
 </html>

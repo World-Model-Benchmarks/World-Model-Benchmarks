@@ -1,0 +1,11 @@
+/* Target-specific evidence supplements; existing page design is retained. */
+.coverage-table { width:100%; border-collapse:collapse; font-size:.85rem; min-width:650px; }
+.coverage-table th,.coverage-table td { padding:.65rem .7rem; border-bottom:1px solid #dde2ee; text-align:right; }
+.coverage-table th:first-child { text-align:left; }
+.coverage-table thead { background:#f3f5fb; }
+.track-details { margin:.75rem 0; font-size:.78rem; line-height:1.5; }
+.track-details summary { cursor:pointer; font-weight:600; }
+.track-details ul { padding-left:1rem; }
+.track-details li { margin:.45rem 0; }
+.track-context,.scope-help { color:#59647b; font-size:.8rem; line-height:1.5; }
+#protocol-evidence-coverage { margin-top:1.5rem; }

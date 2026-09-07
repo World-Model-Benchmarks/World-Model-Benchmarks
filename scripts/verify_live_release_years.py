@@ -7,6 +7,7 @@ import hashlib
 import json
 import subprocess
 import time
+from target_scoped_coding import validate_scoped
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'docs'
@@ -18,7 +19,7 @@ bases = {
     'project': 'https://world-model-benchmarks.github.io/World-Model-Benchmarks/',
     'root': 'https://world-model-benchmarks.github.io/',
 }
-paths = ['index.html', 'assets/metadata.json', 'assets/benchmarks.json', 'assets/release-years-20260907.json', 'assets/app-v3.js', 'assets/app-v3-core.js'] + [f'assets/benchmarks-{i}.json' for i in range(1,5)]
+paths = ['index.html', 'assets/metadata.json', 'assets/benchmarks.json', 'assets/release-years-20260907.json', 'assets/app-v3.js', 'assets/app-v3-core.js', 'assets/scoped-coding.css'] + [f'assets/benchmarks-{i}.json' for i in range(1,5)]
 replacements = {
     'https://axbhb.github.io/world-model-evaluation-survey/': bases['root'],
     bases['project']: bases['root'],
@@ -58,8 +59,9 @@ for site in bases:
     p = OUT / site / 'assets/benchmarks.json'
     if p.exists():
         manifest = json.loads(p.read_text())
+        validate_scoped(manifest)
         assert {name: row[1] for name,row in manifest['records'].items()} == audit['years']
-report = {'checkedAt':datetime.now(timezone.utc).isoformat(),'sourceCommit':sha,'releaseYearSourcePdfSha256':audit['sourcePdfSha256'],'checks':checks,'expectedChecks':len(paths)*len(bases)}
+report = {'checkedAt':datetime.now(timezone.utc).isoformat(),'sourceCommit':sha,'releaseYearSourcePdfSha256':audit['sourcePdfSha256'],'codingSourcePdfSha256':json.loads((ASSETS/'assets/benchmarks.json').read_text())['sourcePdfSha256'],'checks':checks,'expectedChecks':len(paths)*len(bases)}
 report['success'] = len(checks)==report['expectedChecks'] and all(x['status']=='matched' for x in checks)
 (OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

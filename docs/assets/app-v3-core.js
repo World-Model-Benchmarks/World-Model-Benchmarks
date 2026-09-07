@@ -104,6 +104,38 @@ function groupLabel(group, value) {
   return targetShortLabel(value);
 }
 
+
+function categoryTracks(name, manifest) {
+  if (!manifest.categoryRecords) throw new Error("Target-specific manuscript coding is missing; refresh the page.");
+  return Object.entries(manifest.categoryRecords).flatMap(([scope, records]) => {
+    const codes = records[name];
+    if (!codes) return [];
+    const targetCode = scope.startsWith("T") ? scope : (["S5", "S6"].includes(scope) ? "T6" : "T7");
+    const table = targetCode === "T6" ? 8 : targetCode === "T7" ? 9 : Number(targetCode.slice(1)) + 2;
+    return [{scope, target: manifest.targetLabels[targetCode], label: manifest.targetLabels[scope] || manifest.subtargetLabels[scope],
+      table, sourcePage: {3:11,4:12,5:14,6:15,7:18,8:20,9:23}[table], protocols: splitCodes(codes[0]), metrics: splitCodes(codes[1])}];
+  });
+}
+
+function relevantTracks(item, ignoredGroup = null) {
+  return item.evaluationTracks.filter((track) => ignoredGroup === "targets" || !state.filters.targets.size || state.filters.targets.has(track.target));
+}
+
+function matchesEvidence(item, ignoredGroup = null, requiredGroup = null, requiredValue = null) {
+  return relevantTracks(item, ignoredGroup).some((track) => {
+    if (requiredGroup === "targets" && track.target !== requiredValue) return false;
+    for (const group of ["protocols", "metrics"]) {
+      if (requiredGroup === group && !track[group].includes(requiredValue)) return false;
+      if (group !== ignoredGroup && state.filters[group].size && !track[group].some((value) => state.filters[group].has(value))) return false;
+    }
+    return true;
+  });
+}
+
+function scopedValues(item, group) {
+  return [...new Set(relevantTracks(item).flatMap((track) => track[group]))];
+}
+
 function decodeRecord(raw, manifest) {
   const original = raw.shortName;
   const canonical = manifest.aliases?.[original] || original;
@@ -118,6 +150,7 @@ function decodeRecord(raw, manifest) {
   return {
     ...raw,
     shortName: canonical,
+    evaluationTracks: categoryTracks(canonical, manifest),
     ref,
     year,
     releaseYear: year,
@@ -139,6 +172,7 @@ function buildAddedRecord(name, manifest) {
   const targets = splitCodes(targetCodes).map((code) => manifest.targetLabels[code]);
   return {
     ...base,
+    evaluationTracks: categoryTracks(name, manifest),
     ref,
     year,
     releaseYear: year,
@@ -218,7 +252,7 @@ function matchesGroup(item, group, ignoredGroup = null) {
 
 function matchesItem(item, ignoredGroup = null) {
   if (!matchesSearch(item) || !matchesPeriod(item)) return false;
-  return Object.keys(state.filters).every((group) => matchesGroup(item, group, ignoredGroup));
+  return ["domains", "evaluationData"].every((group) => matchesGroup(item, group, ignoredGroup)) && matchesEvidence(item, ignoredGroup);
 }
 
 function visibleItems() {
@@ -235,9 +269,9 @@ function visibleItems() {
 
 function countForValue(group, value) {
   return state.benchmarks.filter((item) => {
-    if (!matchesSearch(item) || !matchesPeriod(item)) return false;
-    if (!Object.keys(state.filters).every((key) => matchesGroup(item, key, group))) return false;
-    return item[group].includes(value);
+    if (!matchesItem(item, group)) return false;
+    return ["targets", "protocols", "metrics"].includes(group)
+      ? matchesEvidence(item, group, group, value) : item[group].includes(value);
   }).length;
 }
 
@@ -411,30 +445,41 @@ function createMatrixHead(text) {
 }
 
 function buildMatrix() {
-  els.matrix.innerHTML = "";
-  els.matrix.append(createMatrixHead("Evaluation target"));
-  PROTOCOLS.forEach((protocol) => els.matrix.append(createMatrixHead(state.metadata.protocolLabels[protocol])));
-  const allCounts = TARGETS.flatMap((target) => PROTOCOLS.map((protocol) =>
-    state.benchmarks.filter((item) => item.targets.includes(target) && item.protocols.includes(protocol)).length
-  ));
-  const max = Math.max(...allCounts, 1);
-  TARGETS.forEach((target) => {
-    const label = document.createElement("div");
-    label.className = "matrix-row-label";
-    label.textContent = targetShortLabel(target);
-    els.matrix.append(label);
-    PROTOCOLS.forEach((protocol) => {
-      const count = state.benchmarks.filter((item) => item.targets.includes(target) && item.protocols.includes(protocol)).length;
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "matrix-cell";
-      button.style.setProperty("--heat", Math.round((count / max) * 100));
-      button.setAttribute("aria-label", `${target}, ${state.metadata.protocolLabels[protocol]}: ${count} benchmarks`);
-      button.innerHTML = `<strong>${count}</strong><small>benchmarks</small>`;
-      button.addEventListener("click", () => setFocusedFilters(target, protocol));
-      els.matrix.append(button);
+  function fillMatrix(container, group, values, labels) {
+    if (!container) return;
+    container.innerHTML = "";
+    container.append(createMatrixHead("Evaluation target"));
+    values.forEach((value) => container.append(createMatrixHead(labels[value])));
+    const count = (target, value) => state.benchmarks.filter((item) =>
+      item.evaluationTracks.some((track) => track.target === target && track[group].includes(value))).length;
+    const max = Math.max(1, ...TARGETS.flatMap((target) => values.map((value) => count(target, value))));
+    TARGETS.forEach((target) => {
+      const label = document.createElement("div");
+      label.className = "matrix-row-label";
+      label.textContent = targetShortLabel(target);
+      container.append(label);
+      values.forEach((value) => {
+        const n = count(target, value);
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "matrix-cell";
+        button.style.setProperty("--heat", Math.round((n / max) * 100));
+        button.setAttribute("aria-label", `${target}, ${labels[value]}: ${n} benchmarks`);
+        button.innerHTML = `<strong>${n}</strong><small>benchmarks</small>`;
+        button.addEventListener("click", () => {
+          Object.values(state.filters).forEach((selected) => selected.clear());
+          state.period = null;
+          state.filters.targets.add(target);
+          state.filters[group].add(value);
+          updateUrl(); renderAll();
+          $("#benchmarks").scrollIntoView({behavior:"smooth", block:"start"});
+        });
+        container.append(button);
+      });
     });
-  });
+  }
+  fillMatrix(els.matrix, "protocols", PROTOCOLS, state.metadata.protocolLabels);
+  fillMatrix($("#metrics-matrix"), "metrics", METRICS, state.metadata.metricLabels);
 }
 
 function buildTimeline() {
@@ -530,6 +575,11 @@ function renderCards(items) {
     const targetPills = item.targets.map((target) => `<span class="target-pill">${escapeHtml(targetShortLabel(target))}</span>`).join("");
     const subtarget = item.subtargets.length ? item.subtargets.join(" · ") : "Top-level target coding";
     const venue = (item.venue || "Publication") + (item.publicationYear ? ` ${item.publicationYear}` : "");
+    const tracks = relevantTracks(item);
+    const protocols = scopedValues(item, "protocols");
+    const metrics = scopedValues(item, "metrics");
+    const context = state.filters.targets.size ? "Selected target tracks" : "All listed tracks (union)";
+    const trackRows = tracks.map((track) => `<li><strong>${escapeHtml(track.label)}</strong> — Protocol ${escapeHtml(track.protocols.join("+"))}; Metrics ${escapeHtml(track.metrics.join("+"))} <small>(Table ${track.table})</small></li>`).join("");
     const paperUrl = item.paperUrl || "#";
     card.innerHTML = `
       <div class="card-topline">
@@ -540,11 +590,13 @@ function renderCards(items) {
       <p class="paper-title">${escapeHtml(String(item.title || item.shortName).replace(/[,.]+$/, ""))}</p>
       <div class="card-meta">
         <span class="meta-pill">${item.domains.map(prettyDomain).join(" + ")}</span>
-        <span class="meta-pill">Protocol ${escapeHtml(item.protocols.join(" · "))}</span>
-        <span class="meta-pill">Metrics ${escapeHtml(item.metrics.join(" · "))}</span>
+        <span class="meta-pill">Protocol ${escapeHtml(protocols.join(" · "))}</span>
+        <span class="meta-pill">Metrics ${escapeHtml(metrics.join(" · "))}</span>
         <span class="meta-pill">Data ${escapeHtml(item.evaluationData.join(" · "))}</span>
       </div>
+      <p class="track-context">${context}</p>
       <div class="card-targets">${targetPills}</div>
+      <details class="track-details"><summary>Protocol and metrics by target / role</summary><ul>${trackRows}</ul></details>
       <div class="card-footer">
         <small>Ref. [${item.ref}] · ${escapeHtml(subtarget)}</small>
         <a class="paper-link" href="${escapeHtml(paperUrl)}" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
@@ -665,7 +717,7 @@ async function init() {
     state.metadata = {
       ...manifest,
       websiteDomainOverrides: WEBSITE_DOMAIN_OVERRIDES,
-      websiteDomainNote: "Website domains include maintainer-requested grouping. The records and fingerprints above describe the unchanged manuscript coding.",
+      websiteDomainNote: "Website domains include maintainer-requested grouping. The records and fingerprints above describe the manuscript coding; protocol/metric filters use categoryRecords.",
       dimensions: 4,
       yearMin: 2018,
       yearMax: 2026,

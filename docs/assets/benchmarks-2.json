@@ -34,7 +34,74 @@
     "paperUrl": "https://arxiv.org/abs/2606.27537",
     "arxivId": "2606.27537",
     "reference": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments, arXiv:2606.27537, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "robotrustbench",
@@ -72,7 +139,74 @@
     "paperUrl": "https://arxiv.org/abs/2606.01600",
     "arxivId": "2606.01600",
     "reference": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation, arXiv:2606.01600, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": 7,
+        "sourcePage": 18,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "worldexam",
@@ -110,7 +244,74 @@
     "paperUrl": "https://arxiv.org/abs/2608.02603",
     "arxivId": "2608.02603",
     "reference": "Y. Yang et al., “WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity,” arXiv:2608.02603, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": 7,
+        "sourcePage": 18,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "surgwmbench",
@@ -143,7 +344,35 @@
     "paperUrl": "https://arxiv.org/abs/2608.08070",
     "arxivId": "2608.08070",
     "reference": "H. Liu et al., “SurgWMBench: A Vision-Based Benchmark for World-Modeling Surgical Instrument Motion Planning,” arXiv:2608.08070, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "h2r-bench",
@@ -179,7 +408,61 @@
     "paperUrl": "https://arxiv.org/abs/2608.13049",
     "arxivId": "2608.13049",
     "reference": "D. Rong et al., “H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models,” arXiv:2608.13049, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "playworld",
@@ -219,7 +502,87 @@
     "paperUrl": "https://arxiv.org/abs/2608.13552",
     "arxivId": "2608.13552",
     "reference": "K. Ding et al., “PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives,” arXiv:2608.13552, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": 7,
+        "sourcePage": 18,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "xeworld",
@@ -255,7 +618,61 @@
     "paperUrl": "https://arxiv.org/abs/2608.05799",
     "arxivId": "2608.05799",
     "reference": "Y. Chen et al., “XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?” arXiv:2608.05799, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "harnesseval-w",
@@ -294,7 +711,87 @@
     "paperUrl": "https://arxiv.org/abs/2608.16859",
     "arxivId": "2608.16859",
     "reference": "W. Chen et al., “HarnessEval-W: Agentifying the Evaluation of Visual Worlds,” arXiv:2608.16859, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": 7,
+        "sourcePage": 18,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "worldecho",
@@ -328,7 +825,35 @@
     "paperUrl": "https://arxiv.org/abs/2608.24885",
     "arxivId": "2608.24885",
     "reference": "S. Chen et al., “Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning,” arXiv:2608.24885, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "acwm-phys",
@@ -362,7 +887,48 @@
     "paperUrl": "https://arxiv.org/abs/2605.08567",
     "arxivId": "2605.08567",
     "reference": "H. Xue, Y. Chen, L. Ma, Z. Zhao, L. Moukheiber, Y. Zhu, and Y. Chen, “ACWM-Phys: Investigating generalized physical interaction in action-conditioned video world models,” arXiv preprint arXiv:2605.08567, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "hteworld",
@@ -399,7 +965,74 @@
     "paperUrl": "https://arxiv.org/abs/2605.19957",
     "arxivId": "2605.19957",
     "reference": "Z. Lin, J. Zhang, P. Jia, X. Zhao, S. Zhang, and X. Chen, “World-ego modeling for long-horizon evolution in hybrid embodied tasks (introduces HTEWorld),” arXiv preprint arXiv:2605.19957, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "rigidbench",
@@ -432,7 +1065,48 @@
     "paperUrl": "https://scholar.google.com/scholar?q=Rigidbench%3A%20Evaluating%20rigid-body%20physics%20in%20video%20generation%20models",
     "arxivId": null,
     "reference": "S. Jain and S. Wu, “Rigidbench: Evaluating rigid-body physics in video generation models,” in ICLR Workshop on Multimodal Intelligence, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "magicbench",
@@ -466,7 +1140,35 @@
     "paperUrl": "https://arxiv.org/abs/2503.16421",
     "arxivId": "2503.16421",
     "reference": "Q. Li, Z. Xing, R. Wang, H. Zhang, Q. Dai, and Z. Wu, “MagicMotion: Controllable video generation with dense-to-sparse trajectory guidance (introduces MagicBench),” arXiv:2503.16421, 2025.",
-    "releaseYear": 2025
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "movebench",
@@ -500,7 +1202,35 @@
     "paperUrl": "https://arxiv.org/abs/2512.08765",
     "arxivId": "2512.08765",
     "reference": "R. Chu, Y. He, Z. Chen, S. Zhang, X. Xu, B. Xia, D. Wang, H. Yi, X. Liu, H. Zhao, Y. Liu, Y. Zhang, and Y. Yang, “WanMove: Motion-controllable video generation via latent trajectory guidance (introduces MoveBench),” arXiv:2512.08765, 2025.",
-    "releaseYear": 2025
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "omni-worldbench",
@@ -536,7 +1266,61 @@
     "paperUrl": "https://arxiv.org/abs/2603.22212",
     "arxivId": "2603.22212",
     "reference": "M. Wu, Z. Cai, F. Zhao, X. Feng, R. Dang, B. Song, R. Tian, J. Zhu, J. Lei, H. Dou, J. Tang, L. Sun, J. Wu, X. Chu, Z. Liu, and K. Huang, “Omni-WorldBench: Towards a comprehensive interaction-centric evaluation for world models,” arXiv:2603.22212, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "oscbench",
@@ -570,7 +1354,48 @@
     "paperUrl": "https://arxiv.org/abs/2603.11698",
     "arxivId": "2603.11698",
     "reference": "X. Han, B. Zhu, S. Hu, F. M. Li, P. Carrington, R. Zimmermann, and J. Chen, “OSCBench: Benchmarking object state change in text-to-video generation,” arXiv preprint arXiv:2603.11698, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "t2vworldbench",
@@ -605,7 +1430,48 @@
     "paperUrl": "https://arxiv.org/abs/2507.18107",
     "arxivId": "2507.18107",
     "reference": "Y. Chen, X. Guo, Z. Shi, Z. Song, and J. Zhang, “T2VWorldBench: A benchmark for evaluating world knowledge in text-to-video generation,” arXiv:2507.18107, 2025.",
-    "releaseYear": 2025
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": 7,
+        "sourcePage": 18,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "wmbench",
@@ -645,7 +1511,88 @@
     "paperUrl": "https://arxiv.org/abs/2607.02642",
     "arxivId": "2607.02642",
     "reference": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation (introduces WMBench), arXiv:2607.02642, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S8",
+        "target": "Functional Utility",
+        "label": "Policy Evaluator",
+        "table": 9,
+        "sourcePage": 23,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "P",
+          "O"
+        ]
+      }
+    ]
   },
   {
     "id": "worldmodelbench",
@@ -680,7 +1627,48 @@
     "paperUrl": "https://arxiv.org/abs/2502.20694",
     "arxivId": "2502.20694",
     "reference": "D. Li, Y. Fang, Y. Chen, S. Yang, S. Cao, J. Wong, M. Luo, X. Wang, H. Yin, J. E. Gonzalez, I. Stoica, S. Han, and Y. Lu, “WorldModelBench: Judging video generation models as world models,” arXiv:2502.20694, 2025.",
-    "releaseYear": 2025
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "worldsimbench",
@@ -721,7 +1709,78 @@
     "paperUrl": "https://arxiv.org/abs/2410.18072",
     "arxivId": "2410.18072",
     "reference": "Y. Qin, Z. Shi, J. Yu, X. Wang, E. Zhou, L. Li, Z. Yin, X. Liu, L. Sheng, J. Shao, L. Bai, W. Ouyang, and R. Zhang, “WorldSimBench: Towards video generation models as world simulators,” arXiv:2410.18072, 2024.",
-    "releaseYear": 2024
+    "releaseYear": 2024,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL",
+          "CL"
+        ],
+        "metrics": [
+          "P",
+          "O"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL",
+          "CL"
+        ],
+        "metrics": [
+          "P",
+          "O"
+        ]
+      },
+      {
+        "scope": "S9",
+        "target": "Functional Utility",
+        "label": "Planner",
+        "table": 9,
+        "sourcePage": 23,
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ]
+      }
+    ]
   },
   {
     "id": "apple-pi",
@@ -755,7 +1814,48 @@
     "paperUrl": "https://arxiv.org/abs/2607.16401",
     "arxivId": "2607.16401",
     "reference": "Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence, arXiv:2607.16401, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "tc-bench",
@@ -788,7 +1888,35 @@
     "paperUrl": "https://arxiv.org/abs/2406.08656",
     "arxivId": "2406.08656",
     "reference": "W. Feng, J. Li, M. Saxon, T. jui Fu, W. Chen, and W. Y. Wang, “TCBench: Benchmarking temporal compositionality in text-to-video and image-to-video generation,” arXiv:2406.08656, 2024.",
-    "releaseYear": 2024
+    "releaseYear": 2024,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "wbench",
@@ -824,7 +1952,74 @@
     "paperUrl": "https://arxiv.org/abs/2605.25874",
     "arxivId": "2605.25874",
     "reference": "K. Ying, H. Hu, S. Ren, J. Li, F. Chen, Z. Wang, X. Cao, X. Cai, and H. Ding, “Wbench: A comprehensive multi-turn benchmark for interactive video world model evaluation,” arXiv preprint arXiv:2605.25874, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "crashtwin",
@@ -858,7 +2053,48 @@
     "paperUrl": "https://arxiv.org/abs/2606.28757",
     "arxivId": "2606.28757",
     "reference": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models, arXiv:2606.28757, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": 6,
+        "sourcePage": 15,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      }
+    ]
   },
   {
     "id": "eva-bench",
@@ -874,6 +2110,7 @@
       "OL"
     ],
     "metrics": [
+      "P",
       "O"
     ],
     "evaluationData": [
@@ -892,7 +2129,48 @@
     "paperUrl": "https://arxiv.org/abs/2410.15461",
     "arxivId": "2410.15461",
     "reference": "X. Chi, C.-K. Fan, H. Zhang, X. Qi, R. Zhang, A. Chen, C. min Chan, W. Xue, Q. Liu, S. Zhang, and Y. Guo, “EVA: An embodied world model for future video anticipation,” arXiv:2410.15461, 2024.",
-    "releaseYear": 2024
+    "releaseYear": 2024,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": 4,
+        "sourcePage": 12,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S9",
+        "target": "Functional Utility",
+        "label": "Planner",
+        "table": 9,
+        "sourcePage": 23,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "O"
+        ]
+      }
+    ]
   },
   {
     "id": "wr-arena",
@@ -933,6 +2211,75 @@
     "paperUrl": "https://arxiv.org/abs/2603.25887",
     "arxivId": "2603.25887",
     "reference": "Q. Gao, K. Zhou, J. Xiang, Z. Liu, D. Yang, J. Chen, A. Ahmad, C. Zeng, G. Bannur, X. Huang, Z. Liu, Y. Gu, Y. Yang, G. Liu, Z. Hu, Z. Liu, and E. Xing, “World reasoning arena,” arXiv:2603.25887, 2026.",
-    "releaseYear": 2026
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": 3,
+        "sourcePage": 11,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": 5,
+        "sourcePage": 14,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": 7,
+        "sourcePage": 18,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": 8,
+        "sourcePage": 20,
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ]
+      },
+      {
+        "scope": "S9",
+        "target": "Functional Utility",
+        "label": "Planner",
+        "table": 9,
+        "sourcePage": 23,
+        "protocols": [
+          "OL",
+          "CL"
+        ],
+        "metrics": [
+          "P",
+          "O"
+        ]
+      }
+    ]
   }
 ]

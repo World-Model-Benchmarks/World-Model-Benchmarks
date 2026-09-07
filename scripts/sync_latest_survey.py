@@ -7,6 +7,7 @@ from pathlib import Path
 import hashlib
 import json
 import re
+from target_scoped_coding import validate_scoped, evaluation_tracks, scoped_metadata, readme_coding
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "docs" / "assets"
@@ -17,11 +18,11 @@ INDEX_PATH = ROOT / "docs" / "index.html"
 
 TOTAL = 102
 CROSS_CATEGORY = 85
-SCHEMA_VERSION = 9
-SNAPSHOT_VERSION = "August 31, 2026 corpus; release years revised September 7, 2026"
+SCHEMA_VERSION = 10
+SNAPSHOT_VERSION = "August 31, 2026 corpus; release years and target-specific coding revised September 7, 2026"
 SNAPSHOT_DATE = "2026-08-31"
-SOURCE_PDF_SHA256 = "c96efe634f70b1297e281e36786dc6a5fedd3b747bf4fc57ad58583c69a50dad"
-EXPECTED_FINGERPRINT = "6dac9ac87a0ed399b06bdde2e8f66d46f31032f503bc05ae3e63b5a29320100a"
+SOURCE_PDF_SHA256 = "a20e17a2a16ceb112c8a54a0635fd77e1e6bc5993969782bce4e874a4e92cbb9"
+EXPECTED_FINGERPRINT = "466d1f9e848f4c39186b1bc6e20fe752c9b784b08bc4ec9218550d4485913ca0"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 EXPECTED_TARGET_COUNTS = {"T1": 46, "T2": 55, "T3": 24, "T4": 77, "T5": 33, "T6": 55, "T7": 13}
 EXPECTED_SUBTARGET_COUNTS = {"S1": 40, "S2": 40, "S3": 26, "S4": 9, "S5": 40, "S6": 15, "S7": 2, "S8": 2, "S9": 12, "S10": 1}
@@ -54,10 +55,11 @@ def main() -> None:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     metadata = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
     records = manifest["records"]
+    validate_scoped(manifest)
 
     require(manifest.get("total") == TOTAL and len(records) == TOTAL, "Corpus must contain 102 records")
     require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 85")
-    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 9")
+    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 10")
     require(manifest.get("version") == SNAPSHOT_VERSION, "Snapshot version is stale")
     require(manifest.get("snapshotDate") == SNAPSHOT_DATE, "Snapshot date is stale")
     require(manifest.get("sourcePdfSha256") == SOURCE_PDF_SHA256, "Source-PDF SHA-256 is stale")
@@ -103,6 +105,7 @@ def main() -> None:
     for item in shard_records:
         name = item["shortName"]
         row = records[name]
+        require(item.get("evaluationTracks") == evaluation_tracks(manifest, name), f"Target-scoped coding mismatch: {name}")
         require(item["ref"] == row[0], f"Reference mismatch for {name}")
         require(item["year"] == row[1], f"Year mismatch for {name}")
         require(item["domains"] == split_codes(row[2]), f"Domain mismatch for {name}")
@@ -123,6 +126,9 @@ def main() -> None:
     require(metadata.get("subtargetCounts", {}).get("Observation-Grounded Evaluation") == 26, "metadata.json S3 count is stale")
     require(metadata.get("releaseWindowCounts") == EXPECTED_RELEASE_WINDOWS, "metadata.json release-window counts are stale")
 
+    require(metadata["table10"] == scoped_metadata(manifest)["table10"], "Table 10 statistics are stale")
+    require(metadata["categoryRecords"] == manifest["categoryRecords"], "Metadata track coding differs")
+
     readme = README_PATH.read_text(encoding="utf-8")
     require("**102 representative benchmarks**" in readme, "README total is stale")
     require("**85** span more than one" in readme, "README cross-category count is stale")
@@ -130,6 +136,21 @@ def main() -> None:
     for name in REMOVED:
         require(f"**{name}" not in readme, f"README still lists removed benchmark {name}")
     require(SITE_URL in readme, "README project URL is wrong")
+
+    sections = ["S1", "S2", "T2", "T3", "T4", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10"]
+    section_index = -1
+    checked_rows = 0
+    for line in readme.splitlines():
+        if line.startswith("| Article |"):
+            section_index += 1
+        match = re.match(r"\| \[\*\*(.*?)\*\*\]\(.*?\) \| (\d{4}) \| .*? \| .*? \| .*? \| (OL(?:\+CL)?|CL) \| (P(?:\+O)?|O) \|$", line)
+        if match:
+            name, year, protocol, metric = match.groups()
+            name = name.removesuffix(" △")
+            require([protocol, metric] == readme_coding(manifest, name, sections[section_index]), f"README scoped coding mismatch: {name}")
+            require(int(year) == records[name][1], f"README year mismatch: {name}")
+            checked_rows += 1
+    require(checked_rows == 343 and section_index == 12, "README is missing category/role rows")
 
     index = INDEX_PATH.read_text(encoding="utf-8")
     require("102 benchmarks · 85 cross-category · checked August 31, 2026" in index, "Website snapshot note is stale")
@@ -144,7 +165,7 @@ def main() -> None:
     require("102 benchmarks · 85 cross-category" in wrapper, "Explorer wrapper total is stale")
     require("the 102 representative benchmarks" in wrapper, "Explorer summary is stale")
     app = (ASSETS / "app.js").read_text(encoding="utf-8")
-    require("app-v3.js?v=20260907" in app, "Fallback loader cache version is stale")
+    require("app-v3.js?v=2026090702" in app, "Fallback loader cache version is stale")
 
     # The canonical manifest intentionally records removals in its audit metadata,
     # so check user-facing website assets and shards rather than the manifest text.
@@ -176,7 +197,7 @@ def main() -> None:
 
     print(
         "Validated the latest PDF snapshot: 102 benchmarks, 85 cross-category, "
-        "preserved non-year coding and synchronized September 7 release-year outputs."
+        "all 307 target/role-specific rows, Table 10 and release years synchronized."
     )
 
 

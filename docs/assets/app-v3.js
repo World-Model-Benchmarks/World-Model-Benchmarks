@@ -47,10 +47,10 @@
     }
 
     const snapshot = document.querySelector(".snapshot-note");
-    if (snapshot) snapshot.innerHTML = '<span class="status-dot"></span> Latest manuscript snapshot · 102 benchmarks · 85 cross-category · checked August 31, 2026';
+    if (snapshot) snapshot.innerHTML = '<span class="status-dot"></span> Latest manuscript snapshot · 102 benchmarks · 85 cross-category · checked August 31, 2026 · coding updated September 7, 2026';
 
     const benchmarkSummary = document.querySelector("#benchmarks .benchmark-heading > p");
-    if (benchmarkSummary) benchmarkSummary.textContent = "Search and filter the 102 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript.";
+    if (benchmarkSummary) benchmarkSummary.textContent = "Search and filter the 102 representative benchmarks coded in Figure 4 and Tables 3–9 of the latest manuscript. Protocol and metric filters use the selected target’s tracks.";
 
     const resultCount = document.querySelector("#result-count");
     if (resultCount && resultCount.textContent !== "102") resultCount.textContent = "102";
@@ -79,7 +79,7 @@
   }
 
   async function loadCanonicalExplorer() {
-    const sourceUrl = new URL("app-v3-core.js?v=20260907", document.currentScript?.src || document.baseURI);
+    const sourceUrl = new URL("app-v3-core.js?v=2026090702", document.currentScript?.src || document.baseURI);
     const response = await fetch(sourceUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status} while loading explorer core`);
     new Function(await response.text())();

@@ -14,6 +14,7 @@ import hashlib
 import json
 import math
 import re
+from target_scoped_coding import evaluation_tracks, validate_scoped, readme_coding, scoped_metadata, coverage_html
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "docs" / "assets"
@@ -27,12 +28,12 @@ SOCIAL_PATH = ASSETS / "social-preview.svg"
 
 TOTAL = 102
 CROSS_CATEGORY = 85
-SCHEMA_VERSION = 9
-SNAPSHOT_VERSION = "August 31, 2026 corpus; release years revised September 7, 2026"
+SCHEMA_VERSION = 10
+SNAPSHOT_VERSION = "August 31, 2026 corpus; release years and target-specific coding revised September 7, 2026"
 SNAPSHOT_DATE = "August 31, 2026"
 SNAPSHOT_ISO_DATE = "2026-08-31"
-SOURCE_PDF_SHA256 = "c96efe634f70b1297e281e36786dc6a5fedd3b747bf4fc57ad58583c69a50dad"
-EXPECTED_FINGERPRINT = "6dac9ac87a0ed399b06bdde2e8f66d46f31032f503bc05ae3e63b5a29320100a"
+SOURCE_PDF_SHA256 = "a20e17a2a16ceb112c8a54a0635fd77e1e6bc5993969782bce4e874a4e92cbb9"
+EXPECTED_FINGERPRINT = "466d1f9e848f4c39186b1bc6e20fe752c9b784b08bc4ec9218550d4485913ca0"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 
 TARGET_LABELS = {
@@ -158,7 +159,7 @@ SECTION_ORDER = {
 
 ROW_PATTERN = re.compile(
     r"^\| \[\*\*(?P<label>.+?)\*\*\]\((?P<paper>[^)]+)\) \| "
-    r"(?P<year>\d{4}) \| (?P<venue>.*?) \| (?P<code>.*?) \| (?P<project>.*?) \|$",
+    r"(?P<year>\d{4}) \| (?P<venue>.*?) \| (?P<code>.*?) \| (?P<project>.*?)(?: \| (?:OL|CL|OL\+CL) \| (?:P|O|P\+O))? \|$",
     re.MULTILINE,
 )
 
@@ -185,7 +186,7 @@ def load_manifest() -> dict:
     records = manifest["records"]
     require(len(records) == TOTAL == manifest.get("total"), "The canonical corpus must contain 102 records")
     require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 85")
-    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 9")
+    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 10")
     require(manifest.get("version") == SNAPSHOT_VERSION, "Snapshot version is stale")
     require(manifest.get("snapshotDate") == SNAPSHOT_ISO_DATE, "Snapshot date is stale")
     require(manifest.get("sourcePdfSha256") == SOURCE_PDF_SHA256, "Source-PDF digest is stale")
@@ -209,6 +210,7 @@ def load_manifest() -> dict:
         for item in manifest["timelineBins"]
     }
     require(windows == EXPECTED_RELEASE_WINDOWS, f"Release-window counts are wrong: {windows}")
+    validate_scoped(manifest)
     return manifest
 
 
@@ -244,6 +246,7 @@ def rebuild_shards(manifest: dict) -> list[dict]:
         item.update(manifest.get("publicationMetadata", {}).get(name, {}))
         for legacy_field in ("evidence", "dataConstruction", "realWorldExecution"):
             item.pop(legacy_field, None)
+        item["evaluationTracks"] = evaluation_tracks(manifest, name)
         corpus.append(item)
 
     chunk_size = math.ceil(TOTAL / 4)
@@ -277,7 +280,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
     cached = existing_row_metadata()
     by_name = {item["shortName"]: item for item in corpus}
 
-    def row(name: str) -> str:
+    def row(name: str, section: str) -> str:
         item = by_name[name]
         old = cached.get(name, {})
         paper = old.get("paper") or item.get("paperUrl")
@@ -290,14 +293,15 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         code = old.get("code", "-")
         project = old.get("project", "-")
         marker = " △" if item["crossCategory"] else ""
-        return f"| [**{name}{marker}**]({paper}) | {item['year']} | {venue} | {code} | {project} |"
+        protocol, metrics = readme_coding(manifest, name, section)
+        return f"| [**{name}{marker}**]({paper}) | {item['year']} | {venue} | {code} | {project} | {protocol} | {metrics} |"
 
-    def table(names: list[str]) -> list[str]:
+    def table(names: list[str], section: str) -> list[str]:
         require(all(name in by_name for name in names), "README section contains a benchmark absent from the corpus")
         return [
-            "| Article | Release Year | Venue | Code | Project Page |",
-            "|:--|:--:|:--:|:--:|:--:|",
-            *[row(name) for name in names],
+            "| Article | Release Year | Venue | Code | Project Page | Protocol | Metrics |",
+            "|:--|:--:|:--:|:--:|:--:|:--:|:--:|",
+            *[row(name, section) for name in names],
         ]
 
     lines = [
@@ -317,6 +321,8 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         "",
         "Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. "
         "Release Year follows the September 7, 2026 manuscript, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.",
+        "",
+        "Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. P = Prediction-Level Metrics; O = Downstream Outcome Metrics. P+O and OL+CL retain both relevant evidence/protocol types. See the target-scoped coding in the machine-readable manifest.",
         "",
         "## Contents",
         "",
@@ -358,7 +364,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
             lines.extend([f"## {h2}", ""])
         if h3:
             lines.extend([f"### {h3}", ""])
-        lines.extend(table(SECTION_ORDER[code]))
+        lines.extend(table(SECTION_ORDER[code], code))
         lines.append("")
 
     lines.extend([
@@ -398,10 +404,11 @@ def write_metadata(manifest: dict) -> None:
         "targets": list(TARGET_LABELS.values()),
     }
     metadata.update({key: manifest[key] for key in ("yearBasis", "releaseYearRevision", "publicationMetadata", "sourceNote")})
+    metadata.update(scoped_metadata(manifest))
     METADATA_PATH.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def update_website_copy() -> None:
+def update_website_copy(manifest: dict) -> None:
     index = INDEX_PATH.read_text(encoding="utf-8")
     index = re.sub(r"Explore \d+ world-model benchmarks", f"Explore {TOTAL} world-model benchmarks", index)
     index = re.sub(r"\d+ benchmarks · \d+ cross-category", f"{TOTAL} benchmarks · {CROSS_CATEGORY} cross-category", index)
@@ -415,11 +422,12 @@ def update_website_copy() -> None:
     index = re.sub(r"raising the cumulative corpus to <strong>\d+</strong>", "raising the cumulative corpus to <strong>50</strong>", index)
     index = re.sub(r"bringing the corpus to <strong>\d+</strong>", "bringing the corpus to <strong>102</strong>", index)
     index = re.sub(r"Search and filter the \d+ representative benchmarks", "Search and filter the 102 representative benchmarks", index)
-    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=20260907", index)
+    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=2026090702", index)
+    index = re.sub(r"<!-- TARGET-SCOPED COVERAGE START -->.*?<!-- TARGET-SCOPED COVERAGE END -->", "<!-- TARGET-SCOPED COVERAGE START -->" + coverage_html(manifest) + "<!-- TARGET-SCOPED COVERAGE END -->", index, flags=re.S)
     INDEX_PATH.write_text(index, encoding="utf-8")
 
     wrapper = WRAPPER_JS_PATH.read_text(encoding="utf-8")
-    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=20260907"', wrapper)
+    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=2026090702"', wrapper)
     wrapper = re.sub(r'Latest manuscript snapshot · \d+ benchmarks · \d+ cross-category', f'Latest manuscript snapshot · {TOTAL} benchmarks · {CROSS_CATEGORY} cross-category', wrapper)
     wrapper = re.sub(r'the \d+ representative benchmarks', f'the {TOTAL} representative benchmarks', wrapper)
     # Only the first stat-strip strong literal is the total; avoid replacing years or unrelated values.
@@ -430,7 +438,7 @@ def update_website_copy() -> None:
     WRAPPER_JS_PATH.write_text(wrapper, encoding="utf-8")
 
     app = APP_JS_PATH.read_text(encoding="utf-8")
-    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=20260907", app)
+    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=2026090702", app)
     APP_JS_PATH.write_text(app, encoding="utf-8")
 
     social = SOCIAL_PATH.read_text(encoding="utf-8")
@@ -451,7 +459,7 @@ def main() -> None:
     corpus = rebuild_shards(manifest)
     generate_readme(manifest, corpus)
     write_metadata(manifest)
-    update_website_copy()
+    update_website_copy(manifest)
     print(
         f"Generated the latest-PDF snapshot: {TOTAL} benchmarks, {CROSS_CATEGORY} cross-category; "
         f"fingerprint {EXPECTED_FINGERPRINT}."
