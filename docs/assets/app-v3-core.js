@@ -10,6 +10,11 @@ const TARGETS = [
 const PROTOCOLS = ["OL", "CL"];
 const METRICS = ["P", "O"];
 const EVALUATION_DATA = ["RWD", "SBG", "SPTC", "HCP"];
+// Website-only editorial grouping requested by the maintainer. The manuscript
+// manifest and its audit fingerprints remain unchanged (CausalSpatial: image).
+const WEBSITE_DOMAIN_OVERRIDES = {
+  CausalSpatial: { from: "image", to: "video" },
+};
 const TARGET_COLORS = {
   "Visual & Temporal Quality": "#6f63d9",
   "Spatial & State Consistency": "#2f88b7",
@@ -74,8 +79,15 @@ const els = {
 };
 
 function prettyDomain(value) {
-  const labels = { video: "Video", image: "Image", embodied: "Embodied", driving: "Driving", game: "Game" };
+  const labels = { video: "Video", embodied: "Embodied", driving: "Driving", game: "Game" };
   return labels[value] || value.replace(/\b\w/g, (character) => character.toUpperCase());
+}
+
+function websiteDomains(name, domain) {
+  const override = WEBSITE_DOMAIN_OVERRIDES[name];
+  return [...new Set(splitCodes(domain).map((value) =>
+    override && value === override.from ? override.to : value
+  ))];
 }
 
 function targetShortLabel(target) {
@@ -108,7 +120,7 @@ function decodeRecord(raw, manifest) {
     shortName: canonical,
     ref,
     year,
-    domains: splitCodes(domain),
+    domains: websiteDomains(canonical, domain),
     protocols: splitCodes(protocols),
     metrics: splitCodes(metrics),
     evaluationData: splitCodes(data),
@@ -128,7 +140,7 @@ function buildAddedRecord(name, manifest) {
     ...base,
     ref,
     year,
-    domains: splitCodes(domain),
+    domains: websiteDomains(name, domain),
     protocols: splitCodes(protocols),
     metrics: splitCodes(metrics),
     evaluationData: splitCodes(data),
@@ -257,7 +269,10 @@ function readUrl() {
   const keys = { targets: "target", protocols: "protocol", metrics: "metric", domains: "domain", evaluationData: "data" };
   Object.entries(keys).forEach(([group, key]) => {
     const value = params.get(key);
-    if (value) value.split("|").filter(Boolean).forEach((part) => state.filters[group].add(part));
+    if (value) value.split("|").filter(Boolean).forEach((part) => {
+      // Keep bookmarks using the removed Image filter usable.
+      state.filters[group].add(group === "domains" && part === "image" ? "video" : part);
+    });
   });
   els.search.value = state.search;
   els.searchClear.hidden = !state.search;
@@ -645,6 +660,8 @@ async function init() {
     const manifest = decoded.at(-1);
     state.metadata = {
       ...manifest,
+      websiteDomainOverrides: WEBSITE_DOMAIN_OVERRIDES,
+      websiteDomainNote: "Website domains include maintainer-requested grouping. The records and fingerprints above describe the unchanged manuscript coding.",
       dimensions: 4,
       yearMin: 2018,
       yearMax: 2026,

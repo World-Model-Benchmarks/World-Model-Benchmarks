@@ -79,7 +79,7 @@
   }
 
   async function loadCanonicalExplorer() {
-    const sourceUrl = new URL("app-v3-core.js?v=12", document.currentScript?.src || document.baseURI);
+    const sourceUrl = new URL("app-v3-core.js?v=13", document.currentScript?.src || document.baseURI);
     const response = await fetch(sourceUrl, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status} while loading explorer core`);
     new Function(await response.text())();
