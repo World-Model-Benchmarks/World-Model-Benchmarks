@@ -6,6 +6,8 @@ on:
     paths:
       - "docs/**"
       - "scripts/test_website_domains.cjs"
+      - "scripts/test_release_years.cjs"
+      - "scripts/release_years_20260907.json"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -27,12 +29,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Validate manuscript coding and website domain grouping
+      - name: Validate manuscript coding, release years and website domain grouping
         run: |
           python scripts/sync_latest_survey.py
           node --check docs/assets/app-v3-core.js
           node --check docs/assets/app-v3.js
           node scripts/test_website_domains.cjs
+          node scripts/test_release_years.cjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
