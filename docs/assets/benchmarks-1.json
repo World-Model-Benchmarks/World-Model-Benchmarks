@@ -31,7 +31,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2604.19092",
     "arxivId": "2604.19092",
-    "reference": "F. Jiang, Y. Chen, K. Xu, Y. Liu, H. Wang, Z. Shen, J. Lu, S. Huang, Y. Wang, C. Xie, and R. Wu, “RoboWM-Bench: A benchmark for evaluating world models in robotic manipulation,” arXiv:2604.19092, 2026."
+    "reference": "F. Jiang, Y. Chen, K. Xu, Y. Liu, H. Wang, Z. Shen, J. Lu, S. Huang, Y. Wang, C. Xie, and R. Wu, “RoboWM-Bench: A benchmark for evaluating world models in robotic manipulation,” arXiv:2604.19092, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "world-in-world",
@@ -61,7 +62,8 @@
     "crossCategory": false,
     "paperUrl": "https://arxiv.org/abs/2510.18135",
     "arxivId": "2510.18135",
-    "reference": "J. Zhang, M. Jiang, N. Dai, T. Lu, A. Uzunoglu, S. Zhang, Y. Wei, J. Wang, V. M. Patel, P. P. Liang, D. Khashabi, C. Peng, R. Chellappa, T. Shu, A. Yuille, Y. Du, and J. Chen, “World-inWorld: World models in a closed-loop world,” arXiv:2510.18135, 2025."
+    "reference": "J. Zhang, M. Jiang, N. Dai, T. Lu, A. Uzunoglu, S. Zhang, Y. Wei, J. Wang, V. M. Patel, P. P. Liang, D. Khashabi, C. Peng, R. Chellappa, T. Shu, A. Yuille, Y. Du, and J. Chen, “World-inWorld: World models in a closed-loop world,” arXiv:2510.18135, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "intphys",
@@ -90,14 +92,15 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/1803.07616",
     "arxivId": "1803.07616",
-    "reference": "R. Riochet, M. Y. Castro, M. Bernard, A. Lerer, R. Fergus, V. Izard, and E. Dupoux, “IntPhys: A framework and benchmark for visual intuitive physics reasoning,” arXiv preprint arXiv:1803.07616, 2018."
+    "reference": "R. Riochet, M. Y. Castro, M. Bernard, A. Lerer, R. Fergus, V. Izard, and E. Dupoux, “IntPhys: A framework and benchmark for visual intuitive physics reasoning,” arXiv preprint arXiv:1803.07616, 2018.",
+    "releaseYear": 2018
   },
   {
     "id": "clevrer",
     "shortName": "CLEVRER",
     "title": "CLEVRER: Collision events for video representation and reasoning",
     "ref": 44,
-    "year": 2020,
+    "year": 2019,
     "venue": "ICLR",
     "domains": [
       "video"
@@ -122,7 +125,9 @@
     "crossCategory": true,
     "paperUrl": "https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning",
     "arxivId": null,
-    "reference": "K. Yi, C. Gan, Y. Li, P. Kohli, J. Wu, A. Torralba, and J. B. Tenenbaum, “CLEVRER: Collision events for video representation and reasoning,” in ICLR, 2020."
+    "reference": "K. Yi, C. Gan, Y. Li, P. Kohli, J. Wu, A. Torralba, and J. B. Tenenbaum, “CLEVRER: Collision events for video representation and reasoning,” in ICLR, 2020.",
+    "releaseYear": 2019,
+    "publicationYear": 2020
   },
   {
     "id": "physion",
@@ -153,7 +158,8 @@
     "crossCategory": true,
     "paperUrl": "https://scholar.google.com/scholar?q=Physion%3A%20Evaluating%20physical%20prediction%20from%20vision%20in%20humans%20and%20machines",
     "arxivId": null,
-    "reference": "D. M. Bear, E. Wang, D. Mrowca, F. J. Binder, H.-Y. F. Tung, R. Pramod, C. Holdaway, S. Tao, K. Smith, F.-Y. Sun, L. Fei-Fei, N. Kanwisher, J. B. Tenenbaum, D. L. Yamins, and J. E. Fan, “Physion: Evaluating physical prediction from vision in humans and machines,” NeurIPS Datasets and Benchmarks, 2021."
+    "reference": "D. M. Bear, E. Wang, D. Mrowca, F. J. Binder, H.-Y. F. Tung, R. Pramod, C. Holdaway, S. Tao, K. Smith, F.-Y. Sun, L. Fei-Fei, N. Kanwisher, J. B. Tenenbaum, D. L. Yamins, and J. E. Fan, “Physion: Evaluating physical prediction from vision in humans and machines,” NeurIPS Datasets and Benchmarks, 2021.",
+    "releaseYear": 2021
   },
   {
     "id": "mind",
@@ -187,7 +193,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2602.08025",
     "arxivId": "2602.08025",
-    "reference": "Y. Ye, X. Lu, Y. Jiang, Y. Gu, R. Zhao, Q. Liang, J. Pan, F. Zhang, W. Wu, and A. J. Wang, “Mind: Benchmarking memory consistency and action control in world models,” arXiv preprint arXiv:2602.08025, 2026."
+    "reference": "Y. Ye, X. Lu, Y. Jiang, Y. Gu, R. Zhao, Q. Liang, J. Pan, F. Zhang, W. Wu, and A. J. Wang, “Mind: Benchmarking memory consistency and action control in world models,” arXiv preprint arXiv:2602.08025, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "worldolympiad",
@@ -220,7 +227,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2606.11129",
     "arxivId": "2606.11129",
-    "reference": "Y. Zhao, W. Zhao, W. Wang, Z. Zhang, D. An, A. Liu, Y. Yu, J. Tang, F. Wang, W. Wang, and B. Zhuang, “WorldOlympiad: Can your world model survive a triathlon?” arXiv preprint arXiv:2606.11129, 2026."
+    "reference": "Y. Zhao, W. Zhao, W. Wang, Z. Zhang, D. An, A. Liu, Y. Yu, J. Tang, F. Wang, W. Wang, and B. Zhuang, “WorldOlympiad: Can your world model survive a triathlon?” arXiv preprint arXiv:2606.11129, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "worldarena",
@@ -261,7 +269,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2602.08971",
     "arxivId": "2602.08971",
-    "reference": "Y. Shang, Z. Li, Y. Ma, W. Su, X. Jin, Z. Wang, L. Jin, X. Zhang, Y. Tang, H. Su, C. Gao, W. Wu, X. Liu, D. Shah, Z. Zhang, Z. Chen, J. Zhu, Y. Tian, T.-S. Chua, W. Zhu, and Y. Li, “WorldArena: A unified benchmark for evaluating perception and functional utility of embodied world models,” arXiv:2602.08971, 2026."
+    "reference": "Y. Shang, Z. Li, Y. Ma, W. Su, X. Jin, Z. Wang, L. Jin, X. Zhang, Y. Tang, H. Su, C. Gao, W. Wu, X. Liu, D. Shah, Z. Zhang, Z. Chen, J. Zhu, Y. Tian, T.-S. Chua, W. Zhu, and Y. Li, “WorldArena: A unified benchmark for evaluating perception and functional utility of embodied world models,” arXiv:2602.08971, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "worldarena-2-0",
@@ -301,7 +310,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2605.17912",
     "arxivId": "2605.17912",
-    "reference": "Y. Shang, Y. Tang, Y. Ma, Z. Li, L. Jin, W. Su, X. Jin, Z. Wang, Z. Wang, X. Zhang, H. Su, W. He, W. Wu, H. Duan, G. Wetzstein, X. Liu, D. Shah, Z. Zhang, Z. Chen, J. Zhu, Y. Tian, T.-S. Chua, W. Zhu, C. Gao, and Y. Li, “Worldarena 2.0: Extending embodied world model benchmarking on modality, functionality and platform,” arXiv preprint arXiv:2605.17912, 2026."
+    "reference": "Y. Shang, Y. Tang, Y. Ma, Z. Li, L. Jin, W. Su, X. Jin, Z. Wang, Z. Wang, X. Zhang, H. Su, W. He, W. Wu, H. Duan, G. Wetzstein, X. Liu, D. Shah, Z. Zhang, Z. Chen, J. Zhu, Y. Tian, T.-S. Chua, W. Zhu, C. Gao, and Y. Li, “Worldarena 2.0: Extending embodied world model benchmarking on modality, functionality and platform,” arXiv preprint arXiv:2605.17912, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "chronomagic-bench",
@@ -332,7 +342,8 @@
     "crossCategory": false,
     "paperUrl": "https://scholar.google.com/scholar?q=ChronoMagic-Bench%3A%20A%20benchmark%20for%20metamorphic%20evaluation%20of%20text-to-time-lapse%20video%20generation",
     "arxivId": null,
-    "reference": "S. Yuan, J. Huang, Y. Xu, Y. Liu, S. Zhang, Y. Shi, R. Zhu, X. Cheng, J. Luo, and L. Yuan, “ChronoMagic-Bench: A benchmark for metamorphic evaluation of text-to-time-lapse video generation,” NeurIPS Datasets and Benchmarks Spotlight, 2024."
+    "reference": "S. Yuan, J. Huang, Y. Xu, Y. Liu, S. Zhang, Y. Shi, R. Zhu, X. Cheng, J. Luo, and L. Yuan, “ChronoMagic-Bench: A benchmark for metamorphic evaluation of text-to-time-lapse video generation,” NeurIPS Datasets and Benchmarks Spotlight, 2024.",
+    "releaseYear": 2024
   },
   {
     "id": "worldscore",
@@ -366,7 +377,8 @@
     "crossCategory": true,
     "paperUrl": "https://scholar.google.com/scholar?q=WorldScore%3A%20A%20unified%20evaluation%20benchmark%20for%20world%20generation",
     "arxivId": null,
-    "reference": "H. Duan, H.-X. Yu, S. Chen, L. Fei-Fei, and J. Wu, “WorldScore: A unified evaluation benchmark for world generation,” ICCV, 2025."
+    "reference": "H. Duan, H.-X. Yu, S. Chen, L. Fei-Fei, and J. Wu, “WorldScore: A unified evaluation benchmark for world generation,” ICCV, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "vmbench",
@@ -398,7 +410,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2503.10076",
     "arxivId": "2503.10076",
-    "reference": "X. Ling, C. Zhu, M. Wu, H. Li, X. Feng, C. Yang, A. Hao, J. Zhu, J. Wu, and X. Chu, “VMBench: A benchmark for perceptionaligned video motion generation,” arXiv:2503.10076, 2025."
+    "reference": "X. Ling, C. Zhu, M. Wu, H. Li, X. Feng, C. Yang, A. Hao, J. Zhu, J. Wu, and X. Chu, “VMBench: A benchmark for perceptionaligned video motion generation,” arXiv:2503.10076, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "ewmbench",
@@ -433,7 +446,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2505.09694",
     "arxivId": "2505.09694",
-    "reference": "H. Yue, S. Huang, Y. Liao, S. Chen, P. Zhou, L. Chen, M. Yao, and G. Ren, “EWMBench: Evaluating scene, motion, and semantic quality in embodied world models,” arXiv:2505.09694, 2025."
+    "reference": "H. Yue, S. Huang, Y. Liao, S. Chen, P. Zhou, L. Chen, M. Yao, and G. Ren, “EWMBench: Evaluating scene, motion, and semantic quality in embodied world models,” arXiv:2505.09694, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "gameworld-score",
@@ -468,7 +482,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2506.18701",
     "arxivId": "2506.18701",
-    "reference": "Y. Zhang, C. Peng, B. Wang, P. Wang, Q. Zhu, F. Kang, B. Jiang, Z. Gao, E. Li, Y. Liu, and Y. Zhou, “Matrix-Game: Interactive world foundation model,” arXiv:2506.18701, 2025."
+    "reference": "Y. Zhang, C. Peng, B. Wang, P. Wang, Q. Zhu, F. Kang, B. Jiang, Z. Gao, E. Li, Y. Liu, and Y. Zhou, “Matrix-Game: Interactive world foundation model,” arXiv:2506.18701, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "worldmark",
@@ -504,7 +519,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2604.21686",
     "arxivId": "2604.21686",
-    "reference": "X. Xu, Z. Lin, K. He, Y. Feng, X. Mao, Y. Yin, K. Zhang, and Y. Ge, “WorldMark: A unified benchmark suite for interactive video world models,” arXiv:2604.21686, 2026."
+    "reference": "X. Xu, Z. Lin, K. He, Y. Feng, X. Mao, Y. Yin, K. Zhang, and Y. Ge, “WorldMark: A unified benchmark suite for interactive video world models,” arXiv:2604.21686, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "4dworldbench",
@@ -539,15 +555,16 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2511.19836",
     "arxivId": "2511.19836",
-    "reference": "Y. Lu, W. Luo, P. Tu, H. Li, H. Zhu, Z. Yu, X. Wang, X. Chen, X. Peng, X. Li, and Z. Chen, “4DWorldBench: A comprehensive evaluation framework for 3d/4d world generation models,” arXiv:2511.19836, 2025."
+    "reference": "Y. Lu, W. Luo, P. Tu, H. Li, H. Zhu, Z. Yu, X. Wang, X. Chen, X. Peng, X. Li, and Z. Chen, “4DWorldBench: A comprehensive evaluation framework for 3d/4d world generation models,” arXiv:2511.19836, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "worldlens",
     "shortName": "WorldLens",
     "title": "WorldLens: Full-spectrum evaluations of driving world models in real world",
     "ref": 75,
-    "year": 2026,
-    "venue": "arXiv",
+    "year": 2025,
+    "venue": "CVPR",
     "domains": [
       "driving"
     ],
@@ -576,7 +593,9 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2512.10958",
     "arxivId": "2512.10958",
-    "reference": "A. Liang, L. Kong, T. Yan, H. Liu, W. Yang, Z. Huang, W. Yin, J. Zuo, Y. Hu, D. Zhu, D. Lu, Y. Liu, G. Jiang, L. Li, X. Li, L. Zhuo, L. X. Ng, B. R. Cottereau, C. Gao, L. Pan, W. T. Ooi, and Z. Liu, “WorldLens: Full-spectrum evaluations of driving world models in real world,” arXiv preprint arXiv:2512.10958, 2026."
+    "reference": "A. Liang, L. Kong, T. Yan, H. Liu, Y. Yang, Z. Huang, W. Yin, J. Zuo, Y. Hu, D. Zhu et al., “WorldLens: Full-spectrum evaluations of driving world models in real world,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026, pp. 36385–36399.",
+    "releaseYear": 2025,
+    "publicationYear": 2026
   },
   {
     "id": "drivinggen",
@@ -611,7 +630,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2601.01528",
     "arxivId": "2601.01528",
-    "reference": "Y. Zhou, H. Shao, L. Wang, Z. Zong, H. Li, and S. L. Waslander, “Drivinggen: A comprehensive benchmark for generative video world models in autonomous driving,” arXiv preprint arXiv:2601.01528, 2026."
+    "reference": "Y. Zhou, H. Shao, L. Wang, Z. Zong, H. Li, and S. L. Waslander, “Drivinggen: A comprehensive benchmark for generative video world models in autonomous driving,” arXiv preprint arXiv:2601.01528, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "pedestrian-sim",
@@ -644,7 +664,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2510.20182",
     "arxivId": "2510.20182",
-    "reference": "A. Appelle and J. P. Lynch, “Pedra: Evaluating the realism of pedestrian dynamics in video generation,” arXiv preprint arXiv:2510.20182, 2025."
+    "reference": "A. Appelle and J. P. Lynch, “Pedra: Evaluating the realism of pedestrian dynamics in video generation,” arXiv preprint arXiv:2510.20182, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "gen-vire",
@@ -677,7 +698,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2511.13853",
     "arxivId": "2511.13853",
-    "reference": "X. Liu, Z. Xu, M. Li, K. Wang, Y. J. Lee, and Y. Shang, “Can world simulators reason? Gen-ViRe: A generative visual reasoning benchmark,” arXiv preprint arXiv:2511.13853, 2025."
+    "reference": "X. Liu, Z. Xu, M. Li, K. Wang, Y. J. Lee, and Y. Shang, “Can world simulators reason? Gen-ViRe: A generative visual reasoning benchmark,” arXiv preprint arXiv:2511.13853, 2025.",
+    "releaseYear": 2025
   },
   {
     "id": "iworld-bench",
@@ -711,7 +733,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2605.03941",
     "arxivId": "2605.03941",
-    "reference": "J. Fang, Y. Lei, Q. Wan, Z. Wang, Y. Huang, Y. Xu, B. Zhao, W. Zhang, C. Gao, X. Chen, and Y. Li, “iWorld-Bench: A benchmark for interactive world models with a unified action generation framework,” arXiv preprint arXiv:2605.03941, 2026."
+    "reference": "J. Fang, Y. Lei, Q. Wan, Z. Wang, Y. Huang, Y. Xu, B. Zhao, W. Zhang, C. Gao, X. Chen, and Y. Li, “iWorld-Bench: A benchmark for interactive world models with a unified action generation framework,” arXiv preprint arXiv:2605.03941, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "wow-world-eval",
@@ -752,7 +775,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2601.04137",
     "arxivId": "2601.04137",
-    "reference": "C.-K. Fan et al., “Wow, Wo, Val! A Comprehensive Embodied World Model Evaluation Turing Test,” arXiv:2601.04137, 2026."
+    "reference": "C.-K. Fan et al., “Wow, Wo, Val! A Comprehensive Embodied World Model Evaluation Turing Test,” arXiv:2601.04137, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "rbench",
@@ -790,7 +814,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2601.15282",
     "arxivId": "2601.15282",
-    "reference": "Y. Deng et al., “Rethinking Video Generation Model for the Embodied World,” ICML, 2026."
+    "reference": "Y. Deng et al., “Rethinking Video Generation Model for the Embodied World,” ICML, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "pai-bench",
@@ -827,7 +852,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2512.01989",
     "arxivId": "2512.01989",
-    "reference": "F. Zhou et al., “PAI-Bench: A Comprehensive Benchmark for Physical AI,” CVPR, 2026."
+    "reference": "F. Zhou et al., “PAI-Bench: A Comprehensive Benchmark for Physical AI,” CVPR, 2026.",
+    "releaseYear": 2025
   },
   {
     "id": "ezs-bench",
@@ -862,7 +888,8 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2603.23376",
     "arxivId": "2603.23376",
-    "reference": "Y. Chen et al., “ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment,” arXiv:2603.23376, 2026."
+    "reference": "Y. Chen et al., “ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment,” arXiv:2603.23376, 2026.",
+    "releaseYear": 2026
   },
   {
     "id": "worldroambench",
@@ -899,6 +926,7 @@
     "crossCategory": true,
     "paperUrl": "https://arxiv.org/abs/2606.31672",
     "arxivId": "2606.31672",
-    "reference": "WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models, arXiv:2606.31672, 2026."
+    "reference": "WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models, arXiv:2606.31672, 2026.",
+    "releaseYear": 2026
   }
 ]

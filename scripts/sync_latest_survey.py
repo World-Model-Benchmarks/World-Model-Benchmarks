@@ -18,14 +18,14 @@ INDEX_PATH = ROOT / "docs" / "index.html"
 TOTAL = 102
 CROSS_CATEGORY = 85
 SCHEMA_VERSION = 9
-SNAPSHOT_VERSION = "August 31, 2026 manuscript snapshot"
+SNAPSHOT_VERSION = "August 31, 2026 corpus; release years revised September 7, 2026"
 SNAPSHOT_DATE = "2026-08-31"
 SOURCE_PDF_SHA256 = "c96efe634f70b1297e281e36786dc6a5fedd3b747bf4fc57ad58583c69a50dad"
-EXPECTED_FINGERPRINT = "e30cf7f9b7bf39cb03baa6b9cddcbeb593b5821e1ba85a82fddff0787c7e4935"
+EXPECTED_FINGERPRINT = "6dac9ac87a0ed399b06bdde2e8f66d46f31032f503bc05ae3e63b5a29320100a"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 EXPECTED_TARGET_COUNTS = {"T1": 46, "T2": 55, "T3": 24, "T4": 77, "T5": 33, "T6": 55, "T7": 13}
 EXPECTED_SUBTARGET_COUNTS = {"S1": 40, "S2": 40, "S3": 26, "S4": 9, "S5": 40, "S6": 15, "S7": 2, "S8": 2, "S9": 12, "S10": 1}
-EXPECTED_RELEASE_WINDOWS = {"2018–2021": 5, "2022–2023": 5, "2024": 9, "2025": 30, "2026": 53}
+EXPECTED_RELEASE_WINDOWS = {"2018–2021": 6, "2022–2023": 4, "2024": 10, "2025": 30, "2026": 52}
 REMOVED = {"CATER", "NExT-QA", "IntentQA", "VCRBench"}
 OBSOLETE_WORKFLOWS = {
     ".github/workflows/pdf-alignment-main-once.yml",
@@ -136,7 +136,7 @@ def main() -> None:
     require('id="stat-total">102<' in index, "Website total is stale")
     require('id="stat-cross">85<' in index, "Website cross-category total is stale")
     require("10 cumulative benchmarks by 2023" in index, "Website 2023 cumulative count is stale")
-    require("30 new benchmarks in 2025" in index and "<strong>49</strong>" in index, "Website 2025 timeline copy is stale")
+    require("30 new benchmarks in 2025" in index and "<strong>50</strong>" in index, "Website 2025 timeline copy is stale")
     require("<strong>102</strong>" in index, "Website final cumulative count is stale")
     require("106 benchmarks · 85 cross-category" not in index, "Old website corpus total remains")
 
@@ -144,7 +144,7 @@ def main() -> None:
     require("102 benchmarks · 85 cross-category" in wrapper, "Explorer wrapper total is stale")
     require("the 102 representative benchmarks" in wrapper, "Explorer summary is stale")
     app = (ASSETS / "app.js").read_text(encoding="utf-8")
-    require("app-v3.js?v=10" in app, "Fallback loader cache version is stale")
+    require("app-v3.js?v=20260907" in app, "Fallback loader cache version is stale")
 
     # The canonical manifest intentionally records removals in its audit metadata,
     # so check user-facing website assets and shards rather than the manifest text.
@@ -165,9 +165,17 @@ def main() -> None:
     for workflow in OBSOLETE_WORKFLOWS:
         require(not (ROOT / workflow).exists(), f"Obsolete 106-benchmark repair workflow remains: {workflow}")
 
+    audit = json.loads((ROOT / "scripts/release_years_20260907.json").read_text(encoding="utf-8"))
+    require({name: row[1] for name, row in records.items()} == audit["years"], "Release years differ from the 102 PDF transcriptions")
+    require(manifest["releaseYearRevision"]["sourcePdfSha256"] == audit["sourcePdfSha256"], "Release-year source PDF is stale")
+    require(metadata["releaseYearRevision"] == manifest["releaseYearRevision"], "Release-year metadata differs")
+    require(all(item.get("releaseYear") == item["year"] for item in shard_records), "Exported releaseYear differs from canonical year")
+    require("| Article | Release Year | Venue |" in readme, "README release-year heading is missing")
+    require("<strong>49</strong>" not in index, "The old cumulative count remains")
+
     print(
         "Validated the latest PDF snapshot: 102 benchmarks, 85 cross-category, "
-        "all Figure 4 / Tables 3–10 coding, and synchronized repository/website outputs."
+        "preserved non-year coding and synchronized September 7 release-year outputs."
     )
 
 

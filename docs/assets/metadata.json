@@ -1,6 +1,6 @@
 {
   "title": "A Survey of World Model Benchmarks",
-  "version": "August 31, 2026 manuscript snapshot",
+  "version": "August 31, 2026 corpus; release years revised September 7, 2026",
   "snapshotDate": "2026-08-31",
   "sourcePdfSha256": "c96efe634f70b1297e281e36786dc6a5fedd3b747bf4fc57ad58583c69a50dad",
   "framework": "Target–Protocol–Metrics–Data",
@@ -57,11 +57,11 @@
     }
   ],
   "releaseWindowCounts": {
-    "2018–2021": 5,
-    "2022–2023": 5,
-    "2024": 9,
+    "2018–2021": 6,
+    "2022–2023": 4,
+    "2024": 10,
     "2025": 30,
-    "2026": 53
+    "2026": 52
   },
   "targetCounts": {
     "Visual & Temporal Quality": 46,
@@ -84,8 +84,8 @@
     "Planner": 12,
     "Interactive Training Environment": 1
   },
-  "classificationFingerprint": "e30cf7f9b7bf39cb03baa6b9cddcbeb593b5821e1ba85a82fddff0787c7e4935",
-  "recordFingerprint": "e30cf7f9b7bf39cb03baa6b9cddcbeb593b5821e1ba85a82fddff0787c7e4935",
+  "classificationFingerprint": "6dac9ac87a0ed399b06bdde2e8f66d46f31032f503bc05ae3e63b5a29320100a",
+  "recordFingerprint": "6dac9ac87a0ed399b06bdde2e8f66d46f31032f503bc05ae3e63b5a29320100a",
   "fingerprintFields": [
     "benchmark",
     "reference",
@@ -108,5 +108,61 @@
     "Causal & Counterfactual Reasoning",
     "Control Fidelity & Interactive Dynamics",
     "Functional Utility"
-  ]
+  ],
+  "yearBasis": "Benchmark release year as coded in Figure 2 and Tables 3-9 of the September 7, 2026 manuscript; distinct from formal publication year.",
+  "releaseYearRevision": {
+    "sourcePdf": "A_Survey_of_World_Model_Benchmarks__1_-1.pdf",
+    "sourcePdfSha256": "9efa7975b1baa7b29570ac1e565449dd5d740ed997da2cd2421b4ee41dad0e72",
+    "manuscriptDate": "2026-09-07",
+    "scope": "Release-year alignment only; other canonical fields and the existing website-only domain grouping are preserved.",
+    "changes": {
+      "CLEVRER": {
+        "from": 2020,
+        "to": 2019
+      },
+      "WorldLens": {
+        "from": 2026,
+        "to": 2025
+      },
+      "CoPhy": {
+        "from": 2020,
+        "to": 2019
+      },
+      "CRAFT": {
+        "from": 2022,
+        "to": 2020
+      },
+      "MMWorld": {
+        "from": 2025,
+        "to": 2024
+      }
+    },
+    "retainedCandidates": {
+      "ComPhy": 2022,
+      "DrivingGen": 2026
+    }
+  },
+  "publicationMetadata": {
+    "CLEVRER": {
+      "venue": "ICLR",
+      "publicationYear": 2020
+    },
+    "CoPhy": {
+      "venue": "ICLR",
+      "publicationYear": 2020
+    },
+    "CRAFT": {
+      "venue": "Findings of ACL",
+      "publicationYear": 2022
+    },
+    "MMWorld": {
+      "venue": "ICLR",
+      "publicationYear": 2025
+    },
+    "WorldLens": {
+      "venue": "CVPR",
+      "publicationYear": 2026
+    }
+  },
+  "sourceNote": "Non-year benchmark coding retains its preceding manuscript source (sourcePdfSha256). Release years are aligned with the September 7, 2026 PDF identified in releaseYearRevision. The corpus cutoff remains August 31, 2026."
 }

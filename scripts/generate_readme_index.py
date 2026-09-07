@@ -28,11 +28,11 @@ SOCIAL_PATH = ASSETS / "social-preview.svg"
 TOTAL = 102
 CROSS_CATEGORY = 85
 SCHEMA_VERSION = 9
-SNAPSHOT_VERSION = "August 31, 2026 manuscript snapshot"
+SNAPSHOT_VERSION = "August 31, 2026 corpus; release years revised September 7, 2026"
 SNAPSHOT_DATE = "August 31, 2026"
 SNAPSHOT_ISO_DATE = "2026-08-31"
 SOURCE_PDF_SHA256 = "c96efe634f70b1297e281e36786dc6a5fedd3b747bf4fc57ad58583c69a50dad"
-EXPECTED_FINGERPRINT = "e30cf7f9b7bf39cb03baa6b9cddcbeb593b5821e1ba85a82fddff0787c7e4935"
+EXPECTED_FINGERPRINT = "6dac9ac87a0ed399b06bdde2e8f66d46f31032f503bc05ae3e63b5a29320100a"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 
 TARGET_LABELS = {
@@ -58,7 +58,7 @@ SUBTARGET_LABELS = {
 }
 EXPECTED_TARGET_COUNTS = {"T1": 46, "T2": 55, "T3": 24, "T4": 77, "T5": 33, "T6": 55, "T7": 13}
 EXPECTED_SUBTARGET_COUNTS = {"S1": 40, "S2": 40, "S3": 26, "S4": 9, "S5": 40, "S6": 15, "S7": 2, "S8": 2, "S9": 12, "S10": 1}
-EXPECTED_RELEASE_WINDOWS = {"2018–2021": 5, "2022–2023": 5, "2024": 9, "2025": 30, "2026": 53}
+EXPECTED_RELEASE_WINDOWS = {"2018–2021": 6, "2022–2023": 4, "2024": 10, "2025": 30, "2026": 52}
 REMOVED_FROM_FORMAL_CORPUS = {"CATER", "NExT-QA", "IntentQA", "VCRBench"}
 
 # Figure 4 order in the latest PDF.  The four removed observation-grounded
@@ -232,6 +232,7 @@ def rebuild_shards(manifest: dict) -> list[dict]:
             "shortName": name,
             "ref": row[0],
             "year": row[1],
+            "releaseYear": row[1],
             "domains": split_codes(row[2]),
             "protocols": split_codes(row[3]),
             "metrics": split_codes(row[4]),
@@ -240,6 +241,7 @@ def rebuild_shards(manifest: dict) -> list[dict]:
             "subtargets": [manifest["subtargetLabels"][code] for code in split_codes(row[7])],
             "crossCategory": len(split_codes(row[6])) > 1,
         })
+        item.update(manifest.get("publicationMetadata", {}).get(name, {}))
         for legacy_field in ("evidence", "dataConstruction", "realWorldExecution"):
             item.pop(legacy_field, None)
         corpus.append(item)
@@ -283,6 +285,8 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
             query = re.sub(r"\s+", "+", item.get("title") or name)
             paper = f"https://scholar.google.com/scholar?q={query}"
         venue = item.get("venue") or old.get("venue") or "arXiv"
+        if item.get("publicationYear") and str(item["publicationYear"]) not in venue:
+            venue = f"{venue} {item['publicationYear']}"
         code = old.get("code", "-")
         project = old.get("project", "-")
         marker = " △" if item["crossCategory"] else ""
@@ -291,7 +295,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
     def table(names: list[str]) -> list[str]:
         require(all(name in by_name for name in names), "README section contains a benchmark absent from the corpus")
         return [
-            "| Article | Year | Venue | Code | Project Page |",
+            "| Article | Release Year | Venue | Code | Project Page |",
             "|:--|:--:|:--:|:--:|:--:|",
             *[row(name) for name in names],
         ]
@@ -303,7 +307,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         f"[![Benchmarks](https://img.shields.io/badge/Benchmarks-{TOTAL}-2f8f63)]({SITE_URL}#benchmarks)",
         "",
         "This repository accompanies **A Survey of World Model Benchmarks**. "
-        f"The latest manuscript covers **{TOTAL} representative benchmarks** published from **2018–2026**; "
+        f"The latest manuscript covers **{TOTAL} representative benchmarks** released from **2018–2026**; "
         f"**{CROSS_CATEGORY}** span more than one evaluation-target category. "
         f"The corpus was last checked on {SNAPSHOT_DATE}.",
         "",
@@ -311,8 +315,8 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         "Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. "
         "`△` marks a benchmark assigned to more than one top-level evaluation target.",
         "",
-        "Each table is a literature index with **Article**, **Year**, **Venue**, **Code**, and **Project Page**. "
-        "`-` means that no verified public link is currently recorded.",
+        "Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. "
+        "Release Year follows the September 7, 2026 manuscript, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.",
         "",
         "## Contents",
         "",
@@ -393,6 +397,7 @@ def write_metadata(manifest: dict) -> None:
         "yearMax": 2026,
         "targets": list(TARGET_LABELS.values()),
     }
+    metadata.update({key: manifest[key] for key in ("yearBasis", "releaseYearRevision", "publicationMetadata", "sourceNote")})
     METADATA_PATH.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
@@ -405,14 +410,14 @@ def update_website_copy() -> None:
     index = re.sub(r'(<strong id="result-count">)\d+(</strong>)', rf"\g<1>{TOTAL}\2", index)
     index = re.sub(r"\d+ cumulative benchmarks by 2023", "10 cumulative benchmarks by 2023", index)
     index = re.sub(r"\d+ new benchmarks in 2025", "30 new benchmarks in 2025", index)
-    index = re.sub(r"raising the cumulative corpus to <strong>\d+</strong>", "raising the cumulative corpus to <strong>49</strong>", index)
+    index = re.sub(r"raising the cumulative corpus to <strong>\d+</strong>", "raising the cumulative corpus to <strong>50</strong>", index)
     index = re.sub(r"bringing the corpus to <strong>\d+</strong>", "bringing the corpus to <strong>102</strong>", index)
     index = re.sub(r"Search and filter the \d+ representative benchmarks", "Search and filter the 102 representative benchmarks", index)
-    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=10", index)
+    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=20260907", index)
     INDEX_PATH.write_text(index, encoding="utf-8")
 
     wrapper = WRAPPER_JS_PATH.read_text(encoding="utf-8")
-    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=12"', wrapper)
+    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=20260907"', wrapper)
     wrapper = re.sub(r'Latest manuscript snapshot · \d+ benchmarks · \d+ cross-category', f'Latest manuscript snapshot · {TOTAL} benchmarks · {CROSS_CATEGORY} cross-category', wrapper)
     wrapper = re.sub(r'the \d+ representative benchmarks', f'the {TOTAL} representative benchmarks', wrapper)
     # Only the first stat-strip strong literal is the total; avoid replacing years or unrelated values.
@@ -423,7 +428,7 @@ def update_website_copy() -> None:
     WRAPPER_JS_PATH.write_text(wrapper, encoding="utf-8")
 
     app = APP_JS_PATH.read_text(encoding="utf-8")
-    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=10", app)
+    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=20260907", app)
     APP_JS_PATH.write_text(app, encoding="utf-8")
 
     social = SOCIAL_PATH.read_text(encoding="utf-8")

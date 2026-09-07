@@ -120,6 +120,7 @@ function decodeRecord(raw, manifest) {
     shortName: canonical,
     ref,
     year,
+    releaseYear: year,
     domains: websiteDomains(canonical, domain),
     protocols: splitCodes(protocols),
     metrics: splitCodes(metrics),
@@ -140,6 +141,7 @@ function buildAddedRecord(name, manifest) {
     ...base,
     ref,
     year,
+    releaseYear: year,
     domains: websiteDomains(name, domain),
     protocols: splitCodes(protocols),
     metrics: splitCodes(metrics),
@@ -179,6 +181,8 @@ function normalizedSearchText(item) {
     item.shortName,
     item.title,
     item.venue,
+    String(item.year),
+    String(item.publicationYear || ""),
     item.domains.join(" "),
     item.targets.join(" "),
     item.subtargets.join(" "),
@@ -525,11 +529,11 @@ function renderCards(items) {
     card.style.setProperty("--card-accent", TARGET_COLORS[item.targets[0]] || "#6f63d9");
     const targetPills = item.targets.map((target) => `<span class="target-pill">${escapeHtml(targetShortLabel(target))}</span>`).join("");
     const subtarget = item.subtargets.length ? item.subtargets.join(" · ") : "Top-level target coding";
-    const venue = item.venue || "Publication";
+    const venue = (item.venue || "Publication") + (item.publicationYear ? ` ${item.publicationYear}` : "");
     const paperUrl = item.paperUrl || "#";
     card.innerHTML = `
       <div class="card-topline">
-        <span class="card-year">${item.year} · ${escapeHtml(venue)}</span>
+        <span class="card-year">Release Year: ${item.year} · ${escapeHtml(venue)}</span>
         ${item.crossCategory ? '<span class="cross-badge">△ Cross-category</span>' : ""}
       </div>
       <h3>${escapeHtml(item.shortName)}</h3>
@@ -630,7 +634,7 @@ function setupEvents() {
     const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
     const link = document.createElement("a");
     link.href = url;
-    link.download = "world-model-benchmarks-2026-08-31.json";
+    link.download = "world-model-benchmarks-2026-09-07-release-years.json";
     document.body.append(link);
     link.click();
     link.remove();

@@ -2,11 +2,11 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-5965d8)](https://world-model-benchmarks.github.io/World-Model-Benchmarks/) [![Benchmarks](https://img.shields.io/badge/Benchmarks-102-2f8f63)](https://world-model-benchmarks.github.io/World-Model-Benchmarks/#benchmarks)
 
-This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **102 representative benchmarks** published from **2018–2026**; **85** span more than one evaluation-target category. The corpus was last checked on August 31, 2026.
+This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **102 representative benchmarks** released from **2018–2026**; **85** span more than one evaluation-target category. The corpus was last checked on August 31, 2026.
 
 The classification below follows Figure 4 and Tables 3–9 of the latest PDF. Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. `△` marks a benchmark assigned to more than one top-level evaluation target.
 
-Each table is a literature index with **Article**, **Year**, **Venue**, **Code**, and **Project Page**. `-` means that no verified public link is currently recorded.
+Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. Release Year follows the September 7, 2026 manuscript, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.
 
 ## Contents
 
@@ -36,7 +36,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### Visual Quality
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**ChronoMagic-Bench**](https://scholar.google.com/scholar?q=ChronoMagic-Bench%3A%20A%20benchmark%20for%20metamorphic%20evaluation%20of%20text-to-time-lapse%20video%20generation) | 2024 | NeurIPS D&B Spotlight | - | - |
 | [**WorldScore △**](https://scholar.google.com/scholar?q=WorldScore%3A%20A%20unified%20evaluation%20benchmark%20for%20world%20generation) | 2025 | ICCV | - | - |
@@ -46,7 +46,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**GameWorld Score △**](https://arxiv.org/abs/2506.18701) | 2025 | arXiv | - | - |
 | [**WorldMark △**](https://arxiv.org/abs/2604.21686) | 2026 | arXiv | - | - |
 | [**4DWorldBench △**](https://arxiv.org/abs/2511.19836) | 2025 | arXiv | - | - |
-| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2026 | arXiv | - | - |
+| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - |
 | [**DrivingGen △**](https://arxiv.org/abs/2601.01528) | 2026 | arXiv | - | - |
 | [**PEDRA △**](https://arxiv.org/abs/2510.20182) | 2025 | arXiv | - | - |
 | [**Gen-ViRe △**](https://arxiv.org/abs/2511.13853) | 2025 | arXiv | - | - |
@@ -81,7 +81,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### Temporal Quality
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**ChronoMagic-Bench**](https://scholar.google.com/scholar?q=ChronoMagic-Bench%3A%20A%20benchmark%20for%20metamorphic%20evaluation%20of%20text-to-time-lapse%20video%20generation) | 2024 | NeurIPS D&B Spotlight | - | - |
 | [**VMBench △**](https://arxiv.org/abs/2503.10076) | 2025 | arXiv | - | - |
@@ -94,7 +94,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**EWMBench △**](https://arxiv.org/abs/2505.09694) | 2025 | arXiv | - | - |
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - |
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - |
-| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2026 | arXiv | - | - |
+| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - |
 | [**DrivingGen △**](https://arxiv.org/abs/2601.01528) | 2026 | arXiv | - | - |
 | [**PEDRA △**](https://arxiv.org/abs/2510.20182) | 2025 | arXiv | - | - |
 | [**Gen-ViRe △**](https://arxiv.org/abs/2511.13853) | 2025 | arXiv | - | - |
@@ -126,13 +126,13 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ## Spatial and State Consistency
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldMark △**](https://arxiv.org/abs/2604.21686) | 2026 | arXiv | - | - |
 | [**GameWorld Score △**](https://arxiv.org/abs/2506.18701) | 2025 | arXiv | - | - |
 | [**EWMBench △**](https://arxiv.org/abs/2505.09694) | 2025 | arXiv | - | - |
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - |
-| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2026 | arXiv | - | - |
+| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - |
 | [**DrivingGen △**](https://arxiv.org/abs/2601.01528) | 2026 | arXiv | - | - |
 | [**WorldScore △**](https://scholar.google.com/scholar?q=WorldScore%3A%20A%20unified%20evaluation%20benchmark%20for%20world%20generation) | 2025 | ICCV | - | - |
 | [**4DWorldBench △**](https://arxiv.org/abs/2511.19836) | 2025 | arXiv | - | - |
@@ -186,7 +186,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ## Long-Horizon Memory and State Persistence
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldPrediction △**](https://arxiv.org/abs/2506.04363) | 2025 | arXiv | - | - |
 | [**SmallWorlds △**](https://arxiv.org/abs/2511.23465) | 2025 | arXiv | - | - |
@@ -215,14 +215,14 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ## Physical Plausibility
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**IntPhys △**](https://arxiv.org/abs/1803.07616) | 2018 | arXiv | - | - |
 | [**IntPhys 2 △**](https://arxiv.org/abs/2506.09849) | 2025 | arXiv | - | - |
-| [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2020 | ICLR | - | - |
-| [**CoPhy △**](https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics) | 2020 | ICLR | - | - |
+| [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2019 | ICLR 2020 | - | - |
+| [**CoPhy △**](https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics) | 2019 | ICLR 2020 | - | - |
 | [**PHYRE**](https://scholar.google.com/scholar?q=PHYRE%3A%20A%20new%20benchmark%20for%20physical%20reasoning) | 2019 | NeurIPS | - | - |
-| [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2022 | Findings of ACL | - | - |
+| [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2020 | Findings of ACL 2022 | - | - |
 | [**Physion △**](https://scholar.google.com/scholar?q=Physion%3A%20Evaluating%20physical%20prediction%20from%20vision%20in%20humans%20and%20machines) | 2021 | NeurIPS D&B | - | - |
 | [**Physion++**](https://scholar.google.com/scholar?q=Physion%2B%2B%3A%20Evaluating%20physical%20scene%20understanding%20that%20requires%20online%20inference%20of%20different%20physical%20properties) | 2023 | NeurIPS | - | - |
 | [**ComPhy △**](https://scholar.google.com/scholar?q=ComPhy%3A%20Compositional%20physical%20reasoning%20of%20objects%20and%20events%20from%20videos) | 2022 | ICLR | - | - |
@@ -245,7 +245,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**What-If World △**](https://arxiv.org/abs/2605.27589) | 2026 | arXiv | - | - |
 | [**RoboWM-Bench △**](https://arxiv.org/abs/2604.19092) | 2026 | arXiv | - | - |
 | [**DreamGen Bench △**](https://arxiv.org/abs/2505.12705) | 2025 | arXiv | - | - |
-| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2026 | arXiv | - | - |
+| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - |
 | [**PhyGround**](https://arxiv.org/abs/2605.10806) | 2026 | arXiv | - | - |
 | [**Physion-Eval**](https://arxiv.org/abs/2603.19607) | 2026 | arXiv | - | - |
 | [**CRONOS △**](https://arxiv.org/abs/2605.23699) | 2026 | arXiv | - | - |
@@ -299,14 +299,14 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### Observation-Grounded Evaluation
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
-| [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2020 | ICLR | - | - |
+| [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2019 | ICLR 2020 | - | - |
 | [**Physion △**](https://scholar.google.com/scholar?q=Physion%3A%20Evaluating%20physical%20prediction%20from%20vision%20in%20humans%20and%20machines) | 2021 | NeurIPS D&B | - | - |
 | [**Causal-VidQA**](https://arxiv.org/abs/2205.14895) | 2022 | arXiv | - | - |
-| [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2022 | Findings of ACL | - | - |
+| [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2020 | Findings of ACL 2022 | - | - |
 | [**ACQUIRED**](https://arxiv.org/abs/2311.01620) | 2023 | arXiv | - | - |
-| [**MMWorld**](https://scholar.google.com/scholar?q=MMWorld%3A%20Towards%20multi-discipline%20multi-faceted%20world%20model%20evaluation%20in%20videos) | 2025 | ICLR | - | - |
+| [**MMWorld**](https://scholar.google.com/scholar?q=MMWorld%3A%20Towards%20multi-discipline%20multi-faceted%20world%20model%20evaluation%20in%20videos) | 2024 | ICLR 2025 | - | - |
 | [**Physics-IQ △**](https://arxiv.org/abs/2501.09038) | 2025 | arXiv | - | - |
 | [**WorldPrediction △**](https://arxiv.org/abs/2506.04363) | 2025 | arXiv | - | - |
 | [**T2VWorldBench △**](https://arxiv.org/abs/2507.18107) | 2025 | arXiv | - | - |
@@ -330,11 +330,11 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### Intervention-Grounded Evaluation
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
-| [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2020 | ICLR | - | - |
-| [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2022 | Findings of ACL | - | - |
-| [**CoPhy △**](https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics) | 2020 | ICLR | - | - |
+| [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2019 | ICLR 2020 | - | - |
+| [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2020 | Findings of ACL 2022 | - | - |
+| [**CoPhy △**](https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics) | 2019 | ICLR 2020 | - | - |
 | [**ComPhy △**](https://scholar.google.com/scholar?q=ComPhy%3A%20Compositional%20physical%20reasoning%20of%20objects%20and%20events%20from%20videos) | 2022 | ICLR | - | - |
 | [**CausalSpatial △**](https://arxiv.org/abs/2601.13304) | 2026 | arXiv | - | - |
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - |
@@ -346,7 +346,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### Pre-specified Control Fidelity
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**TC-Bench △**](https://arxiv.org/abs/2406.08656) | 2024 | arXiv | - | - |
 | [**StoryEval**](https://arxiv.org/abs/2412.16211) | 2024 | arXiv | - | - |
@@ -391,7 +391,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### Interactive Action Fidelity
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldMark △**](https://arxiv.org/abs/2604.21686) | 2026 | arXiv | - | - |
 | [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | - | - |
@@ -413,27 +413,27 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### World Model as Data Engine
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - |
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - |
 
 ### World Model as Policy Evaluator
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - |
 | [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - |
 
 ### World Model as Planner
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - |
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - |
 | [**World-in-World**](https://arxiv.org/abs/2510.18135) | 2025 | arXiv | - | - |
 | [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - |
-| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2026 | arXiv | - | - |
+| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - |
 | [**RoboWM-Bench △**](https://arxiv.org/abs/2604.19092) | 2026 | arXiv | - | - |
 | [**WorldSimBench △**](https://arxiv.org/abs/2410.18072) | 2024 | arXiv | - | - |
 | [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | - | - |
@@ -444,7 +444,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 
 ### World Model as Interactive Training Environment
 
-| Article | Year | Venue | Code | Project Page |
+| Article | Release Year | Venue | Code | Project Page |
 |:--|:--:|:--:|:--:|:--:|
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - |
 
