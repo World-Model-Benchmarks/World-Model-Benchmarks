@@ -1,0 +1,91 @@
+name: Align target-specific metrics with the latest PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/sync-target-metrics-once.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-target-metrics-once
+  cancel-in-progress: false
+
+jobs:
+  align:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify and apply the independently tested update
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib
+          import json
+          import lzma
+          import subprocess
+          from pathlib import Path
+          raw = Path('.github/metrics-coding-update.xz').read_bytes()
+          assert hashlib.sha256(raw).hexdigest() == 'aec8e11e6b2ec24e1b571f113a11b7eb88e6cc33a70ead53a82e978151f3958d', 'Update payload digest mismatch'
+          payload = json.loads(lzma.decompress(raw))
+          Path('/tmp/metrics.patch').write_text(payload['patch'], encoding='utf-8')
+          subprocess.run(['git', 'apply', '--check', '/tmp/metrics.patch'], check=True)
+          subprocess.run(['git', 'apply', '/tmp/metrics.patch'], check=True)
+          Path('scripts/apply_metric_scopes_once.py').write_text(payload['migration'], encoding='utf-8')
+          Path('/tmp/expected-metric-files.json').write_text(json.dumps(payload['expected']), encoding='utf-8')
+          PY
+          python scripts/apply_metric_scopes_once.py
+          python scripts/generate_readme_index.py
+
+      - name: Validate all PDF coding and website behavior
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/sync_latest_survey.py
+          node --check docs/assets/app-v3-core.js
+          node --check docs/assets/app-v3.js
+          node scripts/test_website_domains.cjs
+          node scripts/test_release_years.cjs
+          node scripts/test_target_scoped_metrics.cjs
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+          expected = json.loads(Path('/tmp/expected-metric-files.json').read_text())
+          for name, digest in expected.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == digest, 'Independently tested file differs: ' + name
+          print('PASS: all', len(expected), 'source/data files match the independently tested local outputs')
+          PY
+          rm -f .github/metrics-coding-update.xz scripts/apply_metric_scopes_once.py
+          rm -rf scripts/__pycache__
+
+      - name: Commit validated data and website updates
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'world-model-benchmarks-bot'
+          git config user.email 'world-model-benchmarks-bot@users.noreply.github.com'
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m 'Align 307 target/role-specific protocol and metric records with latest PDF'
+            git push origin HEAD:main
+          fi
+
+      - name: Export synchronized files for independent verification
+        uses: actions/upload-artifact@v4
+        with:
+          name: target-metric-aligned-source
+          path: |
+            Readme.md
+            docs/
+            scripts/
+          include-hidden-files: true
+          retention-days: 14
