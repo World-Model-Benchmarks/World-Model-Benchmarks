@@ -8,6 +8,7 @@ on:
       - "scripts/test_website_domains.cjs"
       - "scripts/test_release_years.cjs"
       - "scripts/release_years_20260907.json"
+      - "scripts/verify_live_release_years.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
