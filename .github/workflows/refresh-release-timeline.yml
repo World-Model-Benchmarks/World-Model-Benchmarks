@@ -1,0 +1,65 @@
+name: Refresh release-window narrative counts
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/refresh-release-timeline.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Update generator and validation for all narrative year counts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/generate_readme_index.py')
+          text = p.read_text()
+          anchor = '    index = re.sub(r"\\d+ new benchmarks in 2025", "30 new benchmarks in 2025", index)'
+          addition = '\n'.join([
+              '    index = re.sub(r"\\d+ new benchmarks in 2024", "10 new benchmarks in 2024", index)',
+              '    index = re.sub(r"\\d+ new benchmarks in 2026", "52 new benchmarks in 2026", index)',
+          ])
+          assert anchor in text
+          if addition not in text:
+              text = text.replace(anchor, anchor + '\n' + addition)
+          p.write_text(text)
+          p = Path('scripts/sync_latest_survey.py')
+          text = p.read_text()
+          anchor = '    require("<strong>49</strong>" not in index, "The old cumulative count remains")'
+          addition = '    require("10 new benchmarks in 2024" in index and "52 new benchmarks in 2026" in index, "Narrative release-window counts are stale")'
+          assert anchor in text
+          if addition not in text:
+              text = text.replace(anchor, anchor + '\n' + addition)
+          p.write_text(text)
+          p = Path('scripts/test_release_years.cjs')
+          text = p.read_text()
+          addition = '''
+          const indexHtml = fs.readFileSync(path.join(root,'docs/index.html'),'utf8');
+          for (const year of ['2024','2025','2026']) {
+            assert.ok(indexHtml.includes(`${audit.releaseWindowCounts[year]} new benchmarks in ${year}`),`Narrative ${year}`);
+          }
+          assert.ok(indexHtml.includes('cumulative corpus to <strong>50</strong>'));
+          '''
+          if 'const indexHtml' not in text:
+              text += addition
+          p.write_text(text)
+          PY
+          python scripts/generate_readme_index.py
+          python scripts/sync_latest_survey.py
+          node scripts/test_release_years.cjs
+          node scripts/test_website_domains.cjs
+      - name: Commit validated timeline copy
+        run: |
+          git config user.name 'world-model-benchmarks-bot'
+          git config user.email 'world-model-benchmarks-bot@users.noreply.github.com'
+          git add Readme.md docs scripts
+          if ! git diff --cached --quiet; then
+            git commit -m 'Synchronize all release-window narrative counts with Figure 2'
+            git push origin HEAD:main
+          fi
