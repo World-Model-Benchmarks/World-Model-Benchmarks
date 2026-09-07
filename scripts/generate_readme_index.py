@@ -410,6 +410,8 @@ def update_website_copy() -> None:
     index = re.sub(r'(<strong id="result-count">)\d+(</strong>)', rf"\g<1>{TOTAL}\2", index)
     index = re.sub(r"\d+ cumulative benchmarks by 2023", "10 cumulative benchmarks by 2023", index)
     index = re.sub(r"\d+ new benchmarks in 2025", "30 new benchmarks in 2025", index)
+    index = re.sub(r"\d+ new benchmarks in 2024", "10 new benchmarks in 2024", index)
+    index = re.sub(r"\d+ new benchmarks in 2026", "52 new benchmarks in 2026", index)
     index = re.sub(r"raising the cumulative corpus to <strong>\d+</strong>", "raising the cumulative corpus to <strong>50</strong>", index)
     index = re.sub(r"bringing the corpus to <strong>\d+</strong>", "bringing the corpus to <strong>102</strong>", index)
     index = re.sub(r"Search and filter the \d+ representative benchmarks", "Search and filter the 102 representative benchmarks", index)

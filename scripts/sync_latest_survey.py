@@ -172,6 +172,7 @@ def main() -> None:
     require(all(item.get("releaseYear") == item["year"] for item in shard_records), "Exported releaseYear differs from canonical year")
     require("| Article | Release Year | Venue |" in readme, "README release-year heading is missing")
     require("<strong>49</strong>" not in index, "The old cumulative count remains")
+    require("10 new benchmarks in 2024" in index and "52 new benchmarks in 2026" in index, "Narrative release-window counts are stale")
 
     print(
         "Validated the latest PDF snapshot: 102 benchmarks, 85 cross-category, "

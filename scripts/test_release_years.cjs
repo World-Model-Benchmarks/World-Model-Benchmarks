@@ -49,3 +49,9 @@ for (const [name,data] of Object.entries(manifest.publicationMetadata)) {
 assert.equal(manifest.records.ComPhy[1],2022);
 assert.equal(manifest.records.DrivingGen[1],2026);
 console.log('PASS: all 102 PDF release years, all five period filters, timeline new/cumulative counts, and separate publication-year card labels.');
+
+const indexHtml = fs.readFileSync(path.join(root,'docs/index.html'),'utf8');
+for (const year of ['2024','2025','2026']) {
+  assert.ok(indexHtml.includes(`${audit.releaseWindowCounts[year]} new benchmarks in ${year}`),`Narrative ${year}`);
+}
+assert.ok(indexHtml.includes('cumulative corpus to <strong>50</strong>'));
