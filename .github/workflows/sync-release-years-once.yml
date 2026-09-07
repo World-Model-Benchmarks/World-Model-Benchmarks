@@ -1,0 +1,47 @@
+name: Synchronize September 7 PDF release years
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/sync-release-years-once.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-year-alignment
+  cancel-in-progress: false
+jobs:
+  align:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Apply the five PDF year changes and regenerate outputs
+        run: python scripts/apply_release_year_revision.py
+      - name: Test release-year filters, timeline, cards and preserved domains
+        run: |
+          node scripts/test_release_years.cjs
+          node scripts/test_website_domains.cjs
+          python scripts/sync_latest_survey.py
+      - name: Commit validated outputs without changing workflow permissions
+        run: |
+          set -euo pipefail
+          git config user.name 'world-model-benchmarks-bot'
+          git config user.email 'world-model-benchmarks-bot@users.noreply.github.com'
+          find scripts -type d -name __pycache__ -exec rm -rf {} +
+          git add Readme.md docs scripts
+          if ! git diff --cached --quiet; then
+            git commit -m 'Align all 102 release years with September 7 PDF and separate publication years'
+            git push origin HEAD:main
+          fi
+          git rev-parse HEAD
+      - name: Export synchronized source for independent verification
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-year-aligned-source
+          path: |
+            docs/
+            scripts/
+            Readme.md
+          retention-days: 14
