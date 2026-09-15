@@ -4,11 +4,11 @@
 
 This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **102 representative benchmarks** released from **2018–2026**; **85** span more than one evaluation-target category. The corpus was last checked on August 31, 2026.
 
-The classification below follows Figure 4 and Tables 3–9 of the latest PDF. Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. `△` marks a benchmark assigned to more than one top-level evaluation target.
+The classification below follows Supplementary Figure S1 and Tables S1–S7 of the final PDF. Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. `△` marks a benchmark assigned to more than one top-level evaluation target.
 
-Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. Release Year follows the September 7, 2026 manuscript, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.
+Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. Release Year follows the final manuscript's corpus coding, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.
 
-Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. P = Prediction-Level Metrics; O = Downstream Outcome Metrics. P+O and OL+CL retain both relevant evidence/protocol types. See the target-scoped coding in the machine-readable manifest.
+Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 task-level Protocol–Metrics–Data records and 372 distinct display combinations so joint filters never form unsupported cross-products.
 
 ## Contents
 
@@ -76,7 +76,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**Omni-WorldBench △**](https://arxiv.org/abs/2603.22212) | 2026 | arXiv | - | - | OL | P |
 | [**OSCBench △**](https://arxiv.org/abs/2603.11698) | 2026 | arXiv | - | - | OL | P |
 | [**T2VWorldBench △**](https://arxiv.org/abs/2507.18107) | 2025 | arXiv | - | - | OL | P |
-| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | P |
+| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
 | [**WorldModelBench △**](https://arxiv.org/abs/2502.20694) | 2025 | arXiv | - | - | OL | P |
 | [**WorldSimBench △**](https://arxiv.org/abs/2410.18072) | 2024 | arXiv | - | - | OL | P |
 | [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - | OL | P |
@@ -115,13 +115,13 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**XEWorld △**](https://arxiv.org/abs/2608.05799) | 2026 | arXiv | - | - | OL | P |
 | [**HarnessEval-W △**](https://arxiv.org/abs/2608.16859) | 2026 | arXiv | - | - | OL | P |
 | [**WorldEcho △**](https://arxiv.org/abs/2608.24885) | 2026 | arXiv | - | - | OL | P |
-| [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - | OL | P |
+| [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - | OL+CL | P |
 | [**HTEWorld △**](https://arxiv.org/abs/2605.19957) | 2026 | arXiv | - | - | OL | P |
 | [**MagicBench △**](https://arxiv.org/abs/2503.16421) | 2025 | arXiv | - | - | OL | P |
 | [**MoveBench △**](https://arxiv.org/abs/2512.08765) | 2025 | arXiv | - | - | OL | P |
 | [**Omni-WorldBench △**](https://arxiv.org/abs/2603.22212) | 2026 | arXiv | - | - | OL | P |
 | [**T2VWorldBench △**](https://arxiv.org/abs/2507.18107) | 2025 | arXiv | - | - | OL | P |
-| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | P |
+| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
 | [**WorldModelBench △**](https://arxiv.org/abs/2502.20694) | 2025 | arXiv | - | - | OL | P |
 | [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | - | - | OL | P |
 | [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - | OL | P |
@@ -153,7 +153,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**MVP △**](https://arxiv.org/abs/2506.09987) | 2025 | arXiv | - | - | OL | P |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | - | - | OL | P |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | - | - | OL | P |
-| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | P+O |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | O |
 | [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - | OL | P |
 | [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - | OL | P |
 | [**CrashTwin △**](https://arxiv.org/abs/2606.28757) | 2026 | arXiv | - | - | OL | P |
@@ -167,7 +167,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**PlayWorld △**](https://arxiv.org/abs/2608.13552) | 2026 | arXiv | - | - | CL | P |
 | [**XEWorld △**](https://arxiv.org/abs/2608.05799) | 2026 | arXiv | - | - | OL | P |
 | [**HarnessEval-W △**](https://arxiv.org/abs/2608.16859) | 2026 | arXiv | - | - | OL | P |
-| [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - | OL | P |
+| [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - | OL+CL | P |
 | [**Gen-ViRe △**](https://arxiv.org/abs/2511.13853) | 2025 | arXiv | - | - | OL | P |
 | [**HTEWorld △**](https://arxiv.org/abs/2605.19957) | 2026 | arXiv | - | - | OL | P |
 | [**IntPhys 2 △**](https://arxiv.org/abs/2506.09849) | 2025 | arXiv | - | - | OL | P |
@@ -179,7 +179,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**IntPhys △**](https://arxiv.org/abs/1803.07616) | 2018 | arXiv | - | - | OL | P |
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - | OL | P |
 | [**SmallWorlds △**](https://arxiv.org/abs/2511.23465) | 2025 | arXiv | - | - | OL | P |
-| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | P |
+| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
 | [**VBench-2.0 △**](https://arxiv.org/abs/2503.21755) | 2025 | arXiv | - | - | OL | P |
 | [**WBench △**](https://arxiv.org/abs/2605.25874) | 2026 | arXiv | - | - | OL | P |
 | [**WorldBench △**](https://arxiv.org/abs/2601.21282) | 2026 | arXiv | - | - | OL | P |
@@ -204,7 +204,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WoW-World-Eval △**](https://arxiv.org/abs/2601.04137) | 2026 | arXiv | - | - | OL | P |
 | [**RBench △**](https://arxiv.org/abs/2601.15282) | 2026 | ICML | - | - | OL | P |
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - | CL | P+O |
-| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | P+O |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | OL+CL | P+O |
 | [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - | OL | P |
 | [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - | OL | P |
 | [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - | OL | P |
@@ -213,7 +213,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**HarnessEval-W △**](https://arxiv.org/abs/2608.16859) | 2026 | arXiv | - | - | OL | P |
 | [**LoopNav △**](https://arxiv.org/abs/2505.22976) | 2025 | arXiv | - | - | OL | P |
 | [**ExPhy △**](https://arxiv.org/abs/2608.20009) | 2026 | arXiv | - | - | OL | P |
-| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | P |
+| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
 
 ## Physical Plausibility
 
@@ -223,7 +223,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**IntPhys 2 △**](https://arxiv.org/abs/2506.09849) | 2025 | arXiv | - | - | OL | P |
 | [**CLEVRER △**](https://scholar.google.com/scholar?q=CLEVRER%3A%20Collision%20events%20for%20video%20representation%20and%20reasoning) | 2019 | ICLR 2020 | - | - | OL | P |
 | [**CoPhy △**](https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics) | 2019 | ICLR 2020 | - | - | OL | P |
-| [**PHYRE**](https://scholar.google.com/scholar?q=PHYRE%3A%20A%20new%20benchmark%20for%20physical%20reasoning) | 2019 | NeurIPS | - | - | CL | O |
+| [**PHYRE**](https://scholar.google.com/scholar?q=PHYRE%3A%20A%20new%20benchmark%20for%20physical%20reasoning) | 2019 | NeurIPS | - | - | OL+CL | O |
 | [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2020 | Findings of ACL 2022 | - | - | OL | P |
 | [**Physion △**](https://scholar.google.com/scholar?q=Physion%3A%20Evaluating%20physical%20prediction%20from%20vision%20in%20humans%20and%20machines) | 2021 | NeurIPS D&B | - | - | OL | P |
 | [**Physion++**](https://scholar.google.com/scholar?q=Physion%2B%2B%3A%20Evaluating%20physical%20scene%20understanding%20that%20requires%20online%20inference%20of%20different%20physical%20properties) | 2023 | NeurIPS | - | - | OL | P |
@@ -264,14 +264,14 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | - | - | OL | P |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | - | - | OL | P |
 | [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - | OL | P |
-| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | P+O |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | O |
 | [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - | CL | P+O |
 | [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - | OL | P |
 | [**CrashTwin △**](https://arxiv.org/abs/2606.28757) | 2026 | arXiv | - | - | OL | P |
 | [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - | OL | P |
 | [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - | OL | P |
 | [**MiraBench △**](https://arxiv.org/abs/2605.29360) | 2026 | arXiv | - | - | OL | P |
-| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | CL | P |
+| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | OL | P |
 | [**WorldExam △**](https://arxiv.org/abs/2608.02603) | 2026 | arXiv | - | - | OL | P |
 | [**GAUGE**](https://arxiv.org/abs/2608.05948) | 2026 | arXiv | - | - | OL | P |
 | [**H2R-Bench △**](https://arxiv.org/abs/2608.13049) | 2026 | arXiv | - | - | OL | P |
@@ -338,10 +338,11 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**CRAFT △**](https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions) | 2020 | Findings of ACL 2022 | - | - | OL | P |
 | [**CoPhy △**](https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics) | 2019 | ICLR 2020 | - | - | OL | P |
 | [**ComPhy △**](https://scholar.google.com/scholar?q=ComPhy%3A%20Compositional%20physical%20reasoning%20of%20objects%20and%20events%20from%20videos) | 2022 | ICLR | - | - | OL | P |
+| [**ContPhy △**](https://scholar.google.com/scholar?q=ContPhy%3A%20Continuum%20physical%20concept%20learning%20and%20reasoning%20from%20videos) | 2024 | ICML | - | - | OL | P |
 | [**CausalSpatial △**](https://arxiv.org/abs/2601.13304) | 2026 | arXiv | - | - | OL | P |
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - | CL | P |
 | [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - | OL | P |
-| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | CL | P |
+| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | OL | P |
 | [**WorldSimProbe △**](https://arxiv.org/abs/2608.09298) | 2026 | arXiv | - | - | OL | P |
 
 ## Control Fidelity and Interactive Dynamics
@@ -372,7 +373,7 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**RBench △**](https://arxiv.org/abs/2601.15282) | 2026 | ICML | - | - | OL | P |
 | [**PAI-Bench △**](https://arxiv.org/abs/2512.01989) | 2025 | CVPR | - | - | OL | P |
 | [**EZS-Bench △**](https://arxiv.org/abs/2603.23376) | 2026 | arXiv | - | - | OL | P |
-| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - | CL | P+O |
+| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - | CL | O |
 | [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - | OL | P |
 | [**MemoBench △**](https://arxiv.org/abs/2606.27537) | 2026 | arXiv | - | - | OL | P |
 | [**RoboTrustBench △**](https://arxiv.org/abs/2606.01600) | 2026 | arXiv | - | - | OL | P |
@@ -406,10 +407,10 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - | OL | P |
 | [**WorldOlympiad △**](https://arxiv.org/abs/2606.11129) | 2026 | arXiv | - | - | OL | P |
 | [**WorldRoamBench △**](https://arxiv.org/abs/2606.31672) | 2026 | arXiv | - | - | OL | P |
-| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | CL | P |
+| [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | OL | P |
 | [**PlayWorld △**](https://arxiv.org/abs/2608.13552) | 2026 | arXiv | - | - | CL | P |
 | [**HTEWorld △**](https://arxiv.org/abs/2605.19957) | 2026 | arXiv | - | - | OL | P |
-| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | P |
+| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
 
 ## Functional Utility
 
@@ -425,24 +426,24 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | Article | Release Year | Venue | Code | Project Page | Protocol | Metrics |
 |:--|:--:|:--:|:--:|:--:|:--:|:--:|
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - | CL | O |
-| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | P+O |
+| [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | CL | O |
 
 ### World Model as Planner
 
 | Article | Release Year | Venue | Code | Project Page | Protocol | Metrics |
 |:--|:--:|:--:|:--:|:--:|:--:|:--:|
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - | CL | O |
-| [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - | OL+CL | O |
+| [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - | CL | O |
 | [**World-in-World**](https://arxiv.org/abs/2510.18135) | 2025 | arXiv | - | - | CL | O |
-| [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - | OL | O |
-| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - | CL | O |
+| [**EVA-Bench △**](https://arxiv.org/abs/2410.15461) | 2024 | arXiv | - | - | OL+CL | O |
+| [**WorldLens △**](https://arxiv.org/abs/2512.10958) | 2025 | CVPR 2026 | - | - | OL+CL | O |
 | [**RoboWM-Bench △**](https://arxiv.org/abs/2604.19092) | 2026 | arXiv | - | - | OL | O |
 | [**WorldSimBench △**](https://arxiv.org/abs/2410.18072) | 2024 | arXiv | - | - | CL | O |
-| [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | - | - | OL+CL | P+O |
-| [**WoW-World-Eval △**](https://arxiv.org/abs/2601.04137) | 2026 | arXiv | - | - | OL | P+O |
-| [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - | CL | P+O |
-| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | P+O |
-| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - | CL | P+O |
+| [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | - | - | CL | O |
+| [**WoW-World-Eval △**](https://arxiv.org/abs/2601.04137) | 2026 | arXiv | - | - | OL | O |
+| [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - | CL | O |
+| [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | O |
+| [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - | CL | O |
 
 ### World Model as Interactive Training Environment
 
@@ -455,4 +456,5 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 - [`docs/assets/benchmarks.json`](docs/assets/benchmarks.json): canonical taxonomy manifest and compact record coding
 - [`docs/assets/benchmarks-1.json`](docs/assets/benchmarks-1.json)–[`benchmarks-4.json`](docs/assets/benchmarks-4.json): normalized benchmark records used by the explorer
 - [`docs/assets/metadata.json`](docs/assets/metadata.json): taxonomy labels, counts, and release-window definitions
+- [`scripts/task_records_20260915.json`](scripts/task_records_20260915.json): 401 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7
 - [Interactive project page](https://world-model-benchmarks.github.io/World-Model-Benchmarks/)

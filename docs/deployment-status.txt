@@ -1,4 +1,4 @@
 GitHub Pages deployment trigger
-Updated: 2026-08-31
+Updated: 2026-09-15
 Corpus: 102 benchmarks / 85 cross-category
-Fingerprint: 466d1f9e848f4c39186b1bc6e20fe752c9b784b08bc4ec9218550d4485913ca0
+Fingerprint: cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd

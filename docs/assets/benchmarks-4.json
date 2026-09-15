@@ -35,26 +35,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0230",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-012"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0324",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-006"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -95,26 +139,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0231",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-043"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0325",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-022"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -155,26 +243,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0232",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-011"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0326",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-002"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -212,13 +344,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0233",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-039"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       }
     ]
@@ -259,26 +413,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0234",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-036"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0273",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-015"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -319,26 +517,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0235",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-037"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0327",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-019"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -360,7 +602,8 @@
       "P"
     ],
     "evaluationData": [
-      "RWD"
+      "RWD",
+      "HCP"
     ],
     "targets": [
       "Physical Plausibility"
@@ -376,13 +619,49 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0236",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-026"
+            ],
+            "sourcePages": [
+              14
+            ]
+          },
+          {
+            "id": "EC0237",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-027"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       }
     ]
@@ -423,26 +702,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0238",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-021"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0328",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-011"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -464,7 +787,7 @@
       "P"
     ],
     "evaluationData": [
-      "SPTC"
+      "HCP"
     ],
     "targets": [
       "Physical Plausibility"
@@ -480,13 +803,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0239",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-076"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       }
     ]
@@ -508,7 +853,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "RWD"
     ],
     "targets": [
       "Physical Plausibility"
@@ -524,13 +869,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0240",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-079"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       }
     ]
@@ -552,7 +919,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SBG"
     ],
     "targets": [
       "Physical Plausibility",
@@ -571,26 +938,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0241",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-054"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0274",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-020"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -633,39 +1044,105 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0242",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-041"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0275",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-017"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0329",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-020"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -706,26 +1183,72 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0243",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-077",
+              "S4-078"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0276",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-024",
+              "S5-025"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       }
     ]
@@ -769,42 +1292,119 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0244",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-067"
+            ],
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "id": "EC0245",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-068"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0330",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-034"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       },
       {
         "scope": "S9",
         "target": "Functional Utility",
         "label": "Planner",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          24
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0371",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-014"
+            ],
+            "sourcePages": [
+              24
+            ]
+          }
         ]
       }
     ]
@@ -820,7 +1420,7 @@
       "driving"
     ],
     "protocols": [
-      "CL"
+      "OL"
     ],
     "metrics": [
       "P"
@@ -847,39 +1447,105 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
-          "CL"
+          "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0246",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-083"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
-          "CL"
+          "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0277",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-028"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          23
+        ],
         "protocols": [
-          "CL"
+          "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0353",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-065"
+            ],
+            "sourcePages": [
+              23
+            ]
+          }
         ]
       }
     ]
@@ -901,7 +1567,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "RWD"
     ],
     "targets": [
       "Physical Plausibility"
@@ -917,13 +1583,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0247",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-059"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       }
     ]
@@ -945,7 +1633,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SPTC"
     ],
     "targets": [
       "Physical Plausibility"
@@ -961,13 +1649,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0248",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-050"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       }
     ]
@@ -1010,39 +1720,105 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          17
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0249",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-098"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0278",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-033"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0331",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-051"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -1082,13 +1858,35 @@
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0279",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-005"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1128,13 +1926,35 @@
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0280",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-007"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1175,13 +1995,35 @@
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0281",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-009"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1221,13 +2063,35 @@
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0282",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-011"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1267,13 +2131,35 @@
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0332",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-003"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -1313,13 +2199,35 @@
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0333",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-001"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]

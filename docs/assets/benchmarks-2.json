@@ -40,65 +40,175 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0028",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-041"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0089",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-045"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0139",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-015"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0183",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-070"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0299",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-036"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -145,65 +255,175 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0029",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-050"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0090",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-056"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0184",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-085"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0255",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-029"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0300",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-043"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -225,6 +445,7 @@
       "P"
     ],
     "evaluationData": [
+      "SPTC",
       "HCP"
     ],
     "targets": [
@@ -250,65 +471,203 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0030",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-062"
+            ],
+            "sourcePages": [
+              6
+            ]
+          },
+          {
+            "id": "EC0031",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-061"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          10
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0091",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-070"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          17
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0185",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-095"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0256",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-032"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0301",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-050"
+            ],
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "id": "EC0302",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-049"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -350,26 +709,73 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0032",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-051",
+              "S1-052"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0092",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-059",
+              "S2-060",
+              "S2-061"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       }
     ]
@@ -391,7 +797,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "RWD"
     ],
     "targets": [
       "Visual & Temporal Quality",
@@ -414,52 +820,192 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": true,
+        "combinations": [
+          {
+            "id": "EC0033",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-036"
+            ],
+            "sourcePages": [
+              5
+            ]
+          },
+          {
+            "id": "EC0034",
+            "protocol": "OL",
+            "metric": "P",
+            "data": null,
+            "dataStatus": "unresolved",
+            "taskIds": [
+              "S1-037"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": true,
+        "combinations": [
+          {
+            "id": "EC0093",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-038"
+            ],
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "id": "EC0094",
+            "protocol": "OL",
+            "metric": "P",
+            "data": null,
+            "dataStatus": "unresolved",
+            "taskIds": [
+              "S2-039"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": true,
+        "combinations": [
+          {
+            "id": "EC0186",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-061"
+            ],
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "id": "EC0187",
+            "protocol": "OL",
+            "metric": "P",
+            "data": null,
+            "dataStatus": "unresolved",
+            "taskIds": [
+              "S4-062"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": true,
+        "combinations": [
+          {
+            "id": "EC0303",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-031"
+            ],
+            "sourcePages": [
+              21
+            ]
+          },
+          {
+            "id": "EC0304",
+            "protocol": "OL",
+            "metric": "P",
+            "data": null,
+            "dataStatus": "unresolved",
+            "taskIds": [
+              "S6-032"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -508,78 +1054,210 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0035",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-047"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0095",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-053"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0140",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-017"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0188",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-081"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0257",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-026"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0342",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-064"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -624,52 +1302,140 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0036",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-067"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          10
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0096",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-075"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          17
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0189",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-101"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0305",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-054"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -691,7 +1457,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SPTC"
     ],
     "targets": [
       "Visual & Temporal Quality",
@@ -717,78 +1483,210 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0037",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-038"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0097",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-040"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0141",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-011"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0190",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-063"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0258",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-021"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0306",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-033"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -831,26 +1729,70 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0038",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-060"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0307",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-048"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -893,39 +1835,105 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0039",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-030"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0191",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-048"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0343",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-060"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -971,65 +1979,175 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0040",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-039"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0098",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-042"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0142",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-012"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0192",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-066"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0344",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-061"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -1071,39 +2189,105 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0041",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-049"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0099",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-055"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0193",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-084"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       }
     ]
@@ -1146,26 +2330,70 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          4
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0042",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-017"
+            ],
+            "sourcePages": [
+              4
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0308",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-014"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -1208,26 +2436,70 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          4
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0043",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-018"
+            ],
+            "sourcePages": [
+              4
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0309",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-015"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -1249,6 +2521,7 @@
       "P"
     ],
     "evaluationData": [
+      "SPTC",
       "HCP"
     ],
     "targets": [
@@ -1272,52 +2545,200 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0044",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-043"
+            ],
+            "sourcePages": [
+              5
+            ]
+          },
+          {
+            "id": "EC0045",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-044",
+              "S1-045"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0100",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-048"
+            ],
+            "sourcePages": [
+              9
+            ]
+          },
+          {
+            "id": "EC0101",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-049",
+              "S2-050"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0194",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-072"
+            ],
+            "sourcePages": [
+              16
+            ]
+          },
+          {
+            "id": "EC0195",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-073",
+              "S4-074"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0310",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-038"
+            ],
+            "sourcePages": [
+              21
+            ]
+          },
+          {
+            "id": "EC0311",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-039",
+              "S6-040"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -1360,39 +2781,105 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0046",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-046"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0102",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-051"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0312",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-041"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -1436,39 +2923,105 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          4
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0047",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-023"
+            ],
+            "sourcePages": [
+              4
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0196",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-040"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0259",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-016"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1484,6 +3037,7 @@
       "embodied"
     ],
     "protocols": [
+      "OL",
       "CL"
     ],
     "metrics": [
@@ -1491,6 +3045,7 @@
       "O"
     ],
     "evaluationData": [
+      "RWD",
       "HCP"
     ],
     "targets": [
@@ -1517,79 +3072,271 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
+          "OL",
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0048",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-055",
+              "S1-056"
+            ],
+            "sourcePages": [
+              6
+            ]
+          },
+          {
+            "id": "EC0049",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-054"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
+          "OL",
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0103",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-065"
+            ],
+            "sourcePages": [
+              9
+            ]
+          },
+          {
+            "id": "EC0104",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-064"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
+          "OL",
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0143",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-023"
+            ],
+            "sourcePages": [
+              11
+            ]
+          },
+          {
+            "id": "EC0144",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-022"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0197",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-090"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          23
+        ],
         "protocols": [
+          "OL",
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0345",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-069"
+            ],
+            "sourcePages": [
+              23
+            ]
+          },
+          {
+            "id": "EC0346",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-068"
+            ],
+            "sourcePages": [
+              23
+            ]
+          }
         ]
       },
       {
         "scope": "S8",
         "target": "Functional Utility",
         "label": "Policy Evaluator",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          24
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0357",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-003"
+            ],
+            "sourcePages": [
+              24
+            ]
+          }
         ]
       }
     ]
@@ -1611,7 +3358,8 @@
       "P"
     ],
     "evaluationData": [
-      "SPTC"
+      "SPTC",
+      "HCP"
     ],
     "targets": [
       "Visual & Temporal Quality",
@@ -1633,39 +3381,147 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0050",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-026"
+            ],
+            "sourcePages": [
+              5
+            ]
+          },
+          {
+            "id": "EC0051",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-027"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0198",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-046"
+            ],
+            "sourcePages": [
+              14
+            ]
+          },
+          {
+            "id": "EC0199",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-047"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0313",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-023"
+            ],
+            "sourcePages": [
+              21
+            ]
+          },
+          {
+            "id": "EC0314",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-024"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -1691,6 +3547,9 @@
       "O"
     ],
     "evaluationData": [
+      "RWD",
+      "SBG",
+      "SPTC",
       "HCP"
     ],
     "targets": [
@@ -1715,34 +3574,139 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          4
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SBG",
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0052",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-008",
+              "S1-009"
+            ],
+            "sourcePages": [
+              4
+            ]
+          },
+          {
+            "id": "EC0053",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-007"
+            ],
+            "sourcePages": [
+              4
+            ]
+          },
+          {
+            "id": "EC0054",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-006"
+            ],
+            "sourcePages": [
+              4
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SBG",
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0105",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-006",
+              "S2-007"
+            ],
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "id": "EC0106",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-005"
+            ],
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "id": "EC0107",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-004"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL",
           "CL"
@@ -1750,14 +3714,79 @@
         "metrics": [
           "P",
           "O"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SBG",
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0200",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-015",
+              "S4-016"
+            ],
+            "sourcePages": [
+              13
+            ]
+          },
+          {
+            "id": "EC0201",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-014"
+            ],
+            "sourcePages": [
+              13
+            ]
+          },
+          {
+            "id": "EC0202",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-013"
+            ],
+            "sourcePages": [
+              13
+            ]
+          },
+          {
+            "id": "EC0203",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-017"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL",
           "CL"
@@ -1765,19 +3794,103 @@
         "metrics": [
           "P",
           "O"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SBG",
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0347",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-057",
+              "S6-058"
+            ],
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "id": "EC0348",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-056"
+            ],
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "id": "EC0349",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-055"
+            ],
+            "sourcePages": [
+              22
+            ]
+          },
+          {
+            "id": "EC0350",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-059"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       },
       {
         "scope": "S9",
         "target": "Functional Utility",
         "label": "Planner",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          24
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0365",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-007"
+            ],
+            "sourcePages": [
+              24
+            ]
+          }
         ]
       }
     ]
@@ -1820,39 +3933,105 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0055",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-031"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0108",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-029"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0204",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-049"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       }
     ]
@@ -1874,7 +4053,8 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "RWD",
+      "SPTC"
     ],
     "targets": [
       "Visual & Temporal Quality",
@@ -1894,26 +4074,98 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          4
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0056",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-005"
+            ],
+            "sourcePages": [
+              4
+            ]
+          },
+          {
+            "id": "EC0057",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-004"
+            ],
+            "sourcePages": [
+              4
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0315",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-005"
+            ],
+            "sourcePages": [
+              20
+            ]
+          },
+          {
+            "id": "EC0316",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-004"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -1958,65 +4210,175 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0058",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-053"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0109",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-062"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0145",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-021"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0205",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-088"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          23
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0351",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-067"
+            ],
+            "sourcePages": [
+              23
+            ]
+          }
         ]
       }
     ]
@@ -2059,39 +4421,105 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          5
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0059",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-032"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0110",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-034"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0206",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-053"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       }
     ]
@@ -2107,7 +4535,8 @@
       "embodied"
     ],
     "protocols": [
-      "OL"
+      "OL",
+      "CL"
     ],
     "metrics": [
       "P",
@@ -2135,39 +4564,147 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          4
+        ],
         "protocols": [
-          "OL"
+          "OL",
+          "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0060",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-002"
+            ],
+            "sourcePages": [
+              4
+            ]
+          },
+          {
+            "id": "EC0061",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-003"
+            ],
+            "sourcePages": [
+              4
+            ]
+          }
         ]
       },
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
         "protocols": [
-          "OL"
+          "OL",
+          "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0111",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-002"
+            ],
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "id": "EC0112",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-003"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
         ]
       },
       {
         "scope": "S9",
         "target": "Functional Utility",
         "label": "Planner",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          24
+        ],
         "protocols": [
-          "OL"
+          "OL",
+          "CL"
         ],
         "metrics": [
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0366",
+            "protocol": "OL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-005"
+            ],
+            "sourcePages": [
+              24
+            ]
+          },
+          {
+            "id": "EC0367",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-006"
+            ],
+            "sourcePages": [
+              24
+            ]
+          }
         ]
       }
     ]
@@ -2217,67 +4754,176 @@
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
-        "table": 3,
-        "sourcePage": 11,
+        "table": "S1",
+        "sourcePage": 4,
+        "sourcePages": [
+          6
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0062",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-066"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          12
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0146",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-028"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0260",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-035"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S6",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          23
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0352",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-075"
+            ],
+            "sourcePages": [
+              23
+            ]
+          }
         ]
       },
       {
         "scope": "S9",
         "target": "Functional Utility",
         "label": "Planner",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          25
+        ],
         "protocols": [
-          "OL",
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0368",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-020",
+              "S7-021"
+            ],
+            "sourcePages": [
+              25
+            ]
+          }
         ]
       }
     ]

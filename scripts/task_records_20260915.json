@@ -1,0 +1,6868 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "title": "A Survey of World Model Benchmarks - Supplementary Material",
+    "tables": "S1-S7",
+    "fileSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
+  },
+  "counts": {
+    "allRecords": 403,
+    "targetTaskRecords": 401,
+    "auxiliaryRecords": 2,
+    "classifiedDataRecords": 394,
+    "unresolvedDataRecords": 7
+  },
+  "records": [
+    {
+      "taskId": "S1-001",
+      "benchmark": "ChronoMagic-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "MTScore; GPT4o-MTScore; CHScore",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-002",
+      "benchmark": "EVA-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed-condition generation baseline",
+      "measuredReadout": "Video quality; FVD and other generation scores",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-003",
+      "benchmark": "EVA-Bench",
+      "scope": "T1",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Generation with RoG adaptation",
+      "measuredReadout": "Video quality; FVD and other generation scores",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-004",
+      "benchmark": "TC-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V / output consistency",
+      "measuredReadout": "Transition-object / other-object consis- tency assertions",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-005",
+      "benchmark": "TC-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "I2V / reference-frame consistency",
+      "measuredReadout": "CLIP / flow / trajectory frame consistency",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-006",
+      "benchmark": "WorldSimBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit / T2V",
+      "measuredReadout": "Aesthetics; Background / Foreground Consistency",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-007",
+      "benchmark": "WorldSimBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / OE / Minecraft",
+      "measuredReadout": "Background / Foreground Consistency",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-008",
+      "benchmark": "WorldSimBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / AD / nuScenes",
+      "measuredReadout": "Aesthetics",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-009",
+      "benchmark": "WorldSimBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / RM / RH20T- P",
+      "measuredReadout": "Aesthetics; Background / Foreground Consistency",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-010",
+      "benchmark": "4DWorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Text-to-4D",
+      "measuredReadout": "Perceptual quality; visual stability scores",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-011",
+      "benchmark": "4DWorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Image-to-4D / physical WISA",
+      "measuredReadout": "Perceptual quality; visual stability scores",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-012",
+      "benchmark": "4DWorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Image-to-4D / nonphysical VBench2",
+      "measuredReadout": "Perceptual quality; visual stability scores",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-013",
+      "benchmark": "4DWorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Video-to-4D / mixed suite",
+      "measuredReadout": "Perceptual quality; visual stability scores",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-014",
+      "benchmark": "EWMBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Scene Consistency; inter-frame visual stability",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-015",
+      "benchmark": "GameWorld Score",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "LAION aesthetics; MUSIQ; CLIP temporal consistency; motion smoothness",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-016",
+      "benchmark": "Gen-ViRe",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Dynamic-task continuity criteria, includ- ing C2 Physical Continuity",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-017",
+      "benchmark": "MagicBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed initial-image / trajec- tory generation",
+      "measuredReadout": "FID; FVD",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-018",
+      "benchmark": "MoveBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed initial-image / trajec- tory generation",
+      "measuredReadout": "FID; FVD; PSNR; SSIM",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-019",
+      "benchmark": "PAI-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-G / T2V",
+      "measuredReadout": "Quality Score: temporal stability; motion smoothness; aesthetic / imaging quality",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-020",
+      "benchmark": "PAI-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-G / I2V",
+      "measuredReadout": "Quality Score: temporal stability; motion smoothness; aesthetic / imaging quality",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-021",
+      "benchmark": "PEDRA",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "I2V / ETH-UCY reference",
+      "measuredReadout": "Disappearance; MOT Confidence; EMD for reference-distribution terms",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-022",
+      "benchmark": "PEDRA",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V / prompt-only physical-unit",
+      "measuredReadout": "Disappearance; MOT Confidence; statistics / reference ranges",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-023",
+      "benchmark": "T2VWorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Video-quality / consistency ratings",
+      "source": {
+        "table": "S1",
+        "page": 4,
+        "tableRow": 23
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-024",
+      "benchmark": "VMBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "MSS; OIS; TCS; quality / continuity components of CAS",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 24
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-025",
+      "benchmark": "WorldLens",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Generation / reconstruction diagnostics",
+      "measuredReadout": "Generation FVD / visual quality; recon- struction LPIPS / PSNR / SSIM",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 25
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-026",
+      "benchmark": "WorldModelBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V",
+      "measuredReadout": "Binary frame-wise / temporal-quality items",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 26
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-027",
+      "benchmark": "WorldModelBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "I2V",
+      "measuredReadout": "Binary frame-wise / temporal-quality items",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 27
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-028",
+      "benchmark": "WorldScore",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V interface",
+      "measuredReadout": "Aesthetic / image quality; motion / style consistency",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 28
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-029",
+      "benchmark": "WorldScore",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Image-conditioned interface",
+      "measuredReadout": "Aesthetic / image quality; motion / style consistency",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 29
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-030",
+      "benchmark": "ACWM-Phys",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "MSE; SSIM; PSNR",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 30
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-031",
+      "benchmark": "Apple-π",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Integrity / fidelity subscores",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 31
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-032",
+      "benchmark": "CrashTwin",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset quality",
+      "measuredReadout": "Identity / appearance stability; video",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 32
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-033",
+      "benchmark": "DrivingGen",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Open-domain driving",
+      "measuredReadout": "Image / video generation quality",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 33
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-034",
+      "benchmark": "DrivingGen",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Ego-conditioned driving",
+      "measuredReadout": "Image / video generation quality",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 34
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-035",
+      "benchmark": "EZS-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "EZSbench generation (Table 2)",
+      "measuredReadout": "AQ, BC, IQ, MS, OC, SC, I2VB, I2VS; Quality Score (Table 2)",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 35
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-036",
+      "benchmark": "H2R-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Main 240 cases / no robot reference image",
+      "measuredReadout": "M5 Video Quality",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 36
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-037",
+      "benchmark": "H2R-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Robot-reference-image ablation",
+      "measuredReadout": "M5 Video Quality",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 37
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-038",
+      "benchmark": "HarnessEval-W",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Render Quality / Motion Quality case scores",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 38
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-039",
+      "benchmark": "HTEWorld",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual / temporal continuity at chunk boundaries",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 39
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-040",
+      "benchmark": "iWorld-Bench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Image / video quality; brightness; sharp- ness",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 40
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-041",
+      "benchmark": "MemoBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual quality; motion smoothness and other basic quality scores",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 41
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-042",
+      "benchmark": "MIND",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual / temporal quality",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 42
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-043",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V Transitions",
+      "measuredReadout": "Imaging Quality; Temporal Flickering; Motion Smoothness; Dynamic Degree; Detect (cuts)",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 43
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-044",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "IT2V Transitions",
+      "measuredReadout": "Imaging Quality; Temporal Flickering; Motion Smoothness; Dynamic Degree; Detect (cuts)",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 44
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-045",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "With Camera Transitions",
+      "measuredReadout": "Imaging Quality; Temporal Flickering; Motion Smoothness; Dynamic Degree; Detect (cuts)",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 45
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-046",
+      "benchmark": "OSCBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual-quality rubric",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 46
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-047",
+      "benchmark": "PlayWorld",
+      "scope": "T1",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Feedback-based test subset",
+      "measuredReadout": "Basic visual / video quality",
+      "source": {
+        "table": "S1",
+        "page": 5,
+        "tableRow": 47
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-048",
+      "benchmark": "RBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual quality; motion smoothness",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 48
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-049",
+      "benchmark": "RigidBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "LPIPS; SSIM",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 49
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-050",
+      "benchmark": "RoboTrustBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual-quality rubric",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 50
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-051",
+      "benchmark": "SurgWMBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pure video generation (Table 1a)",
+      "measuredReadout": "PSNR; SSIM; LPIPS",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 51
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-052",
+      "benchmark": "SurgWMBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Joint video / motion (Table 1b)",
+      "measuredReadout": "PSNR; SSIM; LPIPS",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 52
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-053",
+      "benchmark": "WBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual-quality / temporal-continuity components",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 53
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-054",
+      "benchmark": "WMBench",
+      "scope": "T1",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Direct diagnostics of policy- feedback rollouts WMES",
+      "measuredReadout": "Visual / video diagnostic components of",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 54
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-055",
+      "benchmark": "WMBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "I2V no-control baseline (Table 3)",
+      "measuredReadout": "Dynamic Degree; Motion Smoothness; Flow Score; Photometric Consistency",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 55
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-056",
+      "benchmark": "WMBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "40 s autoregressive diagnos- tics (Table 4)",
+      "measuredReadout": "PSNR / FID / FVD per 8 s segment; temporal degradation",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 56
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-057",
+      "benchmark": "WorldArena",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual / motion / content quality",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 57
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-058",
+      "benchmark": "WorldArena 2.0",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Direct video diagnostics / RoboTwin-LIBERO",
+      "measuredReadout": "Visual / motion / content quality",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 58
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-059",
+      "benchmark": "WorldArena 2.0",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Direct video diagnostics / real ALOHA",
+      "measuredReadout": "Visual / motion / content quality",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 59
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-060",
+      "benchmark": "WorldEcho",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual-quality gating",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 60
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-061",
+      "benchmark": "WorldExam",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Static-scene general quality",
+      "measuredReadout": "Aesthetic / imaging quality; photometric consistency; temporal flickering",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 61
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-062",
+      "benchmark": "WorldExam",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Dynamic-interaction general quality",
+      "measuredReadout": "Subject consistency; motion smoothness; aesthetic / imaging quality",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 62
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-063",
+      "benchmark": "WorldMark",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual quality; temporal quality",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 63
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-064",
+      "benchmark": "WorldRoamBench",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Visual / video quality scores",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 64
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-065",
+      "benchmark": "WoW-World-Eval",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed generated-video diagnostics",
+      "measuredReadout": "Video Quality submetrics",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 65
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-066",
+      "benchmark": "WR-Arena",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Content alignment; style consistency",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 66
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S1-067",
+      "benchmark": "XEWorld",
+      "scope": "T1",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; data category; protocol and metric initial-world images with independently HCP describes this construction pipeline, Player decisions; unsupported origins of the 63 selected data codes. 240 cases are RWD; named branches: EZS-Bench uses s autoregressive branch remains OL. to RoG feedback that controls video",
+      "measuredReadout": "Generated-video visual quality O = downstream outcome. Data: RWD HCP = hybrid construction. NR denotes △ level are classified separately. = cross-category specified long-horizon objectives, not a verified real/synthetic breakdown cases of a specific generator are not standard-track nonphysical VBench2 images are not resolved. the robot-reference-image ablation lacks its Table 2 suite; SurgWMBench lists separately Table and equation numbers inside cells refer extension. This coding does not, by itself,",
+      "source": {
+        "table": "S1",
+        "page": 6,
+        "tableRow": 67
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-001",
+      "benchmark": "IntPhys",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset permanence,",
+      "measuredReadout": "Absolute / relative classification for object shape and continuity",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-002",
+      "benchmark": "EVA-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed-condition generation baseline",
+      "measuredReadout": "Goal Completion Estimation (GCE; normalized DreamSim similarity to the goal frame)",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-003",
+      "benchmark": "EVA-Bench",
+      "scope": "T2",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Generation with RoG adaptation",
+      "measuredReadout": "Goal Completion Estimation (GCE; normalized DreamSim similarity to the goal frame)",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-004",
+      "benchmark": "WorldSimBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit / T2V",
+      "measuredReadout": "Scenario Alignment; Perspectivity; Key Element",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-005",
+      "benchmark": "WorldSimBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / OE / Minecraft",
+      "measuredReadout": "Scenario Alignment",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-006",
+      "benchmark": "WorldSimBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / AD / nuScenes",
+      "measuredReadout": "Perspectivity; Key Element",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-007",
+      "benchmark": "WorldSimBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / RM / RH20T- P",
+      "measuredReadout": "Perspectivity",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-008",
+      "benchmark": "4DWorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Text-to-4D",
+      "measuredReadout": "4D / geometric-consistency diagnostics",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-009",
+      "benchmark": "4DWorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Image-to-4D / physical WISA",
+      "measuredReadout": "4D / geometric-consistency diagnostics",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-010",
+      "benchmark": "4DWorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Image-to-4D / nonphysical VBench2",
+      "measuredReadout": "4D / geometric-consistency diagnostics",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-011",
+      "benchmark": "4DWorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Video-to-4D / mixed suite",
+      "measuredReadout": "4D / geometric-consistency diagnostics",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-012",
+      "benchmark": "AutumnBench",
+      "scope": "T2",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "MFP with adaptive step/rewind queries after exploration",
+      "measuredReadout": "Final masked-grid color MCQ accuracy",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-013",
+      "benchmark": "AutumnBench",
+      "scope": "T2",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Planning / target-subgrid state",
+      "measuredReadout": "Exact target-subgrid color match after execution",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-014",
+      "benchmark": "EWMBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "HSD spatial-trajectory alignment",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-015",
+      "benchmark": "GameWorld Score",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Object consistency; scenario consistency",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-016",
+      "benchmark": "Gen-ViRe",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Spatial-planning / obstacle-relation rubric",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-017",
+      "benchmark": "IntPhys 2",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Paired accuracy for permanence, invari- ance and continuity",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-018",
+      "benchmark": "LoopNav",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "SGCS: missing objects, substitutions and layout matching",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-019",
+      "benchmark": "MVP",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Paired accuracy on spatial-relation minimal pairs",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-020",
+      "benchmark": "PAI-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-C / spatial controls",
+      "measuredReadout": "Depth si-RMSE; Seg mIoU; Edge F1",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-021",
+      "benchmark": "PAI-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-U / Space QA",
+      "measuredReadout": "Spatial-feasibility / relation QA accuracy",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-022",
+      "benchmark": "PEDRA",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "I2V / ETH-UCY reference /",
+      "measuredReadout": "3D Geometric Confidence; NN distance collision relations; EMD for reference- distribution terms",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-023",
+      "benchmark": "PEDRA",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V / prompt-only",
+      "measuredReadout": "3D Geometric Confidence; NN distance / collision relations; physical-unit statistics / reference ranges",
+      "source": {
+        "table": "S2",
+        "page": 7,
+        "tableRow": 23
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-024",
+      "benchmark": "SmallWorlds",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Position / keypoint reprojection error",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 24
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-025",
+      "benchmark": "VBench-2.0",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Dynamic spatial relations; multiview consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 25
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-026",
+      "benchmark": "WorldLens",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Generation / reconstruction diagnostics",
+      "measuredReadout": "Cross-view LoFTR confidence; reconstructed-depth AbsRel",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 26
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-027",
+      "benchmark": "WorldScore",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V interface",
+      "measuredReadout": "3D / photometric consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 27
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-028",
+      "benchmark": "WorldScore",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Image-conditioned interface",
+      "measuredReadout": "3D / photometric consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 28
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-029",
+      "benchmark": "Apple-π",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Spatial-geometry / state consistency with references",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 29
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-030",
+      "benchmark": "CausalSpatial",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "TPR, NSR and MCQ correctness for occlusion, compatibility and trajectories",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 30
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-031",
+      "benchmark": "Chess-World-Model",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Human PGN held-out 10k / rule replay",
+      "measuredReadout": "75-label exact-state / field accuracy",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 31
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-032",
+      "benchmark": "Chess-World-Model",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Random legal self-play 10k / rule replay",
+      "measuredReadout": "75-label exact-state / field accuracy",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 32
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-033",
+      "benchmark": "ContactWorld",
+      "scope": "T2",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Simulated execution / geometric goals",
+      "measuredReadout": "Joint object / end-effector position-and- orientation threshold success",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 33
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-034",
+      "benchmark": "CrashTwin",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Geometric rigidity; object-trajectory / spatial stability",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 34
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-035",
+      "benchmark": "DrivingGen",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Open-domain driving",
+      "measuredReadout": "SLAM / reconstructed-trajectory and scene consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 35
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-036",
+      "benchmark": "DrivingGen",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Ego-conditioned driving",
+      "measuredReadout": "SLAM / reconstructed-trajectory and scene consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 36
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-037",
+      "benchmark": "EZS-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Scene / entity-state checklist judgments",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 37
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-038",
+      "benchmark": "H2R-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Main 240 cases / no robot reference image / predicates",
+      "measuredReadout": "M4 Embodiment Correctness (structural temporal retention); M1 goal-state",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 38
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-039",
+      "benchmark": "H2R-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Robot-reference-image ablation / predicates",
+      "measuredReadout": "M4 Embodiment Correctness (structural temporal retention); M1 goal-state",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 39
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-040",
+      "benchmark": "HarnessEval-W",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Revisit Consistency; protected anchor / state preservation",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 40
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-041",
+      "benchmark": "HOCA-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Generated spatial / entity anomalies",
+      "measuredReadout": "Tasks II/III category / anomaly- description accuracy; spatial-anomaly temporal mIoU, R@0.5",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 41
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-042",
+      "benchmark": "HTEWorld",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Predicted versus reference state / spatial consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 42
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-043",
+      "benchmark": "iWorld-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Scene-return / spatial consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 43
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-044",
+      "benchmark": "MBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Entity / environment memory consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 44
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-045",
+      "benchmark": "MemoBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Geometry and reappearance consistency scores",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 45
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-046",
+      "benchmark": "MIND",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Revisited-scene spatial reconstruction / consistency",
+      "source": {
+        "table": "S2",
+        "page": 8,
+        "tableRow": 46
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-047",
+      "benchmark": "MiraBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Spatial-state / object-relation consistency",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 47
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-048",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V presence",
+      "measuredReadout": "InterStab-L revisit similarity; InterStab- N non-target stability; Object Control",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 48
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-049",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "IT2V presence",
+      "measuredReadout": "InterStab-L revisit similarity; InterStab- N non-target stability; Object Control",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 49
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-050",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "With Camera presence",
+      "measuredReadout": "InterStab-L revisit similarity; InterStab- N non-target stability; Object Control",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 50
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-051",
+      "benchmark": "OSCBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Object-state change; scene-consistency rubric",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 51
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-052",
+      "benchmark": "PDI-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Scale-depth alignment; 3D structural rigidity",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 52
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-053",
+      "benchmark": "PlayWorld",
+      "scope": "T2",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Feedback-based test subset",
+      "measuredReadout": "Entity / world-state consistency VQA",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 53
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-054",
+      "benchmark": "RBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Robot / object stability; spatial-relation scores",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 54
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-055",
+      "benchmark": "RigidBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "IoU; Chamfer distance; depth / position / geometry errors",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 55
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-056",
+      "benchmark": "RoboTrustBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Entity / spatiotemporal-consistency rubric",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 56
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-057",
+      "benchmark": "ScratchWorld",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "F Value-aware changed-field (primary); 1 full-state field accuracy (diagnostic)",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 57
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-058",
+      "benchmark": "STEVO-Bench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Curated initial scenes / task YAML verifier",
+      "measuredReadout": "Coherence / spatial-state consistency",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 58
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-059",
+      "benchmark": "SurgWMBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Teacher forcing / joint task",
+      "measuredReadout": "Tool-point ADE / FDE",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 59
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-060",
+      "benchmark": "SurgWMBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Autoregressive rollout",
+      "measuredReadout": "ADE / FDE at 5 / 10 / 15 steps",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 60
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-061",
+      "benchmark": "SurgWMBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Perturb-and-recover",
+      "measuredReadout": "ADE / FDE and degradation after noise / random masking",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 61
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-062",
+      "benchmark": "WBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Spatial-structure / entity-consistency components",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 62
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-063",
+      "benchmark": "What-If World",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "A-P-O-E Environment consistency",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 63
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-064",
+      "benchmark": "WMBench",
+      "scope": "T2",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Direct diagnostics of policy- feedback rollouts",
+      "measuredReadout": "Subject / scene consistency diagnostics",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 64
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-065",
+      "benchmark": "WMBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "I2V no-control baseline (Table 3)",
+      "measuredReadout": "Subject Consistency",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 65
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-066",
+      "benchmark": "WorldArena",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "3D accuracy; perspective / depth consis- tency",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 66
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-067",
+      "benchmark": "WorldArena 2.0",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Direct video diagnostics / RoboTwin-LIBERO",
+      "measuredReadout": "3D accuracy; depth / perspective",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 67
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-068",
+      "benchmark": "WorldArena 2.0",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Direct video diagnostics / real ALOHA",
+      "measuredReadout": "3D accuracy; depth / perspective",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 68
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-069",
+      "benchmark": "WorldBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Intuitive-physics video generation",
+      "measuredReadout": "Foreground mIoU; background RMSE on intuitive-physics generation (object / scene retention)",
+      "source": {
+        "table": "S2",
+        "page": 9,
+        "tableRow": 69
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-070",
+      "benchmark": "WorldExam",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Scene Revisit",
+      "measuredReadout": "Revisit PSNR / SSIM / LPIPS; 3D consis- tency",
+      "source": {
+        "table": "S2",
+        "page": 10,
+        "tableRow": 70
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-071",
+      "benchmark": "WorldMark",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "World consistency; scene geometry",
+      "source": {
+        "table": "S2",
+        "page": 10,
+        "tableRow": 71
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-072",
+      "benchmark": "WorldOlympiad",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "3D / body / state consistency; cross- segment spatial retention",
+      "source": {
+        "table": "S2",
+        "page": 10,
+        "tableRow": 72
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-073",
+      "benchmark": "WorldRoamBench",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Scene / object spatial consistency",
+      "source": {
+        "table": "S2",
+        "page": 10,
+        "tableRow": 73
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-074",
+      "benchmark": "WoW-World-Eval",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed generated-video diagnostics",
+      "measuredReadout": "Robot / object / scene consistency; trajectory position error",
+      "source": {
+        "table": "S2",
+        "page": 10,
+        "tableRow": 74
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S2-075",
+      "benchmark": "XEWorld",
+      "scope": "T2",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; data category; protocol and metric initial-world images with independently HCP describes this construction pipeline, Player decisions; unsupported origins of the 63 selected data codes. 240 cases are RWD; SBG as an analysis under the survey's over rule-generated states. They to RoG feedback that controls video refers to adaptive step/rewind observation",
+      "measuredReadout": "Morphology masks; structure / geometry reprojection consistency O = downstream outcome. Data: RWD HCP = hybrid construction. NR denotes △ level are classified separately. = cross-category specified long-horizon objectives, not a verified real/synthetic breakdown cases of a specific generator are not standard-track nonphysical VBench2 images are not resolved. the robot-reference-image ablation lacks controlled-world definition: human PGN are retained as separate branches. extension. This coding does not, by itself, queries over a fixed underlying trajectory;",
+      "source": {
+        "table": "S2",
+        "page": 10,
+        "tableRow": 75
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-001",
+      "benchmark": "AutumnBench",
+      "scope": "T3",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Long-prefix MFP with adaptive step/rewind queries after exploration",
+      "measuredReadout": "Masked final-state accuracy after long action sequences",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-002",
+      "benchmark": "AutumnBench",
+      "scope": "T3",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Long-horizon goal planning",
+      "measuredReadout": "Goal-reaching planning success",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-003",
+      "benchmark": "LoopNav",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "SGCS / scene recovery at long revisit intervals",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-004",
+      "benchmark": "SmallWorlds",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Long-horizon prediction error",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-005",
+      "benchmark": "WorldPrediction",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Sequence-choice accuracy for 3-10-step Procedural Planning",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-006",
+      "benchmark": "Chess-World-Model",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Human PGN held-out 10k / rule replay",
+      "measuredReadout": "Multistep exact-trajectory / state accuracy",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-007",
+      "benchmark": "Chess-World-Model",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Random legal self-play 10k / rule replay",
+      "measuredReadout": "Multistep exact-trajectory / state accuracy",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-008",
+      "benchmark": "ContactWorld",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "USB fixed latent prediction",
+      "measuredReadout": "Latent rollout prediction MSE at 1-6 steps",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-009",
+      "benchmark": "ContactWorld",
+      "scope": "T3",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Simulated planning / goal- offset horizon",
+      "measuredReadout": "Mean success at 12 / 24 / 36 / 48-step goal offsets",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-010",
+      "benchmark": "ExPhy",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "ADE / FDE across horizons",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-011",
+      "benchmark": "HarnessEval-W",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Drift Resistance; Revisit Consistency; Offscreen Evolution",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-012",
+      "benchmark": "HTEWorld",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Late-stage state retention; cross-chunk consistency",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-013",
+      "benchmark": "iWorld-Bench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Memory-revisit consistency",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-014",
+      "benchmark": "MBench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Entity / environment / causal-memory retention; gated reliability",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-015",
+      "benchmark": "MemoBench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Long-term state / memory VQA after disappearance and reappearance",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-016",
+      "benchmark": "MIND",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Memory-reconstruction score",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-017",
+      "benchmark": "PlayWorld",
+      "scope": "T3",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Feedback-based test subset",
+      "measuredReadout": "Insight Evolution; long-term state- consistency VQA",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-018",
+      "benchmark": "RBench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Instruction-sequence / long-range completeness in multistage tasks",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-019",
+      "benchmark": "RoboWM-Bench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Reported video-to-action execution",
+      "measuredReadout": "Multistep task / step execution success",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-020",
+      "benchmark": "ScratchWorld",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Hidden-state accuracy after fixed action sequences",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-021",
+      "benchmark": "WBench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Multiturn long-term consistency; state retention",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-022",
+      "benchmark": "WMBench",
+      "scope": "T3",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Direct diagnostics of policy- feedback rollouts",
+      "measuredReadout": "Rollout-fidelity / drift diagnostics up to 40 s",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-023",
+      "benchmark": "WMBench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "40 s autoregressive diagnos- tics (Table 4)",
+      "measuredReadout": "PSNR / FID / FVD per 8 s segment; temporal degradation",
+      "source": {
+        "table": "S3",
+        "page": 11,
+        "tableRow": 23
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-024",
+      "benchmark": "WorldMark",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "World consistency at 20 / 40 / 60 s",
+      "source": {
+        "table": "S3",
+        "page": 12,
+        "tableRow": 24
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-025",
+      "benchmark": "WorldOlympiad",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Chunk / transition / global long-range consistency",
+      "source": {
+        "table": "S3",
+        "page": 12,
+        "tableRow": 25
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-026",
+      "benchmark": "WorldRoamBench",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Departure / return and long-term mem- ory consistency",
+      "source": {
+        "table": "S3",
+        "page": 12,
+        "tableRow": 26
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-027",
+      "benchmark": "WoW-World-Eval",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed generated-video diagnostics",
+      "measuredReadout": "Plan-DAG decomposition; long-horizon sequence correctness",
+      "source": {
+        "table": "S3",
+        "page": 12,
+        "tableRow": 27
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S3-028",
+      "benchmark": "WR-Arena",
+      "scope": "T3",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; initial-world images with independently HCP describes this construction pipeline, Player decisions; unsupported memory judgments and executed rule-replay data are an analyst refers to adaptive step/rewind observation",
+      "measuredReadout": "Additive penalty AP-lambda for rollout degradation O = downstream outcome. Data: RWD △ HCP = hybrid construction. = cross-category specified long-horizon objectives, not a verified real/synthetic breakdown cases of a specific generator are not standard-track goal success are different readouts. Autoregressive SBG coding under the controlled-world definition. queries over a fixed underlying trajectory;",
+      "source": {
+        "table": "S3",
+        "page": 12,
+        "tableRow": 28
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-001",
+      "benchmark": "IntPhys",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset prediction",
+      "measuredReadout": "Physical-feasibility classification from loss (absolute / relative)",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-002",
+      "benchmark": "CLEVRER",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Object / collision-event prediction QA accuracy",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-003",
+      "benchmark": "CoPhy",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "3D object-position prediction error; stability correctness",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-004",
+      "benchmark": "PHYRE",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Feedback-enabled / online baseline",
+      "measuredReadout": "AUCCESS",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-005",
+      "benchmark": "PHYRE",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed action-ranking baseline",
+      "measuredReadout": "AUCCESS",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-006",
+      "benchmark": "CRAFT",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "QA accuracy for collision, contact and basket-entry events",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-007",
+      "benchmark": "Physion",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Object Contact Prediction accuracy",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-008",
+      "benchmark": "ComPhy",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Option / question accuracy for mass, charge and physical prediction",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-009",
+      "benchmark": "Physion++",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Contact-prediction accuracy under different property-observability conditions",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-010",
+      "benchmark": "ContPhy",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Continuous-physics property and predic- tion QA accuracy",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-011",
+      "benchmark": "PhyGenBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Key physical events; physical order; naturalness scores",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-012",
+      "benchmark": "VideoPhy",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Binary Physical Commonsense score",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-013",
+      "benchmark": "WorldSimBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit / T2V",
+      "measuredReadout": "Velocity; Trajectory; Embodied Interaction; Safety",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-014",
+      "benchmark": "WorldSimBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / OE / Minecraft",
+      "measuredReadout": "Velocity; Trajectory; Embodied Interaction",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-015",
+      "benchmark": "WorldSimBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / AD / nuScenes",
+      "measuredReadout": "Trajectory; Safety",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-016",
+      "benchmark": "WorldSimBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Explicit I2V / RM / RH20T- P",
+      "measuredReadout": "Trajectory; Embodied Interaction",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-017",
+      "benchmark": "WorldSimBench",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Implicit / task execution",
+      "measuredReadout": "MineRL / CARLA / CALVIN task success and action completion",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-018",
+      "benchmark": "4DWorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Text-to-4D",
+      "measuredReadout": "Physical-law / dynamics-consistency judgments",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-019",
+      "benchmark": "4DWorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Image-to-4D / physical WISA",
+      "measuredReadout": "Physical-law / dynamics-consistency judgments",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-020",
+      "benchmark": "4DWorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Video-to-4D / physical WISA",
+      "measuredReadout": "Physical-law / dynamics-consistency judgments",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-021",
+      "benchmark": "DreamGen Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical alignment / video-level physical- success judgments",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-022",
+      "benchmark": "EWMBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Dynamic Consistency: velocity / accelera- tion distributions",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-023",
+      "benchmark": "GameWorld Score",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Object / scenario consistency under Physical Rule Understanding",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 23
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-024",
+      "benchmark": "Gen-ViRe",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical-continuity / interaction- feasibility rubric",
+      "source": {
+        "table": "S4",
+        "page": 13,
+        "tableRow": 24
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-025",
+      "benchmark": "IntPhys 2",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Solidity / physical-feasibility discrimina- tion accuracy",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 25
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-026",
+      "benchmark": "Morpheus",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Original real-experiment initialization parameter",
+      "measuredReadout": "PINN physical-law fit; conservation / residuals",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 26
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-027",
+      "benchmark": "Morpheus",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "COSMOS-Transfer aug- mented initialization parameter",
+      "measuredReadout": "PINN physical-law fit; conservation / residuals",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 27
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-028",
+      "benchmark": "MVP",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset pairs",
+      "measuredReadout": "Accuracy on physical-dynamics minimal",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 28
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-029",
+      "benchmark": "PAI-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-G / T2V",
+      "measuredReadout": "Physical-plausibility QA criteria within Domain Score",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 29
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-030",
+      "benchmark": "PAI-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-G / I2V",
+      "measuredReadout": "Physical-plausibility QA criteria within Domain Score",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 30
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-031",
+      "benchmark": "PAI-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-U / Physical World QA",
+      "measuredReadout": "Physical-law / object-property QA accuracy",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 31
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-032",
+      "benchmark": "PAI-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-U / physical constraints",
+      "measuredReadout": "Action-affordance / physical-constraint QA accuracy",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 32
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-033",
+      "benchmark": "PEDRA",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "I2V / ETH-UCY reference",
+      "measuredReadout": "Velocity; acceleration; distance; collision; flow; EMD for reference-distribution terms",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 33
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-034",
+      "benchmark": "PEDRA",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V / prompt-only",
+      "measuredReadout": "Velocity; acceleration; distance; collision; flow; physical-unit statistics / reference ranges",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 34
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-035",
+      "benchmark": "PhyCoBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Generator scoring / human physical ranking",
+      "measuredReadout": "Human physical ranking; PhyCoPredictor: inverse weighted flow / frame prediction MSE (Eq. 4)",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 35
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-036",
+      "benchmark": "Physics-IQ",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Spatial / spatiotemporal IoU; weighted IoU; MSE",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 36
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-037",
+      "benchmark": "PhyWorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset physics",
+      "measuredReadout": "CAP physical commonsense / anti- adherence",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 37
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-038",
+      "benchmark": "SmallWorlds",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Energy / position / velocity diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 38
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-039",
+      "benchmark": "T2VPhysBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Four-level physical-law adherence",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 39
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-040",
+      "benchmark": "T2VWorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical-realism rating",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 40
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-041",
+      "benchmark": "VACT",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Rule consistency in physical- commonsense scenarios",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 41
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-042",
+      "benchmark": "VBench-2.0",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical state-change / dynamics consis- tency",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 42
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-043",
+      "benchmark": "VideoPhy-2",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "≥ Five-level PC; joint success with SA 4 ≥ and PC 4",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 43
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-044",
+      "benchmark": "VMBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "PAS physical adherence; related physical diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 44
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-045",
+      "benchmark": "WorldLens",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Generation / reconstruction diagnostics",
+      "measuredReadout": "Human / evaluator Physical Plausibility ratings (H.2)",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 45
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-046",
+      "benchmark": "WorldModelBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V",
+      "measuredReadout": "Binary scores on five physical laws",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 46
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-047",
+      "benchmark": "WorldModelBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "I2V",
+      "measuredReadout": "Binary scores on five physical laws",
+      "source": {
+        "table": "S4",
+        "page": 14,
+        "tableRow": 47
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-048",
+      "benchmark": "ACWM-Phys",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Masked MSE; prediction error in physical scenes",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 48
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-049",
+      "benchmark": "Apple-π",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical diagnostics rescaled to the requested physical time",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 49
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-050",
+      "benchmark": "CaliBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Nine curated initial scenes / analytic distributions power",
+      "measuredReadout": "Scorability; mnTV; chi-squared statistic; / confidence intervals",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 50
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-051",
+      "benchmark": "CausalSpatial",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "TPR / NSR for collision and physical feasibility questions",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 51
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-052",
+      "benchmark": "ContactWorld",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Simulated contact tasks / tactile ablations",
+      "measuredReadout": "Contact-task success; success changes under modality ablations",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 52
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-053",
+      "benchmark": "CrashTwin",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Momentum and energy residuals; collision diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 53
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-054",
+      "benchmark": "CRONOS",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Motion similarity; VLM physical score; thresholded success rate",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 54
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-055",
+      "benchmark": "DrivingGen",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Open-domain driving",
+      "measuredReadout": "Physical-plausibility / motion-plausibility judgments",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 55
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-056",
+      "benchmark": "DrivingGen",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Ego-conditioned driving",
+      "measuredReadout": "Physical-plausibility / motion-plausibility judgments",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 56
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-057",
+      "benchmark": "ExPhy",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "ADE / FDE; normalized MAE of mass, friction and restitution",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 57
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-058",
+      "benchmark": "EZS-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical feasibility and interaction checklist judgments",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 58
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-059",
+      "benchmark": "GAUGE",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Video world model",
+      "measuredReadout": "Dynamic Error; physical-parameter deviation; period / energy diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 59
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-060",
+      "benchmark": "GAUGE",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Numerical physics-engine comparator*",
+      "measuredReadout": "Motion-capture versus reconstructed- simulation trajectory / physical-parameter deviations",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 60
+      },
+      "auxiliary": true
+    },
+    {
+      "taskId": "S4-061",
+      "benchmark": "H2R-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Main 240 cases / no robot reference image",
+      "measuredReadout": "M3 Functional Contact Transfer",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 61
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-062",
+      "benchmark": "H2R-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Robot-reference-image ablation",
+      "measuredReadout": "M3 Functional Contact Transfer",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 62
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-063",
+      "benchmark": "HarnessEval-W",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical Observation / Physical Transition item scores",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 63
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-064",
+      "benchmark": "HOCA-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Task I / matched real and generated",
+      "measuredReadout": "Plausibility Check F1",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 64
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-065",
+      "benchmark": "HOCA-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Generated anomalies: Tasks II-IV / advanced probes",
+      "measuredReadout": "Domain / description accuracy; physical explanations (0-100); temporal mIoU / R@0.5; multi-anomaly F1 / Exact Match",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 65
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-066",
+      "benchmark": "HTEWorld",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Stagewise motion / physical-state consis- tency",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 66
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-067",
+      "benchmark": "KineBench",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Robot-centric kinematic diagnosis",
+      "measuredReadout": "SPARC; Maruyama manipulability",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 67
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-068",
+      "benchmark": "KineBench",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Physical-manipulation execution",
+      "measuredReadout": "Execution success on 20 physical- manipulation tasks",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 68
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-069",
+      "benchmark": "MBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Hidden-process evolution criteria in causal memory",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 69
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-070",
+      "benchmark": "MemoBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical plausibility VQA subdimensions",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 70
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-071",
+      "benchmark": "MiraBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical constraints; interaction correct- ness",
+      "source": {
+        "table": "S4",
+        "page": 15,
+        "tableRow": 71
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-072",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "T2V",
+      "measuredReadout": "InterCov effect coverage; InterOrder event order; InterStab-N non-target physical stability",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 72
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-073",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "IT2V",
+      "measuredReadout": "InterCov effect coverage; InterOrder event order; InterStab-N non-target physical stability",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 73
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-074",
+      "benchmark": "Omni-WorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "With Camera",
+      "measuredReadout": "InterCov effect coverage; InterOrder event order; InterStab-N non-target physical stability",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 74
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-075",
+      "benchmark": "PDI-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "3D motion consistency; nonphysical acceleration / angle jumps; rigidity residuals",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 75
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-076",
+      "benchmark": "PhyGround",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "250 TI2V cases / expected outcomes specified (13",
+      "measuredReadout": "1-5 scores on 2-4 applicable laws per case laws); PTV; Object Persistence and supplementary readouts",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 76
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-077",
+      "benchmark": "PhysicsMind",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed VQA",
+      "measuredReadout": "Physical-property / commonsense MCQ accuracy",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 77
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-078",
+      "benchmark": "PhysicsMind",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed video prediction",
+      "measuredReadout": "Geometry; torque-related terminal states; inertia-related velocity / acceleration measures",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 78
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-079",
+      "benchmark": "Physion-Eval",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Generator physical diagnos- tics physical",
+      "measuredReadout": "Expert ratings of generated glitches / realism",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 79
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-080",
+      "benchmark": "Physion-Eval",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Human / model critic- pool* validation",
+      "measuredReadout": "Source-blinded realism / physical- anomaly judgments",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 80
+      },
+      "auxiliary": true
+    },
+    {
+      "taskId": "S4-081",
+      "benchmark": "PlayWorld",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Feedback-based test subset",
+      "measuredReadout": "Physical plausibility VQA",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 81
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-082",
+      "benchmark": "RBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical semantics; contact / physical- constraint scores",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 82
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-083",
+      "benchmark": "ReactSim-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset violations;",
+      "measuredReadout": "Agent-agent collision; off-road / direction kinematic infeasibility",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 83
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-084",
+      "benchmark": "RigidBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "ATE / ATE3D; trajectory-based physical- consistency proxies",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 84
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-085",
+      "benchmark": "RoboTrustBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical-interaction / plausibility rubric",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 85
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-086",
+      "benchmark": "RoboWM-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Reported video-to-action execution",
+      "measuredReadout": "Step / task success on physically exe- cutable tasks",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 86
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-087",
+      "benchmark": "STEVO-Bench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Curated initial scenes / task YAML",
+      "measuredReadout": "Physics / state-evolution progress verifier",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 87
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-088",
+      "benchmark": "WBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical-fidelity components",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 88
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-089",
+      "benchmark": "What-If World",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "A-P-O-E Physical plausibility",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 89
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-090",
+      "benchmark": "WMBench",
+      "scope": "T4",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Direct diagnostics of policy- feedback rollouts",
+      "measuredReadout": "Dynamic / physical-fidelity diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 90
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-091",
+      "benchmark": "WorldArena",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physics adherence",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 91
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-092",
+      "benchmark": "WorldArena 2.0",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Direct video diagnostics / RoboTwin-LIBERO",
+      "measuredReadout": "Physics adherence; interaction quality",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 92
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-093",
+      "benchmark": "WorldArena 2.0",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Direct video diagnostics / real ALOHA",
+      "measuredReadout": "Physics adherence; interaction quality",
+      "source": {
+        "table": "S4",
+        "page": 16,
+        "tableRow": 93
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-094",
+      "benchmark": "WorldBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Intuitive / parametric physics generation /",
+      "measuredReadout": "Intuitive-physics generation mIoU; gravity friction / viscosity estimation error; QA is separate appendix evidence",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 94
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-095",
+      "benchmark": "WorldExam",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Physical Reaction",
+      "measuredReadout": "Physical-reaction checklist: expected collision, gravity and friction dynamics",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 95
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-096",
+      "benchmark": "WorldOlympiad",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physical-plausibility / dynamics rubric",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 96
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-097",
+      "benchmark": "WorldRoamBench",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Physics validity after control gating",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 97
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-098",
+      "benchmark": "WorldSimProbe",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Object-interaction dynamics diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 98
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-099",
+      "benchmark": "WoW-World-Eval",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Video-physics diagnostics",
+      "measuredReadout": "Physical commonsense; trajectory-physics diagnostics",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 99
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-100",
+      "benchmark": "WoW-World-Eval",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "GC-IDM real execution: physical feasibility",
+      "measuredReadout": "Real-world success across nine tasks",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 100
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S4-101",
+      "benchmark": "XEWorld",
+      "scope": "T4",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; data category; protocol and metric initial-world images with independently HCP describes this construction pipeline, Player decisions; unsupported 240 cases are RWD; critic-validation pool and evaluation track. readouts, not Kendall/Spearman language QA is separate appendix",
+      "measuredReadout": "Object trajectories versus simulated reference motion O = downstream outcome. Data: RWD HCP = hybrid construction. NR denotes △ level are classified separately. = cross-category specified long-horizon objectives, not a verified real/synthetic breakdown cases of a specific generator are not standard-track the robot-reference-image ablation lacks GAUGE numerical-engine comparison are Generator scores and evaluator-validation statistics judge-validation correlations. PhyGround evidence, not an additional readout on",
+      "source": {
+        "table": "S4",
+        "page": 17,
+        "tableRow": 101
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-001",
+      "benchmark": "CLEVRER",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset question",
+      "measuredReadout": "Explanatory / predictive / counterfactual accuracy",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-002",
+      "benchmark": "CoPhy",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset prediction",
+      "measuredReadout": "Post-intervention 3D position / stability for counterfactual D",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-003",
+      "benchmark": "CRAFT",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Causal and counterfactual QA accuracy",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-004",
+      "benchmark": "Physion",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "OCP accuracy for physical-event chains",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-005",
+      "benchmark": "Causal-VidQA",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset questions",
+      "measuredReadout": "Answer and rationale accuracy for explanation, prediction and counterfactual",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-006",
+      "benchmark": "ComPhy",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Counterfactual QA accuracy under mass / charge changes",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-007",
+      "benchmark": "ACQUIRED",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Counterfactual answer accuracy; pairwise accuracy",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-008",
+      "benchmark": "ContPhy",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Counterfactual QA and goal-directed action-choice accuracy",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-009",
+      "benchmark": "MMWorld",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Causal / counterfactual MCQ accuracy",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-010",
+      "benchmark": "AutumnBench",
+      "scope": "T5",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Change Detection",
+      "measuredReadout": "Change-time localization score",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-011",
+      "benchmark": "CausalVQA",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset planning",
+      "measuredReadout": "Paired score on causal, counterfactual and MCQs",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-012",
+      "benchmark": "MVP",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Accuracy on causal / counterfactual minimal pairs",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-013",
+      "benchmark": "PAI-Bench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-U / Time-causality QA",
+      "measuredReadout": "Causality-question accuracy within Time",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-014",
+      "benchmark": "PAI-Bench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "PAI-U / Predicting Action Effects",
+      "measuredReadout": "Task-state judgment; next-plausible-action QA accuracy",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-015",
+      "benchmark": "Physics-IQ",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "IoU / MSE for physical-event continua- tion",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-016",
+      "benchmark": "T2VWorldBench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Causality prompt subset",
+      "measuredReadout": "Five-level realism / consistency ratings and domain mean on Causality prompts",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-017",
+      "benchmark": "VACT",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Causal-rule / generation consistency",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-018",
+      "benchmark": "WorldPrediction",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "World Modelling: action-choice accuracy between two states",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-019",
+      "benchmark": "CausalSpatial",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "TPR / NSR for hypothetical action consequences",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-020",
+      "benchmark": "CRONOS",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset physical-factor",
+      "measuredReadout": "Sensitivity comparisons under visual / interventions",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-021",
+      "benchmark": "HarnessEval-W",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Expected post-intervention dynamics in Physical Transition",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-022",
+      "benchmark": "HOCA-Bench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Task IV / normative counter- factual explanations",
+      "measuredReadout": "Judge score (0-100) for four-part expla- nations, including violated laws and expected normal outcomes",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-023",
+      "benchmark": "MiraBench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Criteria comparing normal / failed action consequences",
+      "source": {
+        "table": "S5",
+        "page": 18,
+        "tableRow": 23
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-024",
+      "benchmark": "PhysicsMind",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed VQA",
+      "measuredReadout": "Physical / causal MCQ accuracy",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 24
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-025",
+      "benchmark": "PhysicsMind",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed video prediction physical",
+      "measuredReadout": "Terminal-state / trajectory criteria under conditions",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 25
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-026",
+      "benchmark": "PlayWorld",
+      "scope": "T5",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Feedback-based test subset",
+      "measuredReadout": "Action-consequence / autonomous state- evolution VQA",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 26
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-027",
+      "benchmark": "RBench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Action-consequence and physical- semantic criteria in reasoning tasks",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 27
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-028",
+      "benchmark": "ReactSim-Bench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Factual / deviating fixed AV trajectories",
+      "measuredReadout": "Factual / deviating-condition differences in Agent-AV collision and risky TTC",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 28
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-029",
+      "benchmark": "RoboTrustBench",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset plausibility",
+      "measuredReadout": "Action-precondition / consequence / rubric",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 29
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-030",
+      "benchmark": "ScratchWorld",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "Event F1; post-intervention difference matching",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 30
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-031",
+      "benchmark": "What-If World",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset",
+      "measuredReadout": "A-P-O-E counterfactual Outcome differ- ence",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 31
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-032",
+      "benchmark": "WorldExam",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "World Reactivity / reaction tasks",
+      "measuredReadout": "Scene-conditioned reaction checklist: initiating action given, consequences unspecified",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 32
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-033",
+      "benchmark": "WorldSimProbe",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset /",
+      "measuredReadout": "Object effects of non-contact interventions action perturbations",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 33
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-034",
+      "benchmark": "WoW-World-Eval",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed generated-video diagnostics",
+      "measuredReadout": "Task-DAG dependencies, preconditions and causal order",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 34
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S5-035",
+      "benchmark": "WR-Arena",
+      "scope": "T5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Fixed test subset = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; initial-world images with independently HCP describes this construction pipeline, Player decisions; unsupported imply realized interventions. Counterfactual evidence limits. HOCA-Bench judges is the benchmark's own understanding",
+      "measuredReadout": "Counterfactual / action-effect correctness; stepwise next-observation correctness O = downstream outcome. Data: RWD △ HCP = hybrid construction. = cross-category specified long-horizon objectives, not a verified real/synthetic breakdown cases of a specific generator are not standard-track explanation, observed-event reasoning normative explanations; T2VWorldBench track, not this survey's Functional",
+      "source": {
+        "table": "S5",
+        "page": 19,
+        "tableRow": 35
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-001",
+      "benchmark": "ACT-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Instruction Execution Correctness; Trajec- tory Alignment; ADE/FDE",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-002",
+      "benchmark": "PhyGenBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Object presence; action / prompt- adherence checks",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-003",
+      "benchmark": "StoryEval",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Sequential-event video judgments with",
+      "measuredReadout": "Sequential-event completion: description then event judgments; completion rate unanimous voting",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-004",
+      "benchmark": "TC-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified T2V / transition completion",
+      "measuredReadout": "Transition Completion; state-change assertions",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-005",
+      "benchmark": "TC-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified I2V / transition completion",
+      "measuredReadout": "Transition Completion; state-change assertions",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-006",
+      "benchmark": "VideoPhy",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Binary Semantic Adherence score",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-007",
+      "benchmark": "4DWorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Text-to-4D",
+      "measuredReadout": "Condition-adherence judgments",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-008",
+      "benchmark": "4DWorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Image-to-4D / physical WISA",
+      "measuredReadout": "Condition-adherence judgments",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-009",
+      "benchmark": "4DWorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Pre-specified Image-to-4D / nonphysical VBench2",
+      "measuredReadout": "Condition-adherence judgments",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-010",
+      "benchmark": "4DWorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Video-to-4D / mixed suite",
+      "measuredReadout": "Condition-adherence judgments",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-011",
+      "benchmark": "DreamGen Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Instruction adherence; video action- completion scores",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-012",
+      "benchmark": "EWMBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "NDTW and HSD relative to target end- effector trajectories",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-013",
+      "benchmark": "GameWorld Score",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Keyboard / mouse action controllability",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-014",
+      "benchmark": "MagicBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed initial-image / trajec- tory generation",
+      "measuredReadout": "Mask / box IoU for control alignment",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-015",
+      "benchmark": "MoveBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed initial-image / trajec- paper tory generation",
+      "measuredReadout": "Trajectory L2 distance, denoted EPE in the",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-016",
+      "benchmark": "PAI-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified PAI-C / multisignal condi- tional generation",
+      "measuredReadout": "Blur SSIM; Edge F1; Depth si-RMSE; Seg mIoU",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-017",
+      "benchmark": "PAI-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified PAI-G / T2V",
+      "measuredReadout": "Condition / content adherence within PAI-G semantic alignment",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-018",
+      "benchmark": "PAI-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified PAI-G / I2V",
+      "measuredReadout": "Condition / content adherence within PAI-G semantic alignment",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-019",
+      "benchmark": "PhyWorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "CAP semantic adherence",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-020",
+      "benchmark": "VACT",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Text consistency; condition-realization rate",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-021",
+      "benchmark": "VBench-2.0",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Motion order; complex plot; camera control",
+      "source": {
+        "table": "S6",
+        "page": 20,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-022",
+      "benchmark": "VideoPhy-2",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Five-level SA; joint SA / PC pass rate",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-023",
+      "benchmark": "WorldModelBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified T2V",
+      "measuredReadout": "Instruction-following score",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 23
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-024",
+      "benchmark": "WorldModelBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified I2V",
+      "measuredReadout": "Instruction-following score",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 24
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-025",
+      "benchmark": "WorldScore",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified T2V interface",
+      "measuredReadout": "Camera-control error; object / content alignment",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 25
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-026",
+      "benchmark": "WorldScore",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Image-conditioned interface",
+      "measuredReadout": "Camera-control error; object / content alignment",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 26
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-027",
+      "benchmark": "Chess-World-Model",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Human PGN held-out 10k / rule replay",
+      "measuredReadout": "Exact state update after a given legal move",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 27
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-028",
+      "benchmark": "Chess-World-Model",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Random legal self-play 10k / rule replay",
+      "measuredReadout": "Exact state update after a given legal move",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 28
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-029",
+      "benchmark": "DrivingGen",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Ego-conditioned driving only",
+      "measuredReadout": "Ego-conditioned trajectory-following error",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 29
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-030",
+      "benchmark": "EZS-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Text-specified action-task checklist completion",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 30
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-031",
+      "benchmark": "H2R-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Main 240 cases / no robot reference image",
+      "measuredReadout": "M1 Goal-State Completion; M2 Action- Event Completion; M4 requested- embodiment adherence",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 31
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-032",
+      "benchmark": "H2R-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": null,
+      "dataStatus": "unresolved",
+      "taskBranch": "Pre-specified Robot-reference-image ablation",
+      "measuredReadout": "M1 Goal-State Completion; M2 Action- Event Completion; M4 requested- embodiment adherence",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 32
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-033",
+      "benchmark": "HarnessEval-W",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Viewpoint trajectory and intended change in Exploratory / Intentional Transition",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 33
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-034",
+      "benchmark": "KineBench",
+      "scope": "S5",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Specified manipulation-task execution",
+      "measuredReadout": "Execution success for specified tasks / instructions",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 34
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-035",
+      "benchmark": "MBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Trigger coverage; conditional-action realization reliability",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 35
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-036",
+      "benchmark": "MemoBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Rotation / camera-trajectory adherence scores",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 36
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-037",
+      "benchmark": "MiraBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Task Completion Rate; action adherence",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 37
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-038",
+      "benchmark": "Omni-WorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified T2V",
+      "measuredReadout": "Object Control; Content Alignment",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 38
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-039",
+      "benchmark": "Omni-WorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified IT2V",
+      "measuredReadout": "Object Control; Content Alignment",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 39
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-040",
+      "benchmark": "Omni-WorldBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified With Camera",
+      "measuredReadout": "Object Control; Content Alignment; Camera Control rotation / translation error",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 40
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-041",
+      "benchmark": "OSCBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Semantic / state change; prompt adher- ence",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 41
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-042",
+      "benchmark": "RBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Instruction / action-sequence adherence; action magnitude",
+      "source": {
+        "table": "S6",
+        "page": 21,
+        "tableRow": 42
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-043",
+      "benchmark": "RoboTrustBench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Instruction-adherence / task-completion rubric",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 43
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-044",
+      "benchmark": "ScratchWorld",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "F Value-aware changed-field (primary); 1 full-state field accuracy (diagnostic)",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 44
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-045",
+      "benchmark": "STEVO-Bench",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Curated initial scenes / task YAML",
+      "measuredReadout": "Observation / action control verifier",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 45
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-046",
+      "benchmark": "What-If World",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "A-P-O-E Intervention Adherence",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 46
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-047",
+      "benchmark": "WorldArena",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Instruction following; action following",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 47
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-048",
+      "benchmark": "WorldEcho",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "SE(3) NDTW action-following error",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 48
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-049",
+      "benchmark": "WorldExam",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Camera Control",
+      "measuredReadout": "Translation Error; Rotation Error",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 49
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-050",
+      "benchmark": "WorldExam",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Subject Control",
+      "measuredReadout": "Checklist for specified-subject action / direction adherence",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 50
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-051",
+      "benchmark": "WorldSimProbe",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "Action perturbation and control response across trajectories",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 51
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-052",
+      "benchmark": "WoW-World-Eval",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Video instruction adherence",
+      "measuredReadout": "Instruction understanding; action-object sequence alignment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 52
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-053",
+      "benchmark": "WoW-World-Eval",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified GC-IDM real execution: action achievement",
+      "measuredReadout": "Real-world success across nine tasks",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 53
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-054",
+      "benchmark": "XEWorld",
+      "scope": "S5",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Pre-specified Fixed test subset",
+      "measuredReadout": "URDF forward-kinematics reprojection; action-condition alignment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 54
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-055",
+      "benchmark": "WorldSimBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SPTC",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Explicit / T2V",
+      "measuredReadout": "Instruction Alignment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 55
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-056",
+      "benchmark": "WorldSimBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Explicit I2V / OE / Minecraft",
+      "measuredReadout": "Instruction Alignment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 56
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-057",
+      "benchmark": "WorldSimBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Explicit I2V / AD / nuScenes",
+      "measuredReadout": "Instruction Alignment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 57
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-058",
+      "benchmark": "WorldSimBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Explicit I2V / RM / RH20T- P",
+      "measuredReadout": "Instruction Alignment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 58
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-059",
+      "benchmark": "WorldSimBench",
+      "scope": "S6",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Implicit / task execution",
+      "measuredReadout": "MineRL / CARLA / CALVIN task success and action completion",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 59
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-060",
+      "benchmark": "ACWM-Phys",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset prediction",
+      "measuredReadout": "Action-conditioned Masked MSE / error",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 60
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-061",
+      "benchmark": "HTEWorld",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "Instruction retrieval; action-stage align- ment",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 61
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-062",
+      "benchmark": "iWorld-Bench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "Camera-trajectory / action-following scores",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 62
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-063",
+      "benchmark": "MIND",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "Action adherence",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 63
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-064",
+      "benchmark": "PlayWorld",
+      "scope": "S6",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Feedback-based test subset",
+      "measuredReadout": "Action error and adherence under Agent Player feedback",
+      "source": {
+        "table": "S6",
+        "page": 22,
+        "tableRow": 64
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-065",
+      "benchmark": "ReactSim-Bench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed AV trajectory / TTC autoregressive other agents",
+      "measuredReadout": "Other agents’ Agent-AV collision / risky under fixed AV actions",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 65
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-066",
+      "benchmark": "RoboWM-Bench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Reported video-to-action execution",
+      "measuredReadout": "Video-to-action execution / task achieve- ment",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 66
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-067",
+      "benchmark": "WBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "Fixed action-switch / response-adherence components",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 67
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-068",
+      "benchmark": "WMBench",
+      "scope": "S6",
+      "protocol": "CL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Direct diagnostics of policy- feedback rollouts",
+      "measuredReadout": "Trajectory Accuracy; control consistency",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 68
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-069",
+      "benchmark": "WMBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action I2V no-control baseline (Table 3)",
+      "measuredReadout": "Trajectory Accuracy relative to expected trajectories (no-control baseline)",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 69
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-070",
+      "benchmark": "WorldArena 2.0",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Direct video diagnostics / RoboTwin-LIBERO",
+      "measuredReadout": "Instruction following; action-response sensitivity",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 70
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-071",
+      "benchmark": "WorldArena 2.0",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "RWD",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Direct video diagnostics / real ALOHA",
+      "measuredReadout": "Instruction following; action-response sensitivity",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 71
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-072",
+      "benchmark": "WorldMark",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "WASD control alignment",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 72
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-073",
+      "benchmark": "WorldOlympiad",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "Action-prompt following; interaction consistency",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 73
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-074",
+      "benchmark": "WorldRoamBench",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset",
+      "measuredReadout": "Control fidelity; validity gate",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 74
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S6-075",
+      "benchmark": "WR-Arena",
+      "scope": "S6",
+      "protocol": "OL",
+      "metric": "P",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Interactive action Fixed test subset = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; data category; protocol and metric initial-world images with independently HCP describes this construction pipeline, Player decisions; unsupported origins of the 63 selected data codes. 240 cases are RWD; are preserved as organizational actions and fixed AV trajectories can",
+      "measuredReadout": "Simulation fidelity given actions O = downstream outcome. Data: RWD HCP = hybrid construction. NR denotes △ level are classified separately. = cross-category specified long-horizon objectives, not a verified real/synthetic breakdown cases of a specific generator are not standard-track nonphysical VBench2 images are not resolved. the robot-reference-image ablation lacks labels; membership in Interactive Action be evaluated OL. PAI-C denotes the source",
+      "source": {
+        "table": "S6",
+        "page": 23,
+        "tableRow": 75
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-001",
+      "benchmark": "WorldArena",
+      "scope": "S7",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Data engine Policy training with gener- ated data",
+      "measuredReadout": "pi0.5 training-data gain / task success",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 1
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-002",
+      "benchmark": "WorldArena 2.0",
+      "scope": "S7",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Data engine Generated data for policy training",
+      "measuredReadout": "Policy task success after training with generated data",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 2
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-003",
+      "benchmark": "WMBench",
+      "scope": "S8",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Policy evaluator Policy-evaluation reliability",
+      "measuredReadout": "World-model / real success; ranking correlation",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 3
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-004",
+      "benchmark": "WorldArena",
+      "scope": "S8",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Policy evaluator Policy interaction with the model environment",
+      "measuredReadout": "Success correlation with actual RoboTwin simulator execution",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 4
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-005",
+      "benchmark": "EVA-Bench",
+      "scope": "S9",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner CALVIN / without RoG",
+      "measuredReadout": "Simulation task success (Table 5)",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 5
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-006",
+      "benchmark": "EVA-Bench",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner CALVIN / EVA with RoG",
+      "measuredReadout": "Simulation task success (Table 5)",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 6
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-007",
+      "benchmark": "WorldSimBench",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Implicit / planner execution",
+      "measuredReadout": "Simulator task success",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 7
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-008",
+      "benchmark": "AutumnBench",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "SBG",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Autumn goal planning",
+      "measuredReadout": "Goal-reaching success",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 8
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-009",
+      "benchmark": "World-in-World",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Feedback-based test subset",
+      "measuredReadout": "Task success rate; mean plan length",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 9
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-010",
+      "benchmark": "WorldLens",
+      "scope": "S9",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Open-Loop Adherence (A.2)",
+      "measuredReadout": "PDMS",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 10
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-011",
+      "benchmark": "WorldLens",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Closed-Loop Adherence (A.3-A.4)",
+      "measuredReadout": "Route Completion; ADS",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 11
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-012",
+      "benchmark": "ContactWorld",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner MPC / 12 simulated tasks",
+      "measuredReadout": "Task success under joint goal-pose thresholds",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 12
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-013",
+      "benchmark": "ContactWorld",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner MPC / real valve",
+      "measuredReadout": "Valve success: at least 80% of target rotation, without contact loss or premature release",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 13
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-014",
+      "benchmark": "KineBench",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner ManiSkill3 planner execu- tion",
+      "measuredReadout": "Execution success, reported separately for four suites",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 14
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-015",
+      "benchmark": "RoboWM-Bench",
+      "scope": "S9",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Reported video-to-action execution",
+      "measuredReadout": "Task success after action decoding",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 15
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-016",
+      "benchmark": "WorldArena",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner IDM action execution",
+      "measuredReadout": "RoboTwin task success",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 16
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-017",
+      "benchmark": "WorldArena 2.0",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Cross-platform action planning / execution",
+      "measuredReadout": "Planner task success",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 17
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-018",
+      "benchmark": "WorldArena 2.0",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner UniVTAC visuotactile action head",
+      "measuredReadout": "Insert HDMI / Lift Bottle task success",
+      "source": {
+        "table": "S7",
+        "page": 24,
+        "tableRow": 18
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-019",
+      "benchmark": "WoW-World-Eval",
+      "scope": "S9",
+      "protocol": "OL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner GC-IDM real execution",
+      "measuredReadout": "Real-world success across nine tasks",
+      "source": {
+        "table": "S7",
+        "page": 25,
+        "tableRow": 19
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-020",
+      "benchmark": "WR-Arena",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Open-ended planning / Agibot15",
+      "measuredReadout": "Human trajectory-level completion",
+      "source": {
+        "table": "S7",
+        "page": 25,
+        "tableRow": 20
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-021",
+      "benchmark": "WR-Arena",
+      "scope": "S9",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Planner Structured planning / LanguageTable47",
+      "measuredReadout": "Human goal-achievement judgments",
+      "source": {
+        "table": "S7",
+        "page": 25,
+        "tableRow": 21
+      },
+      "auxiliary": false
+    },
+    {
+      "taskId": "S7-022",
+      "benchmark": "WorldArena 2.0",
+      "scope": "S10",
+      "protocol": "CL",
+      "metric": "O",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "taskBranch": "Training environment RoboTwin online RL = closed-loop. Level: P = prediction-level; SPTC = scenario/prompt/task curation; are HCP because generated data validation; its fixed video diagnostics the authors' explicit description reproduced. CL is coded from the authors' description loop. Feedback scheduling is not levels are distinct. Policy-ranking or training. Executed task outcomes replanning. to RoG feedback that controls video",
+      "measuredReadout": "Policy success on adjust-bottle / click-bell tasks O = downstream outcome. Data: RWD △ HCP = hybrid construction. = cross-category or learned-environment rollouts are connected remain SBG. of the RoboTwin action-planner track. The of history- and prediction-conditioned detailed. This task remains separate from cross-platform agreement assesses evaluator reliability; it is not can be measured after a fixed plan (OL), and extension. This coding does not, by itself,",
+      "source": {
+        "table": "S7",
+        "page": 25,
+        "tableRow": 22
+      },
+      "auxiliary": false
+    }
+  ]
+}

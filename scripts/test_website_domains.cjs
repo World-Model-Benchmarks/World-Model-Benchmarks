@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Website grouping tests. The checked-in manuscript manifest is not rewritten.
+// Final manuscript domain tests, including compatibility with legacy Image URLs.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -30,15 +30,14 @@ const counts = Object.fromEntries(api.uniqueValues('domains').map(domain => [dom
 assert.deepEqual(counts, {driving: 8, embodied: 25, game: 9, video: 68});
 assert.equal(api.countForValue('domains', 'image'), 0);
 
-// Check all eight manuscript-coded fields; only the requested website domain differs.
+// Check all eight manuscript-coded fields directly against the final manifest.
 for (const item of corpus) {
   const row = manifest.records[item.shortName];
-  const domains = item.shortName === 'CausalSpatial' ? ['video'] : row[2].split('+');
   assert.deepEqual(plain([
     item.ref, item.year, item.domains, item.protocols, item.metrics, item.evaluationData,
     item.targets, item.subtargets,
   ]), [
-    row[0], row[1], domains, row[3].split('+'), row[4].split('+'), row[5].split('+'),
+    row[0], row[1], row[2].split('+'), row[3].split('+'), row[4].split('+'), row[5].split('+'),
     row[6].split('+').filter(Boolean).map(code => manifest.targetLabels[code]),
     row[7].split('+').filter(Boolean).map(code => manifest.subtargetLabels[code]),
   ], item.shortName);
@@ -59,11 +58,11 @@ assert.deepEqual([...api.state.filters.domains], ['video']);
 assert.equal(api.visibleItems().length, 68);
 api.state.filters.domains.clear();
 
-// The added-record path uses the same grouping rule and never mutates inputs.
+// The added-record path uses the same final coding and never mutates inputs.
 const added = {...manifest, added: {CausalSpatial: {shortName: 'CausalSpatial'}}};
 assert.deepEqual(plain(api.buildAddedRecord('CausalSpatial', added).domains), ['video']);
-assert.equal(manifest.records.CausalSpatial[2], 'image');
+assert.equal(manifest.records.CausalSpatial[2], 'video');
 assert.equal(JSON.stringify({manifest, shards}), before);
 console.log('PASS: website domains Driving=8, Embodied=25, Game=9, Video=68; Image absent.');
 console.log('PASS: CausalSpatial is included by Video; 102 benchmarks / 85 cross-category unchanged.');
-console.log('PASS: all other fields and the manuscript manifest/shards are unchanged.');
+console.log('PASS: CausalSpatial raw and exported domains are both Video; legacy Image URLs remain compatible.');

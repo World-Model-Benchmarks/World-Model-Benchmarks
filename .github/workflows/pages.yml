@@ -9,6 +9,7 @@ on:
       - "scripts/test_release_years.cjs"
       - "scripts/test_target_scoped_metrics.cjs"
       - "scripts/target_scoped_coding.py"
+      - "scripts/task_records_20260915.json"
       - "scripts/sync_latest_survey.py"
       - "scripts/release_years_20260907.json"
       - "scripts/verify_live_release_years.py"
@@ -33,7 +34,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Validate target-specific metrics, release years and website domains
+      - name: Validate joint task coding, release years and website domains
         run: |
           python scripts/sync_latest_survey.py
           node --check docs/assets/app-v3-core.js

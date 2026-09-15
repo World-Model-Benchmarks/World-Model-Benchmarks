@@ -16,7 +16,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SPTC"
     ],
     "targets": [
       "Spatial & State Consistency",
@@ -33,26 +33,70 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0113",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-052"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0207",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-075"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       }
     ]
@@ -91,26 +135,70 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0114",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-018"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0147",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-003"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       }
     ]
@@ -153,52 +241,140 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0115",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-044"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0148",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-014"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0208",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-069"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0317",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-035"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -220,7 +396,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SPTC"
     ],
     "targets": [
       "Spatial & State Consistency",
@@ -240,39 +416,105 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0116",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-058"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0209",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-087"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0318",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-045"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -285,7 +527,7 @@
     "year": 2026,
     "venue": "arXiv",
     "domains": [
-      "image"
+      "video"
     ],
     "protocols": [
       "OL"
@@ -314,39 +556,105 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0117",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-030"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0210",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-051"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0261",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-019"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -391,52 +699,140 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0118",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-063"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          16
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0211",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-089"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0262",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-031"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0319",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-046"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -458,6 +854,7 @@
       "P"
     ],
     "evaluationData": [
+      "SPTC",
       "HCP"
     ],
     "targets": [
@@ -478,39 +875,119 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0119",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-041"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0212",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-065"
+            ],
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "id": "EC0213",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-064"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0263",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-022"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -555,55 +1032,168 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P",
           "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0120",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-012"
+            ],
+            "sourcePages": [
+              7
+            ]
+          },
+          {
+            "id": "EC0121",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-013"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P",
           "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0149",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-001"
+            ],
+            "sourcePages": [
+              11
+            ]
+          },
+          {
+            "id": "EC0150",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-002"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0264",
+            "protocol": "CL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-010"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       },
       {
         "scope": "S9",
         "target": "Functional Utility",
         "label": "Planner",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          24
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0369",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-008"
+            ],
+            "sourcePages": [
+              24
+            ]
+          }
         ]
       }
     ]
@@ -645,39 +1235,105 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0122",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-019"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0214",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-028"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0265",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-012"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -693,6 +1349,7 @@
       "embodied"
     ],
     "protocols": [
+      "OL",
       "CL"
     ],
     "metrics": [
@@ -700,6 +1357,7 @@
       "O"
     ],
     "evaluationData": [
+      "SBG",
       "HCP"
     ],
     "targets": [
@@ -721,56 +1379,157 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0123",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-033"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
+          "OL",
           "CL"
         ],
         "metrics": [
           "P",
           "O"
+        ],
+        "evaluationData": [
+          "SBG",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0151",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-008"
+            ],
+            "sourcePages": [
+              11
+            ]
+          },
+          {
+            "id": "EC0152",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-009"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0215",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-052"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "S9",
         "target": "Functional Utility",
         "label": "Planner",
-        "table": 9,
-        "sourcePage": 23,
+        "table": "S7",
+        "sourcePage": 24,
+        "sourcePages": [
+          24
+        ],
         "protocols": [
           "CL"
         ],
         "metrics": [
-          "P",
           "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0370",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-012",
+              "S7-013"
+            ],
+            "sourcePages": [
+              24
+            ]
+          }
         ]
       }
     ]
@@ -792,7 +1551,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SBG"
     ],
     "targets": [
       "Spatial & State Consistency",
@@ -814,52 +1573,140 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0124",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-057"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0153",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-020"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          19
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0266",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-030"
+            ],
+            "sourcePages": [
+              19
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          22
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0320",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-044"
+            ],
+            "sourcePages": [
+              22
+            ]
+          }
         ]
       }
     ]
@@ -903,52 +1750,140 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0125",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-047"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0216",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-071"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0267",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-023"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0321",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-037"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -970,7 +1905,7 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SBG"
     ],
     "targets": [
       "Spatial & State Consistency",
@@ -990,39 +1925,108 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0126",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-031",
+              "S2-032"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0154",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-006",
+              "S3-007"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          21
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0322",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-027",
+              "S6-028"
+            ],
+            "sourcePages": [
+              21
+            ]
+          }
         ]
       }
     ]
@@ -1061,26 +2065,70 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0127",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-017"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0217",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-025"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       }
     ]
@@ -1120,39 +2168,105 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0128",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-024"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0155",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-004"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0218",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-038"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       }
     ]
@@ -1194,39 +2308,105 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0129",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-025"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0219",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-042"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       },
       {
         "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
-        "table": 8,
+        "table": "S6",
         "sourcePage": 20,
+        "sourcePages": [
+          20
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0323",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-021"
+            ],
+            "sourcePages": [
+              20
+            ]
+          }
         ]
       }
     ]
@@ -1265,26 +2445,70 @@
         "scope": "T2",
         "target": "Spatial & State Consistency",
         "label": "Spatial & State Consistency",
-        "table": 4,
-        "sourcePage": 12,
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          9
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0130",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-069"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          17
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0220",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-094"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
         ]
       }
     ]
@@ -1325,26 +2549,70 @@
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0156",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-005"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0268",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-018"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1383,26 +2651,70 @@
         "scope": "T3",
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
-        "table": 5,
-        "sourcePage": 14,
+        "table": "S3",
+        "sourcePage": 11,
+        "sourcePages": [
+          11
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0157",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-010"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
         ]
       },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          15
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0221",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-057"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
         ]
       }
     ]
@@ -1444,26 +2756,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0222",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-003"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0269",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-002"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1479,6 +2835,7 @@
       "video"
     ],
     "protocols": [
+      "OL",
       "CL"
     ],
     "metrics": [
@@ -1501,13 +2858,49 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
+          "OL",
           "CL"
         ],
         "metrics": [
           "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0223",
+            "protocol": "OL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-005"
+            ],
+            "sourcePages": [
+              13
+            ]
+          },
+          {
+            "id": "EC0224",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-004"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       }
     ]
@@ -1550,26 +2943,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0225",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-006"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0270",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-003"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1607,13 +3044,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0226",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-009"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       }
     ]
@@ -1654,26 +3113,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0227",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-008"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0271",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-006"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1702,7 +3205,8 @@
       "Causal & Counterfactual Reasoning"
     ],
     "subtargets": [
-      "Observation-Grounded Evaluation"
+      "Observation-Grounded Evaluation",
+      "Intervention-Grounded Evaluation"
     ],
     "crossCategory": true,
     "paperUrl": "https://scholar.google.com/scholar?q=ContPhy%3A%20Continuum%20physical%20concept%20learning%20and%20reasoning%20from%20videos",
@@ -1714,26 +3218,70 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0228",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-010"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
         ]
       },
       {
         "scope": "T5",
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
-        "table": 7,
+        "table": "S5",
         "sourcePage": 18,
+        "sourcePages": [
+          18
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0272",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-008"
+            ],
+            "sourcePages": [
+              18
+            ]
+          }
         ]
       }
     ]
@@ -1771,13 +3319,35 @@
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
-        "table": 6,
-        "sourcePage": 15,
+        "table": "S4",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
         "protocols": [
           "OL"
         ],
         "metrics": [
           "P"
+        ],
+        "evaluationData": [
+          "SPTC"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0229",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SPTC",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-035"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
         ]
       }
     ]

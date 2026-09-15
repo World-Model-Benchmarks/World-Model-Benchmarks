@@ -1,19 +1,27 @@
-"""Target/role-scoped protocol and metric coding transcribed from Tables 3-9."""
+"""Joint target/role evidence coding transcribed from Supplementary Tables S1-S7."""
 from __future__ import annotations
 from collections import Counter
 import hashlib
 import html
 import json
 
-SCOPES = {**{f"T{i}": {"target": f"T{i}", "table": i+2, "page": p} for i,p in enumerate([11,12,14,15,18],1)},
-          "S5": {"target":"T6","table":8,"page":20}, "S6": {"target":"T6","table":8,"page":20},
-          **{f"S{i}": {"target":"T7","table":9,"page":23} for i in range(7,11)}}
-EXPECTED_TRACK_FINGERPRINT = "8c8538ee487b515fcc25c54f2002736735c443db1fe1a5a133bcf5496b290077"
-EXPECTED_TABLE10 = {
-    "T6": {"n":55,"olOnly":50,"includesCL":5,"pOnly":51,"includesO":4},
+SCOPES = {
+    "T1": {"target": "T1", "table": "S1", "page": 4},
+    "T2": {"target": "T2", "table": "S2", "page": 7},
+    "T3": {"target": "T3", "table": "S3", "page": 11},
+    "T4": {"target": "T4", "table": "S4", "page": 13},
+    "T5": {"target": "T5", "table": "S5", "page": 18},
+    "S5": {"target": "T6", "table": "S6", "page": 20},
+    "S6": {"target": "T6", "table": "S6", "page": 20},
+    **{f"S{i}": {"target": "T7", "table": "S7", "page": 24} for i in range(7, 11)},
+}
+EXPECTED_TRACK_FINGERPRINT = "85207bc9a524dbe5b72ee388850ad612979d4260506662ae8cb2f0b0e6d6c2a6"
+EXPECTED_EVALUATION_RECORD_FINGERPRINT = "83081d3dc3a0f19811a1e235dcd319e514470055bbea23f631941a195350bb33"
+EXPECTED_TABLE4 = {
+    "T6": {"n":55,"olOnly":51,"includesCL":4,"pOnly":51,"includesO":4},
     "S5": {"n":40,"olOnly":39,"includesCL":1,"pOnly":38,"includesO":2},
-    "S6": {"n":15,"olOnly":11,"includesCL":4,"pOnly":13,"includesO":2},
-    "T7": {"n":13,"olOnly":3,"includesCL":10,"pOnly":0,"includesO":13},
+    "S6": {"n":15,"olOnly":12,"includesCL":3,"pOnly":13,"includesO":2},
+    "T7": {"n":13,"olOnly":2,"includesCL":11,"pOnly":0,"includesO":13},
 }
 
 def scope_label(manifest, scope):
@@ -28,9 +36,42 @@ def track_fingerprint(manifest):
     return hashlib.sha256('\n'.join(rows).encode()).hexdigest()
 
 def evaluation_tracks(manifest, name):
-    return [dict(scope=scope,target=manifest['targetLabels'][info['target']],label=scope_label(manifest,scope),
-                 table=info['table'],sourcePage=info['page'],protocols=codes[0].split('+'),metrics=codes[1].split('+'))
-            for scope,info in SCOPES.items() if (codes:=manifest['categoryRecords'][scope].get(name))]
+    by_scope = {}
+    for record in manifest['evaluationRecords']:
+        if record['benchmark'] == name:
+            by_scope.setdefault(record['scope'], []).append(record)
+    tracks = []
+    for scope, info in SCOPES.items():
+        combinations = by_scope.get(scope)
+        if not combinations:
+            continue
+        codes = manifest['categoryRecords'][scope][name]
+        data = []
+        for value in ('RWD', 'SBG', 'SPTC', 'HCP'):
+            if any(record['data'] == value for record in combinations):
+                data.append(value)
+        tracks.append(dict(
+            scope=scope,
+            target=manifest['targetLabels'][info['target']],
+            label=scope_label(manifest, scope),
+            table=info['table'],
+            sourcePage=info['page'],
+            sourcePages=sorted({page for record in combinations for page in record['sourcePages']}),
+            protocols=codes[0].split('+'),
+            metrics=codes[1].split('+'),
+            evaluationData=data,
+            hasUnresolvedData=any(record['dataStatus'] == 'unresolved' for record in combinations),
+            combinations=[{
+                'id': record['id'],
+                'protocol': record['protocol'],
+                'metric': record['metric'],
+                'data': record['data'],
+                'dataStatus': record['dataStatus'],
+                'taskIds': record['taskIds'],
+                'sourcePages': record['sourcePages'],
+            } for record in combinations],
+        ))
+    return tracks
 
 def coverage(manifest, scopes):
     grouped={}
@@ -47,16 +88,23 @@ def scoped_metadata(manifest):
             'codingScope':manifest['codingScope'],'codingRevision':manifest['codingRevision'],
             'evaluationTrackFingerprint':track_fingerprint(manifest),'targetCoverage':target_coverage,
             'subtargetCoverage':{s:coverage(manifest,[s]) for s in SCOPES if s.startswith('S')},
-            'table10':{s:(target_coverage[s] if s.startswith('T') else coverage(manifest,[s])) for s in EXPECTED_TABLE10}}
+            'table4':{s:(target_coverage[s] if s.startswith('T') else coverage(manifest,[s])) for s in EXPECTED_TABLE4}}
 
 def validate_scoped(manifest):
     assert set(manifest['categoryRecords'])==set(SCOPES)
     assert sum(len(x) for x in manifest['categoryRecords'].values())==307
+    assert len(manifest['evaluationRecords'])==372
+    assert len(manifest['taskRecords'])==403
+    assert sum(not row['auxiliary'] for row in manifest['taskRecords'])==401
     for scope,info in SCOPES.items():
         expected={n for n,r in manifest['records'].items() if scope in r[6 if scope.startswith('T') else 7].split('+')}
         assert set(manifest['categoryRecords'][scope])==expected,scope
         for name,(p,m) in manifest['categoryRecords'][scope].items():
             assert p in ('OL','CL','OL+CL') and m in ('P','O','P+O'),(scope,name,p,m)
+            combinations=[row for row in manifest['evaluationRecords'] if row['scope']==scope and row['benchmark']==name]
+            assert combinations,(scope,name,'missing combinations')
+            assert p=='+'.join(x for x in ('OL','CL') if any(row['protocol']==x for row in combinations))
+            assert m=='+'.join(x for x in ('P','O') if any(row['metric']==x for row in combinations))
     for name,r in manifest['records'].items():
         tracks=evaluation_tracks(manifest,name)
         assert tracks,name
@@ -65,7 +113,8 @@ def validate_scoped(manifest):
             assert r[idx]==union,(name,field,r[idx],union)
     assert track_fingerprint(manifest)==EXPECTED_TRACK_FINGERPRINT,'PDF track fingerprint mismatch'
     assert manifest['evaluationTrackFingerprint']==EXPECTED_TRACK_FINGERPRINT
-    assert scoped_metadata(manifest)['table10']==EXPECTED_TABLE10,'Table 10 mismatch'
+    assert manifest['evaluationRecordFingerprint']==EXPECTED_EVALUATION_RECORD_FINGERPRINT
+    assert scoped_metadata(manifest)['table4']==EXPECTED_TABLE4,'Table 4 mismatch'
 
 def readme_coding(manifest,name,section):
     scope={'S1':'T1','S2':'T1','S3':'T5','S4':'T5'}.get(section,section)
@@ -73,13 +122,13 @@ def readme_coding(manifest,name,section):
 
 def coverage_html(manifest):
     rows=[]
-    for scope,row in scoped_metadata(manifest)['table10'].items():
+    for scope,row in scoped_metadata(manifest)['table4'].items():
         cells=''.join(f'<td>{row[k]} ({100*row[k]/row["n"]:.1f}%)</td>' for k in ('olOnly','includesCL','pOnly','includesO'))
         rows.append(f'<tr><th scope="row">{html.escape(scope_label(manifest,scope))}</th><td>{row["n"]}</td>{cells}</tr>')
     return ('<div class="matrix-shell" id="protocol-evidence-coverage"><div class="matrix-heading">'
-            '<div><p class="eyebrow">Manuscript Table 10</p><h3>Target-specific protocol and evidence coverage</h3></div></div>'
-            '<p>Each benchmark is counted once per row, using only tracks relevant to that target or role. '
-            'Includes CL/O also counts OL+CL/P+O. Protocol and evidence columns are separate marginal counts.</p>'
-            '<div class="matrix-scroll"><table class="coverage-table"><thead><tr><th>Evaluation target</th><th>n</th>'
-            '<th>OL only</th><th>Includes CL</th><th>P only</th><th>Includes O</th></tr></thead><tbody>'
-            +''.join(rows)+'</tbody></table></div></div>')
+        '<div><p class="eyebrow">Manuscript Table 4</p><h3>Target-specific protocol and evidence coverage</h3></div></div>'
+        '<p>Each benchmark is counted once per row, using only tracks relevant to that target or role. '
+        'Includes CL and Includes O are separate marginal counts over records relevant to each target or role.</p>'
+        '<div class="matrix-scroll"><table class="coverage-table"><thead><tr><th>Evaluation target</th><th>n</th>'
+        '<th>OL only</th><th>Includes CL</th><th>P only</th><th>Includes O</th></tr></thead><tbody>'
+        +''.join(rows)+'</tbody></table></div></div>')

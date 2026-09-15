@@ -7,6 +7,8 @@ on:
       - "Readme.md"
       - "docs/**"
       - "scripts/sync_latest_survey.py"
+      - "scripts/target_scoped_coding.py"
+      - "scripts/task_records_20260915.json"
       - ".github/workflows/sync-latest-survey.yml"
   workflow_dispatch:
 
@@ -29,5 +31,5 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate the latest manuscript snapshot
+      - name: Validate the final manuscript snapshot
         run: python scripts/sync_latest_survey.py

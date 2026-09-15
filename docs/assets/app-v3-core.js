@@ -10,10 +10,18 @@ const TARGETS = [
 const PROTOCOLS = ["OL", "CL"];
 const METRICS = ["P", "O"];
 const EVALUATION_DATA = ["RWD", "SBG", "SPTC", "HCP"];
-// Website-only editorial grouping requested by the maintainer. The manuscript
-// manifest and its audit fingerprints remain unchanged (CausalSpatial: image).
-const WEBSITE_DOMAIN_OVERRIDES = {
-  CausalSpatial: { from: "image", to: "video" },
+const SCOPE_SOURCES = {
+  T1: { target: "T1", table: "S1", sourcePage: 4 },
+  T2: { target: "T2", table: "S2", sourcePage: 7 },
+  T3: { target: "T3", table: "S3", sourcePage: 11 },
+  T4: { target: "T4", table: "S4", sourcePage: 13 },
+  T5: { target: "T5", table: "S5", sourcePage: 18 },
+  S5: { target: "T6", table: "S6", sourcePage: 20 },
+  S6: { target: "T6", table: "S6", sourcePage: 20 },
+  S7: { target: "T7", table: "S7", sourcePage: 24 },
+  S8: { target: "T7", table: "S7", sourcePage: 24 },
+  S9: { target: "T7", table: "S7", sourcePage: 24 },
+  S10: { target: "T7", table: "S7", sourcePage: 24 },
 };
 const TARGET_COLORS = {
   "Visual & Temporal Quality": "#6f63d9",
@@ -83,13 +91,6 @@ function prettyDomain(value) {
   return labels[value] || value.replace(/\b\w/g, (character) => character.toUpperCase());
 }
 
-function websiteDomains(name, domain) {
-  const override = WEBSITE_DOMAIN_OVERRIDES[name];
-  return [...new Set(splitCodes(domain).map((value) =>
-    override && value === override.from ? override.to : value
-  ))];
-}
-
 function targetShortLabel(target) {
   return target === "Long-Horizon Memory & State Persistence"
     ? "Long-Horizon Memory & Persistence"
@@ -106,14 +107,34 @@ function groupLabel(group, value) {
 
 
 function categoryTracks(name, manifest) {
-  if (!manifest.categoryRecords) throw new Error("Target-specific manuscript coding is missing; refresh the page.");
-  return Object.entries(manifest.categoryRecords).flatMap(([scope, records]) => {
-    const codes = records[name];
-    if (!codes) return [];
-    const targetCode = scope.startsWith("T") ? scope : (["S5", "S6"].includes(scope) ? "T6" : "T7");
-    const table = targetCode === "T6" ? 8 : targetCode === "T7" ? 9 : Number(targetCode.slice(1)) + 2;
-    return [{scope, target: manifest.targetLabels[targetCode], label: manifest.targetLabels[scope] || manifest.subtargetLabels[scope],
-      table, sourcePage: {3:11,4:12,5:14,6:15,7:18,8:20,9:23}[table], protocols: splitCodes(codes[0]), metrics: splitCodes(codes[1])}];
+  if (!manifest.categoryRecords || !manifest.evaluationRecords) {
+    throw new Error("Joint target/role coding is missing; refresh the page.");
+  }
+  return Object.entries(SCOPE_SOURCES).flatMap(([scope, source]) => {
+    const codes = manifest.categoryRecords[scope]?.[name];
+    const records = manifest.evaluationRecords.filter((record) => record.benchmark === name && record.scope === scope);
+    if (!codes || !records.length) return [];
+    return [{
+      scope,
+      target: manifest.targetLabels[source.target],
+      label: manifest.targetLabels[scope] || manifest.subtargetLabels[scope],
+      table: source.table,
+      sourcePage: source.sourcePage,
+      sourcePages: [...new Set(records.flatMap((record) => record.sourcePages))].sort((a, b) => a - b),
+      protocols: splitCodes(codes[0]),
+      metrics: splitCodes(codes[1]),
+      evaluationData: EVALUATION_DATA.filter((value) => records.some((record) => record.data === value)),
+      hasUnresolvedData: records.some((record) => record.dataStatus === "unresolved"),
+      combinations: records.map((record) => ({
+        id: record.id,
+        protocol: record.protocol,
+        metric: record.metric,
+        data: record.data,
+        dataStatus: record.dataStatus,
+        taskIds: record.taskIds,
+        sourcePages: record.sourcePages,
+      })),
+    }];
   });
 }
 
@@ -121,18 +142,29 @@ function relevantTracks(item, ignoredGroup = null) {
   return item.evaluationTracks.filter((track) => ignoredGroup === "targets" || !state.filters.targets.size || state.filters.targets.has(track.target));
 }
 
-function matchesEvidence(item, ignoredGroup = null, requiredGroup = null, requiredValue = null) {
-  return relevantTracks(item, ignoredGroup).some((track) => {
-    if (requiredGroup === "targets" && track.target !== requiredValue) return false;
-    for (const group of ["protocols", "metrics"]) {
-      if (requiredGroup === group && !track[group].includes(requiredValue)) return false;
-      if (group !== ignoredGroup && state.filters[group].size && !track[group].some((value) => state.filters[group].has(value))) return false;
-    }
+function matchesCombination(combination, ignoredGroup = null, requiredGroup = null, requiredValue = null) {
+  const fields = { protocols: "protocol", metrics: "metric", evaluationData: "data" };
+  return Object.entries(fields).every(([group, field]) => {
+    const value = combination[field];
+    if (requiredGroup === group && value !== requiredValue) return false;
+    if (group !== ignoredGroup && state.filters[group].size && !state.filters[group].has(value)) return false;
     return true;
   });
 }
 
+function matchesEvidence(item, ignoredGroup = null, requiredGroup = null, requiredValue = null) {
+  return relevantTracks(item, ignoredGroup).some((track) => {
+    if (requiredGroup === "targets" && track.target !== requiredValue) return false;
+    return track.combinations.some((combination) =>
+      matchesCombination(combination, ignoredGroup, requiredGroup, requiredValue)
+    );
+  });
+}
+
 function scopedValues(item, group) {
+  if (group === "evaluationData") {
+    return EVALUATION_DATA.filter((value) => relevantTracks(item).some((track) => track.evaluationData.includes(value)));
+  }
   return [...new Set(relevantTracks(item).flatMap((track) => track[group]))];
 }
 
@@ -154,7 +186,7 @@ function decodeRecord(raw, manifest) {
     ref,
     year,
     releaseYear: year,
-    domains: websiteDomains(canonical, domain),
+    domains: splitCodes(domain),
     protocols: splitCodes(protocols),
     metrics: splitCodes(metrics),
     evaluationData: splitCodes(data),
@@ -176,7 +208,7 @@ function buildAddedRecord(name, manifest) {
     ref,
     year,
     releaseYear: year,
-    domains: websiteDomains(name, domain),
+    domains: splitCodes(domain),
     protocols: splitCodes(protocols),
     metrics: splitCodes(metrics),
     evaluationData: splitCodes(data),
@@ -252,7 +284,7 @@ function matchesGroup(item, group, ignoredGroup = null) {
 
 function matchesItem(item, ignoredGroup = null) {
   if (!matchesSearch(item) || !matchesPeriod(item)) return false;
-  return ["domains", "evaluationData"].every((group) => matchesGroup(item, group, ignoredGroup)) && matchesEvidence(item, ignoredGroup);
+  return matchesGroup(item, "domains", ignoredGroup) && matchesEvidence(item, ignoredGroup);
 }
 
 function visibleItems() {
@@ -270,7 +302,7 @@ function visibleItems() {
 function countForValue(group, value) {
   return state.benchmarks.filter((item) => {
     if (!matchesItem(item, group)) return false;
-    return ["targets", "protocols", "metrics"].includes(group)
+    return ["targets", "protocols", "metrics", "evaluationData"].includes(group)
       ? matchesEvidence(item, group, group, value) : item[group].includes(value);
   }).length;
 }
@@ -578,8 +610,18 @@ function renderCards(items) {
     const tracks = relevantTracks(item);
     const protocols = scopedValues(item, "protocols");
     const metrics = scopedValues(item, "metrics");
+    const data = scopedValues(item, "evaluationData");
+    const hasUnresolvedData = tracks.some((track) => track.hasUnresolvedData);
     const context = state.filters.targets.size ? "Selected target tracks" : "All listed tracks (union)";
-    const trackRows = tracks.map((track) => `<li><strong>${escapeHtml(track.label)}</strong> — Protocol ${escapeHtml(track.protocols.join("+"))}; Metrics ${escapeHtml(track.metrics.join("+"))} <small>(Table ${track.table})</small></li>`).join("");
+    const trackRows = tracks.map((track) => {
+      const combinations = track.combinations.map((combination) => {
+        const dataLabel = combination.data || "source unresolved";
+        const taskCount = combination.taskIds.length > 1 ? ` · ${combination.taskIds.length} tasks` : "";
+        return `${combination.protocol} / ${combination.metric} / ${dataLabel}${taskCount}`;
+      }).join("; ");
+      const pages = track.sourcePages.length === 1 ? `p.${track.sourcePages[0]}` : `pp.${track.sourcePages[0]}–${track.sourcePages.at(-1)}`;
+      return `<li><strong>${escapeHtml(track.label)}</strong> — ${escapeHtml(combinations)} <small>(Table ${track.table}, ${pages})</small></li>`;
+    }).join("");
     const paperUrl = item.paperUrl || "#";
     card.innerHTML = `
       <div class="card-topline">
@@ -592,11 +634,11 @@ function renderCards(items) {
         <span class="meta-pill">${item.domains.map(prettyDomain).join(" + ")}</span>
         <span class="meta-pill">Protocol ${escapeHtml(protocols.join(" · "))}</span>
         <span class="meta-pill">Metrics ${escapeHtml(metrics.join(" · "))}</span>
-        <span class="meta-pill">Data ${escapeHtml(item.evaluationData.join(" · "))}</span>
+        <span class="meta-pill">Data ${escapeHtml(data.join(" · ") || "source unresolved")}${hasUnresolvedData ? " · source unresolved" : ""}</span>
       </div>
       <p class="track-context">${context}</p>
       <div class="card-targets">${targetPills}</div>
-      <details class="track-details"><summary>Protocol and metrics by target / role</summary><ul>${trackRows}</ul></details>
+      <details class="track-details"><summary>Evaluation coding by target / role</summary><ul>${trackRows}</ul></details>
       <div class="card-footer">
         <small>Ref. [${item.ref}] · ${escapeHtml(subtarget)}</small>
         <a class="paper-link" href="${escapeHtml(paperUrl)}" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
@@ -686,7 +728,7 @@ function setupEvents() {
     const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
     const link = document.createElement("a");
     link.href = url;
-    link.download = "world-model-benchmarks-2026-09-07-release-years.json";
+    link.download = "world-model-benchmarks-2026-09-15-joint-coding.json";
     document.body.append(link);
     link.click();
     link.remove();
@@ -716,8 +758,6 @@ async function init() {
     const manifest = decoded.at(-1);
     state.metadata = {
       ...manifest,
-      websiteDomainOverrides: WEBSITE_DOMAIN_OVERRIDES,
-      websiteDomainNote: "Website domains include maintainer-requested grouping. The records and fingerprints above describe the manuscript coding; protocol/metric filters use categoryRecords.",
       dimensions: 4,
       yearMin: 2018,
       yearMax: 2026,

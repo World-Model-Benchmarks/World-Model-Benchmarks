@@ -7,6 +7,8 @@ on:
     paths:
       - 'docs/assets/benchmarks.json'
       - 'scripts/generate_readme_index.py'
+      - 'scripts/target_scoped_coding.py'
+      - 'scripts/task_records_20260915.json'
   workflow_dispatch:
 
 permissions:
@@ -28,7 +30,7 @@ jobs:
       - name: Generate README and website outputs
         run: python scripts/generate_readme_index.py
 
-      - name: Validate the generated snapshot
+      - name: Validate final joint coding
         run: python scripts/sync_latest_survey.py
 
       - name: Commit generated files

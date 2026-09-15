@@ -1,8 +1,9 @@
 {
   "title": "A Survey of World Model Benchmarks",
-  "version": "August 31, 2026 corpus; release years and target-specific coding revised September 7, 2026",
+  "version": "August 31, 2026 corpus; joint task-level coding revised September 15, 2026",
   "snapshotDate": "2026-08-31",
-  "sourcePdfSha256": "a20e17a2a16ceb112c8a54a0635fd77e1e6bc5993969782bce4e874a4e92cbb9",
+  "sourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+  "sourceSupplementaryPdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
   "framework": "Target–Protocol–Metrics–Data",
   "total": 102,
   "crossCategory": 85,
@@ -76,7 +77,7 @@
     "Visual Quality": 40,
     "Temporal Quality": 40,
     "Observation-Grounded Evaluation": 26,
-    "Intervention-Grounded Evaluation": 9,
+    "Intervention-Grounded Evaluation": 10,
     "Pre-specified Control Fidelity": 40,
     "Interactive Action Fidelity": 15,
     "Data Engine": 2,
@@ -84,8 +85,29 @@
     "Planner": 12,
     "Interactive Training Environment": 1
   },
-  "classificationFingerprint": "466d1f9e848f4c39186b1bc6e20fe752c9b784b08bc4ec9218550d4485913ca0",
-  "recordFingerprint": "466d1f9e848f4c39186b1bc6e20fe752c9b784b08bc4ec9218550d4485913ca0",
+  "classificationFingerprint": "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd",
+  "recordFingerprint": "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd",
+  "evaluationRecordFingerprint": "83081d3dc3a0f19811a1e235dcd319e514470055bbea23f631941a195350bb33",
+  "taskRecordFingerprint": "b291ea5eddff583a0d978be74ad96e87db5a4f29f5876b1f1a12b8bdc970ffdf",
+  "taskRecordCounts": {
+    "targetTasks": 401,
+    "auxiliary": 2,
+    "displayCombinations": 372,
+    "classifiedData": 394,
+    "unresolvedData": 7,
+    "protocolMetric": {
+      "OL/P": 346,
+      "OL/O": 12,
+      "CL/P": 17,
+      "CL/O": 26
+    },
+    "data": {
+      "RWD": 89,
+      "SBG": 88,
+      "SPTC": 71,
+      "HCP": 146
+    }
+  },
   "fingerprintFields": [
     "benchmark",
     "reference",
@@ -109,38 +131,13 @@
     "Control Fidelity & Interactive Dynamics",
     "Functional Utility"
   ],
-  "yearBasis": "Benchmark release year as coded in Figure 2 and Tables 3-9 of the September 7, 2026 manuscript; distinct from formal publication year.",
+  "yearBasis": "Benchmark release year as coded in Figure 2 of the final September 15, 2026 manuscript; distinct from formal publication year.",
   "releaseYearRevision": {
-    "sourcePdf": "A_Survey_of_World_Model_Benchmarks__1_-1.pdf",
-    "sourcePdfSha256": "9efa7975b1baa7b29570ac1e565449dd5d740ed997da2cd2421b4ee41dad0e72",
-    "manuscriptDate": "2026-09-07",
-    "scope": "Release-year alignment only; other canonical fields and the existing website-only domain grouping are preserved.",
-    "changes": {
-      "CLEVRER": {
-        "from": 2020,
-        "to": 2019
-      },
-      "WorldLens": {
-        "from": 2026,
-        "to": 2025
-      },
-      "CoPhy": {
-        "from": 2020,
-        "to": 2019
-      },
-      "CRAFT": {
-        "from": 2022,
-        "to": 2020
-      },
-      "MMWorld": {
-        "from": 2025,
-        "to": 2024
-      }
-    },
-    "retainedCandidates": {
-      "ComPhy": 2022,
-      "DrivingGen": 2026
-    }
+    "sourcePdf": "main.pdf",
+    "sourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+    "date": "2026-09-15",
+    "changedRecords": 0,
+    "preservedFromPreviousAudit": 102
   },
   "publicationMetadata": {
     "CLEVRER": {
@@ -164,7 +161,7 @@
       "publicationYear": 2026
     }
   },
-  "sourceNote": "Figure 4 membership and all 307 rows of Tables 3-9 are aligned with the latest PDF. The literature cutoff remains August 31, 2026. Release-year provenance is retained separately; the existing website-only CausalSpatial domain grouping is unchanged.",
+  "sourceNote": "The 102-benchmark corpus remains checked through August 31, 2026. Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and their joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 of the final September 15, 2026 manuscript. Two auxiliary records are retained for traceability and excluded from target-task statistics.",
   "categoryRecords": {
     "T1": {
       "MIND": [
@@ -227,62 +224,6 @@
         "OL",
         "P"
       ],
-      "TC-Bench": [
-        "OL",
-        "P"
-      ],
-      "WBench": [
-        "OL",
-        "P"
-      ],
-      "WR-Arena": [
-        "OL",
-        "P"
-      ],
-      "HTEWorld": [
-        "OL",
-        "P"
-      ],
-      "T2VWorldBench": [
-        "OL",
-        "P"
-      ],
-      "WorldModelBench": [
-        "OL",
-        "P"
-      ],
-      "RigidBench": [
-        "OL",
-        "P"
-      ],
-      "ACWM-Phys": [
-        "OL",
-        "P"
-      ],
-      "OSCBench": [
-        "OL",
-        "P"
-      ],
-      "MoveBench": [
-        "OL",
-        "P"
-      ],
-      "MagicBench": [
-        "OL",
-        "P"
-      ],
-      "Omni-WorldBench": [
-        "OL",
-        "P"
-      ],
-      "WorldSimBench": [
-        "OL",
-        "P"
-      ],
-      "EVA-Bench": [
-        "OL",
-        "P"
-      ],
       "WoW-World-Eval": [
         "OL",
         "P"
@@ -303,24 +244,12 @@
         "OL",
         "P"
       ],
-      "CrashTwin": [
-        "OL",
-        "P"
-      ],
       "MemoBench": [
         "OL",
         "P"
       ],
       "RoboTrustBench": [
         "OL",
-        "P"
-      ],
-      "Apple-π": [
-        "OL",
-        "P"
-      ],
-      "WMBench": [
-        "CL",
         "P"
       ],
       "WorldExam": [
@@ -348,6 +277,74 @@
         "P"
       ],
       "WorldEcho": [
+        "OL",
+        "P"
+      ],
+      "ACWM-Phys": [
+        "OL",
+        "P"
+      ],
+      "HTEWorld": [
+        "OL",
+        "P"
+      ],
+      "RigidBench": [
+        "OL",
+        "P"
+      ],
+      "MagicBench": [
+        "OL",
+        "P"
+      ],
+      "MoveBench": [
+        "OL",
+        "P"
+      ],
+      "Omni-WorldBench": [
+        "OL",
+        "P"
+      ],
+      "OSCBench": [
+        "OL",
+        "P"
+      ],
+      "T2VWorldBench": [
+        "OL",
+        "P"
+      ],
+      "WMBench": [
+        "OL+CL",
+        "P"
+      ],
+      "WorldModelBench": [
+        "OL",
+        "P"
+      ],
+      "WorldSimBench": [
+        "OL",
+        "P"
+      ],
+      "Apple-π": [
+        "OL",
+        "P"
+      ],
+      "TC-Bench": [
+        "OL",
+        "P"
+      ],
+      "WBench": [
+        "OL",
+        "P"
+      ],
+      "CrashTwin": [
+        "OL",
+        "P"
+      ],
+      "EVA-Bench": [
+        "OL+CL",
+        "P"
+      ],
+      "WR-Arena": [
         "OL",
         "P"
       ]
@@ -413,8 +410,96 @@
         "OL",
         "P"
       ],
+      "WoW-World-Eval": [
+        "OL",
+        "P"
+      ],
+      "RBench": [
+        "OL",
+        "P"
+      ],
+      "PAI-Bench": [
+        "OL",
+        "P"
+      ],
+      "EZS-Bench": [
+        "OL",
+        "P"
+      ],
+      "WorldRoamBench": [
+        "OL",
+        "P"
+      ],
+      "MemoBench": [
+        "OL",
+        "P"
+      ],
+      "RoboTrustBench": [
+        "OL",
+        "P"
+      ],
+      "WorldExam": [
+        "OL",
+        "P"
+      ],
+      "SurgWMBench": [
+        "OL",
+        "P"
+      ],
+      "H2R-Bench": [
+        "OL",
+        "P"
+      ],
+      "PlayWorld": [
+        "CL",
+        "P"
+      ],
+      "XEWorld": [
+        "OL",
+        "P"
+      ],
+      "HarnessEval-W": [
+        "OL",
+        "P"
+      ],
+      "HTEWorld": [
+        "OL",
+        "P"
+      ],
+      "RigidBench": [
+        "OL",
+        "P"
+      ],
+      "Omni-WorldBench": [
+        "OL",
+        "P"
+      ],
+      "OSCBench": [
+        "OL",
+        "P"
+      ],
+      "WMBench": [
+        "OL+CL",
+        "P"
+      ],
+      "WorldSimBench": [
+        "OL",
+        "P"
+      ],
+      "Apple-π": [
+        "OL",
+        "P"
+      ],
       "WBench": [
         "OL",
+        "P"
+      ],
+      "CrashTwin": [
+        "OL",
+        "P"
+      ],
+      "EVA-Bench": [
+        "OL+CL",
         "P"
       ],
       "PDI-Bench": [
@@ -445,62 +530,6 @@
         "OL",
         "P"
       ],
-      "SmallWorlds": [
-        "OL",
-        "P"
-      ],
-      "HTEWorld": [
-        "OL",
-        "P"
-      ],
-      "IntPhys 2": [
-        "OL",
-        "P"
-      ],
-      "WorldBench": [
-        "OL",
-        "P"
-      ],
-      "VBench-2.0": [
-        "OL",
-        "P"
-      ],
-      "RigidBench": [
-        "OL",
-        "P"
-      ],
-      "OSCBench": [
-        "OL",
-        "P"
-      ],
-      "Omni-WorldBench": [
-        "OL",
-        "P"
-      ],
-      "WorldSimBench": [
-        "OL",
-        "P"
-      ],
-      "EVA-Bench": [
-        "OL",
-        "P"
-      ],
-      "WoW-World-Eval": [
-        "OL",
-        "P"
-      ],
-      "RBench": [
-        "OL",
-        "P"
-      ],
-      "PAI-Bench": [
-        "OL",
-        "P"
-      ],
-      "EZS-Bench": [
-        "OL",
-        "P"
-      ],
       "AutumnBench": [
         "CL",
         "P+O"
@@ -509,25 +538,9 @@
         "OL",
         "P"
       ],
-      "WorldRoamBench": [
-        "OL",
-        "P"
-      ],
-      "CrashTwin": [
-        "OL",
-        "P"
-      ],
-      "MemoBench": [
-        "OL",
-        "P"
-      ],
-      "RoboTrustBench": [
-        "OL",
-        "P"
-      ],
       "ContactWorld": [
         "CL",
-        "P+O"
+        "O"
       ],
       "ScratchWorld": [
         "OL",
@@ -541,35 +554,19 @@
         "OL",
         "P"
       ],
-      "Apple-π": [
+      "IntPhys 2": [
         "OL",
         "P"
       ],
-      "WMBench": [
-        "CL",
-        "P"
-      ],
-      "WorldExam": [
+      "SmallWorlds": [
         "OL",
         "P"
       ],
-      "SurgWMBench": [
+      "VBench-2.0": [
         "OL",
         "P"
       ],
-      "H2R-Bench": [
-        "OL",
-        "P"
-      ],
-      "PlayWorld": [
-        "CL",
-        "P"
-      ],
-      "XEWorld": [
-        "OL",
-        "P"
-      ],
-      "HarnessEval-W": [
+      "WorldBench": [
         "OL",
         "P"
       ]
@@ -595,7 +592,43 @@
         "OL",
         "P"
       ],
+      "WoW-World-Eval": [
+        "OL",
+        "P"
+      ],
+      "RBench": [
+        "OL",
+        "P"
+      ],
+      "WorldRoamBench": [
+        "OL",
+        "P"
+      ],
+      "MemoBench": [
+        "OL",
+        "P"
+      ],
+      "PlayWorld": [
+        "CL",
+        "P"
+      ],
+      "HarnessEval-W": [
+        "OL",
+        "P"
+      ],
+      "HTEWorld": [
+        "OL",
+        "P"
+      ],
+      "WMBench": [
+        "OL+CL",
+        "P"
+      ],
       "WBench": [
+        "OL",
+        "P"
+      ],
+      "WR-Arena": [
         "OL",
         "P"
       ],
@@ -607,44 +640,12 @@
         "OL",
         "P"
       ],
-      "WorldPrediction": [
-        "OL",
-        "P"
-      ],
-      "SmallWorlds": [
-        "OL",
-        "P"
-      ],
-      "WR-Arena": [
-        "OL",
-        "P"
-      ],
-      "HTEWorld": [
-        "OL",
-        "P"
-      ],
-      "WoW-World-Eval": [
-        "OL",
-        "P"
-      ],
-      "RBench": [
-        "OL",
-        "P"
-      ],
       "AutumnBench": [
         "CL",
         "P+O"
       ],
-      "WorldRoamBench": [
-        "OL",
-        "P"
-      ],
-      "MemoBench": [
-        "OL",
-        "P"
-      ],
       "ContactWorld": [
-        "CL",
+        "OL+CL",
         "P+O"
       ],
       "ScratchWorld": [
@@ -655,15 +656,11 @@
         "OL",
         "P"
       ],
-      "WMBench": [
-        "CL",
+      "SmallWorlds": [
+        "OL",
         "P"
       ],
-      "PlayWorld": [
-        "CL",
-        "P"
-      ],
-      "HarnessEval-W": [
+      "WorldPrediction": [
         "OL",
         "P"
       ],
@@ -733,7 +730,95 @@
         "OL",
         "P"
       ],
+      "WoW-World-Eval": [
+        "OL",
+        "P+O"
+      ],
+      "RBench": [
+        "OL",
+        "P"
+      ],
+      "PAI-Bench": [
+        "OL",
+        "P"
+      ],
+      "EZS-Bench": [
+        "OL",
+        "P"
+      ],
+      "WorldRoamBench": [
+        "OL",
+        "P"
+      ],
+      "MemoBench": [
+        "OL",
+        "P"
+      ],
+      "RoboTrustBench": [
+        "OL",
+        "P"
+      ],
+      "WorldExam": [
+        "OL",
+        "P"
+      ],
+      "H2R-Bench": [
+        "OL",
+        "P"
+      ],
+      "PlayWorld": [
+        "CL",
+        "P"
+      ],
+      "XEWorld": [
+        "OL",
+        "P"
+      ],
+      "HarnessEval-W": [
+        "OL",
+        "P"
+      ],
+      "ACWM-Phys": [
+        "OL",
+        "P"
+      ],
+      "HTEWorld": [
+        "OL",
+        "P"
+      ],
+      "RigidBench": [
+        "OL",
+        "P"
+      ],
+      "Omni-WorldBench": [
+        "OL",
+        "P"
+      ],
+      "T2VWorldBench": [
+        "OL",
+        "P"
+      ],
+      "WMBench": [
+        "CL",
+        "P"
+      ],
+      "WorldModelBench": [
+        "OL",
+        "P"
+      ],
+      "WorldSimBench": [
+        "OL+CL",
+        "P+O"
+      ],
+      "Apple-π": [
+        "OL",
+        "P"
+      ],
       "WBench": [
+        "OL",
+        "P"
+      ],
+      "CrashTwin": [
         "OL",
         "P"
       ],
@@ -761,15 +846,35 @@
         "OL",
         "P"
       ],
-      "SmallWorlds": [
+      "MVP": [
         "OL",
         "P"
       ],
-      "HTEWorld": [
+      "ContactWorld": [
+        "CL",
+        "O"
+      ],
+      "MiraBench": [
         "OL",
         "P"
       ],
       "IntPhys 2": [
+        "OL",
+        "P"
+      ],
+      "SmallWorlds": [
+        "OL",
+        "P"
+      ],
+      "VBench-2.0": [
+        "OL",
+        "P"
+      ],
+      "WorldBench": [
+        "OL",
+        "P"
+      ],
+      "ExPhy": [
         "OL",
         "P"
       ],
@@ -778,7 +883,7 @@
         "P"
       ],
       "PHYRE": [
-        "CL",
+        "OL+CL",
         "O"
       ],
       "CRAFT": [
@@ -821,27 +926,7 @@
         "OL",
         "P"
       ],
-      "WorldBench": [
-        "OL",
-        "P"
-      ],
       "PhyWorldBench": [
-        "OL",
-        "P"
-      ],
-      "T2VWorldBench": [
-        "OL",
-        "P"
-      ],
-      "WorldModelBench": [
-        "OL",
-        "P"
-      ],
-      "VBench-2.0": [
-        "OL",
-        "P"
-      ],
-      "RigidBench": [
         "OL",
         "P"
       ],
@@ -873,95 +958,11 @@
         "OL",
         "P"
       ],
-      "ACWM-Phys": [
-        "OL",
-        "P"
-      ],
-      "Omni-WorldBench": [
-        "OL",
-        "P"
-      ],
-      "WorldSimBench": [
-        "OL+CL",
-        "P+O"
-      ],
-      "WoW-World-Eval": [
-        "OL",
-        "P+O"
-      ],
-      "RBench": [
-        "OL",
-        "P"
-      ],
-      "PAI-Bench": [
-        "OL",
-        "P"
-      ],
-      "EZS-Bench": [
-        "OL",
-        "P"
-      ],
-      "MVP": [
-        "OL",
-        "P"
-      ],
-      "WorldRoamBench": [
-        "OL",
-        "P"
-      ],
-      "CrashTwin": [
-        "OL",
-        "P"
-      ],
-      "MemoBench": [
-        "OL",
-        "P"
-      ],
-      "RoboTrustBench": [
-        "OL",
-        "P"
-      ],
-      "ContactWorld": [
-        "CL",
-        "P+O"
-      ],
-      "MiraBench": [
-        "OL",
-        "P"
-      ],
-      "Apple-π": [
-        "OL",
-        "P"
-      ],
       "KineBench": [
         "CL",
         "P+O"
       ],
       "ReactSim-Bench": [
-        "CL",
-        "P"
-      ],
-      "WMBench": [
-        "CL",
-        "P"
-      ],
-      "WorldExam": [
-        "OL",
-        "P"
-      ],
-      "H2R-Bench": [
-        "OL",
-        "P"
-      ],
-      "PlayWorld": [
-        "CL",
-        "P"
-      ],
-      "XEWorld": [
-        "OL",
-        "P"
-      ],
-      "HarnessEval-W": [
         "OL",
         "P"
       ],
@@ -976,10 +977,6 @@
       "WorldSimProbe": [
         "OL",
         "P"
-      ],
-      "ExPhy": [
-        "OL",
-        "P"
       ]
     },
     "T5": {
@@ -988,6 +985,42 @@
         "P"
       ],
       "Physion": [
+        "OL",
+        "P"
+      ],
+      "WoW-World-Eval": [
+        "OL",
+        "P"
+      ],
+      "RBench": [
+        "OL",
+        "P"
+      ],
+      "PAI-Bench": [
+        "OL",
+        "P"
+      ],
+      "RoboTrustBench": [
+        "OL",
+        "P"
+      ],
+      "WorldExam": [
+        "OL",
+        "P"
+      ],
+      "PlayWorld": [
+        "CL",
+        "P"
+      ],
+      "HarnessEval-W": [
+        "OL",
+        "P"
+      ],
+      "T2VWorldBench": [
+        "OL",
+        "P"
+      ],
+      "WR-Arena": [
         "OL",
         "P"
       ],
@@ -1003,11 +1036,23 @@
         "OL",
         "P"
       ],
-      "WorldPrediction": [
+      "AutumnBench": [
+        "CL",
+        "P"
+      ],
+      "MVP": [
         "OL",
         "P"
       ],
-      "WR-Arena": [
+      "ScratchWorld": [
+        "OL",
+        "P"
+      ],
+      "MiraBench": [
+        "OL",
+        "P"
+      ],
+      "WorldPrediction": [
         "OL",
         "P"
       ],
@@ -1031,10 +1076,6 @@
         "OL",
         "P"
       ],
-      "T2VWorldBench": [
-        "OL",
-        "P"
-      ],
       "CRONOS": [
         "OL",
         "P"
@@ -1047,7 +1088,19 @@
         "OL",
         "P"
       ],
+      "ReactSim-Bench": [
+        "OL",
+        "P"
+      ],
+      "WorldSimProbe": [
+        "OL",
+        "P"
+      ],
       "Causal-VidQA": [
+        "OL",
+        "P"
+      ],
+      "ACQUIRED": [
         "OL",
         "P"
       ],
@@ -1056,62 +1109,6 @@
         "P"
       ],
       "CausalVQA": [
-        "OL",
-        "P"
-      ],
-      "ACQUIRED": [
-        "OL",
-        "P"
-      ],
-      "WoW-World-Eval": [
-        "OL",
-        "P"
-      ],
-      "RBench": [
-        "OL",
-        "P"
-      ],
-      "PAI-Bench": [
-        "OL",
-        "P"
-      ],
-      "AutumnBench": [
-        "CL",
-        "P"
-      ],
-      "MVP": [
-        "OL",
-        "P"
-      ],
-      "RoboTrustBench": [
-        "OL",
-        "P"
-      ],
-      "ScratchWorld": [
-        "OL",
-        "P"
-      ],
-      "MiraBench": [
-        "OL",
-        "P"
-      ],
-      "ReactSim-Bench": [
-        "CL",
-        "P"
-      ],
-      "WorldExam": [
-        "OL",
-        "P"
-      ],
-      "PlayWorld": [
-        "CL",
-        "P"
-      ],
-      "HarnessEval-W": [
-        "OL",
-        "P"
-      ],
-      "WorldSimProbe": [
         "OL",
         "P"
       ]
@@ -1141,78 +1138,6 @@
         "OL",
         "P"
       ],
-      "TC-Bench": [
-        "OL",
-        "P"
-      ],
-      "MBench": [
-        "OL",
-        "P"
-      ],
-      "STEVO-Bench": [
-        "OL",
-        "P"
-      ],
-      "What-If World": [
-        "OL",
-        "P"
-      ],
-      "VideoPhy": [
-        "OL",
-        "P"
-      ],
-      "VideoPhy-2": [
-        "OL",
-        "P"
-      ],
-      "PhyGenBench": [
-        "OL",
-        "P"
-      ],
-      "PhyWorldBench": [
-        "OL",
-        "P"
-      ],
-      "WorldModelBench": [
-        "OL",
-        "P"
-      ],
-      "VBench-2.0": [
-        "OL",
-        "P"
-      ],
-      "DreamGen Bench": [
-        "OL",
-        "P"
-      ],
-      "VACT": [
-        "OL",
-        "P"
-      ],
-      "StoryEval": [
-        "OL",
-        "P"
-      ],
-      "OSCBench": [
-        "OL",
-        "P"
-      ],
-      "MoveBench": [
-        "OL",
-        "P"
-      ],
-      "MagicBench": [
-        "OL",
-        "P"
-      ],
-      "ACT-Bench": [
-        "OL",
-        "P"
-      ],
-      "Omni-WorldBench": [
-        "OL",
-        "P"
-      ],
       "WoW-World-Eval": [
         "OL",
         "P+O"
@@ -1237,22 +1162,6 @@
         "OL",
         "P"
       ],
-      "ScratchWorld": [
-        "OL",
-        "P"
-      ],
-      "MiraBench": [
-        "OL",
-        "P"
-      ],
-      "Chess-World-Model": [
-        "OL",
-        "P"
-      ],
-      "KineBench": [
-        "CL",
-        "P+O"
-      ],
       "WorldExam": [
         "OL",
         "P"
@@ -1273,7 +1182,95 @@
         "OL",
         "P"
       ],
+      "MagicBench": [
+        "OL",
+        "P"
+      ],
+      "MoveBench": [
+        "OL",
+        "P"
+      ],
+      "Omni-WorldBench": [
+        "OL",
+        "P"
+      ],
+      "OSCBench": [
+        "OL",
+        "P"
+      ],
+      "WorldModelBench": [
+        "OL",
+        "P"
+      ],
+      "TC-Bench": [
+        "OL",
+        "P"
+      ],
+      "MBench": [
+        "OL",
+        "P"
+      ],
+      "STEVO-Bench": [
+        "OL",
+        "P"
+      ],
+      "What-If World": [
+        "OL",
+        "P"
+      ],
+      "ScratchWorld": [
+        "OL",
+        "P"
+      ],
+      "MiraBench": [
+        "OL",
+        "P"
+      ],
+      "Chess-World-Model": [
+        "OL",
+        "P"
+      ],
+      "VBench-2.0": [
+        "OL",
+        "P"
+      ],
+      "VideoPhy": [
+        "OL",
+        "P"
+      ],
+      "VideoPhy-2": [
+        "OL",
+        "P"
+      ],
+      "PhyGenBench": [
+        "OL",
+        "P"
+      ],
+      "PhyWorldBench": [
+        "OL",
+        "P"
+      ],
+      "DreamGen Bench": [
+        "OL",
+        "P"
+      ],
+      "VACT": [
+        "OL",
+        "P"
+      ],
+      "KineBench": [
+        "CL",
+        "O"
+      ],
       "WorldSimProbe": [
+        "OL",
+        "P"
+      ],
+      "StoryEval": [
+        "OL",
+        "P"
+      ],
+      "ACT-Bench": [
         "OL",
         "P"
       ]
@@ -1303,6 +1300,30 @@
         "OL",
         "P"
       ],
+      "WorldRoamBench": [
+        "OL",
+        "P"
+      ],
+      "PlayWorld": [
+        "CL",
+        "P"
+      ],
+      "ACWM-Phys": [
+        "OL",
+        "P"
+      ],
+      "HTEWorld": [
+        "OL",
+        "P"
+      ],
+      "WMBench": [
+        "OL+CL",
+        "P"
+      ],
+      "WorldSimBench": [
+        "OL+CL",
+        "P+O"
+      ],
       "WBench": [
         "OL",
         "P"
@@ -1311,32 +1332,8 @@
         "OL",
         "P"
       ],
-      "HTEWorld": [
-        "OL",
-        "P"
-      ],
-      "ACWM-Phys": [
-        "OL",
-        "P"
-      ],
-      "WorldSimBench": [
-        "OL+CL",
-        "P+O"
-      ],
-      "WorldRoamBench": [
-        "OL",
-        "P"
-      ],
       "ReactSim-Bench": [
-        "CL",
-        "P"
-      ],
-      "WMBench": [
-        "CL",
-        "P"
-      ],
-      "PlayWorld": [
-        "CL",
+        "OL",
         "P"
       ]
     },
@@ -1357,7 +1354,7 @@
       ],
       "WMBench": [
         "CL",
-        "P+O"
+        "O"
       ]
     },
     "S9": {
@@ -1374,40 +1371,40 @@
         "O"
       ],
       "WorldArena 2.0": [
-        "OL+CL",
-        "O"
-      ],
-      "WorldLens": [
         "CL",
         "O"
       ],
-      "WR-Arena": [
+      "WorldLens": [
         "OL+CL",
-        "P+O"
+        "O"
+      ],
+      "WoW-World-Eval": [
+        "OL",
+        "O"
       ],
       "WorldSimBench": [
         "CL",
         "O"
       ],
       "EVA-Bench": [
-        "OL",
+        "OL+CL",
         "O"
       ],
-      "WoW-World-Eval": [
-        "OL",
-        "P+O"
+      "WR-Arena": [
+        "CL",
+        "O"
       ],
       "AutumnBench": [
         "CL",
-        "P+O"
+        "O"
       ],
       "ContactWorld": [
         "CL",
-        "P+O"
+        "O"
       ],
       "KineBench": [
         "CL",
-        "P+O"
+        "O"
       ]
     },
     "S10": {
@@ -1430,35 +1427,34 @@
     "S9": "Planner",
     "S10": "Interactive Training Environment"
   },
-  "codingScope": "Protocol and Metrics in categoryRecords are specific to each evaluation target or downstream role (Tables 3-9). Benchmark-level records contain their union for unfiltered corpus summaries only; combined filters must match within the same category/role record.",
+  "codingScope": "Each evaluationRecords item is one observed Protocol-Metrics-Data combination within a target or downstream role. Filters match all selected evidence dimensions within the same combination; selections within a filter group use OR and selections across groups use AND. Benchmark-level records contain unions for overview only.",
   "codingRevision": {
-    "sourcePdf": "A_Survey_of_World_Model_Benchmarks__1_-2.pdf",
-    "sourcePdfSha256": "a20e17a2a16ceb112c8a54a0635fd77e1e6bc5993969782bce4e874a4e92cbb9",
-    "date": "2026-09-07",
-    "tableRowCount": 307,
-    "changedRowsFromPreviousPdf": 16,
-    "changedBenchmarksFromPreviousPdf": [
-      "WMBench",
-      "WoW-World-Eval",
-      "WorldSimBench",
-      "WR-Arena",
-      "AutumnBench"
-    ],
+    "mainSourcePdf": "main.pdf",
+    "mainSourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+    "supplementarySourcePdf": "A Survey of World Model Benchmarks - Supplementary Material.pdf",
+    "supplementarySourcePdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
+    "date": "2026-09-15",
+    "targetRoleParentRows": 307,
+    "targetTaskRecords": 401,
+    "auxiliaryRecords": 2,
+    "displayCombinations": 372,
+    "changedTargetRoleRows": 23,
+    "changedBenchmarkOverviewRecords": 31,
     "preservedReleaseYears": 102
   },
-  "evaluationTrackFingerprint": "8c8538ee487b515fcc25c54f2002736735c443db1fe1a5a133bcf5496b290077",
+  "evaluationTrackFingerprint": "85207bc9a524dbe5b72ee388850ad612979d4260506662ae8cb2f0b0e6d6c2a6",
   "targetCoverage": {
     "T1": {
       "n": 46,
-      "olOnly": 44,
-      "includesCL": 2,
+      "olOnly": 43,
+      "includesCL": 3,
       "pOnly": 46,
       "includesO": 0
     },
     "T2": {
       "n": 55,
-      "olOnly": 51,
-      "includesCL": 4,
+      "olOnly": 50,
+      "includesCL": 5,
       "pOnly": 53,
       "includesO": 2
     },
@@ -1471,29 +1467,29 @@
     },
     "T4": {
       "n": 77,
-      "olOnly": 70,
-      "includesCL": 7,
+      "olOnly": 71,
+      "includesCL": 6,
       "pOnly": 71,
       "includesO": 6
     },
     "T5": {
       "n": 33,
-      "olOnly": 30,
-      "includesCL": 3,
+      "olOnly": 31,
+      "includesCL": 2,
       "pOnly": 33,
       "includesO": 0
     },
     "T6": {
       "n": 55,
-      "olOnly": 50,
-      "includesCL": 5,
+      "olOnly": 51,
+      "includesCL": 4,
       "pOnly": 51,
       "includesO": 4
     },
     "T7": {
       "n": 13,
-      "olOnly": 3,
-      "includesCL": 10,
+      "olOnly": 2,
+      "includesCL": 11,
       "pOnly": 0,
       "includesO": 13
     }
@@ -1508,8 +1504,8 @@
     },
     "S6": {
       "n": 15,
-      "olOnly": 11,
-      "includesCL": 4,
+      "olOnly": 12,
+      "includesCL": 3,
       "pOnly": 13,
       "includesO": 2
     },
@@ -1529,8 +1525,8 @@
     },
     "S9": {
       "n": 12,
-      "olOnly": 3,
-      "includesCL": 9,
+      "olOnly": 2,
+      "includesCL": 10,
       "pOnly": 0,
       "includesO": 12
     },
@@ -1542,11 +1538,11 @@
       "includesO": 1
     }
   },
-  "table10": {
+  "table4": {
     "T6": {
       "n": 55,
-      "olOnly": 50,
-      "includesCL": 5,
+      "olOnly": 51,
+      "includesCL": 4,
       "pOnly": 51,
       "includesO": 4
     },
@@ -1559,15 +1555,15 @@
     },
     "S6": {
       "n": 15,
-      "olOnly": 11,
-      "includesCL": 4,
+      "olOnly": 12,
+      "includesCL": 3,
       "pOnly": 13,
       "includesO": 2
     },
     "T7": {
       "n": 13,
-      "olOnly": 3,
-      "includesCL": 10,
+      "olOnly": 2,
+      "includesCL": 11,
       "pOnly": 0,
       "includesO": 13
     }
