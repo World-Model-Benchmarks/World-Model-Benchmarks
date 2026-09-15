@@ -8,7 +8,7 @@ The classification below follows Supplementary Figure S1 and Tables S1–S7 of t
 
 Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. Release Year follows the final manuscript's corpus coding, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.
 
-Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 task-level Protocol–Metrics–Data records and 372 distinct display combinations so joint filters never form unsupported cross-products.
+Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 fully classified task-level Protocol–Metrics–Data records and 369 distinct display combinations so joint filters never form unsupported cross-products.
 
 ## Contents
 

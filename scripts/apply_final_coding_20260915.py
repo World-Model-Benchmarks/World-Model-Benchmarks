@@ -17,8 +17,10 @@ METRIC_ORDER = ("P", "O")
 DATA_ORDER = ("RWD", "SBG", "SPTC", "HCP")
 SCOPE_ORDER = ("T1", "T2", "T3", "T4", "T5", "S5", "S6", "S7", "S8", "S9", "S10")
 
-MAIN_PDF_SHA256 = "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0"
+MAIN_PDF_SHA256 = "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de"
 SUPPLEMENTARY_PDF_SHA256 = "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
+MAIN_SOURCE_ARCHIVE_SHA256 = "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a"
+CODING_CHECKLIST_SHA256 = "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4"
 
 
 def join_codes(values: set[str], order: tuple[str, ...]) -> str:
@@ -56,6 +58,8 @@ def main() -> None:
 
     if (len(task_records), len(auxiliary_records)) != (401, 2):
         raise RuntimeError("The final supplement must contain 401 target-task and 2 auxiliary records")
+    if any(record["data"] not in DATA_ORDER or record["dataStatus"] != "classified" for record in task_records):
+        raise RuntimeError("Every final target-task record must have one classified Data source")
 
     # Two classification corrections explicitly recorded in the final paper.
     manifest["records"]["CausalSpatial"][2] = "video"
@@ -103,7 +107,7 @@ def main() -> None:
             "sourcePages": sorted({row["source"]["page"] for row in supporting_rows}),
         })
 
-    if len(evaluation_records) != 372 or len(parent) != 307:
+    if len(evaluation_records) != 369 or len(parent) != 307:
         raise RuntimeError(f"Unexpected grouped totals: {len(evaluation_records)} combinations, {len(parent)} parent rows")
 
     expected_parents = {
@@ -138,15 +142,19 @@ def main() -> None:
         code for row in manifest["records"].values() for code in row[7].split("+") if code
     )
     manifest.update({
-        "version": "August 31, 2026 corpus; joint task-level coding revised September 15, 2026",
-        "schemaVersion": 11,
+        "version": "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026",
+        "schemaVersion": 12,
         "sourcePdfSha256": MAIN_PDF_SHA256,
         "sourceSupplementaryPdfSha256": SUPPLEMENTARY_PDF_SHA256,
+        "sourceArchive": "Main_Manuscript_LaTeX.zip",
+        "sourceArchiveSha256": MAIN_SOURCE_ARCHIVE_SHA256,
+        "codingChecklist": "网页逐项修改清单(1).md",
+        "codingChecklistSha256": CODING_CHECKLIST_SHA256,
         "sourceNote": (
             "The 102-benchmark corpus remains checked through August 31, 2026. "
             "Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and "
-            "their joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 of "
-            "the final September 15, 2026 manuscript. Two auxiliary records are retained for "
+            "their fully classified joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 and "
+            "the final September 15, 2026 consistency checklist. Two auxiliary records are retained for "
             "traceability and excluded from target-task statistics."
         ),
         "yearBasis": (
@@ -170,11 +178,11 @@ def main() -> None:
         "taskRecordCounts": {
             "targetTasks": 401,
             "auxiliary": 2,
-            "displayCombinations": 372,
-            "classifiedData": 394,
-            "unresolvedData": 7,
+            "displayCombinations": 369,
+            "classifiedData": 401,
+            "unresolvedData": 0,
             "protocolMetric": {"OL/P": 346, "OL/O": 12, "CL/P": 17, "CL/O": 26},
-            "data": {"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 146},
+            "data": {"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 153},
         },
         "targetCounts": {
             manifest["targetLabels"][code]: target_counts[code]
@@ -193,13 +201,17 @@ def main() -> None:
         "codingRevision": {
             "mainSourcePdf": "main.pdf",
             "mainSourcePdfSha256": MAIN_PDF_SHA256,
+            "mainSourceArchive": "Main_Manuscript_LaTeX.zip",
+            "mainSourceArchiveSha256": MAIN_SOURCE_ARCHIVE_SHA256,
             "supplementarySourcePdf": "A Survey of World Model Benchmarks - Supplementary Material.pdf",
             "supplementarySourcePdfSha256": SUPPLEMENTARY_PDF_SHA256,
+            "codingChecklist": "网页逐项修改清单(1).md",
+            "codingChecklistSha256": CODING_CHECKLIST_SHA256,
             "date": "2026-09-15",
             "targetRoleParentRows": 307,
             "targetTaskRecords": 401,
             "auxiliaryRecords": 2,
-            "displayCombinations": 372,
+            "displayCombinations": 369,
             "changedTargetRoleRows": 23,
             "changedBenchmarkOverviewRecords": 31,
             "preservedReleaseYears": 102,

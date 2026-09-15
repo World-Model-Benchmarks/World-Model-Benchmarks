@@ -1,8 +1,8 @@
 {
   "title": "A Survey of World Model Benchmarks",
-  "version": "August 31, 2026 corpus; joint task-level coding revised September 15, 2026",
+  "version": "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026",
   "framework": "Target–Protocol–Metrics–Data",
-  "schemaVersion": 11,
+  "schemaVersion": 12,
   "total": 102,
   "crossCategory": 85,
   "protocolLabels": {
@@ -1302,7 +1302,7 @@
       "embodied",
       "OL",
       "P",
-      "RWD",
+      "RWD+HCP",
       "T1+T2+T4+T6",
       "S1+S2+S5"
     ],
@@ -1423,9 +1423,9 @@
     "Planner": 12,
     "Interactive Training Environment": 1
   },
-  "sourceNote": "The 102-benchmark corpus remains checked through August 31, 2026. Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and their joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 of the final September 15, 2026 manuscript. Two auxiliary records are retained for traceability and excluded from target-task statistics.",
-  "classificationFingerprint": "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd",
-  "recordFingerprint": "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd",
+  "sourceNote": "The 102-benchmark corpus remains checked through August 31, 2026. Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and their fully classified joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 and the final September 15, 2026 consistency checklist. Two auxiliary records are retained for traceability and excluded from target-task statistics.",
+  "classificationFingerprint": "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf",
+  "recordFingerprint": "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf",
   "fingerprintFields": [
     "benchmark",
     "reference",
@@ -1437,7 +1437,7 @@
     "targets",
     "subtargets"
   ],
-  "sourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+  "sourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
   "corpusChanges": {
     "previousTotal": 106,
     "currentTotal": 102,
@@ -1458,7 +1458,7 @@
   "yearBasis": "Benchmark release year as coded in Figure 2 of the final September 15, 2026 manuscript; distinct from formal publication year.",
   "releaseYearRevision": {
     "sourcePdf": "main.pdf",
-    "sourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+    "sourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
     "date": "2026-09-15",
     "changedRecords": 0,
     "preservedFromPreviousAudit": 102
@@ -2744,18 +2744,22 @@
       ]
     }
   },
-  "evaluationTrackFingerprint": "85207bc9a524dbe5b72ee388850ad612979d4260506662ae8cb2f0b0e6d6c2a6",
+  "evaluationTrackFingerprint": "57506b97cd7eb30d66632bb51fef231635ad01661311b674294139332d4b9808",
   "codingScope": "Each evaluationRecords item is one observed Protocol-Metrics-Data combination within a target or downstream role. Filters match all selected evidence dimensions within the same combination; selections within a filter group use OR and selections across groups use AND. Benchmark-level records contain unions for overview only.",
   "codingRevision": {
     "mainSourcePdf": "main.pdf",
-    "mainSourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+    "mainSourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
+    "mainSourceArchive": "Main_Manuscript_LaTeX.zip",
+    "mainSourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
     "supplementarySourcePdf": "A Survey of World Model Benchmarks - Supplementary Material.pdf",
     "supplementarySourcePdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
+    "codingChecklist": "网页逐项修改清单(1).md",
+    "codingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4",
     "date": "2026-09-15",
     "targetRoleParentRows": 307,
     "targetTaskRecords": 401,
     "auxiliaryRecords": 2,
-    "displayCombinations": 372,
+    "displayCombinations": 369,
     "changedTargetRoleRows": 23,
     "changedBenchmarkOverviewRecords": 31,
     "preservedReleaseYears": 102
@@ -2979,6 +2983,7 @@
       "data": "HCP",
       "dataStatus": "classified",
       "taskIds": [
+        "S1-012",
         "S1-013"
       ],
       "sourceTable": "S1",
@@ -2988,22 +2993,6 @@
     },
     {
       "id": "EC0015",
-      "benchmark": "4DWorldBench",
-      "scope": "T1",
-      "protocol": "OL",
-      "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
-      "taskIds": [
-        "S1-012"
-      ],
-      "sourceTable": "S1",
-      "sourcePages": [
-        4
-      ]
-    },
-    {
-      "id": "EC0016",
       "benchmark": "WorldLens",
       "scope": "T1",
       "protocol": "OL",
@@ -3019,7 +3008,7 @@
       ]
     },
     {
-      "id": "EC0017",
+      "id": "EC0016",
       "benchmark": "DrivingGen",
       "scope": "T1",
       "protocol": "OL",
@@ -3036,7 +3025,7 @@
       ]
     },
     {
-      "id": "EC0018",
+      "id": "EC0017",
       "benchmark": "PEDRA",
       "scope": "T1",
       "protocol": "OL",
@@ -3052,7 +3041,7 @@
       ]
     },
     {
-      "id": "EC0019",
+      "id": "EC0018",
       "benchmark": "PEDRA",
       "scope": "T1",
       "protocol": "OL",
@@ -3068,7 +3057,7 @@
       ]
     },
     {
-      "id": "EC0020",
+      "id": "EC0019",
       "benchmark": "Gen-ViRe",
       "scope": "T1",
       "protocol": "OL",
@@ -3084,7 +3073,7 @@
       ]
     },
     {
-      "id": "EC0021",
+      "id": "EC0020",
       "benchmark": "iWorld-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3100,7 +3089,7 @@
       ]
     },
     {
-      "id": "EC0022",
+      "id": "EC0021",
       "benchmark": "WoW-World-Eval",
       "scope": "T1",
       "protocol": "OL",
@@ -3116,7 +3105,7 @@
       ]
     },
     {
-      "id": "EC0023",
+      "id": "EC0022",
       "benchmark": "RBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3132,7 +3121,7 @@
       ]
     },
     {
-      "id": "EC0024",
+      "id": "EC0023",
       "benchmark": "PAI-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3148,7 +3137,7 @@
       ]
     },
     {
-      "id": "EC0025",
+      "id": "EC0024",
       "benchmark": "PAI-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3164,7 +3153,7 @@
       ]
     },
     {
-      "id": "EC0026",
+      "id": "EC0025",
       "benchmark": "EZS-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3180,7 +3169,7 @@
       ]
     },
     {
-      "id": "EC0027",
+      "id": "EC0026",
       "benchmark": "WorldRoamBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3196,7 +3185,7 @@
       ]
     },
     {
-      "id": "EC0028",
+      "id": "EC0027",
       "benchmark": "MemoBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3212,7 +3201,7 @@
       ]
     },
     {
-      "id": "EC0029",
+      "id": "EC0028",
       "benchmark": "RoboTrustBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3228,7 +3217,7 @@
       ]
     },
     {
-      "id": "EC0030",
+      "id": "EC0029",
       "benchmark": "WorldExam",
       "scope": "T1",
       "protocol": "OL",
@@ -3244,7 +3233,7 @@
       ]
     },
     {
-      "id": "EC0031",
+      "id": "EC0030",
       "benchmark": "WorldExam",
       "scope": "T1",
       "protocol": "OL",
@@ -3260,7 +3249,7 @@
       ]
     },
     {
-      "id": "EC0032",
+      "id": "EC0031",
       "benchmark": "SurgWMBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3277,7 +3266,7 @@
       ]
     },
     {
-      "id": "EC0033",
+      "id": "EC0032",
       "benchmark": "H2R-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3293,13 +3282,13 @@
       ]
     },
     {
-      "id": "EC0034",
+      "id": "EC0033",
       "benchmark": "H2R-Bench",
       "scope": "T1",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
       "taskIds": [
         "S1-037"
       ],
@@ -3309,7 +3298,7 @@
       ]
     },
     {
-      "id": "EC0035",
+      "id": "EC0034",
       "benchmark": "PlayWorld",
       "scope": "T1",
       "protocol": "CL",
@@ -3325,7 +3314,7 @@
       ]
     },
     {
-      "id": "EC0036",
+      "id": "EC0035",
       "benchmark": "XEWorld",
       "scope": "T1",
       "protocol": "OL",
@@ -3341,7 +3330,7 @@
       ]
     },
     {
-      "id": "EC0037",
+      "id": "EC0036",
       "benchmark": "HarnessEval-W",
       "scope": "T1",
       "protocol": "OL",
@@ -3357,7 +3346,7 @@
       ]
     },
     {
-      "id": "EC0038",
+      "id": "EC0037",
       "benchmark": "WorldEcho",
       "scope": "T1",
       "protocol": "OL",
@@ -3373,7 +3362,7 @@
       ]
     },
     {
-      "id": "EC0039",
+      "id": "EC0038",
       "benchmark": "ACWM-Phys",
       "scope": "T1",
       "protocol": "OL",
@@ -3389,7 +3378,7 @@
       ]
     },
     {
-      "id": "EC0040",
+      "id": "EC0039",
       "benchmark": "HTEWorld",
       "scope": "T1",
       "protocol": "OL",
@@ -3405,7 +3394,7 @@
       ]
     },
     {
-      "id": "EC0041",
+      "id": "EC0040",
       "benchmark": "RigidBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3421,7 +3410,7 @@
       ]
     },
     {
-      "id": "EC0042",
+      "id": "EC0041",
       "benchmark": "MagicBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3437,7 +3426,7 @@
       ]
     },
     {
-      "id": "EC0043",
+      "id": "EC0042",
       "benchmark": "MoveBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3453,7 +3442,7 @@
       ]
     },
     {
-      "id": "EC0044",
+      "id": "EC0043",
       "benchmark": "Omni-WorldBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3469,7 +3458,7 @@
       ]
     },
     {
-      "id": "EC0045",
+      "id": "EC0044",
       "benchmark": "Omni-WorldBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3486,7 +3475,7 @@
       ]
     },
     {
-      "id": "EC0046",
+      "id": "EC0045",
       "benchmark": "OSCBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3502,7 +3491,7 @@
       ]
     },
     {
-      "id": "EC0047",
+      "id": "EC0046",
       "benchmark": "T2VWorldBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3518,7 +3507,7 @@
       ]
     },
     {
-      "id": "EC0048",
+      "id": "EC0047",
       "benchmark": "WMBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3535,7 +3524,7 @@
       ]
     },
     {
-      "id": "EC0049",
+      "id": "EC0048",
       "benchmark": "WMBench",
       "scope": "T1",
       "protocol": "CL",
@@ -3551,7 +3540,7 @@
       ]
     },
     {
-      "id": "EC0050",
+      "id": "EC0049",
       "benchmark": "WorldModelBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3567,7 +3556,7 @@
       ]
     },
     {
-      "id": "EC0051",
+      "id": "EC0050",
       "benchmark": "WorldModelBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3583,7 +3572,7 @@
       ]
     },
     {
-      "id": "EC0052",
+      "id": "EC0051",
       "benchmark": "WorldSimBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3600,7 +3589,7 @@
       ]
     },
     {
-      "id": "EC0053",
+      "id": "EC0052",
       "benchmark": "WorldSimBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3616,7 +3605,7 @@
       ]
     },
     {
-      "id": "EC0054",
+      "id": "EC0053",
       "benchmark": "WorldSimBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3632,7 +3621,7 @@
       ]
     },
     {
-      "id": "EC0055",
+      "id": "EC0054",
       "benchmark": "Apple-π",
       "scope": "T1",
       "protocol": "OL",
@@ -3648,7 +3637,7 @@
       ]
     },
     {
-      "id": "EC0056",
+      "id": "EC0055",
       "benchmark": "TC-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3664,7 +3653,7 @@
       ]
     },
     {
-      "id": "EC0057",
+      "id": "EC0056",
       "benchmark": "TC-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3680,7 +3669,7 @@
       ]
     },
     {
-      "id": "EC0058",
+      "id": "EC0057",
       "benchmark": "WBench",
       "scope": "T1",
       "protocol": "OL",
@@ -3696,7 +3685,7 @@
       ]
     },
     {
-      "id": "EC0059",
+      "id": "EC0058",
       "benchmark": "CrashTwin",
       "scope": "T1",
       "protocol": "OL",
@@ -3712,7 +3701,7 @@
       ]
     },
     {
-      "id": "EC0060",
+      "id": "EC0059",
       "benchmark": "EVA-Bench",
       "scope": "T1",
       "protocol": "OL",
@@ -3728,7 +3717,7 @@
       ]
     },
     {
-      "id": "EC0061",
+      "id": "EC0060",
       "benchmark": "EVA-Bench",
       "scope": "T1",
       "protocol": "CL",
@@ -3744,7 +3733,7 @@
       ]
     },
     {
-      "id": "EC0062",
+      "id": "EC0061",
       "benchmark": "WR-Arena",
       "scope": "T1",
       "protocol": "OL",
@@ -3760,7 +3749,7 @@
       ]
     },
     {
-      "id": "EC0063",
+      "id": "EC0062",
       "benchmark": "IntPhys",
       "scope": "T2",
       "protocol": "OL",
@@ -3776,7 +3765,7 @@
       ]
     },
     {
-      "id": "EC0064",
+      "id": "EC0063",
       "benchmark": "MIND",
       "scope": "T2",
       "protocol": "OL",
@@ -3792,7 +3781,7 @@
       ]
     },
     {
-      "id": "EC0065",
+      "id": "EC0064",
       "benchmark": "WorldOlympiad",
       "scope": "T2",
       "protocol": "OL",
@@ -3808,7 +3797,7 @@
       ]
     },
     {
-      "id": "EC0066",
+      "id": "EC0065",
       "benchmark": "WorldArena",
       "scope": "T2",
       "protocol": "OL",
@@ -3824,7 +3813,7 @@
       ]
     },
     {
-      "id": "EC0067",
+      "id": "EC0066",
       "benchmark": "WorldArena 2.0",
       "scope": "T2",
       "protocol": "OL",
@@ -3840,7 +3829,7 @@
       ]
     },
     {
-      "id": "EC0068",
+      "id": "EC0067",
       "benchmark": "WorldArena 2.0",
       "scope": "T2",
       "protocol": "OL",
@@ -3856,7 +3845,7 @@
       ]
     },
     {
-      "id": "EC0069",
+      "id": "EC0068",
       "benchmark": "WorldScore",
       "scope": "T2",
       "protocol": "OL",
@@ -3872,7 +3861,7 @@
       ]
     },
     {
-      "id": "EC0070",
+      "id": "EC0069",
       "benchmark": "WorldScore",
       "scope": "T2",
       "protocol": "OL",
@@ -3888,7 +3877,7 @@
       ]
     },
     {
-      "id": "EC0071",
+      "id": "EC0070",
       "benchmark": "EWMBench",
       "scope": "T2",
       "protocol": "OL",
@@ -3904,7 +3893,7 @@
       ]
     },
     {
-      "id": "EC0072",
+      "id": "EC0071",
       "benchmark": "GameWorld Score",
       "scope": "T2",
       "protocol": "OL",
@@ -3920,7 +3909,7 @@
       ]
     },
     {
-      "id": "EC0073",
+      "id": "EC0072",
       "benchmark": "WorldMark",
       "scope": "T2",
       "protocol": "OL",
@@ -3936,7 +3925,7 @@
       ]
     },
     {
-      "id": "EC0074",
+      "id": "EC0073",
       "benchmark": "4DWorldBench",
       "scope": "T2",
       "protocol": "OL",
@@ -3952,7 +3941,7 @@
       ]
     },
     {
-      "id": "EC0075",
+      "id": "EC0074",
       "benchmark": "4DWorldBench",
       "scope": "T2",
       "protocol": "OL",
@@ -3968,7 +3957,7 @@
       ]
     },
     {
-      "id": "EC0076",
+      "id": "EC0075",
       "benchmark": "4DWorldBench",
       "scope": "T2",
       "protocol": "OL",
@@ -3976,6 +3965,7 @@
       "data": "HCP",
       "dataStatus": "classified",
       "taskIds": [
+        "S2-010",
         "S2-011"
       ],
       "sourceTable": "S2",
@@ -3984,23 +3974,7 @@
       ]
     },
     {
-      "id": "EC0077",
-      "benchmark": "4DWorldBench",
-      "scope": "T2",
-      "protocol": "OL",
-      "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
-      "taskIds": [
-        "S2-010"
-      ],
-      "sourceTable": "S2",
-      "sourcePages": [
-        7
-      ]
-    },
-    {
-      "id": "EC0078",
+      "id": "EC0076",
       "benchmark": "WorldLens",
       "scope": "T2",
       "protocol": "OL",
@@ -4016,7 +3990,7 @@
       ]
     },
     {
-      "id": "EC0079",
+      "id": "EC0077",
       "benchmark": "DrivingGen",
       "scope": "T2",
       "protocol": "OL",
@@ -4033,7 +4007,7 @@
       ]
     },
     {
-      "id": "EC0080",
+      "id": "EC0078",
       "benchmark": "PEDRA",
       "scope": "T2",
       "protocol": "OL",
@@ -4049,7 +4023,7 @@
       ]
     },
     {
-      "id": "EC0081",
+      "id": "EC0079",
       "benchmark": "PEDRA",
       "scope": "T2",
       "protocol": "OL",
@@ -4065,7 +4039,7 @@
       ]
     },
     {
-      "id": "EC0082",
+      "id": "EC0080",
       "benchmark": "Gen-ViRe",
       "scope": "T2",
       "protocol": "OL",
@@ -4081,7 +4055,7 @@
       ]
     },
     {
-      "id": "EC0083",
+      "id": "EC0081",
       "benchmark": "iWorld-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4097,7 +4071,7 @@
       ]
     },
     {
-      "id": "EC0084",
+      "id": "EC0082",
       "benchmark": "WoW-World-Eval",
       "scope": "T2",
       "protocol": "OL",
@@ -4113,7 +4087,7 @@
       ]
     },
     {
-      "id": "EC0085",
+      "id": "EC0083",
       "benchmark": "RBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4129,7 +4103,7 @@
       ]
     },
     {
-      "id": "EC0086",
+      "id": "EC0084",
       "benchmark": "PAI-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4146,7 +4120,7 @@
       ]
     },
     {
-      "id": "EC0087",
+      "id": "EC0085",
       "benchmark": "EZS-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4162,7 +4136,7 @@
       ]
     },
     {
-      "id": "EC0088",
+      "id": "EC0086",
       "benchmark": "WorldRoamBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4178,7 +4152,7 @@
       ]
     },
     {
-      "id": "EC0089",
+      "id": "EC0087",
       "benchmark": "MemoBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4194,7 +4168,7 @@
       ]
     },
     {
-      "id": "EC0090",
+      "id": "EC0088",
       "benchmark": "RoboTrustBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4210,7 +4184,7 @@
       ]
     },
     {
-      "id": "EC0091",
+      "id": "EC0089",
       "benchmark": "WorldExam",
       "scope": "T2",
       "protocol": "OL",
@@ -4226,7 +4200,7 @@
       ]
     },
     {
-      "id": "EC0092",
+      "id": "EC0090",
       "benchmark": "SurgWMBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4244,7 +4218,7 @@
       ]
     },
     {
-      "id": "EC0093",
+      "id": "EC0091",
       "benchmark": "H2R-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4260,13 +4234,13 @@
       ]
     },
     {
-      "id": "EC0094",
+      "id": "EC0092",
       "benchmark": "H2R-Bench",
       "scope": "T2",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
       "taskIds": [
         "S2-039"
       ],
@@ -4276,7 +4250,7 @@
       ]
     },
     {
-      "id": "EC0095",
+      "id": "EC0093",
       "benchmark": "PlayWorld",
       "scope": "T2",
       "protocol": "CL",
@@ -4292,7 +4266,7 @@
       ]
     },
     {
-      "id": "EC0096",
+      "id": "EC0094",
       "benchmark": "XEWorld",
       "scope": "T2",
       "protocol": "OL",
@@ -4308,7 +4282,7 @@
       ]
     },
     {
-      "id": "EC0097",
+      "id": "EC0095",
       "benchmark": "HarnessEval-W",
       "scope": "T2",
       "protocol": "OL",
@@ -4324,7 +4298,7 @@
       ]
     },
     {
-      "id": "EC0098",
+      "id": "EC0096",
       "benchmark": "HTEWorld",
       "scope": "T2",
       "protocol": "OL",
@@ -4340,7 +4314,7 @@
       ]
     },
     {
-      "id": "EC0099",
+      "id": "EC0097",
       "benchmark": "RigidBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4356,7 +4330,7 @@
       ]
     },
     {
-      "id": "EC0100",
+      "id": "EC0098",
       "benchmark": "Omni-WorldBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4372,7 +4346,7 @@
       ]
     },
     {
-      "id": "EC0101",
+      "id": "EC0099",
       "benchmark": "Omni-WorldBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4389,7 +4363,7 @@
       ]
     },
     {
-      "id": "EC0102",
+      "id": "EC0100",
       "benchmark": "OSCBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4405,7 +4379,7 @@
       ]
     },
     {
-      "id": "EC0103",
+      "id": "EC0101",
       "benchmark": "WMBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4421,7 +4395,7 @@
       ]
     },
     {
-      "id": "EC0104",
+      "id": "EC0102",
       "benchmark": "WMBench",
       "scope": "T2",
       "protocol": "CL",
@@ -4437,7 +4411,7 @@
       ]
     },
     {
-      "id": "EC0105",
+      "id": "EC0103",
       "benchmark": "WorldSimBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4454,7 +4428,7 @@
       ]
     },
     {
-      "id": "EC0106",
+      "id": "EC0104",
       "benchmark": "WorldSimBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4470,7 +4444,7 @@
       ]
     },
     {
-      "id": "EC0107",
+      "id": "EC0105",
       "benchmark": "WorldSimBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4486,7 +4460,7 @@
       ]
     },
     {
-      "id": "EC0108",
+      "id": "EC0106",
       "benchmark": "Apple-π",
       "scope": "T2",
       "protocol": "OL",
@@ -4502,7 +4476,7 @@
       ]
     },
     {
-      "id": "EC0109",
+      "id": "EC0107",
       "benchmark": "WBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4518,7 +4492,7 @@
       ]
     },
     {
-      "id": "EC0110",
+      "id": "EC0108",
       "benchmark": "CrashTwin",
       "scope": "T2",
       "protocol": "OL",
@@ -4534,7 +4508,7 @@
       ]
     },
     {
-      "id": "EC0111",
+      "id": "EC0109",
       "benchmark": "EVA-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4550,7 +4524,7 @@
       ]
     },
     {
-      "id": "EC0112",
+      "id": "EC0110",
       "benchmark": "EVA-Bench",
       "scope": "T2",
       "protocol": "CL",
@@ -4566,7 +4540,7 @@
       ]
     },
     {
-      "id": "EC0113",
+      "id": "EC0111",
       "benchmark": "PDI-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4582,7 +4556,7 @@
       ]
     },
     {
-      "id": "EC0114",
+      "id": "EC0112",
       "benchmark": "LoopNav",
       "scope": "T2",
       "protocol": "OL",
@@ -4598,7 +4572,7 @@
       ]
     },
     {
-      "id": "EC0115",
+      "id": "EC0113",
       "benchmark": "MBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4614,7 +4588,7 @@
       ]
     },
     {
-      "id": "EC0116",
+      "id": "EC0114",
       "benchmark": "STEVO-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4630,7 +4604,7 @@
       ]
     },
     {
-      "id": "EC0117",
+      "id": "EC0115",
       "benchmark": "CausalSpatial",
       "scope": "T2",
       "protocol": "OL",
@@ -4646,7 +4620,7 @@
       ]
     },
     {
-      "id": "EC0118",
+      "id": "EC0116",
       "benchmark": "What-If World",
       "scope": "T2",
       "protocol": "OL",
@@ -4662,7 +4636,7 @@
       ]
     },
     {
-      "id": "EC0119",
+      "id": "EC0117",
       "benchmark": "HOCA-Bench",
       "scope": "T2",
       "protocol": "OL",
@@ -4678,7 +4652,7 @@
       ]
     },
     {
-      "id": "EC0120",
+      "id": "EC0118",
       "benchmark": "AutumnBench",
       "scope": "T2",
       "protocol": "CL",
@@ -4694,7 +4668,7 @@
       ]
     },
     {
-      "id": "EC0121",
+      "id": "EC0119",
       "benchmark": "AutumnBench",
       "scope": "T2",
       "protocol": "CL",
@@ -4710,7 +4684,7 @@
       ]
     },
     {
-      "id": "EC0122",
+      "id": "EC0120",
       "benchmark": "MVP",
       "scope": "T2",
       "protocol": "OL",
@@ -4726,7 +4700,7 @@
       ]
     },
     {
-      "id": "EC0123",
+      "id": "EC0121",
       "benchmark": "ContactWorld",
       "scope": "T2",
       "protocol": "CL",
@@ -4742,7 +4716,7 @@
       ]
     },
     {
-      "id": "EC0124",
+      "id": "EC0122",
       "benchmark": "ScratchWorld",
       "scope": "T2",
       "protocol": "OL",
@@ -4758,7 +4732,7 @@
       ]
     },
     {
-      "id": "EC0125",
+      "id": "EC0123",
       "benchmark": "MiraBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4774,7 +4748,7 @@
       ]
     },
     {
-      "id": "EC0126",
+      "id": "EC0124",
       "benchmark": "Chess-World-Model",
       "scope": "T2",
       "protocol": "OL",
@@ -4791,7 +4765,7 @@
       ]
     },
     {
-      "id": "EC0127",
+      "id": "EC0125",
       "benchmark": "IntPhys 2",
       "scope": "T2",
       "protocol": "OL",
@@ -4807,7 +4781,7 @@
       ]
     },
     {
-      "id": "EC0128",
+      "id": "EC0126",
       "benchmark": "SmallWorlds",
       "scope": "T2",
       "protocol": "OL",
@@ -4823,7 +4797,7 @@
       ]
     },
     {
-      "id": "EC0129",
+      "id": "EC0127",
       "benchmark": "VBench-2.0",
       "scope": "T2",
       "protocol": "OL",
@@ -4839,7 +4813,7 @@
       ]
     },
     {
-      "id": "EC0130",
+      "id": "EC0128",
       "benchmark": "WorldBench",
       "scope": "T2",
       "protocol": "OL",
@@ -4855,7 +4829,7 @@
       ]
     },
     {
-      "id": "EC0131",
+      "id": "EC0129",
       "benchmark": "RoboWM-Bench",
       "scope": "T3",
       "protocol": "OL",
@@ -4871,7 +4845,7 @@
       ]
     },
     {
-      "id": "EC0132",
+      "id": "EC0130",
       "benchmark": "MIND",
       "scope": "T3",
       "protocol": "OL",
@@ -4887,7 +4861,7 @@
       ]
     },
     {
-      "id": "EC0133",
+      "id": "EC0131",
       "benchmark": "WorldOlympiad",
       "scope": "T3",
       "protocol": "OL",
@@ -4903,7 +4877,7 @@
       ]
     },
     {
-      "id": "EC0134",
+      "id": "EC0132",
       "benchmark": "WorldMark",
       "scope": "T3",
       "protocol": "OL",
@@ -4919,7 +4893,7 @@
       ]
     },
     {
-      "id": "EC0135",
+      "id": "EC0133",
       "benchmark": "iWorld-Bench",
       "scope": "T3",
       "protocol": "OL",
@@ -4935,7 +4909,7 @@
       ]
     },
     {
-      "id": "EC0136",
+      "id": "EC0134",
       "benchmark": "WoW-World-Eval",
       "scope": "T3",
       "protocol": "OL",
@@ -4951,7 +4925,7 @@
       ]
     },
     {
-      "id": "EC0137",
+      "id": "EC0135",
       "benchmark": "RBench",
       "scope": "T3",
       "protocol": "OL",
@@ -4967,7 +4941,7 @@
       ]
     },
     {
-      "id": "EC0138",
+      "id": "EC0136",
       "benchmark": "WorldRoamBench",
       "scope": "T3",
       "protocol": "OL",
@@ -4983,7 +4957,7 @@
       ]
     },
     {
-      "id": "EC0139",
+      "id": "EC0137",
       "benchmark": "MemoBench",
       "scope": "T3",
       "protocol": "OL",
@@ -4999,7 +4973,7 @@
       ]
     },
     {
-      "id": "EC0140",
+      "id": "EC0138",
       "benchmark": "PlayWorld",
       "scope": "T3",
       "protocol": "CL",
@@ -5015,7 +4989,7 @@
       ]
     },
     {
-      "id": "EC0141",
+      "id": "EC0139",
       "benchmark": "HarnessEval-W",
       "scope": "T3",
       "protocol": "OL",
@@ -5031,7 +5005,7 @@
       ]
     },
     {
-      "id": "EC0142",
+      "id": "EC0140",
       "benchmark": "HTEWorld",
       "scope": "T3",
       "protocol": "OL",
@@ -5047,7 +5021,7 @@
       ]
     },
     {
-      "id": "EC0143",
+      "id": "EC0141",
       "benchmark": "WMBench",
       "scope": "T3",
       "protocol": "OL",
@@ -5063,7 +5037,7 @@
       ]
     },
     {
-      "id": "EC0144",
+      "id": "EC0142",
       "benchmark": "WMBench",
       "scope": "T3",
       "protocol": "CL",
@@ -5079,7 +5053,7 @@
       ]
     },
     {
-      "id": "EC0145",
+      "id": "EC0143",
       "benchmark": "WBench",
       "scope": "T3",
       "protocol": "OL",
@@ -5095,7 +5069,7 @@
       ]
     },
     {
-      "id": "EC0146",
+      "id": "EC0144",
       "benchmark": "WR-Arena",
       "scope": "T3",
       "protocol": "OL",
@@ -5111,7 +5085,7 @@
       ]
     },
     {
-      "id": "EC0147",
+      "id": "EC0145",
       "benchmark": "LoopNav",
       "scope": "T3",
       "protocol": "OL",
@@ -5127,7 +5101,7 @@
       ]
     },
     {
-      "id": "EC0148",
+      "id": "EC0146",
       "benchmark": "MBench",
       "scope": "T3",
       "protocol": "OL",
@@ -5143,7 +5117,7 @@
       ]
     },
     {
-      "id": "EC0149",
+      "id": "EC0147",
       "benchmark": "AutumnBench",
       "scope": "T3",
       "protocol": "CL",
@@ -5159,7 +5133,7 @@
       ]
     },
     {
-      "id": "EC0150",
+      "id": "EC0148",
       "benchmark": "AutumnBench",
       "scope": "T3",
       "protocol": "CL",
@@ -5175,7 +5149,7 @@
       ]
     },
     {
-      "id": "EC0151",
+      "id": "EC0149",
       "benchmark": "ContactWorld",
       "scope": "T3",
       "protocol": "OL",
@@ -5191,7 +5165,7 @@
       ]
     },
     {
-      "id": "EC0152",
+      "id": "EC0150",
       "benchmark": "ContactWorld",
       "scope": "T3",
       "protocol": "CL",
@@ -5207,7 +5181,7 @@
       ]
     },
     {
-      "id": "EC0153",
+      "id": "EC0151",
       "benchmark": "ScratchWorld",
       "scope": "T3",
       "protocol": "OL",
@@ -5223,7 +5197,7 @@
       ]
     },
     {
-      "id": "EC0154",
+      "id": "EC0152",
       "benchmark": "Chess-World-Model",
       "scope": "T3",
       "protocol": "OL",
@@ -5240,7 +5214,7 @@
       ]
     },
     {
-      "id": "EC0155",
+      "id": "EC0153",
       "benchmark": "SmallWorlds",
       "scope": "T3",
       "protocol": "OL",
@@ -5256,7 +5230,7 @@
       ]
     },
     {
-      "id": "EC0156",
+      "id": "EC0154",
       "benchmark": "WorldPrediction",
       "scope": "T3",
       "protocol": "OL",
@@ -5272,7 +5246,7 @@
       ]
     },
     {
-      "id": "EC0157",
+      "id": "EC0155",
       "benchmark": "ExPhy",
       "scope": "T3",
       "protocol": "OL",
@@ -5288,7 +5262,7 @@
       ]
     },
     {
-      "id": "EC0158",
+      "id": "EC0156",
       "benchmark": "RoboWM-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -5304,7 +5278,7 @@
       ]
     },
     {
-      "id": "EC0159",
+      "id": "EC0157",
       "benchmark": "IntPhys",
       "scope": "T4",
       "protocol": "OL",
@@ -5320,7 +5294,7 @@
       ]
     },
     {
-      "id": "EC0160",
+      "id": "EC0158",
       "benchmark": "CLEVRER",
       "scope": "T4",
       "protocol": "OL",
@@ -5336,7 +5310,7 @@
       ]
     },
     {
-      "id": "EC0161",
+      "id": "EC0159",
       "benchmark": "Physion",
       "scope": "T4",
       "protocol": "OL",
@@ -5352,7 +5326,7 @@
       ]
     },
     {
-      "id": "EC0162",
+      "id": "EC0160",
       "benchmark": "WorldOlympiad",
       "scope": "T4",
       "protocol": "OL",
@@ -5368,7 +5342,7 @@
       ]
     },
     {
-      "id": "EC0163",
+      "id": "EC0161",
       "benchmark": "WorldArena",
       "scope": "T4",
       "protocol": "OL",
@@ -5384,7 +5358,7 @@
       ]
     },
     {
-      "id": "EC0164",
+      "id": "EC0162",
       "benchmark": "WorldArena 2.0",
       "scope": "T4",
       "protocol": "OL",
@@ -5400,7 +5374,7 @@
       ]
     },
     {
-      "id": "EC0165",
+      "id": "EC0163",
       "benchmark": "WorldArena 2.0",
       "scope": "T4",
       "protocol": "OL",
@@ -5416,7 +5390,7 @@
       ]
     },
     {
-      "id": "EC0166",
+      "id": "EC0164",
       "benchmark": "VMBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5432,7 +5406,7 @@
       ]
     },
     {
-      "id": "EC0167",
+      "id": "EC0165",
       "benchmark": "EWMBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5448,7 +5422,7 @@
       ]
     },
     {
-      "id": "EC0168",
+      "id": "EC0166",
       "benchmark": "GameWorld Score",
       "scope": "T4",
       "protocol": "OL",
@@ -5464,7 +5438,7 @@
       ]
     },
     {
-      "id": "EC0169",
+      "id": "EC0167",
       "benchmark": "4DWorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5481,7 +5455,7 @@
       ]
     },
     {
-      "id": "EC0170",
+      "id": "EC0168",
       "benchmark": "4DWorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5497,7 +5471,7 @@
       ]
     },
     {
-      "id": "EC0171",
+      "id": "EC0169",
       "benchmark": "WorldLens",
       "scope": "T4",
       "protocol": "OL",
@@ -5513,7 +5487,7 @@
       ]
     },
     {
-      "id": "EC0172",
+      "id": "EC0170",
       "benchmark": "DrivingGen",
       "scope": "T4",
       "protocol": "OL",
@@ -5530,7 +5504,7 @@
       ]
     },
     {
-      "id": "EC0173",
+      "id": "EC0171",
       "benchmark": "PEDRA",
       "scope": "T4",
       "protocol": "OL",
@@ -5546,7 +5520,7 @@
       ]
     },
     {
-      "id": "EC0174",
+      "id": "EC0172",
       "benchmark": "PEDRA",
       "scope": "T4",
       "protocol": "OL",
@@ -5562,7 +5536,7 @@
       ]
     },
     {
-      "id": "EC0175",
+      "id": "EC0173",
       "benchmark": "Gen-ViRe",
       "scope": "T4",
       "protocol": "OL",
@@ -5578,7 +5552,7 @@
       ]
     },
     {
-      "id": "EC0176",
+      "id": "EC0174",
       "benchmark": "WoW-World-Eval",
       "scope": "T4",
       "protocol": "OL",
@@ -5594,7 +5568,7 @@
       ]
     },
     {
-      "id": "EC0177",
+      "id": "EC0175",
       "benchmark": "WoW-World-Eval",
       "scope": "T4",
       "protocol": "OL",
@@ -5610,7 +5584,7 @@
       ]
     },
     {
-      "id": "EC0178",
+      "id": "EC0176",
       "benchmark": "RBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5626,7 +5600,7 @@
       ]
     },
     {
-      "id": "EC0179",
+      "id": "EC0177",
       "benchmark": "PAI-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -5644,7 +5618,7 @@
       ]
     },
     {
-      "id": "EC0180",
+      "id": "EC0178",
       "benchmark": "PAI-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -5660,7 +5634,7 @@
       ]
     },
     {
-      "id": "EC0181",
+      "id": "EC0179",
       "benchmark": "EZS-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -5676,7 +5650,7 @@
       ]
     },
     {
-      "id": "EC0182",
+      "id": "EC0180",
       "benchmark": "WorldRoamBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5692,7 +5666,7 @@
       ]
     },
     {
-      "id": "EC0183",
+      "id": "EC0181",
       "benchmark": "MemoBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5708,7 +5682,7 @@
       ]
     },
     {
-      "id": "EC0184",
+      "id": "EC0182",
       "benchmark": "RoboTrustBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5724,7 +5698,7 @@
       ]
     },
     {
-      "id": "EC0185",
+      "id": "EC0183",
       "benchmark": "WorldExam",
       "scope": "T4",
       "protocol": "OL",
@@ -5740,7 +5714,7 @@
       ]
     },
     {
-      "id": "EC0186",
+      "id": "EC0184",
       "benchmark": "H2R-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -5756,13 +5730,13 @@
       ]
     },
     {
-      "id": "EC0187",
+      "id": "EC0185",
       "benchmark": "H2R-Bench",
       "scope": "T4",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
       "taskIds": [
         "S4-062"
       ],
@@ -5772,7 +5746,7 @@
       ]
     },
     {
-      "id": "EC0188",
+      "id": "EC0186",
       "benchmark": "PlayWorld",
       "scope": "T4",
       "protocol": "CL",
@@ -5788,7 +5762,7 @@
       ]
     },
     {
-      "id": "EC0189",
+      "id": "EC0187",
       "benchmark": "XEWorld",
       "scope": "T4",
       "protocol": "OL",
@@ -5804,7 +5778,7 @@
       ]
     },
     {
-      "id": "EC0190",
+      "id": "EC0188",
       "benchmark": "HarnessEval-W",
       "scope": "T4",
       "protocol": "OL",
@@ -5820,7 +5794,7 @@
       ]
     },
     {
-      "id": "EC0191",
+      "id": "EC0189",
       "benchmark": "ACWM-Phys",
       "scope": "T4",
       "protocol": "OL",
@@ -5836,7 +5810,7 @@
       ]
     },
     {
-      "id": "EC0192",
+      "id": "EC0190",
       "benchmark": "HTEWorld",
       "scope": "T4",
       "protocol": "OL",
@@ -5852,7 +5826,7 @@
       ]
     },
     {
-      "id": "EC0193",
+      "id": "EC0191",
       "benchmark": "RigidBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5868,7 +5842,7 @@
       ]
     },
     {
-      "id": "EC0194",
+      "id": "EC0192",
       "benchmark": "Omni-WorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5884,7 +5858,7 @@
       ]
     },
     {
-      "id": "EC0195",
+      "id": "EC0193",
       "benchmark": "Omni-WorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5901,7 +5875,7 @@
       ]
     },
     {
-      "id": "EC0196",
+      "id": "EC0194",
       "benchmark": "T2VWorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5917,7 +5891,7 @@
       ]
     },
     {
-      "id": "EC0197",
+      "id": "EC0195",
       "benchmark": "WMBench",
       "scope": "T4",
       "protocol": "CL",
@@ -5933,7 +5907,7 @@
       ]
     },
     {
-      "id": "EC0198",
+      "id": "EC0196",
       "benchmark": "WorldModelBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5949,7 +5923,7 @@
       ]
     },
     {
-      "id": "EC0199",
+      "id": "EC0197",
       "benchmark": "WorldModelBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5965,7 +5939,7 @@
       ]
     },
     {
-      "id": "EC0200",
+      "id": "EC0198",
       "benchmark": "WorldSimBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5982,7 +5956,7 @@
       ]
     },
     {
-      "id": "EC0201",
+      "id": "EC0199",
       "benchmark": "WorldSimBench",
       "scope": "T4",
       "protocol": "OL",
@@ -5998,7 +5972,7 @@
       ]
     },
     {
-      "id": "EC0202",
+      "id": "EC0200",
       "benchmark": "WorldSimBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6014,7 +5988,7 @@
       ]
     },
     {
-      "id": "EC0203",
+      "id": "EC0201",
       "benchmark": "WorldSimBench",
       "scope": "T4",
       "protocol": "CL",
@@ -6030,7 +6004,7 @@
       ]
     },
     {
-      "id": "EC0204",
+      "id": "EC0202",
       "benchmark": "Apple-π",
       "scope": "T4",
       "protocol": "OL",
@@ -6046,7 +6020,7 @@
       ]
     },
     {
-      "id": "EC0205",
+      "id": "EC0203",
       "benchmark": "WBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6062,7 +6036,7 @@
       ]
     },
     {
-      "id": "EC0206",
+      "id": "EC0204",
       "benchmark": "CrashTwin",
       "scope": "T4",
       "protocol": "OL",
@@ -6078,7 +6052,7 @@
       ]
     },
     {
-      "id": "EC0207",
+      "id": "EC0205",
       "benchmark": "PDI-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -6094,7 +6068,7 @@
       ]
     },
     {
-      "id": "EC0208",
+      "id": "EC0206",
       "benchmark": "MBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6110,7 +6084,7 @@
       ]
     },
     {
-      "id": "EC0209",
+      "id": "EC0207",
       "benchmark": "STEVO-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -6126,7 +6100,7 @@
       ]
     },
     {
-      "id": "EC0210",
+      "id": "EC0208",
       "benchmark": "CausalSpatial",
       "scope": "T4",
       "protocol": "OL",
@@ -6142,7 +6116,7 @@
       ]
     },
     {
-      "id": "EC0211",
+      "id": "EC0209",
       "benchmark": "What-If World",
       "scope": "T4",
       "protocol": "OL",
@@ -6158,7 +6132,7 @@
       ]
     },
     {
-      "id": "EC0212",
+      "id": "EC0210",
       "benchmark": "HOCA-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -6174,7 +6148,7 @@
       ]
     },
     {
-      "id": "EC0213",
+      "id": "EC0211",
       "benchmark": "HOCA-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -6190,7 +6164,7 @@
       ]
     },
     {
-      "id": "EC0214",
+      "id": "EC0212",
       "benchmark": "MVP",
       "scope": "T4",
       "protocol": "OL",
@@ -6206,7 +6180,7 @@
       ]
     },
     {
-      "id": "EC0215",
+      "id": "EC0213",
       "benchmark": "ContactWorld",
       "scope": "T4",
       "protocol": "CL",
@@ -6222,7 +6196,7 @@
       ]
     },
     {
-      "id": "EC0216",
+      "id": "EC0214",
       "benchmark": "MiraBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6238,7 +6212,7 @@
       ]
     },
     {
-      "id": "EC0217",
+      "id": "EC0215",
       "benchmark": "IntPhys 2",
       "scope": "T4",
       "protocol": "OL",
@@ -6254,7 +6228,7 @@
       ]
     },
     {
-      "id": "EC0218",
+      "id": "EC0216",
       "benchmark": "SmallWorlds",
       "scope": "T4",
       "protocol": "OL",
@@ -6270,7 +6244,7 @@
       ]
     },
     {
-      "id": "EC0219",
+      "id": "EC0217",
       "benchmark": "VBench-2.0",
       "scope": "T4",
       "protocol": "OL",
@@ -6286,7 +6260,7 @@
       ]
     },
     {
-      "id": "EC0220",
+      "id": "EC0218",
       "benchmark": "WorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6302,7 +6276,7 @@
       ]
     },
     {
-      "id": "EC0221",
+      "id": "EC0219",
       "benchmark": "ExPhy",
       "scope": "T4",
       "protocol": "OL",
@@ -6318,7 +6292,7 @@
       ]
     },
     {
-      "id": "EC0222",
+      "id": "EC0220",
       "benchmark": "CoPhy",
       "scope": "T4",
       "protocol": "OL",
@@ -6334,7 +6308,7 @@
       ]
     },
     {
-      "id": "EC0223",
+      "id": "EC0221",
       "benchmark": "PHYRE",
       "scope": "T4",
       "protocol": "OL",
@@ -6350,7 +6324,7 @@
       ]
     },
     {
-      "id": "EC0224",
+      "id": "EC0222",
       "benchmark": "PHYRE",
       "scope": "T4",
       "protocol": "CL",
@@ -6366,7 +6340,7 @@
       ]
     },
     {
-      "id": "EC0225",
+      "id": "EC0223",
       "benchmark": "CRAFT",
       "scope": "T4",
       "protocol": "OL",
@@ -6382,7 +6356,7 @@
       ]
     },
     {
-      "id": "EC0226",
+      "id": "EC0224",
       "benchmark": "Physion++",
       "scope": "T4",
       "protocol": "OL",
@@ -6398,7 +6372,7 @@
       ]
     },
     {
-      "id": "EC0227",
+      "id": "EC0225",
       "benchmark": "ComPhy",
       "scope": "T4",
       "protocol": "OL",
@@ -6414,7 +6388,7 @@
       ]
     },
     {
-      "id": "EC0228",
+      "id": "EC0226",
       "benchmark": "ContPhy",
       "scope": "T4",
       "protocol": "OL",
@@ -6430,7 +6404,7 @@
       ]
     },
     {
-      "id": "EC0229",
+      "id": "EC0227",
       "benchmark": "PhyCoBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6446,7 +6420,7 @@
       ]
     },
     {
-      "id": "EC0230",
+      "id": "EC0228",
       "benchmark": "VideoPhy",
       "scope": "T4",
       "protocol": "OL",
@@ -6462,7 +6436,7 @@
       ]
     },
     {
-      "id": "EC0231",
+      "id": "EC0229",
       "benchmark": "VideoPhy-2",
       "scope": "T4",
       "protocol": "OL",
@@ -6478,7 +6452,7 @@
       ]
     },
     {
-      "id": "EC0232",
+      "id": "EC0230",
       "benchmark": "PhyGenBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6494,7 +6468,7 @@
       ]
     },
     {
-      "id": "EC0233",
+      "id": "EC0231",
       "benchmark": "T2VPhysBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6510,7 +6484,7 @@
       ]
     },
     {
-      "id": "EC0234",
+      "id": "EC0232",
       "benchmark": "Physics-IQ",
       "scope": "T4",
       "protocol": "OL",
@@ -6526,7 +6500,7 @@
       ]
     },
     {
-      "id": "EC0235",
+      "id": "EC0233",
       "benchmark": "PhyWorldBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6542,7 +6516,7 @@
       ]
     },
     {
-      "id": "EC0236",
+      "id": "EC0234",
       "benchmark": "Morpheus",
       "scope": "T4",
       "protocol": "OL",
@@ -6558,7 +6532,7 @@
       ]
     },
     {
-      "id": "EC0237",
+      "id": "EC0235",
       "benchmark": "Morpheus",
       "scope": "T4",
       "protocol": "OL",
@@ -6574,7 +6548,7 @@
       ]
     },
     {
-      "id": "EC0238",
+      "id": "EC0236",
       "benchmark": "DreamGen Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -6590,7 +6564,7 @@
       ]
     },
     {
-      "id": "EC0239",
+      "id": "EC0237",
       "benchmark": "PhyGround",
       "scope": "T4",
       "protocol": "OL",
@@ -6606,7 +6580,7 @@
       ]
     },
     {
-      "id": "EC0240",
+      "id": "EC0238",
       "benchmark": "Physion-Eval",
       "scope": "T4",
       "protocol": "OL",
@@ -6622,7 +6596,7 @@
       ]
     },
     {
-      "id": "EC0241",
+      "id": "EC0239",
       "benchmark": "CRONOS",
       "scope": "T4",
       "protocol": "OL",
@@ -6638,7 +6612,7 @@
       ]
     },
     {
-      "id": "EC0242",
+      "id": "EC0240",
       "benchmark": "VACT",
       "scope": "T4",
       "protocol": "OL",
@@ -6654,7 +6628,7 @@
       ]
     },
     {
-      "id": "EC0243",
+      "id": "EC0241",
       "benchmark": "PhysicsMind",
       "scope": "T4",
       "protocol": "OL",
@@ -6671,7 +6645,7 @@
       ]
     },
     {
-      "id": "EC0244",
+      "id": "EC0242",
       "benchmark": "KineBench",
       "scope": "T4",
       "protocol": "CL",
@@ -6687,7 +6661,7 @@
       ]
     },
     {
-      "id": "EC0245",
+      "id": "EC0243",
       "benchmark": "KineBench",
       "scope": "T4",
       "protocol": "CL",
@@ -6703,7 +6677,7 @@
       ]
     },
     {
-      "id": "EC0246",
+      "id": "EC0244",
       "benchmark": "ReactSim-Bench",
       "scope": "T4",
       "protocol": "OL",
@@ -6719,7 +6693,7 @@
       ]
     },
     {
-      "id": "EC0247",
+      "id": "EC0245",
       "benchmark": "GAUGE",
       "scope": "T4",
       "protocol": "OL",
@@ -6735,7 +6709,7 @@
       ]
     },
     {
-      "id": "EC0248",
+      "id": "EC0246",
       "benchmark": "CaliBench",
       "scope": "T4",
       "protocol": "OL",
@@ -6751,7 +6725,7 @@
       ]
     },
     {
-      "id": "EC0249",
+      "id": "EC0247",
       "benchmark": "WorldSimProbe",
       "scope": "T4",
       "protocol": "OL",
@@ -6767,7 +6741,7 @@
       ]
     },
     {
-      "id": "EC0250",
+      "id": "EC0248",
       "benchmark": "CLEVRER",
       "scope": "T5",
       "protocol": "OL",
@@ -6783,7 +6757,7 @@
       ]
     },
     {
-      "id": "EC0251",
+      "id": "EC0249",
       "benchmark": "Physion",
       "scope": "T5",
       "protocol": "OL",
@@ -6799,7 +6773,7 @@
       ]
     },
     {
-      "id": "EC0252",
+      "id": "EC0250",
       "benchmark": "WoW-World-Eval",
       "scope": "T5",
       "protocol": "OL",
@@ -6815,7 +6789,7 @@
       ]
     },
     {
-      "id": "EC0253",
+      "id": "EC0251",
       "benchmark": "RBench",
       "scope": "T5",
       "protocol": "OL",
@@ -6831,7 +6805,7 @@
       ]
     },
     {
-      "id": "EC0254",
+      "id": "EC0252",
       "benchmark": "PAI-Bench",
       "scope": "T5",
       "protocol": "OL",
@@ -6848,7 +6822,7 @@
       ]
     },
     {
-      "id": "EC0255",
+      "id": "EC0253",
       "benchmark": "RoboTrustBench",
       "scope": "T5",
       "protocol": "OL",
@@ -6864,7 +6838,7 @@
       ]
     },
     {
-      "id": "EC0256",
+      "id": "EC0254",
       "benchmark": "WorldExam",
       "scope": "T5",
       "protocol": "OL",
@@ -6880,7 +6854,7 @@
       ]
     },
     {
-      "id": "EC0257",
+      "id": "EC0255",
       "benchmark": "PlayWorld",
       "scope": "T5",
       "protocol": "CL",
@@ -6896,7 +6870,7 @@
       ]
     },
     {
-      "id": "EC0258",
+      "id": "EC0256",
       "benchmark": "HarnessEval-W",
       "scope": "T5",
       "protocol": "OL",
@@ -6912,7 +6886,7 @@
       ]
     },
     {
-      "id": "EC0259",
+      "id": "EC0257",
       "benchmark": "T2VWorldBench",
       "scope": "T5",
       "protocol": "OL",
@@ -6928,7 +6902,7 @@
       ]
     },
     {
-      "id": "EC0260",
+      "id": "EC0258",
       "benchmark": "WR-Arena",
       "scope": "T5",
       "protocol": "OL",
@@ -6944,7 +6918,7 @@
       ]
     },
     {
-      "id": "EC0261",
+      "id": "EC0259",
       "benchmark": "CausalSpatial",
       "scope": "T5",
       "protocol": "OL",
@@ -6960,7 +6934,7 @@
       ]
     },
     {
-      "id": "EC0262",
+      "id": "EC0260",
       "benchmark": "What-If World",
       "scope": "T5",
       "protocol": "OL",
@@ -6976,7 +6950,7 @@
       ]
     },
     {
-      "id": "EC0263",
+      "id": "EC0261",
       "benchmark": "HOCA-Bench",
       "scope": "T5",
       "protocol": "OL",
@@ -6992,7 +6966,7 @@
       ]
     },
     {
-      "id": "EC0264",
+      "id": "EC0262",
       "benchmark": "AutumnBench",
       "scope": "T5",
       "protocol": "CL",
@@ -7008,7 +6982,7 @@
       ]
     },
     {
-      "id": "EC0265",
+      "id": "EC0263",
       "benchmark": "MVP",
       "scope": "T5",
       "protocol": "OL",
@@ -7024,7 +6998,7 @@
       ]
     },
     {
-      "id": "EC0266",
+      "id": "EC0264",
       "benchmark": "ScratchWorld",
       "scope": "T5",
       "protocol": "OL",
@@ -7040,7 +7014,7 @@
       ]
     },
     {
-      "id": "EC0267",
+      "id": "EC0265",
       "benchmark": "MiraBench",
       "scope": "T5",
       "protocol": "OL",
@@ -7056,7 +7030,7 @@
       ]
     },
     {
-      "id": "EC0268",
+      "id": "EC0266",
       "benchmark": "WorldPrediction",
       "scope": "T5",
       "protocol": "OL",
@@ -7072,7 +7046,7 @@
       ]
     },
     {
-      "id": "EC0269",
+      "id": "EC0267",
       "benchmark": "CoPhy",
       "scope": "T5",
       "protocol": "OL",
@@ -7088,7 +7062,7 @@
       ]
     },
     {
-      "id": "EC0270",
+      "id": "EC0268",
       "benchmark": "CRAFT",
       "scope": "T5",
       "protocol": "OL",
@@ -7104,7 +7078,7 @@
       ]
     },
     {
-      "id": "EC0271",
+      "id": "EC0269",
       "benchmark": "ComPhy",
       "scope": "T5",
       "protocol": "OL",
@@ -7120,7 +7094,7 @@
       ]
     },
     {
-      "id": "EC0272",
+      "id": "EC0270",
       "benchmark": "ContPhy",
       "scope": "T5",
       "protocol": "OL",
@@ -7136,7 +7110,7 @@
       ]
     },
     {
-      "id": "EC0273",
+      "id": "EC0271",
       "benchmark": "Physics-IQ",
       "scope": "T5",
       "protocol": "OL",
@@ -7152,7 +7126,7 @@
       ]
     },
     {
-      "id": "EC0274",
+      "id": "EC0272",
       "benchmark": "CRONOS",
       "scope": "T5",
       "protocol": "OL",
@@ -7168,7 +7142,7 @@
       ]
     },
     {
-      "id": "EC0275",
+      "id": "EC0273",
       "benchmark": "VACT",
       "scope": "T5",
       "protocol": "OL",
@@ -7184,7 +7158,7 @@
       ]
     },
     {
-      "id": "EC0276",
+      "id": "EC0274",
       "benchmark": "PhysicsMind",
       "scope": "T5",
       "protocol": "OL",
@@ -7201,7 +7175,7 @@
       ]
     },
     {
-      "id": "EC0277",
+      "id": "EC0275",
       "benchmark": "ReactSim-Bench",
       "scope": "T5",
       "protocol": "OL",
@@ -7217,7 +7191,7 @@
       ]
     },
     {
-      "id": "EC0278",
+      "id": "EC0276",
       "benchmark": "WorldSimProbe",
       "scope": "T5",
       "protocol": "OL",
@@ -7233,7 +7207,7 @@
       ]
     },
     {
-      "id": "EC0279",
+      "id": "EC0277",
       "benchmark": "Causal-VidQA",
       "scope": "T5",
       "protocol": "OL",
@@ -7249,7 +7223,7 @@
       ]
     },
     {
-      "id": "EC0280",
+      "id": "EC0278",
       "benchmark": "ACQUIRED",
       "scope": "T5",
       "protocol": "OL",
@@ -7265,7 +7239,7 @@
       ]
     },
     {
-      "id": "EC0281",
+      "id": "EC0279",
       "benchmark": "MMWorld",
       "scope": "T5",
       "protocol": "OL",
@@ -7281,7 +7255,7 @@
       ]
     },
     {
-      "id": "EC0282",
+      "id": "EC0280",
       "benchmark": "CausalVQA",
       "scope": "T5",
       "protocol": "OL",
@@ -7297,7 +7271,7 @@
       ]
     },
     {
-      "id": "EC0283",
+      "id": "EC0281",
       "benchmark": "WorldArena",
       "scope": "S5",
       "protocol": "OL",
@@ -7313,7 +7287,7 @@
       ]
     },
     {
-      "id": "EC0284",
+      "id": "EC0282",
       "benchmark": "WorldScore",
       "scope": "S5",
       "protocol": "OL",
@@ -7329,7 +7303,7 @@
       ]
     },
     {
-      "id": "EC0285",
+      "id": "EC0283",
       "benchmark": "WorldScore",
       "scope": "S5",
       "protocol": "OL",
@@ -7345,7 +7319,7 @@
       ]
     },
     {
-      "id": "EC0286",
+      "id": "EC0284",
       "benchmark": "EWMBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7361,7 +7335,7 @@
       ]
     },
     {
-      "id": "EC0287",
+      "id": "EC0285",
       "benchmark": "GameWorld Score",
       "scope": "S5",
       "protocol": "OL",
@@ -7377,7 +7351,7 @@
       ]
     },
     {
-      "id": "EC0288",
+      "id": "EC0286",
       "benchmark": "4DWorldBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7393,7 +7367,7 @@
       ]
     },
     {
-      "id": "EC0289",
+      "id": "EC0287",
       "benchmark": "4DWorldBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7409,7 +7383,7 @@
       ]
     },
     {
-      "id": "EC0290",
+      "id": "EC0288",
       "benchmark": "4DWorldBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7417,6 +7391,7 @@
       "data": "HCP",
       "dataStatus": "classified",
       "taskIds": [
+        "S6-009",
         "S6-010"
       ],
       "sourceTable": "S6",
@@ -7425,23 +7400,7 @@
       ]
     },
     {
-      "id": "EC0291",
-      "benchmark": "4DWorldBench",
-      "scope": "S5",
-      "protocol": "OL",
-      "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
-      "taskIds": [
-        "S6-009"
-      ],
-      "sourceTable": "S6",
-      "sourcePages": [
-        20
-      ]
-    },
-    {
-      "id": "EC0292",
+      "id": "EC0289",
       "benchmark": "DrivingGen",
       "scope": "S5",
       "protocol": "OL",
@@ -7457,7 +7416,7 @@
       ]
     },
     {
-      "id": "EC0293",
+      "id": "EC0290",
       "benchmark": "WoW-World-Eval",
       "scope": "S5",
       "protocol": "OL",
@@ -7473,7 +7432,7 @@
       ]
     },
     {
-      "id": "EC0294",
+      "id": "EC0291",
       "benchmark": "WoW-World-Eval",
       "scope": "S5",
       "protocol": "OL",
@@ -7489,7 +7448,7 @@
       ]
     },
     {
-      "id": "EC0295",
+      "id": "EC0292",
       "benchmark": "RBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7505,7 +7464,7 @@
       ]
     },
     {
-      "id": "EC0296",
+      "id": "EC0293",
       "benchmark": "PAI-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7522,7 +7481,7 @@
       ]
     },
     {
-      "id": "EC0297",
+      "id": "EC0294",
       "benchmark": "PAI-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7538,7 +7497,7 @@
       ]
     },
     {
-      "id": "EC0298",
+      "id": "EC0295",
       "benchmark": "EZS-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7554,7 +7513,7 @@
       ]
     },
     {
-      "id": "EC0299",
+      "id": "EC0296",
       "benchmark": "MemoBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7570,7 +7529,7 @@
       ]
     },
     {
-      "id": "EC0300",
+      "id": "EC0297",
       "benchmark": "RoboTrustBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7586,7 +7545,7 @@
       ]
     },
     {
-      "id": "EC0301",
+      "id": "EC0298",
       "benchmark": "WorldExam",
       "scope": "S5",
       "protocol": "OL",
@@ -7602,7 +7561,7 @@
       ]
     },
     {
-      "id": "EC0302",
+      "id": "EC0299",
       "benchmark": "WorldExam",
       "scope": "S5",
       "protocol": "OL",
@@ -7618,7 +7577,7 @@
       ]
     },
     {
-      "id": "EC0303",
+      "id": "EC0300",
       "benchmark": "H2R-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7634,13 +7593,13 @@
       ]
     },
     {
-      "id": "EC0304",
+      "id": "EC0301",
       "benchmark": "H2R-Bench",
       "scope": "S5",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
       "taskIds": [
         "S6-032"
       ],
@@ -7650,7 +7609,7 @@
       ]
     },
     {
-      "id": "EC0305",
+      "id": "EC0302",
       "benchmark": "XEWorld",
       "scope": "S5",
       "protocol": "OL",
@@ -7666,7 +7625,7 @@
       ]
     },
     {
-      "id": "EC0306",
+      "id": "EC0303",
       "benchmark": "HarnessEval-W",
       "scope": "S5",
       "protocol": "OL",
@@ -7682,7 +7641,7 @@
       ]
     },
     {
-      "id": "EC0307",
+      "id": "EC0304",
       "benchmark": "WorldEcho",
       "scope": "S5",
       "protocol": "OL",
@@ -7698,7 +7657,7 @@
       ]
     },
     {
-      "id": "EC0308",
+      "id": "EC0305",
       "benchmark": "MagicBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7714,7 +7673,7 @@
       ]
     },
     {
-      "id": "EC0309",
+      "id": "EC0306",
       "benchmark": "MoveBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7730,7 +7689,7 @@
       ]
     },
     {
-      "id": "EC0310",
+      "id": "EC0307",
       "benchmark": "Omni-WorldBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7746,7 +7705,7 @@
       ]
     },
     {
-      "id": "EC0311",
+      "id": "EC0308",
       "benchmark": "Omni-WorldBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7763,7 +7722,7 @@
       ]
     },
     {
-      "id": "EC0312",
+      "id": "EC0309",
       "benchmark": "OSCBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7779,7 +7738,7 @@
       ]
     },
     {
-      "id": "EC0313",
+      "id": "EC0310",
       "benchmark": "WorldModelBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7795,7 +7754,7 @@
       ]
     },
     {
-      "id": "EC0314",
+      "id": "EC0311",
       "benchmark": "WorldModelBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7811,7 +7770,7 @@
       ]
     },
     {
-      "id": "EC0315",
+      "id": "EC0312",
       "benchmark": "TC-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7827,7 +7786,7 @@
       ]
     },
     {
-      "id": "EC0316",
+      "id": "EC0313",
       "benchmark": "TC-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7843,7 +7802,7 @@
       ]
     },
     {
-      "id": "EC0317",
+      "id": "EC0314",
       "benchmark": "MBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7859,7 +7818,7 @@
       ]
     },
     {
-      "id": "EC0318",
+      "id": "EC0315",
       "benchmark": "STEVO-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -7875,7 +7834,7 @@
       ]
     },
     {
-      "id": "EC0319",
+      "id": "EC0316",
       "benchmark": "What-If World",
       "scope": "S5",
       "protocol": "OL",
@@ -7891,7 +7850,7 @@
       ]
     },
     {
-      "id": "EC0320",
+      "id": "EC0317",
       "benchmark": "ScratchWorld",
       "scope": "S5",
       "protocol": "OL",
@@ -7907,7 +7866,7 @@
       ]
     },
     {
-      "id": "EC0321",
+      "id": "EC0318",
       "benchmark": "MiraBench",
       "scope": "S5",
       "protocol": "OL",
@@ -7923,7 +7882,7 @@
       ]
     },
     {
-      "id": "EC0322",
+      "id": "EC0319",
       "benchmark": "Chess-World-Model",
       "scope": "S5",
       "protocol": "OL",
@@ -7940,7 +7899,7 @@
       ]
     },
     {
-      "id": "EC0323",
+      "id": "EC0320",
       "benchmark": "VBench-2.0",
       "scope": "S5",
       "protocol": "OL",
@@ -7956,7 +7915,7 @@
       ]
     },
     {
-      "id": "EC0324",
+      "id": "EC0321",
       "benchmark": "VideoPhy",
       "scope": "S5",
       "protocol": "OL",
@@ -7972,7 +7931,7 @@
       ]
     },
     {
-      "id": "EC0325",
+      "id": "EC0322",
       "benchmark": "VideoPhy-2",
       "scope": "S5",
       "protocol": "OL",
@@ -7988,7 +7947,7 @@
       ]
     },
     {
-      "id": "EC0326",
+      "id": "EC0323",
       "benchmark": "PhyGenBench",
       "scope": "S5",
       "protocol": "OL",
@@ -8004,7 +7963,7 @@
       ]
     },
     {
-      "id": "EC0327",
+      "id": "EC0324",
       "benchmark": "PhyWorldBench",
       "scope": "S5",
       "protocol": "OL",
@@ -8020,7 +7979,7 @@
       ]
     },
     {
-      "id": "EC0328",
+      "id": "EC0325",
       "benchmark": "DreamGen Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -8036,7 +7995,7 @@
       ]
     },
     {
-      "id": "EC0329",
+      "id": "EC0326",
       "benchmark": "VACT",
       "scope": "S5",
       "protocol": "OL",
@@ -8052,7 +8011,7 @@
       ]
     },
     {
-      "id": "EC0330",
+      "id": "EC0327",
       "benchmark": "KineBench",
       "scope": "S5",
       "protocol": "CL",
@@ -8068,7 +8027,7 @@
       ]
     },
     {
-      "id": "EC0331",
+      "id": "EC0328",
       "benchmark": "WorldSimProbe",
       "scope": "S5",
       "protocol": "OL",
@@ -8084,7 +8043,7 @@
       ]
     },
     {
-      "id": "EC0332",
+      "id": "EC0329",
       "benchmark": "StoryEval",
       "scope": "S5",
       "protocol": "OL",
@@ -8100,7 +8059,7 @@
       ]
     },
     {
-      "id": "EC0333",
+      "id": "EC0330",
       "benchmark": "ACT-Bench",
       "scope": "S5",
       "protocol": "OL",
@@ -8116,7 +8075,7 @@
       ]
     },
     {
-      "id": "EC0334",
+      "id": "EC0331",
       "benchmark": "RoboWM-Bench",
       "scope": "S6",
       "protocol": "OL",
@@ -8132,7 +8091,7 @@
       ]
     },
     {
-      "id": "EC0335",
+      "id": "EC0332",
       "benchmark": "MIND",
       "scope": "S6",
       "protocol": "OL",
@@ -8148,7 +8107,7 @@
       ]
     },
     {
-      "id": "EC0336",
+      "id": "EC0333",
       "benchmark": "WorldOlympiad",
       "scope": "S6",
       "protocol": "OL",
@@ -8164,7 +8123,7 @@
       ]
     },
     {
-      "id": "EC0337",
+      "id": "EC0334",
       "benchmark": "WorldArena 2.0",
       "scope": "S6",
       "protocol": "OL",
@@ -8180,7 +8139,7 @@
       ]
     },
     {
-      "id": "EC0338",
+      "id": "EC0335",
       "benchmark": "WorldArena 2.0",
       "scope": "S6",
       "protocol": "OL",
@@ -8196,7 +8155,7 @@
       ]
     },
     {
-      "id": "EC0339",
+      "id": "EC0336",
       "benchmark": "WorldMark",
       "scope": "S6",
       "protocol": "OL",
@@ -8212,7 +8171,7 @@
       ]
     },
     {
-      "id": "EC0340",
+      "id": "EC0337",
       "benchmark": "iWorld-Bench",
       "scope": "S6",
       "protocol": "OL",
@@ -8228,7 +8187,7 @@
       ]
     },
     {
-      "id": "EC0341",
+      "id": "EC0338",
       "benchmark": "WorldRoamBench",
       "scope": "S6",
       "protocol": "OL",
@@ -8244,7 +8203,7 @@
       ]
     },
     {
-      "id": "EC0342",
+      "id": "EC0339",
       "benchmark": "PlayWorld",
       "scope": "S6",
       "protocol": "CL",
@@ -8260,7 +8219,7 @@
       ]
     },
     {
-      "id": "EC0343",
+      "id": "EC0340",
       "benchmark": "ACWM-Phys",
       "scope": "S6",
       "protocol": "OL",
@@ -8276,7 +8235,7 @@
       ]
     },
     {
-      "id": "EC0344",
+      "id": "EC0341",
       "benchmark": "HTEWorld",
       "scope": "S6",
       "protocol": "OL",
@@ -8292,7 +8251,7 @@
       ]
     },
     {
-      "id": "EC0345",
+      "id": "EC0342",
       "benchmark": "WMBench",
       "scope": "S6",
       "protocol": "OL",
@@ -8308,7 +8267,7 @@
       ]
     },
     {
-      "id": "EC0346",
+      "id": "EC0343",
       "benchmark": "WMBench",
       "scope": "S6",
       "protocol": "CL",
@@ -8324,7 +8283,7 @@
       ]
     },
     {
-      "id": "EC0347",
+      "id": "EC0344",
       "benchmark": "WorldSimBench",
       "scope": "S6",
       "protocol": "OL",
@@ -8341,7 +8300,7 @@
       ]
     },
     {
-      "id": "EC0348",
+      "id": "EC0345",
       "benchmark": "WorldSimBench",
       "scope": "S6",
       "protocol": "OL",
@@ -8357,7 +8316,7 @@
       ]
     },
     {
-      "id": "EC0349",
+      "id": "EC0346",
       "benchmark": "WorldSimBench",
       "scope": "S6",
       "protocol": "OL",
@@ -8373,7 +8332,7 @@
       ]
     },
     {
-      "id": "EC0350",
+      "id": "EC0347",
       "benchmark": "WorldSimBench",
       "scope": "S6",
       "protocol": "CL",
@@ -8389,7 +8348,7 @@
       ]
     },
     {
-      "id": "EC0351",
+      "id": "EC0348",
       "benchmark": "WBench",
       "scope": "S6",
       "protocol": "OL",
@@ -8405,7 +8364,7 @@
       ]
     },
     {
-      "id": "EC0352",
+      "id": "EC0349",
       "benchmark": "WR-Arena",
       "scope": "S6",
       "protocol": "OL",
@@ -8421,7 +8380,7 @@
       ]
     },
     {
-      "id": "EC0353",
+      "id": "EC0350",
       "benchmark": "ReactSim-Bench",
       "scope": "S6",
       "protocol": "OL",
@@ -8437,7 +8396,7 @@
       ]
     },
     {
-      "id": "EC0354",
+      "id": "EC0351",
       "benchmark": "WorldArena",
       "scope": "S7",
       "protocol": "OL",
@@ -8453,7 +8412,7 @@
       ]
     },
     {
-      "id": "EC0355",
+      "id": "EC0352",
       "benchmark": "WorldArena 2.0",
       "scope": "S7",
       "protocol": "OL",
@@ -8469,7 +8428,7 @@
       ]
     },
     {
-      "id": "EC0356",
+      "id": "EC0353",
       "benchmark": "WorldArena",
       "scope": "S8",
       "protocol": "CL",
@@ -8485,7 +8444,7 @@
       ]
     },
     {
-      "id": "EC0357",
+      "id": "EC0354",
       "benchmark": "WMBench",
       "scope": "S8",
       "protocol": "CL",
@@ -8501,7 +8460,7 @@
       ]
     },
     {
-      "id": "EC0358",
+      "id": "EC0355",
       "benchmark": "RoboWM-Bench",
       "scope": "S9",
       "protocol": "OL",
@@ -8517,7 +8476,7 @@
       ]
     },
     {
-      "id": "EC0359",
+      "id": "EC0356",
       "benchmark": "World-in-World",
       "scope": "S9",
       "protocol": "CL",
@@ -8533,7 +8492,7 @@
       ]
     },
     {
-      "id": "EC0360",
+      "id": "EC0357",
       "benchmark": "WorldArena",
       "scope": "S9",
       "protocol": "CL",
@@ -8549,7 +8508,7 @@
       ]
     },
     {
-      "id": "EC0361",
+      "id": "EC0358",
       "benchmark": "WorldArena 2.0",
       "scope": "S9",
       "protocol": "CL",
@@ -8566,7 +8525,7 @@
       ]
     },
     {
-      "id": "EC0362",
+      "id": "EC0359",
       "benchmark": "WorldLens",
       "scope": "S9",
       "protocol": "OL",
@@ -8582,7 +8541,7 @@
       ]
     },
     {
-      "id": "EC0363",
+      "id": "EC0360",
       "benchmark": "WorldLens",
       "scope": "S9",
       "protocol": "CL",
@@ -8598,7 +8557,7 @@
       ]
     },
     {
-      "id": "EC0364",
+      "id": "EC0361",
       "benchmark": "WoW-World-Eval",
       "scope": "S9",
       "protocol": "OL",
@@ -8614,7 +8573,7 @@
       ]
     },
     {
-      "id": "EC0365",
+      "id": "EC0362",
       "benchmark": "WorldSimBench",
       "scope": "S9",
       "protocol": "CL",
@@ -8630,7 +8589,7 @@
       ]
     },
     {
-      "id": "EC0366",
+      "id": "EC0363",
       "benchmark": "EVA-Bench",
       "scope": "S9",
       "protocol": "OL",
@@ -8646,7 +8605,7 @@
       ]
     },
     {
-      "id": "EC0367",
+      "id": "EC0364",
       "benchmark": "EVA-Bench",
       "scope": "S9",
       "protocol": "CL",
@@ -8662,7 +8621,7 @@
       ]
     },
     {
-      "id": "EC0368",
+      "id": "EC0365",
       "benchmark": "WR-Arena",
       "scope": "S9",
       "protocol": "CL",
@@ -8679,7 +8638,7 @@
       ]
     },
     {
-      "id": "EC0369",
+      "id": "EC0366",
       "benchmark": "AutumnBench",
       "scope": "S9",
       "protocol": "CL",
@@ -8695,7 +8654,7 @@
       ]
     },
     {
-      "id": "EC0370",
+      "id": "EC0367",
       "benchmark": "ContactWorld",
       "scope": "S9",
       "protocol": "CL",
@@ -8712,7 +8671,7 @@
       ]
     },
     {
-      "id": "EC0371",
+      "id": "EC0368",
       "benchmark": "KineBench",
       "scope": "S9",
       "protocol": "CL",
@@ -8728,7 +8687,7 @@
       ]
     },
     {
-      "id": "EC0372",
+      "id": "EC0369",
       "benchmark": "WorldArena 2.0",
       "scope": "S10",
       "protocol": "CL",
@@ -8938,8 +8897,9 @@
       "scope": "T1",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Image-to-4D / nonphysical VBench2",
       "measuredReadout": "Perceptual quality; visual stability scores",
       "source": {
@@ -9363,8 +9323,9 @@
       "scope": "T1",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Robot-reference-image ablation",
       "measuredReadout": "M5 Video Quality",
       "source": {
@@ -10043,8 +10004,9 @@
       "scope": "T2",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Image-to-4D / nonphysical VBench2",
       "measuredReadout": "4D / geometric-consistency diagnostics",
       "source": {
@@ -10536,8 +10498,9 @@
       "scope": "T2",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Robot-reference-image ablation / predicates",
       "measuredReadout": "M4 Embodiment Correctness (structural temporal retention); M1 goal-state",
       "source": {
@@ -12678,8 +12641,9 @@
       "scope": "T4",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Robot-reference-image ablation",
       "measuredReadout": "M3 Functional Contact Transfer",
       "source": {
@@ -14089,8 +14053,9 @@
       "scope": "S5",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Pre-specified Image-to-4D / nonphysical VBench2",
       "measuredReadout": "Condition-adherence judgments",
       "source": {
@@ -14480,8 +14445,9 @@
       "scope": "S5",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Pre-specified Robot-reference-image ablation",
       "measuredReadout": "M1 Goal-State Completion; M2 Action- Event Completion; M4 requested- embodiment adherence",
       "source": {
@@ -15600,9 +15566,9 @@
   "taskRecordCounts": {
     "targetTasks": 401,
     "auxiliary": 2,
-    "displayCombinations": 372,
-    "classifiedData": 394,
-    "unresolvedData": 7,
+    "displayCombinations": 369,
+    "classifiedData": 401,
+    "unresolvedData": 0,
     "protocolMetric": {
       "OL/P": 346,
       "OL/O": 12,
@@ -15613,9 +15579,13 @@
       "RWD": 89,
       "SBG": 88,
       "SPTC": 71,
-      "HCP": 146
+      "HCP": 153
     }
   },
-  "evaluationRecordFingerprint": "83081d3dc3a0f19811a1e235dcd319e514470055bbea23f631941a195350bb33",
-  "taskRecordFingerprint": "b291ea5eddff583a0d978be74ad96e87db5a4f29f5876b1f1a12b8bdc970ffdf"
+  "evaluationRecordFingerprint": "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e",
+  "taskRecordFingerprint": "e81cb0fb6c38954457cb903f73d207c9e734a8f72108e6b9b6a15f2aace8e27d",
+  "sourceArchive": "Main_Manuscript_LaTeX.zip",
+  "sourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
+  "codingChecklist": "网页逐项修改清单(1).md",
+  "codingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4"
 }

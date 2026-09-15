@@ -3,14 +3,18 @@
   "source": {
     "title": "A Survey of World Model Benchmarks - Supplementary Material",
     "tables": "S1-S7",
-    "fileSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
+    "fileSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
+    "finalMainSourceArchive": "Main_Manuscript_LaTeX.zip",
+    "finalMainSourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
+    "finalCodingChecklist": "网页逐项修改清单(1).md",
+    "finalCodingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4"
   },
   "counts": {
     "allRecords": 403,
     "targetTaskRecords": 401,
     "auxiliaryRecords": 2,
-    "classifiedDataRecords": 394,
-    "unresolvedDataRecords": 7
+    "classifiedDataRecords": 401,
+    "unresolvedDataRecords": 0
   },
   "records": [
     {
@@ -206,8 +210,9 @@
       "scope": "T1",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Image-to-4D / nonphysical VBench2",
       "measuredReadout": "Perceptual quality; visual stability scores",
       "source": {
@@ -631,8 +636,9 @@
       "scope": "T1",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Robot-reference-image ablation",
       "measuredReadout": "M5 Video Quality",
       "source": {
@@ -1311,8 +1317,9 @@
       "scope": "T2",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Image-to-4D / nonphysical VBench2",
       "measuredReadout": "4D / geometric-consistency diagnostics",
       "source": {
@@ -1804,8 +1811,9 @@
       "scope": "T2",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Robot-reference-image ablation / predicates",
       "measuredReadout": "M4 Embodiment Correctness (structural temporal retention); M1 goal-state",
       "source": {
@@ -3946,8 +3954,9 @@
       "scope": "T4",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Robot-reference-image ablation",
       "measuredReadout": "M3 Functional Contact Transfer",
       "source": {
@@ -5357,8 +5366,9 @@
       "scope": "S5",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Pre-specified Image-to-4D / nonphysical VBench2",
       "measuredReadout": "Condition-adherence judgments",
       "source": {
@@ -5748,8 +5758,9 @@
       "scope": "S5",
       "protocol": "OL",
       "metric": "P",
-      "data": null,
-      "dataStatus": "unresolved",
+      "data": "HCP",
+      "dataStatus": "classified",
+      "dataResolution": "final-consistency-checklist",
       "taskBranch": "Pre-specified Robot-reference-image ablation",
       "measuredReadout": "M1 Goal-State Completion; M2 Action- Event Completion; M4 requested- embodiment adherence",
       "source": {

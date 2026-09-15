@@ -1,9 +1,14 @@
 {
   "title": "A Survey of World Model Benchmarks",
-  "version": "August 31, 2026 corpus; joint task-level coding revised September 15, 2026",
+  "schemaVersion": 12,
+  "version": "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026",
   "snapshotDate": "2026-08-31",
-  "sourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+  "sourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
   "sourceSupplementaryPdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
+  "sourceArchive": "Main_Manuscript_LaTeX.zip",
+  "sourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
+  "codingChecklist": "网页逐项修改清单(1).md",
+  "codingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4",
   "framework": "Target–Protocol–Metrics–Data",
   "total": 102,
   "crossCategory": 85,
@@ -85,16 +90,16 @@
     "Planner": 12,
     "Interactive Training Environment": 1
   },
-  "classificationFingerprint": "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd",
-  "recordFingerprint": "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd",
-  "evaluationRecordFingerprint": "83081d3dc3a0f19811a1e235dcd319e514470055bbea23f631941a195350bb33",
-  "taskRecordFingerprint": "b291ea5eddff583a0d978be74ad96e87db5a4f29f5876b1f1a12b8bdc970ffdf",
+  "classificationFingerprint": "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf",
+  "recordFingerprint": "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf",
+  "evaluationRecordFingerprint": "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e",
+  "taskRecordFingerprint": "e81cb0fb6c38954457cb903f73d207c9e734a8f72108e6b9b6a15f2aace8e27d",
   "taskRecordCounts": {
     "targetTasks": 401,
     "auxiliary": 2,
-    "displayCombinations": 372,
-    "classifiedData": 394,
-    "unresolvedData": 7,
+    "displayCombinations": 369,
+    "classifiedData": 401,
+    "unresolvedData": 0,
     "protocolMetric": {
       "OL/P": 346,
       "OL/O": 12,
@@ -105,7 +110,7 @@
       "RWD": 89,
       "SBG": 88,
       "SPTC": 71,
-      "HCP": 146
+      "HCP": 153
     }
   },
   "fingerprintFields": [
@@ -134,7 +139,7 @@
   "yearBasis": "Benchmark release year as coded in Figure 2 of the final September 15, 2026 manuscript; distinct from formal publication year.",
   "releaseYearRevision": {
     "sourcePdf": "main.pdf",
-    "sourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+    "sourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
     "date": "2026-09-15",
     "changedRecords": 0,
     "preservedFromPreviousAudit": 102
@@ -161,7 +166,7 @@
       "publicationYear": 2026
     }
   },
-  "sourceNote": "The 102-benchmark corpus remains checked through August 31, 2026. Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and their joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 of the final September 15, 2026 manuscript. Two auxiliary records are retained for traceability and excluded from target-task statistics.",
+  "sourceNote": "The 102-benchmark corpus remains checked through August 31, 2026. Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and their fully classified joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 and the final September 15, 2026 consistency checklist. Two auxiliary records are retained for traceability and excluded from target-task statistics.",
   "categoryRecords": {
     "T1": {
       "MIND": [
@@ -1430,19 +1435,23 @@
   "codingScope": "Each evaluationRecords item is one observed Protocol-Metrics-Data combination within a target or downstream role. Filters match all selected evidence dimensions within the same combination; selections within a filter group use OR and selections across groups use AND. Benchmark-level records contain unions for overview only.",
   "codingRevision": {
     "mainSourcePdf": "main.pdf",
-    "mainSourcePdfSha256": "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0",
+    "mainSourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
+    "mainSourceArchive": "Main_Manuscript_LaTeX.zip",
+    "mainSourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
     "supplementarySourcePdf": "A Survey of World Model Benchmarks - Supplementary Material.pdf",
     "supplementarySourcePdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
+    "codingChecklist": "网页逐项修改清单(1).md",
+    "codingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4",
     "date": "2026-09-15",
     "targetRoleParentRows": 307,
     "targetTaskRecords": 401,
     "auxiliaryRecords": 2,
-    "displayCombinations": 372,
+    "displayCombinations": 369,
     "changedTargetRoleRows": 23,
     "changedBenchmarkOverviewRecords": 31,
     "preservedReleaseYears": 102
   },
-  "evaluationTrackFingerprint": "85207bc9a524dbe5b72ee388850ad612979d4260506662ae8cb2f0b0e6d6c2a6",
+  "evaluationTrackFingerprint": "57506b97cd7eb30d66632bb51fef231635ad01661311b674294139332d4b9808",
   "targetCoverage": {
     "T1": {
       "n": 46,

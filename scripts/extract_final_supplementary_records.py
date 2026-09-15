@@ -18,6 +18,9 @@ import pdfplumber
 
 PROTOCOL_RE = re.compile(r"^(?:OL|CL)[a-z]?$")
 DATA_RE = re.compile(r"^(?:RWD|SBG|SPTC|HCP|NR)[a-z]?$")
+FINAL_HCP_OVERRIDES = {
+    "S1-012", "S1-037", "S2-010", "S2-039", "S4-062", "S6-009", "S6-032",
+}
 
 
 def join_words(words: list[dict]) -> str:
@@ -101,21 +104,24 @@ def extract(pdf_path: Path, manifest_path: Path) -> dict:
 
                 scope, table = scope_for(page_number, top)
                 table_indexes[table] += 1
+                task_id = f"{table}-{table_indexes[table]:03d}"
                 raw_protocol = protocol_word["text"]
                 raw_data = data_words[0]["text"]
+                if raw_data.startswith("NR") and task_id not in FINAL_HCP_OVERRIDES:
+                    raise ValueError(f"Unexpected unresolved Data code at {task_id}")
                 task_words = [word for word in row_words if 145 <= word["x0"] < 276]
                 readout_words = [word for word in row_words if 276 <= word["x0"] < 445]
                 task = join_words(task_words)
                 readout = join_words(readout_words)
                 auxiliary = "comparator*" in task or "pool*" in task
-                records.append({
-                    "taskId": f"{table}-{table_indexes[table]:03d}",
+                record = {
+                    "taskId": task_id,
                     "benchmark": names_by_ref[refs[0]],
                     "scope": scope,
                     "protocol": raw_protocol[:2],
                     "metric": metric_words[0]["text"],
-                    "data": None if raw_data.startswith("NR") else re.match(r"[A-Z]+", raw_data).group(0),
-                    "dataStatus": "unresolved" if raw_data.startswith("NR") else "classified",
+                    "data": "HCP" if raw_data.startswith("NR") else re.match(r"[A-Z]+", raw_data).group(0),
+                    "dataStatus": "classified",
                     "taskBranch": task,
                     "measuredReadout": readout,
                     "source": {
@@ -124,7 +130,10 @@ def extract(pdf_path: Path, manifest_path: Path) -> dict:
                         "tableRow": table_indexes[table],
                     },
                     "auxiliary": auxiliary,
-                })
+                }
+                if raw_data.startswith("NR"):
+                    record["dataResolution"] = "final-consistency-checklist"
+                records.append(record)
 
     task_records = [record for record in records if not record["auxiliary"]]
     auxiliary_records = [record for record in records if record["auxiliary"]]
@@ -132,12 +141,12 @@ def extract(pdf_path: Path, manifest_path: Path) -> dict:
     data = Counter(r["data"] for r in task_records if r["data"])
     unresolved = sum(r["data"] is None for r in task_records)
     expected_pmd = Counter({("OL", "P"): 346, ("OL", "O"): 12, ("CL", "P"): 17, ("CL", "O"): 26})
-    expected_data = Counter({"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 146})
+    expected_data = Counter({"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 153})
     if len(records) != 403 or len(task_records) != 401 or len(auxiliary_records) != 2:
         raise ValueError(f"Unexpected record totals: {len(records)}/{len(task_records)}/{len(auxiliary_records)}")
     if pmd != expected_pmd:
         raise ValueError(f"Unexpected protocol/metric totals: {pmd}")
-    if data != expected_data or unresolved != 7:
+    if data != expected_data or unresolved != 0:
         raise ValueError(f"Unexpected data totals: {data}, unresolved={unresolved}")
 
     return {

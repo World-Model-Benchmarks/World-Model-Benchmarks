@@ -28,13 +28,13 @@ SOCIAL_PATH = ASSETS / "social-preview.svg"
 
 TOTAL = 102
 CROSS_CATEGORY = 85
-SCHEMA_VERSION = 11
-SNAPSHOT_VERSION = "August 31, 2026 corpus; joint task-level coding revised September 15, 2026"
+SCHEMA_VERSION = 12
+SNAPSHOT_VERSION = "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026"
 SNAPSHOT_DATE = "August 31, 2026"
 SNAPSHOT_ISO_DATE = "2026-08-31"
-SOURCE_PDF_SHA256 = "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0"
+SOURCE_PDF_SHA256 = "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de"
 SUPPLEMENTARY_PDF_SHA256 = "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
-EXPECTED_FINGERPRINT = "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd"
+EXPECTED_FINGERPRINT = "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 
 TARGET_LABELS = {
@@ -187,7 +187,7 @@ def load_manifest() -> dict:
     records = manifest["records"]
     require(len(records) == TOTAL == manifest.get("total"), "The canonical corpus must contain 102 records")
     require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 85")
-    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 11")
+    require(manifest.get("schemaVersion") == SCHEMA_VERSION, f"Schema version must be {SCHEMA_VERSION}")
     require(manifest.get("version") == SNAPSHOT_VERSION, "Snapshot version is stale")
     require(manifest.get("snapshotDate") == SNAPSHOT_ISO_DATE, "Snapshot date is stale")
     require(manifest.get("sourcePdfSha256") == SOURCE_PDF_SHA256, "Source-PDF digest is stale")
@@ -323,7 +323,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         "Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. "
         "Release Year follows the final manuscript's corpus coding, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.",
         "",
-        "Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 task-level Protocol–Metrics–Data records and 372 distinct display combinations so joint filters never form unsupported cross-products.",
+        "Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 fully classified task-level Protocol–Metrics–Data records and 369 distinct display combinations so joint filters never form unsupported cross-products.",
         "",
         "## Contents",
         "",
@@ -384,10 +384,15 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
 def write_metadata(manifest: dict) -> None:
     metadata = {
         "title": manifest["title"],
+        "schemaVersion": SCHEMA_VERSION,
         "version": SNAPSHOT_VERSION,
         "snapshotDate": SNAPSHOT_ISO_DATE,
         "sourcePdfSha256": SOURCE_PDF_SHA256,
         "sourceSupplementaryPdfSha256": SUPPLEMENTARY_PDF_SHA256,
+        "sourceArchive": manifest["sourceArchive"],
+        "sourceArchiveSha256": manifest["sourceArchiveSha256"],
+        "codingChecklist": manifest["codingChecklist"],
+        "codingChecklistSha256": manifest["codingChecklistSha256"],
         "framework": manifest["framework"],
         "total": TOTAL,
         "crossCategory": CROSS_CATEGORY,
@@ -428,12 +433,12 @@ def update_website_copy(manifest: dict) -> None:
     index = re.sub(r"raising the cumulative corpus to <strong>\d+</strong>", "raising the cumulative corpus to <strong>50</strong>", index)
     index = re.sub(r"bringing the corpus to <strong>\d+</strong>", "bringing the corpus to <strong>102</strong>", index)
     index = re.sub(r"Search and filter the \d+ representative benchmarks", "Search and filter the 102 representative benchmarks", index)
-    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=2026091501", index)
+    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=2026091502", index)
     index = re.sub(r"<!-- TARGET-SCOPED COVERAGE START -->.*?<!-- TARGET-SCOPED COVERAGE END -->", "<!-- TARGET-SCOPED COVERAGE START -->" + coverage_html(manifest) + "<!-- TARGET-SCOPED COVERAGE END -->", index, flags=re.S)
     INDEX_PATH.write_text(index, encoding="utf-8")
 
     wrapper = WRAPPER_JS_PATH.read_text(encoding="utf-8")
-    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=2026091501"', wrapper)
+    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=2026091502"', wrapper)
     wrapper = re.sub(r'Latest manuscript snapshot · \d+ benchmarks · \d+ cross-category', f'Latest manuscript snapshot · {TOTAL} benchmarks · {CROSS_CATEGORY} cross-category', wrapper)
     wrapper = re.sub(r'the \d+ representative benchmarks', f'the {TOTAL} representative benchmarks', wrapper)
     # Only the first stat-strip strong literal is the total; avoid replacing years or unrelated values.
@@ -444,7 +449,7 @@ def update_website_copy(manifest: dict) -> None:
     WRAPPER_JS_PATH.write_text(wrapper, encoding="utf-8")
 
     app = APP_JS_PATH.read_text(encoding="utf-8")
-    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=2026091501", app)
+    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=2026091502", app)
     APP_JS_PATH.write_text(app, encoding="utf-8")
 
     social = SOCIAL_PATH.read_text(encoding="utf-8")

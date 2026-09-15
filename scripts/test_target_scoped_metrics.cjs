@@ -36,7 +36,10 @@ api.state.benchmarks = api.normalizeCorpus(shards, m);
 assert.equal(api.state.benchmarks.length, 102);
 assert.equal(m.taskRecords.length, 403);
 assert.equal(m.taskRecords.filter(row => !row.auxiliary).length, 401);
-assert.equal(m.evaluationRecords.length, 372);
+assert.equal(m.evaluationRecords.length, 369);
+assert.equal(m.taskRecordCounts.classifiedData, 401);
+assert.equal(m.taskRecordCounts.unresolvedData, 0);
+assert.deepEqual(plain(m.taskRecordCounts.data), {RWD: 89, SBG: 88, SPTC: 71, HCP: 153});
 assert.equal(api.state.benchmarks.reduce((count, item) => count + item.evaluationTracks.length, 0), 307);
 for (const item of api.state.benchmarks) {
   const exported = shards.find(row => row.shortName === item.shortName);
@@ -121,9 +124,11 @@ assert.ok(names(api.visibleItems()).includes('WorldArena 2.0'));
 reset();
 api.state.filters.targets.add(m.targetLabels.T1);
 api.state.search = '4DWorldBench';
-assert.equal(api.visibleItems().length, 1); // An unresolved branch is allowed without a Data filter.
+assert.equal(api.visibleItems().length, 1);
 api.renderCards(api.visibleItems());
-assert.match(nodes.get('#benchmark-grid').children[0].innerHTML, /source unresolved/);
+assert.doesNotMatch(nodes.get('#benchmark-grid').children[0].innerHTML, /source unresolved/);
+assert.match(nodes.get('#benchmark-grid').children[0].innerHTML, /Data RWD · SPTC · HCP/);
+assert.match(nodes.get('#benchmark-grid').children[0].innerHTML, /OL \/ P \/ HCP · 2 tasks/);
 assert.match(nodes.get('#benchmark-grid').children[0].innerHTML, /Evaluation coding by target \/ role/);
 
 reset();
@@ -137,5 +142,5 @@ for (const [id, group, labels] of [['#taxonomy-matrix', 'protocols', m.protocolL
   }));
 }
 
-console.log(`PASS: 401 task rows, 372 joint combinations, 307 target/role parents, and ${checks} combined-filter cases.`);
-console.log('PASS: data filtering is task-aligned; unresolved rows and both anti-cross-product examples behave correctly.');
+console.log(`PASS: 401 fully classified task rows, 369 joint combinations, 307 target/role parents, and ${checks} combined-filter cases.`);
+console.log('PASS: data filtering is task-aligned; all Data sources and both anti-cross-product examples behave correctly.');

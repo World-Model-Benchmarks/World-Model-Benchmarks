@@ -15,8 +15,8 @@ SCOPES = {
     "S6": {"target": "T6", "table": "S6", "page": 20},
     **{f"S{i}": {"target": "T7", "table": "S7", "page": 24} for i in range(7, 11)},
 }
-EXPECTED_TRACK_FINGERPRINT = "85207bc9a524dbe5b72ee388850ad612979d4260506662ae8cb2f0b0e6d6c2a6"
-EXPECTED_EVALUATION_RECORD_FINGERPRINT = "83081d3dc3a0f19811a1e235dcd319e514470055bbea23f631941a195350bb33"
+EXPECTED_TRACK_FINGERPRINT = "57506b97cd7eb30d66632bb51fef231635ad01661311b674294139332d4b9808"
+EXPECTED_EVALUATION_RECORD_FINGERPRINT = "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e"
 EXPECTED_TABLE4 = {
     "T6": {"n":55,"olOnly":51,"includesCL":4,"pOnly":51,"includesO":4},
     "S5": {"n":40,"olOnly":39,"includesCL":1,"pOnly":38,"includesO":2},
@@ -93,9 +93,11 @@ def scoped_metadata(manifest):
 def validate_scoped(manifest):
     assert set(manifest['categoryRecords'])==set(SCOPES)
     assert sum(len(x) for x in manifest['categoryRecords'].values())==307
-    assert len(manifest['evaluationRecords'])==372
+    assert len(manifest['evaluationRecords'])==369
     assert len(manifest['taskRecords'])==403
     assert sum(not row['auxiliary'] for row in manifest['taskRecords'])==401
+    assert all(row['data'] in ('RWD','SBG','SPTC','HCP') and row['dataStatus']=='classified'
+               for row in manifest['taskRecords'] if not row['auxiliary'])
     for scope,info in SCOPES.items():
         expected={n for n,r in manifest['records'].items() if scope in r[6 if scope.startswith('T') else 7].split('+')}
         assert set(manifest['categoryRecords'][scope])==expected,scope

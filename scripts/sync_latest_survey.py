@@ -18,13 +18,15 @@ INDEX_PATH = ROOT / "docs" / "index.html"
 
 TOTAL = 102
 CROSS_CATEGORY = 85
-SCHEMA_VERSION = 11
-SNAPSHOT_VERSION = "August 31, 2026 corpus; joint task-level coding revised September 15, 2026"
+SCHEMA_VERSION = 12
+SNAPSHOT_VERSION = "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026"
 SNAPSHOT_DATE = "2026-08-31"
-SOURCE_PDF_SHA256 = "f261e719372af3fbbfc1ecec7f0386603edaff413e39e907ad27021205323db0"
+SOURCE_PDF_SHA256 = "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de"
 SUPPLEMENTARY_PDF_SHA256 = "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
-EXPECTED_FINGERPRINT = "cb5341a52d712f847f6c0b6483d8c151071195aa05f2aa70dce557d2f66114bd"
-EXPECTED_EVALUATION_FINGERPRINT = "83081d3dc3a0f19811a1e235dcd319e514470055bbea23f631941a195350bb33"
+SOURCE_ARCHIVE_SHA256 = "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a"
+CODING_CHECKLIST_SHA256 = "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4"
+EXPECTED_FINGERPRINT = "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf"
+EXPECTED_EVALUATION_FINGERPRINT = "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e"
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 EXPECTED_TARGET_COUNTS = {"T1": 46, "T2": 55, "T3": 24, "T4": 77, "T5": 33, "T6": 55, "T7": 13}
 EXPECTED_SUBTARGET_COUNTS = {"S1": 40, "S2": 40, "S3": 26, "S4": 10, "S5": 40, "S6": 15, "S7": 2, "S8": 2, "S9": 12, "S10": 1}
@@ -66,6 +68,8 @@ def main() -> None:
     require(manifest.get("snapshotDate") == SNAPSHOT_DATE, "Snapshot date is stale")
     require(manifest.get("sourcePdfSha256") == SOURCE_PDF_SHA256, "Source-PDF SHA-256 is stale")
     require(manifest.get("sourceSupplementaryPdfSha256") == SUPPLEMENTARY_PDF_SHA256, "Supplementary-PDF SHA-256 is stale")
+    require(manifest.get("sourceArchiveSha256") == SOURCE_ARCHIVE_SHA256, "Final source-archive SHA-256 is stale")
+    require(manifest.get("codingChecklistSha256") == CODING_CHECKLIST_SHA256, "Final coding-checklist SHA-256 is stale")
     require(not (set(records) & REMOVED), f"Removed benchmarks remain in records: {sorted(set(records) & REMOVED)}")
 
     target_counts = Counter(code for row in records.values() for code in split_codes(row[6]))
@@ -122,9 +126,12 @@ def main() -> None:
             require(legacy_field not in item, f"Legacy field {legacy_field} remains in {name}")
 
     require(metadata.get("total") == TOTAL and metadata.get("crossCategory") == CROSS_CATEGORY, "metadata.json totals are stale")
+    require(metadata.get("schemaVersion") == SCHEMA_VERSION, "metadata.json schema version is stale")
     require(metadata.get("version") == SNAPSHOT_VERSION and metadata.get("snapshotDate") == SNAPSHOT_DATE, "metadata.json snapshot is stale")
     require(metadata.get("sourcePdfSha256") == SOURCE_PDF_SHA256, "metadata.json source digest is stale")
     require(metadata.get("sourceSupplementaryPdfSha256") == SUPPLEMENTARY_PDF_SHA256, "metadata.json supplement digest is stale")
+    require(metadata.get("sourceArchiveSha256") == SOURCE_ARCHIVE_SHA256, "metadata.json source-archive digest is stale")
+    require(metadata.get("codingChecklistSha256") == CODING_CHECKLIST_SHA256, "metadata.json coding-checklist digest is stale")
     require(metadata.get("classificationFingerprint") == EXPECTED_FINGERPRINT, "metadata.json fingerprint is stale")
     require(metadata.get("targetCounts", {}).get("Causal & Counterfactual Reasoning") == 33, "metadata.json T5 count is stale")
     require(metadata.get("subtargetCounts", {}).get("Intervention-Grounded Evaluation") == 10, "metadata.json S4 count is stale")
@@ -157,7 +164,7 @@ def main() -> None:
     require(checked_rows == 344 and section_index == 12, "README is missing category/role rows")
 
     index = INDEX_PATH.read_text(encoding="utf-8")
-    require("102 benchmarks · 85 cross-category · corpus checked August 31, 2026 · coding updated September 15, 2026" in index, "Website snapshot note is stale")
+    require("102 benchmarks · 85 cross-category · corpus checked August 31, 2026 · coding finalized September 15, 2026" in index, "Website snapshot note is stale")
     require('id="stat-total">102<' in index, "Website total is stale")
     require('id="stat-cross">85<' in index, "Website cross-category total is stale")
     require("10 cumulative benchmarks by 2023" in index, "Website 2023 cumulative count is stale")
@@ -169,15 +176,17 @@ def main() -> None:
     require("102 benchmarks · 85 cross-category" in wrapper, "Explorer wrapper total is stale")
     require("the 102 representative benchmarks" in wrapper, "Explorer summary is stale")
     app = (ASSETS / "app.js").read_text(encoding="utf-8")
-    require("app-v3.js?v=2026091501" in app, "Fallback loader cache version is stale")
+    require("app-v3.js?v=2026091502" in app, "Fallback loader cache version is stale")
+    require("app-v3-core.js?v=2026091502" in wrapper, "Explorer-core cache version is stale")
 
     require(len(manifest["taskRecords"]) == 403, "Manifest must retain 403 task and auxiliary records")
     require(sum(not row["auxiliary"] for row in manifest["taskRecords"]) == 401, "Target-task total must be 401")
-    require(len(manifest["evaluationRecords"]) == 372, "Display-combination total must be 372")
+    require(len(manifest["evaluationRecords"]) == 369, "Display-combination total must be 369")
     require(manifest["evaluationRecordFingerprint"] == EXPECTED_EVALUATION_FINGERPRINT, "Joint-record fingerprint is stale")
     require(manifest["taskRecordCounts"]["protocolMetric"] == {"OL/P": 346, "OL/O": 12, "CL/P": 17, "CL/O": 26}, "Protocol/metric task totals are stale")
-    require(manifest["taskRecordCounts"]["data"] == {"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 146}, "Data task totals are stale")
-    require(manifest["taskRecordCounts"]["unresolvedData"] == 7, "Unresolved-Data total is stale")
+    require(manifest["taskRecordCounts"]["data"] == {"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 153}, "Data task totals are stale")
+    require(manifest["taskRecordCounts"]["classifiedData"] == 401, "Classified-Data total is stale")
+    require(manifest["taskRecordCounts"]["unresolvedData"] == 0, "Unresolved-Data total is stale")
     require(records["CausalSpatial"][2] == "video", "CausalSpatial raw domain must be video")
     require(set(split_codes(records["ContPhy"][7])) == {"S3", "S4"}, "ContPhy must retain OG and add IG")
 
@@ -211,7 +220,7 @@ def main() -> None:
 
     print(
         "Validated the latest PDF snapshot: 102 benchmarks, 85 cross-category, "
-        "all 401 task rows, 372 joint combinations, 307 target/role parent rows, Table 4 and release years synchronized."
+        "all 401 fully classified task rows, 369 joint combinations, 307 target/role parent rows, Table 4 and release years synchronized."
     )
 
 
