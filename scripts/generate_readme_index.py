@@ -26,15 +26,15 @@ WRAPPER_JS_PATH = ASSETS / "app-v3.js"
 APP_JS_PATH = ASSETS / "app.js"
 SOCIAL_PATH = ASSETS / "social-preview.svg"
 
-TOTAL = 102
-CROSS_CATEGORY = 85
+TOTAL = 130
+CROSS_CATEGORY = 108
 SCHEMA_VERSION = 12
-SNAPSHOT_VERSION = "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026"
-SNAPSHOT_DATE = "August 31, 2026"
-SNAPSHOT_ISO_DATE = "2026-08-31"
-SOURCE_PDF_SHA256 = "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de"
-SUPPLEMENTARY_PDF_SHA256 = "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
-EXPECTED_FINGERPRINT = "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf"
+SNAPSHOT_VERSION = 'October 18, 2026 corpus; joint task-level coding finalized November 8, 2026'
+SNAPSHOT_DATE = 'October 18, 2026'
+SNAPSHOT_ISO_DATE = '2026-10-18'
+SOURCE_PDF_SHA256 = '950eb41ec9e26e9181502e3d2e87837daf3d783301db5f546e45d3d83fdc369c'
+SUPPLEMENTARY_PDF_SHA256 = '42180ccbb41a01508d6a8bb79059e414c0dd8d99dd8d79412cce77b1d26cdd8d'
+EXPECTED_FINGERPRINT = 'af6a8bc9e9bca01c2b35e2cbf65c2ef1104739fa3a38061237f55da7923ac4c3'
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
 
 TARGET_LABELS = {
@@ -58,13 +58,12 @@ SUBTARGET_LABELS = {
     "S9": "Planner",
     "S10": "Interactive Training Environment",
 }
-EXPECTED_TARGET_COUNTS = {"T1": 46, "T2": 55, "T3": 24, "T4": 77, "T5": 33, "T6": 55, "T7": 13}
-EXPECTED_SUBTARGET_COUNTS = {"S1": 40, "S2": 40, "S3": 26, "S4": 10, "S5": 40, "S6": 15, "S7": 2, "S8": 2, "S9": 12, "S10": 1}
-EXPECTED_RELEASE_WINDOWS = {"2018–2021": 6, "2022–2023": 4, "2024": 10, "2025": 30, "2026": 52}
+EXPECTED_TARGET_COUNTS = {'T1': 63, 'T2': 76, 'T3': 34, 'T4': 92, 'T5': 39, 'T6': 74, 'T7': 15}
+EXPECTED_SUBTARGET_COUNTS = {'S1': 53, 'S2': 53, 'S3': 31, 'S4': 12, 'S5': 56, 'S6': 22, 'S7': 2, 'S8': 2, 'S9': 14, 'S10': 2}
+EXPECTED_RELEASE_WINDOWS = {'2018–2021': 6, '2022–2023': 4, '2024': 10, '2025': 30, '2026': 80}
 REMOVED_FROM_FORMAL_CORPUS = {"CATER", "NExT-QA", "IntentQA", "VCRBench"}
 
-# Supplementary Figure S1 order in the final PDF. The four removed observation-grounded
-# datasets are intentionally absent from S3.
+# Preserve the existing index order; append verified additions within each section.
 SECTION_ORDER = {
     "S1": [
         "ChronoMagic-Bench", "WorldScore", "VMBench", "EWMBench", "WorldArena",
@@ -158,6 +157,9 @@ SECTION_ORDER = {
     "S10": ["WorldArena 2.0"],
 }
 
+for _section, _names in {'S1': ['WorldReasonBench', 'TailOR', 'StateBench', 'VWG-Bench', 'HappyWorld-Bench', 'TriWorldBench', 'WROP', 'VehDyn', 'PROWBench', 'WorldOracle', 'CausalCascade', 'Orbia', 'WorldMemBench'], 'S2': ['WorldReasonBench', 'TailOR', 'VWG-Bench', 'HappyWorld-Bench', 'TriWorldBench', 'WROP', 'VehDyn', 'CoDrive-Bench', 'PROWBench', 'AffectWorld', 'Orbia', 'R2M-Bench', 'WRBench'], 'T2': ['ICAT', 'WorldReasonBench', 'TailOR', 'StateBench', 'VWG-Bench', 'HappyWorld-Bench', 'TriWorldBench', 'VehDyn', 'CoDrive-Bench', 'OPIS', 'Ego2Act', 'PROWBench', 'WorldOracle', 'AffectWorld', 'CausalCascade', 'WorldCast', 'Orbia', 'MultiWorldBench', 'R2M-Bench', 'WRBench', 'LiveBench'], 'T3': ['StateBench', 'HappyWorld-Bench', 'WROP', 'WorldOracle', 'Orbia', 'WorldMemBench', 'MultiWorldBench', 'R2M-Bench', 'WRBench', 'LiveBench'], 'T4': ['ICAT', 'WorldReasonBench', 'TailOR', 'Principia', 'VWG-Bench', 'HappyWorld-Bench', 'TriWorldBench', 'WROP', 'VehDyn', 'Ego2Act', 'PhysicsLENS', 'Last Exam in Physics', 'CausalCascade', 'WorldCast', 'WorldMemBench'], 'S3': ['ICAT', 'HappyWorld-Bench', 'Ego2Act', 'AffectWorld', 'CausalCascade'], 'S4': ['VehDyn', 'CausalCascade'], 'S5': ['ICAT', 'TailOR', 'StateBench', 'VWG-Bench', 'HappyWorld-Bench', 'WROP', 'VehDyn', 'CoDrive-Bench', 'Ego2Act', 'PhysicsLENS', 'PROWBench', 'WorldCast', 'Orbia', 'WorldMemBench', 'WRBench', 'LiveBench'], 'S6': ['HappyWorld-Bench', 'TriWorldBench', 'WorldOracle', 'Orbia', 'WorldMemBench', 'MultiWorldBench', 'WRBench'], 'S7': [], 'S8': [], 'S9': ['Compositional continual learning', 'MapShift'], 'S10': ['Compositional continual learning']}.items():
+    SECTION_ORDER[_section].extend(_names)
+
 ROW_PATTERN = re.compile(
     r"^\| \[\*\*(?P<label>.+?)\*\*\]\((?P<paper>[^)]+)\) \| "
     r"(?P<year>\d{4}) \| (?P<venue>.*?) \| (?P<code>.*?) \| (?P<project>.*?)(?: \| (?:OL|CL|OL\+CL) \| (?:P|O|P\+O))? \|$",
@@ -185,8 +187,8 @@ def require(condition: bool, message: str) -> None:
 def load_manifest() -> dict:
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     records = manifest["records"]
-    require(len(records) == TOTAL == manifest.get("total"), "The canonical corpus must contain 102 records")
-    require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 85")
+    require(len(records) == TOTAL == manifest.get("total"), "The canonical corpus must contain 130 records")
+    require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 108")
     require(manifest.get("schemaVersion") == SCHEMA_VERSION, f"Schema version must be {SCHEMA_VERSION}")
     require(manifest.get("version") == SNAPSHOT_VERSION, "Snapshot version is stale")
     require(manifest.get("snapshotDate") == SNAPSHOT_ISO_DATE, "Snapshot date is stale")
@@ -216,12 +218,7 @@ def load_manifest() -> dict:
 
 
 def load_shard_metadata() -> dict[str, dict]:
-    metadata: dict[str, dict] = {}
-    for index in range(1, 5):
-        path = ASSETS / f"benchmarks-{index}.json"
-        for item in json.loads(path.read_text(encoding="utf-8")):
-            metadata[item["shortName"]] = dict(item)
-    return metadata
+    return json.loads((ROOT / "scripts/benchmark_metadata_20261108.json").read_text(encoding="utf-8"))
 
 
 def rebuild_shards(manifest: dict) -> list[dict]:
@@ -252,7 +249,7 @@ def rebuild_shards(manifest: dict) -> list[dict]:
 
     chunk_size = math.ceil(TOTAL / 4)
     chunks = [corpus[start:start + chunk_size] for start in range(0, TOTAL, chunk_size)]
-    require([len(chunk) for chunk in chunks] == [26, 26, 26, 24], "Unexpected shard sizes")
+    require([len(chunk) for chunk in chunks] == [33, 33, 33, 31], "Unexpected shard sizes")
     for index, chunk in enumerate(chunks, start=1):
         (ASSETS / f"benchmarks-{index}.json").write_text(
             json.dumps(chunk, ensure_ascii=False, indent=2) + "\n",
@@ -291,8 +288,8 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         venue = item.get("venue") or old.get("venue") or "arXiv"
         if item.get("publicationYear") and str(item["publicationYear"]) not in venue:
             venue = f"{venue} {item['publicationYear']}"
-        code = old.get("code", "-")
-        project = old.get("project", "-")
+        code = old.get("code") or (f"[{item.get('codeLabel', 'Code')}]({item['codeUrl']})" if item.get("codeUrl") else "-")
+        project = old.get("project") or (f"[{item.get('projectLabel', 'Project')}]({item['projectUrl']})" if item.get("projectUrl") else "-")
         marker = " △" if item["crossCategory"] else ""
         protocol, metrics = readme_coding(manifest, name, section)
         return f"| [**{name}{marker}**]({paper}) | {item['year']} | {venue} | {code} | {project} | {protocol} | {metrics} |"
@@ -316,14 +313,14 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         f"**{CROSS_CATEGORY}** span more than one evaluation-target category. "
         f"The corpus was last checked on {SNAPSHOT_DATE}.",
         "",
-        "The classification below follows Supplementary Figure S1 and Tables S1–S7 of the final PDF. "
+        "The classification below follows the survey taxonomy and the task-level evidence summarized in Supplementary Tables S1–S7. "
         "Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. "
         "`△` marks a benchmark assigned to more than one top-level evaluation target.",
         "",
         "Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. "
         "Release Year follows the final manuscript's corpus coding, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.",
         "",
-        "Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 fully classified task-level Protocol–Metrics–Data records and 369 distinct display combinations so joint filters never form unsupported cross-products.",
+        "Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 808 fully classified task-level Protocol–Metrics–Data records and 482 distinct display combinations so joint filters never form unsupported cross-products.",
         "",
         "## Contents",
         "",
@@ -374,7 +371,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         "- [`docs/assets/benchmarks.json`](docs/assets/benchmarks.json): canonical taxonomy manifest and compact record coding",
         "- [`docs/assets/benchmarks-1.json`](docs/assets/benchmarks-1.json)–[`benchmarks-4.json`](docs/assets/benchmarks-4.json): normalized benchmark records used by the explorer",
         "- [`docs/assets/metadata.json`](docs/assets/metadata.json): taxonomy labels, counts, and release-window definitions",
-        "- [`scripts/task_records_20260915.json`](scripts/task_records_20260915.json): 401 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7",
+        "- [`scripts/task_records_20261108.json`](scripts/task_records_20261108.json): 808 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7",
         f"- [Interactive project page]({SITE_URL})",
         "",
     ])
@@ -420,7 +417,7 @@ def write_metadata(manifest: dict) -> None:
 
 
 def update_website_copy(manifest: dict) -> None:
-    index = INDEX_PATH.read_text(encoding="utf-8")
+    index = INDEX_PATH.read_text(encoding="utf-8").replace("August 31, 2026", SNAPSHOT_DATE).replace("September 15, 2026", "November 8, 2026")
     index = re.sub(r"Explore \d+ world-model benchmarks", f"Explore {TOTAL} world-model benchmarks", index)
     index = re.sub(r"\d+ benchmarks · \d+ cross-category", f"{TOTAL} benchmarks · {CROSS_CATEGORY} cross-category", index)
     index = re.sub(r'(<strong id="stat-total">)\d+(</strong>)', rf"\g<1>{TOTAL}\2", index)
@@ -429,17 +426,18 @@ def update_website_copy(manifest: dict) -> None:
     index = re.sub(r"\d+ cumulative benchmarks by 2023", "10 cumulative benchmarks by 2023", index)
     index = re.sub(r"\d+ new benchmarks in 2025", "30 new benchmarks in 2025", index)
     index = re.sub(r"\d+ new benchmarks in 2024", "10 new benchmarks in 2024", index)
-    index = re.sub(r"\d+ new benchmarks in 2026", "52 new benchmarks in 2026", index)
+    index = re.sub(r"\d+ new benchmarks in 2026", "80 new benchmarks in 2026", index)
     index = re.sub(r"raising the cumulative corpus to <strong>\d+</strong>", "raising the cumulative corpus to <strong>50</strong>", index)
-    index = re.sub(r"bringing the corpus to <strong>\d+</strong>", "bringing the corpus to <strong>102</strong>", index)
-    index = re.sub(r"Search and filter the \d+ representative benchmarks", "Search and filter the 102 representative benchmarks", index)
-    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=2026091502", index)
+    index = re.sub(r"bringing the corpus to <strong>\d+</strong>", "bringing the corpus to <strong>130</strong>", index)
+    index = index.replace("Supplementary Figure S1 and Tables S1–S7", "Supplementary Tables S1–S7")
+    index = re.sub(r"Search and filter the \d+ representative benchmarks", "Search and filter the 130 representative benchmarks", index)
+    index = re.sub(r"assets/app-v3\.js\?v=\d+", "assets/app-v3.js?v=2026110801", index)
     index = re.sub(r"<!-- TARGET-SCOPED COVERAGE START -->.*?<!-- TARGET-SCOPED COVERAGE END -->", "<!-- TARGET-SCOPED COVERAGE START -->" + coverage_html(manifest) + "<!-- TARGET-SCOPED COVERAGE END -->", index, flags=re.S)
     INDEX_PATH.write_text(index, encoding="utf-8")
 
-    wrapper = WRAPPER_JS_PATH.read_text(encoding="utf-8")
-    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=2026091502"', wrapper)
-    wrapper = re.sub(r'Latest manuscript snapshot · \d+ benchmarks · \d+ cross-category', f'Latest manuscript snapshot · {TOTAL} benchmarks · {CROSS_CATEGORY} cross-category', wrapper)
+    wrapper = WRAPPER_JS_PATH.read_text(encoding="utf-8").replace("August 31, 2026", SNAPSHOT_DATE).replace("September 15, 2026", "November 8, 2026")
+    wrapper = re.sub(r'const sourceUrl = new URL\("app-v3-core\.js\?v=\d+"', 'const sourceUrl = new URL("app-v3-core.js?v=2026110801"', wrapper)
+    wrapper = re.sub(r'(?:Latest|Final) manuscript snapshot · \d+ benchmarks · \d+ cross-category', f'Final manuscript snapshot · {TOTAL} benchmarks · {CROSS_CATEGORY} cross-category', wrapper)
     wrapper = re.sub(r'the \d+ representative benchmarks', f'the {TOTAL} representative benchmarks', wrapper)
     # Only the first stat-strip strong literal is the total; avoid replacing years or unrelated values.
     wrapper = re.sub(r'(setTextIfChanged\(stats\[0\]\.querySelector\("strong"\), ")\d+("\);)', rf'\g<1>{TOTAL}\2', wrapper)
@@ -449,7 +447,7 @@ def update_website_copy(manifest: dict) -> None:
     WRAPPER_JS_PATH.write_text(wrapper, encoding="utf-8")
 
     app = APP_JS_PATH.read_text(encoding="utf-8")
-    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=2026091502", app)
+    app = re.sub(r"app-v3\.js\?v=\d+", "app-v3.js?v=2026110801", app)
     APP_JS_PATH.write_text(app, encoding="utf-8")
 
     social = SOCIAL_PATH.read_text(encoding="utf-8")
@@ -457,8 +455,8 @@ def update_website_copy(manifest: dict) -> None:
     SOCIAL_PATH.write_text(social, encoding="utf-8")
 
     (ROOT / "docs" / "deployment-status.txt").write_text(
-        "GitHub Pages deployment trigger\n"
-        "Updated: 2026-09-15\n"
+        "Local preview snapshot\n"
+        "Updated: 2026-11-08\n"
         f"Corpus: {TOTAL} benchmarks / {CROSS_CATEGORY} cross-category\n"
         f"Fingerprint: {EXPECTED_FINGERPRINT}\n",
         encoding="utf-8",

@@ -14,12 +14,12 @@ ASSETS = ROOT / 'docs'
 OUT = Path('live-verification')
 OUT.mkdir(exist_ok=True)
 sha = subprocess.check_output(['git', '-C', str(ROOT), 'rev-parse', 'HEAD'], text=True).strip()
-audit = json.loads((ROOT / 'scripts/release_years_20260907.json').read_text())
+audit = json.loads((ROOT / 'scripts/release_years_20261108.json').read_text())
 bases = {
     'project': 'https://world-model-benchmarks.github.io/World-Model-Benchmarks/',
     'root': 'https://world-model-benchmarks.github.io/',
 }
-paths = ['index.html', 'assets/metadata.json', 'assets/benchmarks.json', 'assets/release-years-20260907.json', 'assets/app-v3.js', 'assets/app-v3-core.js', 'assets/scoped-coding.css'] + [f'assets/benchmarks-{i}.json' for i in range(1,5)]
+paths = ['index.html', 'assets/metadata.json', 'assets/benchmarks.json', 'assets/release-years-20261108.json', 'assets/app-v3.js', 'assets/app-v3-core.js', 'assets/scoped-coding.css'] + [f'assets/benchmarks-{i}.json' for i in range(1,5)]
 replacements = {
     'https://axbhb.github.io/world-model-evaluation-survey/': bases['root'],
     bases['project']: bases['root'],

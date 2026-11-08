@@ -8,7 +8,10 @@ on:
       - 'docs/assets/benchmarks.json'
       - 'scripts/generate_readme_index.py'
       - 'scripts/target_scoped_coding.py'
-      - 'scripts/task_records_20260915.json'
+      - 'scripts/task_records_20261108.json'
+      - 'scripts/benchmark_metadata_20261108.json'
+      - 'scripts/task_navigation_20261108.json'
+      - 'scripts/release_years_20261108.json'
   workflow_dispatch:
 
 permissions:

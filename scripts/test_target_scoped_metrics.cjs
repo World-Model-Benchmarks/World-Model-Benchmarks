@@ -33,14 +33,14 @@ const names = items => plain(items.map(item => item.shortName)).sort();
 api.state.metadata = m;
 api.state.benchmarks = api.normalizeCorpus(shards, m);
 
-assert.equal(api.state.benchmarks.length, 102);
-assert.equal(m.taskRecords.length, 403);
-assert.equal(m.taskRecords.filter(row => !row.auxiliary).length, 401);
-assert.equal(m.evaluationRecords.length, 369);
-assert.equal(m.taskRecordCounts.classifiedData, 401);
+assert.equal(api.state.benchmarks.length, 130);
+assert.equal(m.taskRecords.length, 810);
+assert.equal(m.taskRecords.filter(row => !row.auxiliary).length, 808);
+assert.equal(m.evaluationRecords.length, 482);
+assert.equal(m.taskRecordCounts.classifiedData, 808);
 assert.equal(m.taskRecordCounts.unresolvedData, 0);
-assert.deepEqual(plain(m.taskRecordCounts.data), {RWD: 89, SBG: 88, SPTC: 71, HCP: 153});
-assert.equal(api.state.benchmarks.reduce((count, item) => count + item.evaluationTracks.length, 0), 307);
+assert.deepEqual(plain(m.taskRecordCounts.data), {RWD: 172, SBG: 194, SPTC: 131, HCP: 311});
+assert.equal(api.state.benchmarks.reduce((count, item) => count + item.evaluationTracks.length, 0), 402);
 for (const item of api.state.benchmarks) {
   const exported = shards.find(row => row.shortName === item.shortName);
   assert.deepEqual(plain(item.evaluationTracks), exported.evaluationTracks, item.shortName);
@@ -93,7 +93,7 @@ for (const selected of targetSelections) {
 
 reset();
 api.state.filters.targets.add(m.targetLabels.T6);
-assert.equal(api.countForValue('protocols', 'CL'), 4);
+assert.equal(api.countForValue('protocols', 'CL'), 6);
 assert.equal(api.countForValue('metrics', 'O'), 4);
 
 reset();
@@ -142,5 +142,5 @@ for (const [id, group, labels] of [['#taxonomy-matrix', 'protocols', m.protocolL
   }));
 }
 
-console.log(`PASS: 401 fully classified task rows, 369 joint combinations, 307 target/role parents, and ${checks} combined-filter cases.`);
+console.log(`PASS: 808 fully classified task rows, 482 joint combinations, 402 target/role parents, and ${checks} combined-filter cases.`);
 console.log('PASS: data filtering is task-aligned; all Data sources and both anti-cross-product examples behave correctly.');
