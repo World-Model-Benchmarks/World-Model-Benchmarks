@@ -36,6 +36,19 @@ SOURCE_PDF_SHA256 = '950eb41ec9e26e9181502e3d2e87837daf3d783301db5f546e45d3d83fd
 SUPPLEMENTARY_PDF_SHA256 = '42180ccbb41a01508d6a8bb79059e414c0dd8d99dd8d79412cce77b1d26cdd8d'
 EXPECTED_FINGERPRINT = 'af6a8bc9e9bca01c2b35e2cbf65c2ef1104739fa3a38061237f55da7923ac4c3'
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
+CITATION_BIBTEX = """@misc{zhang2026worldmodelbenchmarks,
+  title = {A Survey of World Model Benchmarks},
+  author = {Zhang, Zheng and Guo, Zhixiang and Si, Yuan and
+            Liang, Siyuan and Liu, Shunyu and Gao, Weibo and
+            Wang, Song and Rutkowski, Leszek and Valenzise, Giuseppe and
+            Yang, Ming-Hsuan and Cong, Lin William and Deen, M. Jamal and
+            Cripps, Sally and Tao, Dacheng},
+  year = {2026},
+  howpublished = {Preprints.org},
+  doi = {10.20944/preprints202609.0665.v2},
+  url = {https://www.preprints.org/manuscript/202609.0665/v2},
+  note = {Preprint, version 2}
+}"""
 
 TARGET_LABELS = {
     "T1": "Visual & Temporal Quality",
@@ -331,6 +344,7 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         "- [Causal and Counterfactual Reasoning](#causal-and-counterfactual-reasoning)",
         "- [Control Fidelity and Interactive Dynamics](#control-fidelity-and-interactive-dynamics)",
         "- [Functional Utility](#functional-utility)",
+        "- [Citation](#citation)",
         "",
         "## Evaluation-target coverage",
         "",
@@ -366,13 +380,13 @@ def generate_readme(manifest: dict, corpus: list[dict]) -> None:
         lines.append("")
 
     lines.extend([
-        "## Machine-readable data",
+        "## Citation",
         "",
-        "- [`docs/assets/benchmarks.json`](docs/assets/benchmarks.json): canonical taxonomy manifest and compact record coding",
-        "- [`docs/assets/benchmarks-1.json`](docs/assets/benchmarks-1.json)–[`benchmarks-4.json`](docs/assets/benchmarks-4.json): normalized benchmark records used by the explorer",
-        "- [`docs/assets/metadata.json`](docs/assets/metadata.json): taxonomy labels, counts, and release-window definitions",
-        "- [`scripts/task_records_20261108.json`](scripts/task_records_20261108.json): 808 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7",
-        f"- [Interactive project page]({SITE_URL})",
+        "If you use this survey, please cite the [preprint (version 2)](https://doi.org/10.20944/preprints202609.0665.v2):",
+        "",
+        "```bibtex",
+        CITATION_BIBTEX,
+        "```",
         "",
     ])
     README_PATH.write_text("\n".join(lines), encoding="utf-8")
@@ -418,6 +432,12 @@ def write_metadata(manifest: dict) -> None:
 
 def update_website_copy(manifest: dict) -> None:
     index = INDEX_PATH.read_text(encoding="utf-8").replace("August 31, 2026", SNAPSHOT_DATE).replace("September 15, 2026", "November 8, 2026")
+    index = re.sub(
+        r'(<pre id="citation-code"><code>).*?(</code></pre>)',
+        lambda match: match.group(1) + CITATION_BIBTEX + match.group(2),
+        index,
+        flags=re.S,
+    )
     index = re.sub(r"Explore \d+ world-model benchmarks", f"Explore {TOTAL} world-model benchmarks", index)
     index = re.sub(r"\d+ benchmarks · \d+ cross-category", f"{TOTAL} benchmarks · {CROSS_CATEGORY} cross-category", index)
     index = re.sub(r'(<strong id="stat-total">)\d+(</strong>)', rf"\g<1>{TOTAL}\2", index)

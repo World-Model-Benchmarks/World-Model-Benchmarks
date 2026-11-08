@@ -19,6 +19,7 @@ Protocol and Metrics are coded for the target or role of each section, not inher
 - [Causal and Counterfactual Reasoning](#causal-and-counterfactual-reasoning)
 - [Control Fidelity and Interactive Dynamics](#control-fidelity-and-interactive-dynamics)
 - [Functional Utility](#functional-utility)
+- [Citation](#citation)
 
 ## Evaluation-target coverage
 
@@ -556,10 +557,22 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - | CL | O |
 | [**Compositional continual learning**](https://arxiv.org/abs/2609.22055v1) | 2026 | arXiv 2026 | - | [Project](https://object814.github.io/Compositional-Continual-Learning/) | CL | O |
 
-## Machine-readable data
+## Citation
 
-- [`docs/assets/benchmarks.json`](docs/assets/benchmarks.json): canonical taxonomy manifest and compact record coding
-- [`docs/assets/benchmarks-1.json`](docs/assets/benchmarks-1.json)–[`benchmarks-4.json`](docs/assets/benchmarks-4.json): normalized benchmark records used by the explorer
-- [`docs/assets/metadata.json`](docs/assets/metadata.json): taxonomy labels, counts, and release-window definitions
-- [`scripts/task_records_20261108.json`](scripts/task_records_20261108.json): 808 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7
-- [Interactive project page](https://world-model-benchmarks.github.io/World-Model-Benchmarks/)
+If you use this survey, please cite the [preprint (version 2)](https://doi.org/10.20944/preprints202609.0665.v2):
+
+```bibtex
+@misc{zhang2026worldmodelbenchmarks,
+  title = {A Survey of World Model Benchmarks},
+  author = {Zhang, Zheng and Guo, Zhixiang and Si, Yuan and
+            Liang, Siyuan and Liu, Shunyu and Gao, Weibo and
+            Wang, Song and Rutkowski, Leszek and Valenzise, Giuseppe and
+            Yang, Ming-Hsuan and Cong, Lin William and Deen, M. Jamal and
+            Cripps, Sally and Tao, Dacheng},
+  year = {2026},
+  howpublished = {Preprints.org},
+  doi = {10.20944/preprints202609.0665.v2},
+  url = {https://www.preprints.org/manuscript/202609.0665/v2},
+  note = {Preprint, version 2}
+}
+```
