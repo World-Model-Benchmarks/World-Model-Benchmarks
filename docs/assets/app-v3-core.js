@@ -11,17 +11,17 @@ const PROTOCOLS = ["OL", "CL"];
 const METRICS = ["P", "O"];
 const EVALUATION_DATA = ["RWD", "SBG", "SPTC", "HCP"];
 const SCOPE_SOURCES = {
-  T1: { target: "T1", table: "S1", sourcePage: 4 },
+  T1: { target: "T1", table: "S1", sourcePage: 5 },
   T2: { target: "T2", table: "S2", sourcePage: 7 },
-  T3: { target: "T3", table: "S3", sourcePage: 11 },
-  T4: { target: "T4", table: "S4", sourcePage: 13 },
-  T5: { target: "T5", table: "S5", sourcePage: 18 },
-  S5: { target: "T6", table: "S6", sourcePage: 20 },
-  S6: { target: "T6", table: "S6", sourcePage: 20 },
-  S7: { target: "T7", table: "S7", sourcePage: 24 },
-  S8: { target: "T7", table: "S7", sourcePage: 24 },
-  S9: { target: "T7", table: "S7", sourcePage: 24 },
-  S10: { target: "T7", table: "S7", sourcePage: 24 },
+  T3: { target: "T3", table: "S3", sourcePage: 9 },
+  T4: { target: "T4", table: "S4", sourcePage: 10 },
+  T5: { target: "T5", table: "S5", sourcePage: 13 },
+  S5: { target: "T6", table: "S6", sourcePage: 14 },
+  S6: { target: "T6", table: "S6", sourcePage: 14 },
+  S7: { target: "T7", table: "S7", sourcePage: 16 },
+  S8: { target: "T7", table: "S7", sourcePage: 16 },
+  S9: { target: "T7", table: "S7", sourcePage: 16 },
+  S10: { target: "T7", table: "S7", sourcePage: 16 },
 };
 const TARGET_COLORS = {
   "Visual & Temporal Quality": "#6f63d9",
@@ -728,7 +728,7 @@ function setupEvents() {
     const url = URL.createObjectURL(new Blob([payload], { type: "application/json" }));
     const link = document.createElement("a");
     link.href = url;
-    link.download = "world-model-benchmarks-2026-09-15-joint-coding.json";
+    link.download = "world-model-benchmarks-2026-11-08-joint-coding.json";
     document.body.append(link);
     link.click();
     link.remove();

@@ -6,23 +6,18 @@ import html
 import json
 
 SCOPES = {
-    "T1": {"target": "T1", "table": "S1", "page": 4},
+    "T1": {"target": "T1", "table": "S1", "page": 5},
     "T2": {"target": "T2", "table": "S2", "page": 7},
-    "T3": {"target": "T3", "table": "S3", "page": 11},
-    "T4": {"target": "T4", "table": "S4", "page": 13},
-    "T5": {"target": "T5", "table": "S5", "page": 18},
-    "S5": {"target": "T6", "table": "S6", "page": 20},
-    "S6": {"target": "T6", "table": "S6", "page": 20},
-    **{f"S{i}": {"target": "T7", "table": "S7", "page": 24} for i in range(7, 11)},
+    "T3": {"target": "T3", "table": "S3", "page": 9},
+    "T4": {"target": "T4", "table": "S4", "page": 10},
+    "T5": {"target": "T5", "table": "S5", "page": 13},
+    "S5": {"target": "T6", "table": "S6", "page": 14},
+    "S6": {"target": "T6", "table": "S6", "page": 14},
+    **{f"S{i}": {"target": "T7", "table": "S7", "page": 16} for i in range(7, 11)},
 }
-EXPECTED_TRACK_FINGERPRINT = "57506b97cd7eb30d66632bb51fef231635ad01661311b674294139332d4b9808"
-EXPECTED_EVALUATION_RECORD_FINGERPRINT = "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e"
-EXPECTED_TABLE4 = {
-    "T6": {"n":55,"olOnly":51,"includesCL":4,"pOnly":51,"includesO":4},
-    "S5": {"n":40,"olOnly":39,"includesCL":1,"pOnly":38,"includesO":2},
-    "S6": {"n":15,"olOnly":12,"includesCL":3,"pOnly":13,"includesO":2},
-    "T7": {"n":13,"olOnly":2,"includesCL":11,"pOnly":0,"includesO":13},
-}
+EXPECTED_TRACK_FINGERPRINT = '477f9552a6ecefab926182ddb70f35864f7b5c0f7c66cd0ada72b7427e43dafa'
+EXPECTED_EVALUATION_RECORD_FINGERPRINT = 'f81b8d1fe159572b989f83dded31c8215c56098ec12e496216fe2e660978b18e'
+EXPECTED_TABLE4 = {'T6': {'n': 74, 'olOnly': 68, 'includesCL': 6, 'pOnly': 70, 'includesO': 4}, 'S5': {'n': 56, 'olOnly': 53, 'includesCL': 3, 'pOnly': 54, 'includesO': 2}, 'S6': {'n': 22, 'olOnly': 19, 'includesCL': 3, 'pOnly': 20, 'includesO': 2}, 'T7': {'n': 15, 'olOnly': 2, 'includesCL': 13, 'pOnly': 0, 'includesO': 15}}
 
 def scope_label(manifest, scope):
     return manifest['targetLabels'].get(scope) or manifest['subtargetLabels'][scope]
@@ -92,10 +87,10 @@ def scoped_metadata(manifest):
 
 def validate_scoped(manifest):
     assert set(manifest['categoryRecords'])==set(SCOPES)
-    assert sum(len(x) for x in manifest['categoryRecords'].values())==307
-    assert len(manifest['evaluationRecords'])==369
-    assert len(manifest['taskRecords'])==403
-    assert sum(not row['auxiliary'] for row in manifest['taskRecords'])==401
+    assert sum(len(x) for x in manifest['categoryRecords'].values())==402
+    assert len(manifest['evaluationRecords'])==482
+    assert len(manifest['taskRecords'])==810
+    assert sum(not row['auxiliary'] for row in manifest['taskRecords'])==808
     assert all(row['data'] in ('RWD','SBG','SPTC','HCP') and row['dataStatus']=='classified'
                for row in manifest['taskRecords'] if not row['auxiliary'])
     for scope,info in SCOPES.items():
@@ -119,6 +114,9 @@ def validate_scoped(manifest):
     assert scoped_metadata(manifest)['table4']==EXPECTED_TABLE4,'Table 4 mismatch'
 
 def readme_coding(manifest,name,section):
+    tasks=[row for row in manifest['taskRecords'] if row['benchmark']==name and section in row.get('navigation', []) and not row['auxiliary']]
+    if tasks:
+        return ['+'.join(code for code in order if any(row[field]==code for row in tasks)) for field,order in [('protocol',('OL','CL')),('metric',('P','O'))]]
     scope={'S1':'T1','S2':'T1','S3':'T5','S4':'T5'}.get(section,section)
     return manifest['categoryRecords'][scope][name]
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate repository and website data against the latest 102-benchmark PDF."""
+"""Validate repository and website data against the latest 130-benchmark PDF."""
 from __future__ import annotations
 
 from collections import Counter
@@ -16,21 +16,21 @@ METADATA_PATH = ASSETS / "metadata.json"
 README_PATH = ROOT / "Readme.md"
 INDEX_PATH = ROOT / "docs" / "index.html"
 
-TOTAL = 102
-CROSS_CATEGORY = 85
+TOTAL = 130
+CROSS_CATEGORY = 108
 SCHEMA_VERSION = 12
-SNAPSHOT_VERSION = "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026"
-SNAPSHOT_DATE = "2026-08-31"
-SOURCE_PDF_SHA256 = "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de"
-SUPPLEMENTARY_PDF_SHA256 = "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41"
-SOURCE_ARCHIVE_SHA256 = "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a"
-CODING_CHECKLIST_SHA256 = "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4"
-EXPECTED_FINGERPRINT = "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf"
-EXPECTED_EVALUATION_FINGERPRINT = "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e"
+SNAPSHOT_VERSION = 'October 18, 2026 corpus; joint task-level coding finalized November 8, 2026'
+SNAPSHOT_DATE = '2026-10-18'
+SOURCE_PDF_SHA256 = '950eb41ec9e26e9181502e3d2e87837daf3d783301db5f546e45d3d83fdc369c'
+SUPPLEMENTARY_PDF_SHA256 = '42180ccbb41a01508d6a8bb79059e414c0dd8d99dd8d79412cce77b1d26cdd8d'
+SOURCE_ARCHIVE_SHA256 = '6a069825f606d7f13563c02e807358ef9c9db270b52c0fdad4324edc6a0420ef'
+CODING_CHECKLIST_SHA256 = '85b79ec1ed29213c7e32dc243a6b125ed4861d418f1a25908ac2af6c1647de07'
+EXPECTED_FINGERPRINT = 'af6a8bc9e9bca01c2b35e2cbf65c2ef1104739fa3a38061237f55da7923ac4c3'
+EXPECTED_EVALUATION_FINGERPRINT = 'f81b8d1fe159572b989f83dded31c8215c56098ec12e496216fe2e660978b18e'
 SITE_URL = "https://world-model-benchmarks.github.io/World-Model-Benchmarks/"
-EXPECTED_TARGET_COUNTS = {"T1": 46, "T2": 55, "T3": 24, "T4": 77, "T5": 33, "T6": 55, "T7": 13}
-EXPECTED_SUBTARGET_COUNTS = {"S1": 40, "S2": 40, "S3": 26, "S4": 10, "S5": 40, "S6": 15, "S7": 2, "S8": 2, "S9": 12, "S10": 1}
-EXPECTED_RELEASE_WINDOWS = {"2018–2021": 6, "2022–2023": 4, "2024": 10, "2025": 30, "2026": 52}
+EXPECTED_TARGET_COUNTS = {'T1': 63, 'T2': 76, 'T3': 34, 'T4': 92, 'T5': 39, 'T6': 74, 'T7': 15}
+EXPECTED_SUBTARGET_COUNTS = {'S1': 53, 'S2': 53, 'S3': 31, 'S4': 12, 'S5': 56, 'S6': 22, 'S7': 2, 'S8': 2, 'S9': 14, 'S10': 2}
+EXPECTED_RELEASE_WINDOWS = {'2018–2021': 6, '2022–2023': 4, '2024': 10, '2025': 30, '2026': 80}
 REMOVED = {"CATER", "NExT-QA", "IntentQA", "VCRBench"}
 OBSOLETE_WORKFLOWS = {
     ".github/workflows/pdf-alignment-main-once.yml",
@@ -61,9 +61,9 @@ def main() -> None:
     records = manifest["records"]
     validate_scoped(manifest)
 
-    require(manifest.get("total") == TOTAL and len(records) == TOTAL, "Corpus must contain 102 records")
-    require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 85")
-    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 11")
+    require(manifest.get("total") == TOTAL and len(records) == TOTAL, "Corpus must contain 130 records")
+    require(manifest.get("crossCategory") == CROSS_CATEGORY, "Cross-category total must be 108")
+    require(manifest.get("schemaVersion") == SCHEMA_VERSION, "Schema version must be 12")
     require(manifest.get("version") == SNAPSHOT_VERSION, "Snapshot version is stale")
     require(manifest.get("snapshotDate") == SNAPSHOT_DATE, "Snapshot date is stale")
     require(manifest.get("sourcePdfSha256") == SOURCE_PDF_SHA256, "Source-PDF SHA-256 is stale")
@@ -84,7 +84,7 @@ def main() -> None:
 
     wr = records.get("WR-Arena")
     require(wr is not None, "WR-Arena is missing")
-    require(wr[0] == 110 and wr[3] == "OL+CL" and wr[4] == "P+O", "WR-Arena must be ref. 110, OL+CL, P+O")
+    require(wr[0] == 175 and wr[3] == "OL+CL" and wr[4] == "P+O", "WR-Arena must be ref. 175, OL+CL, P+O")
 
     for name, row in records.items():
         require(len(row) >= 8, f"Incomplete record: {name}")
@@ -133,17 +133,17 @@ def main() -> None:
     require(metadata.get("sourceArchiveSha256") == SOURCE_ARCHIVE_SHA256, "metadata.json source-archive digest is stale")
     require(metadata.get("codingChecklistSha256") == CODING_CHECKLIST_SHA256, "metadata.json coding-checklist digest is stale")
     require(metadata.get("classificationFingerprint") == EXPECTED_FINGERPRINT, "metadata.json fingerprint is stale")
-    require(metadata.get("targetCounts", {}).get("Causal & Counterfactual Reasoning") == 33, "metadata.json T5 count is stale")
-    require(metadata.get("subtargetCounts", {}).get("Intervention-Grounded Evaluation") == 10, "metadata.json S4 count is stale")
+    require(metadata.get("targetCounts", {}).get("Causal & Counterfactual Reasoning") == 39, "metadata.json T5 count is stale")
+    require(metadata.get("subtargetCounts", {}).get("Intervention-Grounded Evaluation") == 12, "metadata.json S4 count is stale")
     require(metadata.get("releaseWindowCounts") == EXPECTED_RELEASE_WINDOWS, "metadata.json release-window counts are stale")
 
     require(metadata["table4"] == scoped_metadata(manifest)["table4"], "Table 4 statistics are stale")
     require(metadata["categoryRecords"] == manifest["categoryRecords"], "Metadata track coding differs")
 
     readme = README_PATH.read_text(encoding="utf-8")
-    require("**102 representative benchmarks**" in readme, "README total is stale")
-    require("**85** span more than one" in readme, "README cross-category count is stale")
-    require("| Causal & Counterfactual Reasoning | 33 |" in readme, "README T5 count is stale")
+    require("**130 representative benchmarks**" in readme, "README total is stale")
+    require("**108** span more than one" in readme, "README cross-category count is stale")
+    require("| Causal & Counterfactual Reasoning | 39 |" in readme, "README T5 count is stale")
     for name in REMOVED:
         require(f"**{name}" not in readme, f"README still lists removed benchmark {name}")
     require(SITE_URL in readme, "README project URL is wrong")
@@ -161,31 +161,31 @@ def main() -> None:
             require([protocol, metric] == readme_coding(manifest, name, sections[section_index]), f"README scoped coding mismatch: {name}")
             require(int(year) == records[name][1], f"README year mismatch: {name}")
             checked_rows += 1
-    require(checked_rows == 344 and section_index == 12, "README is missing category/role rows")
+    require(checked_rows == 449 and section_index == 12, "README is missing category/role rows")
 
     index = INDEX_PATH.read_text(encoding="utf-8")
-    require("102 benchmarks · 85 cross-category · corpus checked August 31, 2026 · coding finalized September 15, 2026" in index, "Website snapshot note is stale")
-    require('id="stat-total">102<' in index, "Website total is stale")
-    require('id="stat-cross">85<' in index, "Website cross-category total is stale")
+    require("130 benchmarks · 108 cross-category · corpus checked October 18, 2026 · coding finalized November 8, 2026" in index, "Website snapshot note is stale")
+    require('id="stat-total">130<' in index, "Website total is stale")
+    require('id="stat-cross">108<' in index, "Website cross-category total is stale")
     require("10 cumulative benchmarks by 2023" in index, "Website 2023 cumulative count is stale")
     require("30 new benchmarks in 2025" in index and "<strong>50</strong>" in index, "Website 2025 timeline copy is stale")
-    require("<strong>102</strong>" in index, "Website final cumulative count is stale")
+    require("<strong>130</strong>" in index, "Website final cumulative count is stale")
     require("106 benchmarks · 85 cross-category" not in index, "Old website corpus total remains")
 
     wrapper = (ASSETS / "app-v3.js").read_text(encoding="utf-8")
-    require("102 benchmarks · 85 cross-category" in wrapper, "Explorer wrapper total is stale")
-    require("the 102 representative benchmarks" in wrapper, "Explorer summary is stale")
+    require("130 benchmarks · 108 cross-category" in wrapper, "Explorer wrapper total is stale")
+    require("the 130 representative benchmarks" in wrapper, "Explorer summary is stale")
     app = (ASSETS / "app.js").read_text(encoding="utf-8")
-    require("app-v3.js?v=2026091502" in app, "Fallback loader cache version is stale")
-    require("app-v3-core.js?v=2026091502" in wrapper, "Explorer-core cache version is stale")
+    require("app-v3.js?v=2026110801" in app, "Fallback loader cache version is stale")
+    require("app-v3-core.js?v=2026110801" in wrapper, "Explorer-core cache version is stale")
 
-    require(len(manifest["taskRecords"]) == 403, "Manifest must retain 403 task and auxiliary records")
-    require(sum(not row["auxiliary"] for row in manifest["taskRecords"]) == 401, "Target-task total must be 401")
-    require(len(manifest["evaluationRecords"]) == 369, "Display-combination total must be 369")
+    require(len(manifest["taskRecords"]) == 810, "Manifest must retain 810 task and auxiliary records")
+    require(sum(not row["auxiliary"] for row in manifest["taskRecords"]) == 808, "Target-task total must be 808")
+    require(len(manifest["evaluationRecords"]) == 482, "Display-combination total must be 482")
     require(manifest["evaluationRecordFingerprint"] == EXPECTED_EVALUATION_FINGERPRINT, "Joint-record fingerprint is stale")
-    require(manifest["taskRecordCounts"]["protocolMetric"] == {"OL/P": 346, "OL/O": 12, "CL/P": 17, "CL/O": 26}, "Protocol/metric task totals are stale")
-    require(manifest["taskRecordCounts"]["data"] == {"RWD": 89, "SBG": 88, "SPTC": 71, "HCP": 153}, "Data task totals are stale")
-    require(manifest["taskRecordCounts"]["classifiedData"] == 401, "Classified-Data total is stale")
+    require(manifest["taskRecordCounts"]["protocolMetric"] == {"OL/P": 718, "OL/O": 12, "CL/P": 33, "CL/O": 45}, "Protocol/metric task totals are stale")
+    require(manifest["taskRecordCounts"]["data"] == {"RWD": 172, "SBG": 194, "SPTC": 131, "HCP": 311}, "Data task totals are stale")
+    require(manifest["taskRecordCounts"]["classifiedData"] == 808, "Classified-Data total is stale")
     require(manifest["taskRecordCounts"]["unresolvedData"] == 0, "Unresolved-Data total is stale")
     require(records["CausalSpatial"][2] == "video", "CausalSpatial raw domain must be video")
     require(set(split_codes(records["ContPhy"][7])) == {"S3", "S4"}, "ContPhy must retain OG and add IG")
@@ -209,18 +209,18 @@ def main() -> None:
     for workflow in OBSOLETE_WORKFLOWS:
         require(not (ROOT / workflow).exists(), f"Obsolete 106-benchmark repair workflow remains: {workflow}")
 
-    audit = json.loads((ROOT / "scripts/release_years_20260907.json").read_text(encoding="utf-8"))
-    require({name: row[1] for name, row in records.items()} == audit["years"], "Release years differ from the 102 PDF transcriptions")
+    audit = json.loads((ROOT / "scripts/release_years_20261108.json").read_text(encoding="utf-8"))
+    require({name: row[1] for name, row in records.items()} == audit["years"], "Release years differ from the 130 PDF transcriptions")
     require(manifest["releaseYearRevision"]["sourcePdfSha256"] == SOURCE_PDF_SHA256, "Release-year source PDF is stale")
     require(metadata["releaseYearRevision"] == manifest["releaseYearRevision"], "Release-year metadata differs")
     require(all(item.get("releaseYear") == item["year"] for item in shard_records), "Exported releaseYear differs from canonical year")
     require("| Article | Release Year | Venue |" in readme, "README release-year heading is missing")
     require("<strong>49</strong>" not in index, "The old cumulative count remains")
-    require("10 new benchmarks in 2024" in index and "52 new benchmarks in 2026" in index, "Narrative release-window counts are stale")
+    require("10 new benchmarks in 2024" in index and "80 new benchmarks in 2026" in index, "Narrative release-window counts are stale")
 
     print(
-        "Validated the latest PDF snapshot: 102 benchmarks, 85 cross-category, "
-        "all 401 fully classified task rows, 369 joint combinations, 307 target/role parent rows, Table 4 and release years synchronized."
+        "Validated the latest PDF snapshot: 130 benchmarks, 108 cross-category, "
+        "all 808 fully classified task rows, 482 joint combinations, 402 target/role parent rows, Table 4 and release years synchronized."
     )
 
 

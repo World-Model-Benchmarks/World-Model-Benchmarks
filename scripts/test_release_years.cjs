@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-// Independent 102-year PDF transcription and browser-logic regression checks.
+// Independent 130-year PDF transcription and browser-logic regression checks.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '..');
 const assets = path.join(root, 'docs/assets');
-const audit = JSON.parse(fs.readFileSync(path.join(__dirname, 'release_years_20260907.json'), 'utf8'));
+const audit = JSON.parse(fs.readFileSync(path.join(__dirname, 'release_years_20261108.json'), 'utf8'));
 const manifest = JSON.parse(fs.readFileSync(path.join(assets, 'benchmarks.json'), 'utf8'));
 const shards = [1,2,3,4].flatMap(i => JSON.parse(fs.readFileSync(path.join(assets, `benchmarks-${i}.json`), 'utf8')));
 class Element {
@@ -24,7 +24,7 @@ const source = fs.readFileSync(path.join(assets,'app-v3-core.js'),'utf8');
 const api = vm.runInNewContext(source.replace(/\ninit\(\);\s*$/, '\n') + '\n({state,normalizeCorpus,matchesPeriod,visibleItems,renderCards,buildTimeline})', {document,URLSearchParams,location:{search:'',pathname:'/',hash:''}});
 api.state.metadata=manifest;
 api.state.benchmarks=api.normalizeCorpus(shards,manifest);
-assert.equal(api.state.benchmarks.length,102);
+assert.equal(api.state.benchmarks.length,130);
 assert.deepEqual(Object.fromEntries(api.state.benchmarks.map(x=>[x.shortName,x.year])),audit.years);
 assert.ok(api.state.benchmarks.every(x=>x.releaseYear===x.year));
 for (const [period,count] of Object.entries(audit.releaseWindowCounts)) {
@@ -48,7 +48,7 @@ for (const [name,data] of Object.entries(manifest.publicationMetadata)) {
 }
 assert.equal(manifest.records.ComPhy[1],2022);
 assert.equal(manifest.records.DrivingGen[1],2026);
-console.log('PASS: all 102 PDF release years, all five period filters, timeline new/cumulative counts, and separate publication-year card labels.');
+console.log('PASS: all 130 PDF release years, all five period filters, timeline new/cumulative counts, and separate publication-year card labels.');
 
 const indexHtml = fs.readFileSync(path.join(root,'docs/index.html'),'utf8');
 for (const year of ['2024','2025','2026']) {

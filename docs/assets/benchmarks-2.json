@@ -1,14 +1,29 @@
 [
   {
-    "id": "memobench",
-    "shortName": "MemoBench",
-    "title": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments",
-    "ref": 85,
+    "id": "codrive-bench",
+    "shortName": "CoDrive-Bench",
+    "title": "CoDrive: Cross-Vehicle World-Consistent Video Generation with Precise Trajectory Control for Cooperative Driving",
+    "ref": 92,
     "year": 2026,
+    "releaseYear": 2026,
     "venue": "arXiv",
+    "publicationYear": 2026,
     "domains": [
-      "video"
+      "driving"
     ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Temporal Quality",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2609.34749v1",
+    "arxivId": "2609.34749",
+    "reference": "CoDrive: Cross-Vehicle World-Consistent Video Generation with Precise Trajectory Control for Cooperative Driving, 2026.",
     "protocols": [
       "OL"
     ],
@@ -16,34 +31,18 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "RWD",
+      "SBG"
     ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Long-Horizon Memory & State Persistence",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2606.27537",
-    "arxivId": "2606.27537",
-    "reference": "MemoBench: Benchmarking World Modeling in Dynamically Changing Environments, arXiv:2606.27537, 2026.",
-    "releaseYear": 2026,
     "evaluationTracks": [
       {
         "scope": "T1",
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
         "table": "S1",
-        "sourcePage": 4,
+        "sourcePage": 5,
         "sourcePages": [
-          5
+          6
         ],
         "protocols": [
           "OL"
@@ -52,21 +51,35 @@
           "P"
         ],
         "evaluationData": [
-          "HCP"
+          "RWD",
+          "SBG"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0027",
+            "id": "ADD28-EC0011",
             "protocol": "OL",
             "metric": "P",
-            "data": "HCP",
+            "data": "RWD",
             "dataStatus": "classified",
             "taskIds": [
-              "S1-041"
+              "ADD28:R357.01"
             ],
             "sourcePages": [
-              5
+              6
+            ]
+          },
+          {
+            "id": "ADD28-EC0012",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R357.02"
+            ],
+            "sourcePages": [
+              6
             ]
           }
         ]
@@ -87,21 +100,708 @@
           "P"
         ],
         "evaluationData": [
+          "RWD",
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0013",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R356.01",
+              "ADD28:R356.02"
+            ],
+            "sourcePages": [
+              8
+            ]
+          },
+          {
+            "id": "ADD28-EC0014",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R356.03",
+              "ADD28:R356.04"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0009",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R355.01"
+            ],
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "id": "ADD28-EC0010",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R355.02"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "projectUrl": "https://codrive-project-page.github.io/"
+  },
+  {
+    "id": "phyre",
+    "shortName": "PHYRE",
+    "title": "PHYRE: A new benchmark for physical reasoning",
+    "ref": 93,
+    "year": 2019,
+    "venue": "NeurIPS",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL",
+      "CL"
+    ],
+    "metrics": [
+      "O"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=PHYRE%3A%20A%20new%20benchmark%20for%20physical%20reasoning",
+    "arxivId": null,
+    "reference": "A. Bakhtin, L. van der Maaten, J. Johnson, L. Gustafson, and R. Girshick, “PHYRE: A new benchmark for physical reasoning,” in NeurIPS, 2019.",
+    "releaseYear": 2019,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          10
+        ],
+        "protocols": [
+          "OL",
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0221",
+            "protocol": "OL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-005"
+            ],
+            "sourcePages": [
+              10
+            ]
+          },
+          {
+            "id": "EC0222",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-004"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comphy",
+    "shortName": "ComPhy",
+    "title": "ComPhy: Compositional physical reasoning of objects and events from videos",
+    "ref": 94,
+    "year": 2022,
+    "venue": "ICLR",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=ComPhy%3A%20Compositional%20physical%20reasoning%20of%20objects%20and%20events%20from%20videos",
+    "arxivId": null,
+    "reference": "Z. Chen, K. Yi, Y. Li, M. Ding, A. Torralba, J. B. Tenenbaum, and C. Gan, “ComPhy: Compositional physical reasoning of objects and events from videos,” in ICLR, 2022.",
+    "releaseYear": 2022,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          10
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0225",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-008"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0269",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-006"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physics-iq",
+    "shortName": "Physics-IQ",
+    "title": "Do generative video models understand physical principles?",
+    "ref": 95,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2501.09038",
+    "arxivId": "2501.09038",
+    "reference": "S. Motamed, L. Culp, K. Swersky, P. Jaini, and R. Geirhos, “Do generative video models understand physical principles?” arXiv:2501.09038, 2025.",
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          11
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0232",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-036"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0271",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-015"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "compositional-continual-learning",
+    "shortName": "Compositional continual learning",
+    "title": "Benchmarking World Models for Continual Learning on Compositional Tasks",
+    "ref": 96,
+    "year": 2026,
+    "releaseYear": 2026,
+    "venue": "arXiv",
+    "publicationYear": 2026,
+    "domains": [
+      "embodied"
+    ],
+    "targets": [
+      "Functional Utility"
+    ],
+    "subtargets": [
+      "Planner",
+      "Interactive Training Environment"
+    ],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2609.22055v1",
+    "arxivId": "2609.22055",
+    "reference": "Benchmarking World Models for Continual Learning on Compositional Tasks, 2026.",
+    "protocols": [
+      "CL"
+    ],
+    "metrics": [
+      "O"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "evaluationTracks": [
+      {
+        "scope": "S9",
+        "target": "Functional Utility",
+        "label": "Planner",
+        "table": "S7",
+        "sourcePage": 16,
+        "sourcePages": [
+          17
+        ],
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0016",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R333.01.s01",
+              "ADD28:R333.01.s02",
+              "ADD28:R333.02.s01",
+              "ADD28:R333.02.s02",
+              "ADD28:R333.03.s01",
+              "ADD28:R333.03.s02",
+              "ADD28:R333.04.s01",
+              "ADD28:R333.04.s02",
+              "ADD28:R333.05.s01",
+              "ADD28:R333.05.s02",
+              "ADD28:R333.06.s01",
+              "ADD28:R333.06.s02"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S10",
+        "target": "Functional Utility",
+        "label": "Interactive Training Environment",
+        "table": "S7",
+        "sourcePage": 16,
+        "sourcePages": [
+          17
+        ],
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0015",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R332.01.s01",
+              "ADD28:R332.01.s02",
+              "ADD28:R332.02.s01",
+              "ADD28:R332.02.s02",
+              "ADD28:R332.03.s01",
+              "ADD28:R332.03.s02"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
+        ]
+      }
+    ],
+    "projectUrl": "https://object814.github.io/Compositional-Continual-Learning/"
+  },
+  {
+    "id": "physicslens",
+    "shortName": "PhysicsLENS",
+    "title": "PhysicsLENS: Diagnosing Physical Property Blindness in Video Generation Models",
+    "ref": 97,
+    "year": 2026,
+    "releaseYear": 2026,
+    "venue": "arXiv",
+    "publicationYear": 2026,
+    "domains": [
+      "embodied"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2610.01162v1",
+    "arxivId": "2610.01162",
+    "reference": "PhysicsLENS: Diagnosing Physical Property Blindness in Video Generation Models, 2026.",
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD",
+      "HCP"
+    ],
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD",
           "HCP"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0087",
+            "id": "ADD28-EC0060",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S2-045"
+              "ADD28:R364.02",
+              "ADD28:R366.01"
             ],
             "sourcePages": [
-              8
+              12
+            ]
+          },
+          {
+            "id": "ADD28-EC0061",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R364.01"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0058",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R365.02"
+            ],
+            "sourcePages": [
+              15
+            ]
+          },
+          {
+            "id": "ADD28-EC0059",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R365.01"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "codeUrl": "https://github.com/Isaiah-Milkey/PhysicsLENS-benchmark"
+  },
+  {
+    "id": "contactworld",
+    "shortName": "ContactWorld",
+    "title": "ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation",
+    "ref": 98,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL",
+      "CL"
+    ],
+    "metrics": [
+      "P",
+      "O"
+    ],
+    "evaluationData": [
+      "SBG",
+      "HCP"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility",
+      "Functional Utility"
+    ],
+    "subtargets": [
+      "Planner"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.13877",
+    "arxivId": "2606.13877",
+    "reference": "ContactWorld: What Matters in Vision-Tactile World Models for Contact-Rich Manipulation, arXiv:2606.13877, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0121",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-033"
+            ],
+            "sourcePages": [
+              7
             ]
           }
         ]
@@ -111,7 +811,789 @@
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
         "table": "S3",
-        "sourcePage": 11,
+        "sourcePage": 9,
+        "sourcePages": [
+          9
+        ],
+        "protocols": [
+          "OL",
+          "CL"
+        ],
+        "metrics": [
+          "P",
+          "O"
+        ],
+        "evaluationData": [
+          "SBG",
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0149",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-008"
+            ],
+            "sourcePages": [
+              9
+            ]
+          },
+          {
+            "id": "EC0150",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-009"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          11
+        ],
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0213",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-052"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S9",
+        "target": "Functional Utility",
+        "label": "Planner",
+        "table": "S7",
+        "sourcePage": 16,
+        "sourcePages": [
+          17
+        ],
+        "protocols": [
+          "CL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0367",
+            "protocol": "CL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-012",
+              "S7-013"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physicsmind",
+    "shortName": "PhysicsMind",
+    "title": "Physicsmind: Sim and real mechanics benchmarking for physical reasoning and prediction in foundational vlms and world models",
+    "ref": 99,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2601.16007",
+    "arxivId": "2601.16007",
+    "reference": "C.-W. Mak, G. Zhu, B. Zhang, H. Li, X. Chi, K. Zhang, Y. Wu, Y. He, C.-K. Fan, W. Lu, K. Ge, X. Fang, H. He, K. Lu, T. Xu, L. Zhang, Y. Ni, Y. Li, and S. Zhang, “Physicsmind: Sim and real mechanics benchmarking for physical reasoning and prediction in foundational vlms and world models,” arXiv preprint arXiv:2601.16007, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0241",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-077",
+              "S4-078"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0274",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-024",
+              "S5-025"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "contphy",
+    "shortName": "ContPhy",
+    "title": "ContPhy: Continuum physical concept learning and reasoning from videos",
+    "ref": 100,
+    "year": 2024,
+    "venue": "ICML",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=ContPhy%3A%20Continuum%20physical%20concept%20learning%20and%20reasoning%20from%20videos",
+    "arxivId": null,
+    "reference": "Z. Zheng, X. Yan, Z. Chen, J. Wang, Q. Z. E. Lim, J. B. Tenenbaum, and C. Gan, “ContPhy: Continuum physical concept learning and reasoning from videos,” ICML, 2024.",
+    "releaseYear": 2024,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          10
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0226",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-010"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0270",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-008"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cophy",
+    "shortName": "CoPhy",
+    "title": "CoPhy: Counterfactual learning of physical dynamics",
+    "ref": 101,
+    "year": 2019,
+    "venue": "ICLR",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=CoPhy%3A%20Counterfactual%20learning%20of%20physical%20dynamics",
+    "arxivId": null,
+    "reference": "F. Baradel, N. Neverova, J. Mille, G. Mori, and C. Wolf, “CoPhy: Counterfactual learning of physical dynamics,” ICLR, 2020.",
+    "releaseYear": 2019,
+    "publicationYear": 2020,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          10
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0220",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-003"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0267",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-002"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physion-plus-plus",
+    "shortName": "Physion++",
+    "title": "Physion++: Evaluating physical scene understanding that requires online inference of different physical properties",
+    "ref": 102,
+    "year": 2023,
+    "venue": "NeurIPS",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://scholar.google.com/scholar?q=Physion%2B%2B%3A%20Evaluating%20physical%20scene%20understanding%20that%20requires%20online%20inference%20of%20different%20physical%20properties",
+    "arxivId": null,
+    "reference": "H.-Y. Tung, M. Ding, Z. Chen, D. Bear, C. Gan, J. B. Tenenbaum, D. L. Yamins, J. E. Fan, and K. A. Smith, “Physion++: Evaluating physical scene understanding that requires online inference of different physical properties,” NeurIPS, 2023.",
+    "releaseYear": 2023,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          10
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0224",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-009"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "craft",
+    "shortName": "CRAFT",
+    "title": "CRAFT: A benchmark for causal reasoning about forces and interactions",
+    "ref": 103,
+    "year": 2020,
+    "venue": "Findings of ACL",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Intervention-Grounded Evaluation"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://scholar.google.com/scholar?q=CRAFT%3A%20A%20benchmark%20for%20causal%20reasoning%20about%20forces%20and%20interactions",
+    "arxivId": null,
+    "reference": "T. Ates, M. S¸. Ates¸o˘glu, C¸ . Yi˘git, I. Kesen, M. Kobas, E. Erdem, A. Erdem, T. Goksun, and D. Yuret, “CRAFT: A benchmark for causal reasoning about forces and interactions,” Findings of ACL, 2022.",
+    "releaseYear": 2020,
+    "publicationYear": 2022,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          10
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0223",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-006"
+            ],
+            "sourcePages": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          13
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0268",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-003"
+            ],
+            "sourcePages": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "physion-eval",
+    "shortName": "Physion-Eval",
+    "title": "Physion-eval: Evaluating physical realism in generated video via human reasoning",
+    "ref": 104,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2603.19607",
+    "arxivId": "2603.19607",
+    "reference": "Q. Zhang, P. Jing, H.-X. Yu, F. Ding, F. Nie, W. Wang, Y. Du, J. Zou, J. Wu, and B. Shuai, “Physion-eval: Evaluating physical realism in generated video via human reasoning,” arXiv preprint arXiv:2603.19607, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0238",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-079"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crashtwin",
+    "shortName": "CrashTwin",
+    "title": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models",
+    "ref": 105,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "driving",
+      "video"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Physical Plausibility"
+    ],
+    "subtargets": [
+      "Temporal Quality"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.28757",
+    "arxivId": "2606.28757",
+    "reference": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models, arXiv:2606.28757, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
+        "sourcePages": [
+          5
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0058",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-032"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0108",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-034"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
         "sourcePages": [
           11
         ],
@@ -127,86 +1609,16 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0137",
+            "id": "EC0204",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S3-015"
+              "S4-053"
             ],
             "sourcePages": [
               11
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          15
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0181",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-070"
-            ],
-            "sourcePages": [
-              15
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          21
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0296",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-036"
-            ],
-            "sourcePages": [
-              21
             ]
           }
         ]
@@ -214,14 +1626,14 @@
     ]
   },
   {
-    "id": "robotrustbench",
-    "shortName": "RoboTrustBench",
-    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
-    "ref": 86,
-    "year": 2026,
+    "id": "phyworldbench",
+    "shortName": "PhyWorldBench",
+    "title": "PhyWorldBench: A comprehensive evaluation of physical realism in text-to-video models",
+    "ref": 106,
+    "year": 2025,
     "venue": "arXiv",
     "domains": [
-      "embodied"
+      "video"
     ],
     "protocols": [
       "OL"
@@ -230,105 +1642,29 @@
       "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SPTC"
     ],
     "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
       "Physical Plausibility",
-      "Causal & Counterfactual Reasoning",
       "Control Fidelity & Interactive Dynamics"
     ],
     "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Observation-Grounded Evaluation",
       "Pre-specified Control Fidelity"
     ],
     "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2606.01600",
-    "arxivId": "2606.01600",
-    "reference": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation, arXiv:2606.01600, 2026.",
-    "releaseYear": 2026,
+    "paperUrl": "https://arxiv.org/abs/2507.13428",
+    "arxivId": "2507.13428",
+    "reference": "J. Gu, X. Liu, Y. Zeng, A. Nagarajan, F. Zhu, D. Hong, Y. Fan, Q. Yan, K. Zhou, M.-Y. Liu, and X. E. Wang, “PhyWorldBench: A comprehensive evaluation of physical realism in text-to-video models,” arXiv:2507.13428, 2025.",
+    "releaseYear": 2025,
     "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0028",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-050"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0088",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-056"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
-        "sourcePage": 13,
+        "sourcePage": 10,
         "sourcePages": [
-          16
+          11
         ],
         "protocols": [
           "OL"
@@ -337,56 +1673,21 @@
           "P"
         ],
         "evaluationData": [
-          "HCP"
+          "SPTC"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0182",
+            "id": "EC0233",
             "protocol": "OL",
             "metric": "P",
-            "data": "HCP",
+            "data": "SPTC",
             "dataStatus": "classified",
             "taskIds": [
-              "S4-085"
+              "S4-037"
             ],
             "sourcePages": [
-              16
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T5",
-        "target": "Causal & Counterfactual Reasoning",
-        "label": "Causal & Counterfactual Reasoning",
-        "table": "S5",
-        "sourcePage": 18,
-        "sourcePages": [
-          19
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0253",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S5-029"
-            ],
-            "sourcePages": [
-              19
+              11
             ]
           }
         ]
@@ -396,9 +1697,9 @@
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
         "table": "S6",
-        "sourcePage": 20,
+        "sourcePage": 14,
         "sourcePages": [
-          22
+          14
         ],
         "protocols": [
           "OL"
@@ -407,21 +1708,21 @@
           "P"
         ],
         "evaluationData": [
-          "HCP"
+          "SPTC"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0297",
+            "id": "EC0324",
             "protocol": "OL",
             "metric": "P",
-            "data": "HCP",
+            "data": "SPTC",
             "dataStatus": "classified",
             "taskIds": [
-              "S6-043"
+              "S6-019"
             ],
             "sourcePages": [
-              22
+              14
             ]
           }
         ]
@@ -429,10 +1730,10 @@
     ]
   },
   {
-    "id": "worldexam",
-    "shortName": "WorldExam",
-    "title": "WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity",
-    "ref": 87,
+    "id": "cronos",
+    "shortName": "CRONOS",
+    "title": "Cronos: Benchmarking counterfactual physical consistency in video models",
+    "ref": 107,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -445,120 +1746,29 @@
       "P"
     ],
     "evaluationData": [
-      "SPTC",
-      "HCP"
+      "SBG"
     ],
     "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
       "Physical Plausibility",
-      "Causal & Counterfactual Reasoning",
-      "Control Fidelity & Interactive Dynamics"
+      "Causal & Counterfactual Reasoning"
     ],
     "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Observation-Grounded Evaluation",
-      "Pre-specified Control Fidelity"
+      "Observation-Grounded Evaluation"
     ],
     "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2608.02603",
-    "arxivId": "2608.02603",
-    "reference": "Y. Yang et al., “WorldExam: Benchmarking World Models from Apparent Appearance to Inherent Reactivity,” arXiv:2608.02603, 2026.",
+    "paperUrl": "https://arxiv.org/abs/2605.23699",
+    "arxivId": "2605.23699",
+    "reference": "L. Begiristain, O. D¨unkel, and A. Kortylewski, “Cronos: Benchmarking counterfactual physical consistency in video models,” arXiv preprint arXiv:2605.23699, 2026.",
     "releaseYear": 2026,
     "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0029",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-062"
-            ],
-            "sourcePages": [
-              6
-            ]
-          },
-          {
-            "id": "EC0030",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-061"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          10
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0089",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-070"
-            ],
-            "sourcePages": [
-              10
-            ]
-          }
-        ]
-      },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
-        "sourcePage": 13,
+        "sourcePage": 10,
         "sourcePages": [
-          17
+          11
         ],
         "protocols": [
           "OL"
@@ -567,21 +1777,21 @@
           "P"
         ],
         "evaluationData": [
-          "SPTC"
+          "SBG"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0183",
+            "id": "EC0239",
             "protocol": "OL",
             "metric": "P",
-            "data": "SPTC",
+            "data": "SBG",
             "dataStatus": "classified",
             "taskIds": [
-              "S4-095"
+              "S4-054"
             ],
             "sourcePages": [
-              17
+              11
             ]
           }
         ]
@@ -591,338 +1801,9 @@
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
         "table": "S5",
-        "sourcePage": 18,
-        "sourcePages": [
-          19
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0254",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S5-032"
-            ],
-            "sourcePages": [
-              19
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          22
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0298",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-050"
-            ],
-            "sourcePages": [
-              22
-            ]
-          },
-          {
-            "id": "EC0299",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-049"
-            ],
-            "sourcePages": [
-              22
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "surgwmbench",
-    "shortName": "SurgWMBench",
-    "title": "SurgWMBench: A Vision-Based Benchmark for World-Modeling Surgical Instrument Motion Planning",
-    "ref": 88,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "embodied"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "RWD"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2608.08070",
-    "arxivId": "2608.08070",
-    "reference": "H. Liu et al., “SurgWMBench: A Vision-Based Benchmark for World-Modeling Surgical Instrument Motion Planning,” arXiv:2608.08070, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0031",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-051",
-              "S1-052"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0090",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-059",
-              "S2-060",
-              "S2-061"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "h2r-bench",
-    "shortName": "H2R-Bench",
-    "title": "H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models",
-    "ref": 89,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "embodied"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "RWD",
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2608.13049",
-    "arxivId": "2608.13049",
-    "reference": "D. Rong et al., “H2R-Bench: Benchmarking Human-to-Robot Manipulation Video Generation in World Models,” arXiv:2608.13049, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0032",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-036"
-            ],
-            "sourcePages": [
-              5
-            ]
-          },
-          {
-            "id": "EC0033",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-037"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          8
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0091",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-038"
-            ],
-            "sourcePages": [
-              8
-            ]
-          },
-          {
-            "id": "EC0092",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-039"
-            ],
-            "sourcePages": [
-              8
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
         "sourcePage": 13,
         "sourcePages": [
-          15
+          13
         ],
         "protocols": [
           "OL"
@@ -931,84 +1812,21 @@
           "P"
         ],
         "evaluationData": [
-          "RWD",
-          "HCP"
+          "SBG"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0184",
+            "id": "EC0272",
             "protocol": "OL",
             "metric": "P",
-            "data": "RWD",
+            "data": "SBG",
             "dataStatus": "classified",
             "taskIds": [
-              "S4-061"
+              "S5-020"
             ],
             "sourcePages": [
-              15
-            ]
-          },
-          {
-            "id": "EC0185",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-062"
-            ],
-            "sourcePages": [
-              15
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          21
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0300",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-031"
-            ],
-            "sourcePages": [
-              21
-            ]
-          },
-          {
-            "id": "EC0301",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-032"
-            ],
-            "sourcePages": [
-              21
+              13
             ]
           }
         ]
@@ -1019,7 +1837,7 @@
     "id": "playworld",
     "shortName": "PlayWorld",
     "title": "PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives",
-    "ref": 90,
+    "ref": 108,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
@@ -1060,9 +1878,9 @@
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
         "table": "S1",
-        "sourcePage": 4,
+        "sourcePage": 5,
         "sourcePages": [
-          5
+          6
         ],
         "protocols": [
           "CL"
@@ -1085,7 +1903,7 @@
               "S1-047"
             ],
             "sourcePages": [
-              5
+              6
             ]
           }
         ]
@@ -1097,7 +1915,7 @@
         "table": "S2",
         "sourcePage": 7,
         "sourcePages": [
-          9
+          8
         ],
         "protocols": [
           "CL"
@@ -1120,7 +1938,7 @@
               "S2-053"
             ],
             "sourcePages": [
-              9
+              8
             ]
           }
         ]
@@ -1130,9 +1948,9 @@
         "target": "Long-Horizon Memory & State Persistence",
         "label": "Long-Horizon Memory & State Persistence",
         "table": "S3",
-        "sourcePage": 11,
+        "sourcePage": 9,
         "sourcePages": [
-          11
+          9
         ],
         "protocols": [
           "CL"
@@ -1155,7 +1973,7 @@
               "S3-017"
             ],
             "sourcePages": [
-              11
+              9
             ]
           }
         ]
@@ -1165,9 +1983,9 @@
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
-        "sourcePage": 13,
+        "sourcePage": 10,
         "sourcePages": [
-          16
+          12
         ],
         "protocols": [
           "CL"
@@ -1190,7 +2008,7 @@
               "S4-081"
             ],
             "sourcePages": [
-              16
+              12
             ]
           }
         ]
@@ -1200,9 +2018,9 @@
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
         "table": "S5",
-        "sourcePage": 18,
+        "sourcePage": 13,
         "sourcePages": [
-          19
+          13
         ],
         "protocols": [
           "CL"
@@ -1225,7 +2043,7 @@
               "S5-026"
             ],
             "sourcePages": [
-              19
+              13
             ]
           }
         ]
@@ -1235,9 +2053,9 @@
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Interactive Action Fidelity",
         "table": "S6",
-        "sourcePage": 20,
+        "sourcePage": 14,
         "sourcePages": [
-          22
+          16
         ],
         "protocols": [
           "CL"
@@ -1260,7 +2078,7 @@
               "S6-064"
             ],
             "sourcePages": [
-              22
+              16
             ]
           }
         ]
@@ -1268,11 +2086,11 @@
     ]
   },
   {
-    "id": "xeworld",
-    "shortName": "XEWorld",
-    "title": "XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?",
-    "ref": 91,
-    "year": 2026,
+    "id": "dreamgen-bench",
+    "shortName": "DreamGen Bench",
+    "title": "DreamGen: Unlocking generalization in robot learning through video world models (introduces DreamGen Bench)",
+    "ref": 109,
+    "year": 2025,
     "venue": "arXiv",
     "domains": [
       "embodied"
@@ -1284,282 +2102,27 @@
       "P"
     ],
     "evaluationData": [
-      "SBG"
+      "HCP"
     ],
     "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
       "Physical Plausibility",
       "Control Fidelity & Interactive Dynamics"
     ],
     "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
       "Pre-specified Control Fidelity"
     ],
     "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2608.05799",
-    "arxivId": "2608.05799",
-    "reference": "Y. Chen et al., “XEWorld: Can Action-Conditioned World Models Generalize to Unseen Robot Embodiments?” arXiv:2608.05799, 2026.",
-    "releaseYear": 2026,
+    "paperUrl": "https://arxiv.org/abs/2505.12705",
+    "arxivId": "2505.12705",
+    "reference": "J. Jang, S. Ye, Z. Lin, J. Xiang, J. Bjorck, Y. Fang, F. Hu, S. Huang, K. Kundalia, Y.-C. Lin, L. Magne, A. Mandlekar, A. Narayan, Y. L. Tan, G. Wang, J. Wang, Q. Wang, Y. Xu, X. Zeng, K. Zheng, R. Zheng, M.-Y. Liu, L. Zettlemoyer, D. Fox, J. Kautz, S. Reed, Y. Zhu, and L. Fan, “DreamGen: Unlocking generalization in robot learning through video world models (introduces DreamGen Bench),” arXiv:2505.12705, 2025.",
+    "releaseYear": 2025,
     "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0035",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-067"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          10
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0094",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-075"
-            ],
-            "sourcePages": [
-              10
-            ]
-          }
-        ]
-      },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          17
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0187",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-101"
-            ],
-            "sourcePages": [
-              17
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          22
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0302",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-054"
-            ],
-            "sourcePages": [
-              22
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "harnesseval-w",
-    "shortName": "HarnessEval-W",
-    "title": "HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
-    "ref": 92,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Long-Horizon Memory & State Persistence",
-      "Physical Plausibility",
-      "Causal & Counterfactual Reasoning",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Observation-Grounded Evaluation",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2608.16859",
-    "arxivId": "2608.16859",
-    "reference": "W. Chen et al., “HarnessEval-W: Agentifying the Evaluation of Visual Worlds,” arXiv:2608.16859, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0036",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-038"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          8
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0095",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-040"
-            ],
-            "sourcePages": [
-              8
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T3",
-        "target": "Long-Horizon Memory & State Persistence",
-        "label": "Long-Horizon Memory & State Persistence",
-        "table": "S3",
-        "sourcePage": 11,
+        "sourcePage": 10,
         "sourcePages": [
           11
         ],
@@ -1570,91 +2133,21 @@
           "P"
         ],
         "evaluationData": [
-          "SPTC"
+          "HCP"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0139",
+            "id": "EC0236",
             "protocol": "OL",
             "metric": "P",
-            "data": "SPTC",
+            "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S3-011"
+              "S4-021"
             ],
             "sourcePages": [
               11
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          15
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0188",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-063"
-            ],
-            "sourcePages": [
-              15
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T5",
-        "target": "Causal & Counterfactual Reasoning",
-        "label": "Causal & Counterfactual Reasoning",
-        "table": "S5",
-        "sourcePage": 18,
-        "sourcePages": [
-          18
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0256",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S5-021"
-            ],
-            "sourcePages": [
-              18
             ]
           }
         ]
@@ -1664,9 +2157,9 @@
         "target": "Control Fidelity & Interactive Dynamics",
         "label": "Pre-specified Control Fidelity",
         "table": "S6",
-        "sourcePage": 20,
+        "sourcePage": 14,
         "sourcePages": [
-          21
+          14
         ],
         "protocols": [
           "OL"
@@ -1675,21 +2168,21 @@
           "P"
         ],
         "evaluationData": [
-          "SPTC"
+          "HCP"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0303",
+            "id": "EC0325",
             "protocol": "OL",
             "metric": "P",
-            "data": "SPTC",
+            "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S6-033"
+              "S6-011"
             ],
             "sourcePages": [
-              21
+              14
             ]
           }
         ]
@@ -1697,577 +2190,43 @@
     ]
   },
   {
-    "id": "worldecho",
-    "shortName": "WorldEcho",
-    "title": "Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning (introduces WorldEcho)",
-    "ref": 93,
+    "id": "principia",
+    "shortName": "Principia",
+    "title": "Principia: Relational physics tests for video models",
+    "ref": 110,
     "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "embodied"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SBG"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2608.24885",
-    "arxivId": "2608.24885",
-    "reference": "S. Chen et al., “Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning,” arXiv:2608.24885, 2026.",
     "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0037",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-060"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          22
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0304",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-048"
-            ],
-            "sourcePages": [
-              22
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "acwm-phys",
-    "shortName": "ACWM-Phys",
-    "title": "ACWM-Phys: Investigating generalized physical interaction in action-conditioned video world models",
-    "ref": 94,
-    "year": 2026,
     "venue": "arXiv",
+    "publicationYear": 2026,
     "domains": [
       "video"
     ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SBG"
-    ],
     "targets": [
-      "Visual & Temporal Quality",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Interactive Action Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2605.08567",
-    "arxivId": "2605.08567",
-    "reference": "H. Xue, Y. Chen, L. Ma, Z. Zhao, L. Moukheiber, Y. Zhu, and Y. Chen, “ACWM-Phys: Investigating generalized physical interaction in action-conditioned video world models,” arXiv preprint arXiv:2605.08567, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0038",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-030"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          15
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0189",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-048"
-            ],
-            "sourcePages": [
-              15
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S6",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Interactive Action Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          22
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0340",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-060"
-            ],
-            "sourcePages": [
-              22
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "hteworld",
-    "shortName": "HTEWorld",
-    "title": "World-ego modeling for long-horizon evolution in hybrid embodied tasks (introduces HTEWorld)",
-    "ref": 95,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "embodied"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SBG"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Long-Horizon Memory & State Persistence",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Interactive Action Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2605.19957",
-    "arxivId": "2605.19957",
-    "reference": "Z. Lin, J. Zhang, P. Jia, X. Zhao, S. Zhang, and X. Chen, “World-ego modeling for long-horizon evolution in hybrid embodied tasks (introduces HTEWorld),” arXiv preprint arXiv:2605.19957, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0039",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-039"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          8
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0096",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-042"
-            ],
-            "sourcePages": [
-              8
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T3",
-        "target": "Long-Horizon Memory & State Persistence",
-        "label": "Long-Horizon Memory & State Persistence",
-        "table": "S3",
-        "sourcePage": 11,
-        "sourcePages": [
-          11
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0140",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S3-012"
-            ],
-            "sourcePages": [
-              11
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          15
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0190",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-066"
-            ],
-            "sourcePages": [
-              15
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S6",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Interactive Action Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          22
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0341",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-061"
-            ],
-            "sourcePages": [
-              22
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "rigidbench",
-    "shortName": "RigidBench",
-    "title": "Rigidbench: Evaluating rigid-body physics in video generation models",
-    "ref": 96,
-    "year": 2026,
-    "venue": "ICLR Workshop",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SBG"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
       "Physical Plausibility"
     ],
-    "subtargets": [
-      "Visual Quality"
+    "subtargets": [],
+    "crossCategory": false,
+    "paperUrl": "https://arxiv.org/abs/2609.04200v1",
+    "arxivId": "2609.04200",
+    "reference": "Principia: Relational physics tests for video models, 2026.",
+    "protocols": [
+      "OL"
     ],
-    "crossCategory": true,
-    "paperUrl": "https://scholar.google.com/scholar?q=Rigidbench%3A%20Evaluating%20rigid-body%20physics%20in%20video%20generation%20models",
-    "arxivId": null,
-    "reference": "S. Jain and S. Wu, “Rigidbench: Evaluating rigid-body physics in video generation models,” in ICLR Workshop on Multimodal Intelligence, 2026.",
-    "releaseYear": 2026,
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
     "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0040",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-049"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SBG"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0097",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-055"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
-        "sourcePage": 13,
+        "sourcePage": 10,
         "sourcePages": [
-          16
+          13
         ],
         "protocols": [
           "OL"
@@ -2276,36 +2235,46 @@
           "P"
         ],
         "evaluationData": [
-          "SBG"
+          "HCP"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0191",
+            "id": "ADD28-EC0062",
             "protocol": "OL",
             "metric": "P",
-            "data": "SBG",
+            "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S4-084"
+              "ADD28:R326.01",
+              "ADD28:R326.02",
+              "ADD28:R326.03",
+              "ADD28:R326.04",
+              "ADD28:R326.05",
+              "ADD28:R326.06",
+              "ADD28:R326.07",
+              "ADD28:R326.08",
+              "ADD28:R326.09"
             ],
             "sourcePages": [
-              16
+              13
             ]
           }
         ]
       }
-    ]
+    ],
+    "codeUrl": "https://github.com/PrincipiaBench/Principia",
+    "projectUrl": "https://principiabench.github.io/"
   },
   {
-    "id": "magicbench",
-    "shortName": "MagicBench",
-    "title": "MagicMotion: Controllable video generation with dense-to-sparse trajectory guidance (introduces MagicBench)",
-    "ref": 97,
-    "year": 2025,
+    "id": "drivinggen",
+    "shortName": "DrivingGen",
+    "title": "Drivinggen: A comprehensive benchmark for generative video world models in autonomous driving",
+    "ref": 111,
+    "year": 2026,
     "venue": "arXiv",
     "domains": [
-      "video"
+      "driving"
     ],
     "protocols": [
       "OL"
@@ -2318,219 +2287,6 @@
     ],
     "targets": [
       "Visual & Temporal Quality",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2503.16421",
-    "arxivId": "2503.16421",
-    "reference": "Q. Li, Z. Xing, R. Wang, H. Zhang, Q. Dai, and Z. Wu, “MagicMotion: Controllable video generation with dense-to-sparse trajectory guidance (introduces MagicBench),” arXiv:2503.16421, 2025.",
-    "releaseYear": 2025,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          4
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0041",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-017"
-            ],
-            "sourcePages": [
-              4
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          20
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0305",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-014"
-            ],
-            "sourcePages": [
-              20
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "movebench",
-    "shortName": "MoveBench",
-    "title": "WanMove: Motion-controllable video generation via latent trajectory guidance (introduces MoveBench)",
-    "ref": 98,
-    "year": 2025,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "RWD"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2512.08765",
-    "arxivId": "2512.08765",
-    "reference": "R. Chu, Y. He, Z. Chen, S. Zhang, X. Xu, B. Xia, D. Wang, H. Yi, X. Liu, H. Zhao, Y. Liu, Y. Zhang, and Y. Yang, “WanMove: Motion-controllable video generation via latent trajectory guidance (introduces MoveBench),” arXiv:2512.08765, 2025.",
-    "releaseYear": 2025,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          4
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0042",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-018"
-            ],
-            "sourcePages": [
-              4
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          20
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0306",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-015"
-            ],
-            "sourcePages": [
-              20
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "omni-worldbench",
-    "shortName": "Omni-WorldBench",
-    "title": "Omni-WorldBench: Towards a comprehensive interaction-centric evaluation for world models",
-    "ref": 99,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC",
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
       "Spatial & State Consistency",
       "Physical Plausibility",
       "Control Fidelity & Interactive Dynamics"
@@ -2541,9 +2297,9 @@
       "Pre-specified Control Fidelity"
     ],
     "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2603.22212",
-    "arxivId": "2603.22212",
-    "reference": "M. Wu, Z. Cai, F. Zhao, X. Feng, R. Dang, B. Song, R. Tian, J. Zhu, J. Lei, H. Dou, J. Tang, L. Sun, J. Wu, X. Chu, Z. Liu, and K. Huang, “Omni-WorldBench: Towards a comprehensive interaction-centric evaluation for world models,” arXiv:2603.22212, 2026.",
+    "paperUrl": "https://arxiv.org/abs/2601.01528",
+    "arxivId": "2601.01528",
+    "reference": "Y. Zhou, H. Shao, L. Wang, Z. Zong, H. Li, and S. L. Waslander, “Drivinggen: A comprehensive benchmark for generative video world models in autonomous driving,” arXiv preprint arXiv:2601.01528, 2026.",
     "releaseYear": 2026,
     "evaluationTracks": [
       {
@@ -2551,7 +2307,7 @@
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
         "table": "S1",
-        "sourcePage": 4,
+        "sourcePage": 5,
         "sourcePages": [
           5
         ],
@@ -2562,1079 +2318,22 @@
           "P"
         ],
         "evaluationData": [
-          "SPTC",
-          "HCP"
+          "RWD"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0043",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-043"
-            ],
-            "sourcePages": [
-              5
-            ]
-          },
-          {
-            "id": "EC0044",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-044",
-              "S1-045"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0098",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-048"
-            ],
-            "sourcePages": [
-              9
-            ]
-          },
-          {
-            "id": "EC0099",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-049",
-              "S2-050"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          16
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0192",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-072"
-            ],
-            "sourcePages": [
-              16
-            ]
-          },
-          {
-            "id": "EC0193",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-073",
-              "S4-074"
-            ],
-            "sourcePages": [
-              16
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          21
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0307",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-038"
-            ],
-            "sourcePages": [
-              21
-            ]
-          },
-          {
-            "id": "EC0308",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-039",
-              "S6-040"
-            ],
-            "sourcePages": [
-              21
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "oscbench",
-    "shortName": "OSCBench",
-    "title": "OSCBench: Benchmarking object state change in text-to-video generation",
-    "ref": 100,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2603.11698",
-    "arxivId": "2603.11698",
-    "reference": "X. Han, B. Zhu, S. Hu, F. M. Li, P. Carrington, R. Zimmermann, and J. Chen, “OSCBench: Benchmarking object state change in text-to-video generation,” arXiv preprint arXiv:2603.11698, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0045",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-046"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0100",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-051"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          21
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0309",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-041"
-            ],
-            "sourcePages": [
-              21
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "t2vworldbench",
-    "shortName": "T2VWorldBench",
-    "title": "T2VWorldBench: A benchmark for evaluating world knowledge in text-to-video generation",
-    "ref": 101,
-    "year": 2025,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Physical Plausibility",
-      "Causal & Counterfactual Reasoning"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Observation-Grounded Evaluation"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2507.18107",
-    "arxivId": "2507.18107",
-    "reference": "Y. Chen, X. Guo, Z. Shi, Z. Song, and J. Zhang, “T2VWorldBench: A benchmark for evaluating world knowledge in text-to-video generation,” arXiv:2507.18107, 2025.",
-    "releaseYear": 2025,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          4
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0046",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-023"
-            ],
-            "sourcePages": [
-              4
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          14
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0194",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-040"
-            ],
-            "sourcePages": [
-              14
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T5",
-        "target": "Causal & Counterfactual Reasoning",
-        "label": "Causal & Counterfactual Reasoning",
-        "table": "S5",
-        "sourcePage": 18,
-        "sourcePages": [
-          18
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0257",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S5-016"
-            ],
-            "sourcePages": [
-              18
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "wmbench",
-    "shortName": "WMBench",
-    "title": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation (introduces WMBench)",
-    "ref": 102,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "embodied"
-    ],
-    "protocols": [
-      "OL",
-      "CL"
-    ],
-    "metrics": [
-      "P",
-      "O"
-    ],
-    "evaluationData": [
-      "RWD",
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Long-Horizon Memory & State Persistence",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics",
-      "Functional Utility"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Interactive Action Fidelity",
-      "Policy Evaluator"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2607.02642",
-    "arxivId": "2607.02642",
-    "reference": "GigaWorld-1: A Roadmap to Build World Models for Robot Policy Evaluation (introduces WMBench), arXiv:2607.02642, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL",
-          "CL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0047",
+            "id": "EC0016",
             "protocol": "OL",
             "metric": "P",
             "data": "RWD",
             "dataStatus": "classified",
             "taskIds": [
-              "S1-055",
-              "S1-056"
-            ],
-            "sourcePages": [
-              6
-            ]
-          },
-          {
-            "id": "EC0048",
-            "protocol": "CL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-054"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL",
-          "CL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0101",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-065"
-            ],
-            "sourcePages": [
-              9
-            ]
-          },
-          {
-            "id": "EC0102",
-            "protocol": "CL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-064"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T3",
-        "target": "Long-Horizon Memory & State Persistence",
-        "label": "Long-Horizon Memory & State Persistence",
-        "table": "S3",
-        "sourcePage": 11,
-        "sourcePages": [
-          11
-        ],
-        "protocols": [
-          "OL",
-          "CL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0141",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S3-023"
-            ],
-            "sourcePages": [
-              11
-            ]
-          },
-          {
-            "id": "EC0142",
-            "protocol": "CL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S3-022"
-            ],
-            "sourcePages": [
-              11
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          16
-        ],
-        "protocols": [
-          "CL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0195",
-            "protocol": "CL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-090"
-            ],
-            "sourcePages": [
-              16
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S6",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Interactive Action Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          23
-        ],
-        "protocols": [
-          "OL",
-          "CL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0342",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-069"
-            ],
-            "sourcePages": [
-              23
-            ]
-          },
-          {
-            "id": "EC0343",
-            "protocol": "CL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-068"
-            ],
-            "sourcePages": [
-              23
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S8",
-        "target": "Functional Utility",
-        "label": "Policy Evaluator",
-        "table": "S7",
-        "sourcePage": 24,
-        "sourcePages": [
-          24
-        ],
-        "protocols": [
-          "CL"
-        ],
-        "metrics": [
-          "O"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0354",
-            "protocol": "CL",
-            "metric": "O",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S7-003"
-            ],
-            "sourcePages": [
-              24
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "worldmodelbench",
-    "shortName": "WorldModelBench",
-    "title": "WorldModelBench: Judging video generation models as world models",
-    "ref": 103,
-    "year": 2025,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "SPTC",
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2502.20694",
-    "arxivId": "2502.20694",
-    "reference": "D. Li, Y. Fang, Y. Chen, S. Yang, S. Cao, J. Wong, M. Luo, X. Wang, H. Yin, J. E. Gonzalez, I. Stoica, S. Han, and Y. Lu, “WorldModelBench: Judging video generation models as world models,” arXiv:2502.20694, 2025.",
-    "releaseYear": 2025,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0049",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-026"
+              "S1-033",
+              "S1-034"
             ],
             "sourcePages": [
               5
-            ]
-          },
-          {
-            "id": "EC0050",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-027"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          14
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0196",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-046"
-            ],
-            "sourcePages": [
-              14
-            ]
-          },
-          {
-            "id": "EC0197",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-047"
-            ],
-            "sourcePages": [
-              14
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          21
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0310",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-023"
-            ],
-            "sourcePages": [
-              21
-            ]
-          },
-          {
-            "id": "EC0311",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-024"
-            ],
-            "sourcePages": [
-              21
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "worldsimbench",
-    "shortName": "WorldSimBench",
-    "title": "WorldSimBench: Towards video generation models as world simulators",
-    "ref": 104,
-    "year": 2024,
-    "venue": "arXiv",
-    "domains": [
-      "game",
-      "driving",
-      "embodied"
-    ],
-    "protocols": [
-      "OL",
-      "CL"
-    ],
-    "metrics": [
-      "P",
-      "O"
-    ],
-    "evaluationData": [
-      "RWD",
-      "SBG",
-      "SPTC",
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Physical Plausibility",
-      "Control Fidelity & Interactive Dynamics",
-      "Functional Utility"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Interactive Action Fidelity",
-      "Planner"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2410.18072",
-    "arxivId": "2410.18072",
-    "reference": "Y. Qin, Z. Shi, J. Yu, X. Wang, E. Zhou, L. Li, Z. Yin, X. Liu, L. Sheng, J. Shao, L. Bai, W. Ouyang, and R. Zhang, “WorldSimBench: Towards video generation models as world simulators,” arXiv:2410.18072, 2024.",
-    "releaseYear": 2024,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          4
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "SBG",
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0051",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-008",
-              "S1-009"
-            ],
-            "sourcePages": [
-              4
-            ]
-          },
-          {
-            "id": "EC0052",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-007"
-            ],
-            "sourcePages": [
-              4
-            ]
-          },
-          {
-            "id": "EC0053",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-006"
-            ],
-            "sourcePages": [
-              4
             ]
           }
         ]
@@ -3655,47 +2354,19 @@
           "P"
         ],
         "evaluationData": [
-          "RWD",
-          "SBG",
-          "SPTC"
+          "RWD"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0103",
+            "id": "EC0077",
             "protocol": "OL",
             "metric": "P",
             "data": "RWD",
             "dataStatus": "classified",
             "taskIds": [
-              "S2-006",
-              "S2-007"
-            ],
-            "sourcePages": [
-              7
-            ]
-          },
-          {
-            "id": "EC0104",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-005"
-            ],
-            "sourcePages": [
-              7
-            ]
-          },
-          {
-            "id": "EC0105",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-004"
+              "S2-035",
+              "S2-036"
             ],
             "sourcePages": [
               7
@@ -3708,240 +2379,9 @@
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
-        "sourcePage": 13,
+        "sourcePage": 10,
         "sourcePages": [
-          13
-        ],
-        "protocols": [
-          "OL",
-          "CL"
-        ],
-        "metrics": [
-          "P",
-          "O"
-        ],
-        "evaluationData": [
-          "RWD",
-          "SBG",
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0198",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-015",
-              "S4-016"
-            ],
-            "sourcePages": [
-              13
-            ]
-          },
-          {
-            "id": "EC0199",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-014"
-            ],
-            "sourcePages": [
-              13
-            ]
-          },
-          {
-            "id": "EC0200",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-013"
-            ],
-            "sourcePages": [
-              13
-            ]
-          },
-          {
-            "id": "EC0201",
-            "protocol": "CL",
-            "metric": "O",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-017"
-            ],
-            "sourcePages": [
-              13
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S6",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Interactive Action Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          22
-        ],
-        "protocols": [
-          "OL",
-          "CL"
-        ],
-        "metrics": [
-          "P",
-          "O"
-        ],
-        "evaluationData": [
-          "RWD",
-          "SBG",
-          "SPTC",
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0344",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-057",
-              "S6-058"
-            ],
-            "sourcePages": [
-              22
-            ]
-          },
-          {
-            "id": "EC0345",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SBG",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-056"
-            ],
-            "sourcePages": [
-              22
-            ]
-          },
-          {
-            "id": "EC0346",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-055"
-            ],
-            "sourcePages": [
-              22
-            ]
-          },
-          {
-            "id": "EC0347",
-            "protocol": "CL",
-            "metric": "O",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-059"
-            ],
-            "sourcePages": [
-              22
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S9",
-        "target": "Functional Utility",
-        "label": "Planner",
-        "table": "S7",
-        "sourcePage": 24,
-        "sourcePages": [
-          24
-        ],
-        "protocols": [
-          "CL"
-        ],
-        "metrics": [
-          "O"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0362",
-            "protocol": "CL",
-            "metric": "O",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S7-007"
-            ],
-            "sourcePages": [
-              24
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "apple-pi",
-    "shortName": "Apple-π",
-    "title": "Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence",
-    "ref": 105,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Physical Plausibility"
-    ],
-    "subtargets": [
-      "Visual Quality",
-      "Temporal Quality"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2607.16401",
-    "arxivId": "2607.16401",
-    "reference": "Apple-π: Benchmarking Thinking with Video Towards Law-Grounded Physical Intelligence, arXiv:2607.16401, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
+          11
         ],
         "protocols": [
           "OL"
@@ -3950,25 +2390,358 @@
           "P"
         ],
         "evaluationData": [
-          "HCP"
+          "RWD"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0054",
+            "id": "EC0170",
             "protocol": "OL",
             "metric": "P",
-            "data": "HCP",
+            "data": "RWD",
             "dataStatus": "classified",
             "taskIds": [
-              "S1-031"
+              "S4-055",
+              "S4-056"
             ],
             "sourcePages": [
-              5
+              11
             ]
           }
         ]
       },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0289",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-029"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rbench",
+    "shortName": "RBench",
+    "title": "Rethinking Video Generation Model for the Embodied World",
+    "ref": 112,
+    "year": 2026,
+    "venue": "ICML",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Visual Quality",
+      "Temporal Quality",
+      "Observation-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2601.15282",
+    "arxivId": "2601.15282",
+    "reference": "Y. Deng et al., “Rethinking Video Generation Model for the Embodied World,” ICML, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
+        "sourcePages": [
+          6,
+          7
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0022",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-048"
+            ],
+            "sourcePages": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8,
+          9
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0083",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-054"
+            ],
+            "sourcePages": [
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": "S3",
+        "sourcePage": 9,
+        "sourcePages": [
+          9,
+          10
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0135",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-018"
+            ],
+            "sourcePages": [
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0176",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-082"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0251",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-027"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15,
+          16
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0292",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-042"
+            ],
+            "sourcePages": [
+              15,
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ego2act",
+    "shortName": "Ego2Act",
+    "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
+    "ref": 113,
+    "year": 2026,
+    "releaseYear": 2026,
+    "venue": "arXiv",
+    "publicationYear": 2026,
+    "domains": [
+      "embodied"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Observation-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2610.01092v1",
+    "arxivId": "2610.01092",
+    "reference": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation, 2026.",
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "evaluationTracks": [
       {
         "scope": "T2",
         "target": "Spatial & State Consistency",
@@ -3985,18 +2758,18 @@
           "P"
         ],
         "evaluationData": [
-          "HCP"
+          "RWD"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0106",
+            "id": "ADD28-EC0018",
             "protocol": "OL",
             "metric": "P",
-            "data": "HCP",
+            "data": "RWD",
             "dataStatus": "classified",
             "taskIds": [
-              "S2-029"
+              "ADD28:R361.01"
             ],
             "sourcePages": [
               8
@@ -4009,7 +2782,77 @@
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0019",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R363.01"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
         "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0020",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R362.01"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
         "sourcePages": [
           15
         ],
@@ -4020,18 +2863,18 @@
           "P"
         ],
         "evaluationData": [
-          "HCP"
+          "RWD"
         ],
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0202",
+            "id": "ADD28-EC0017",
             "protocol": "OL",
             "metric": "P",
-            "data": "HCP",
+            "data": "RWD",
             "dataStatus": "classified",
             "taskIds": [
-              "S4-049"
+              "ADD28:R360.01"
             ],
             "sourcePages": [
               15
@@ -4039,151 +2882,19 @@
           }
         ]
       }
-    ]
+    ],
+    "codeUrl": "https://github.com/ego2act/ego2act",
+    "projectUrl": "https://ego2act.github.io"
   },
   {
-    "id": "tc-bench",
-    "shortName": "TC-Bench",
-    "title": "TCBench: Benchmarking temporal compositionality in text-to-video and image-to-video generation",
-    "ref": 106,
-    "year": 2024,
-    "venue": "arXiv",
-    "domains": [
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "RWD",
-      "SPTC"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Control Fidelity & Interactive Dynamics"
-    ],
-    "subtargets": [
-      "Temporal Quality",
-      "Pre-specified Control Fidelity"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2406.08656",
-    "arxivId": "2406.08656",
-    "reference": "W. Feng, J. Li, M. Saxon, T. jui Fu, W. Chen, and W. Y. Wang, “TCBench: Benchmarking temporal compositionality in text-to-video and image-to-video generation,” arXiv:2406.08656, 2024.",
-    "releaseYear": 2024,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          4
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0055",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-005"
-            ],
-            "sourcePages": [
-              4
-            ]
-          },
-          {
-            "id": "EC0056",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-004"
-            ],
-            "sourcePages": [
-              4
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S5",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Pre-specified Control Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          20
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "RWD",
-          "SPTC"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0312",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "RWD",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-005"
-            ],
-            "sourcePages": [
-              20
-            ]
-          },
-          {
-            "id": "EC0313",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "SPTC",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-004"
-            ],
-            "sourcePages": [
-              20
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "wbench",
-    "shortName": "WBench",
-    "title": "Wbench: A comprehensive multi-turn benchmark for interactive video world model evaluation",
-    "ref": 107,
+    "id": "reactsim-bench",
+    "shortName": "ReactSim-Bench",
+    "title": "ReactSim-Bench: Benchmarking Reactive Behavior World Model Simulation in Autonomous Driving",
+    "ref": 114,
     "year": 2026,
     "venue": "arXiv",
     "domains": [
-      "video"
+      "driving"
     ],
     "protocols": [
       "OL"
@@ -4195,133 +2906,96 @@
       "HCP"
     ],
     "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Long-Horizon Memory & State Persistence",
       "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
       "Control Fidelity & Interactive Dynamics"
     ],
     "subtargets": [
-      "Temporal Quality",
+      "Intervention-Grounded Evaluation",
       "Interactive Action Fidelity"
     ],
     "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2605.25874",
-    "arxivId": "2605.25874",
-    "reference": "K. Ying, H. Hu, S. Ren, J. Li, F. Chen, Z. Wang, X. Cao, X. Cai, and H. Ding, “Wbench: A comprehensive multi-turn benchmark for interactive video world model evaluation,” arXiv preprint arXiv:2605.25874, 2026.",
+    "paperUrl": "https://arxiv.org/abs/2606.14058",
+    "arxivId": "2606.14058",
+    "reference": "ReactSim-Bench: Benchmarking Reactive Behavior World Model Simulation in Autonomous Driving, arXiv:2606.14058, 2026.",
     "releaseYear": 2026,
     "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          6
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0057",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-053"
-            ],
-            "sourcePages": [
-              6
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          9
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0107",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-062"
-            ],
-            "sourcePages": [
-              9
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T3",
-        "target": "Long-Horizon Memory & State Persistence",
-        "label": "Long-Horizon Memory & State Persistence",
-        "table": "S3",
-        "sourcePage": 11,
-        "sourcePages": [
-          11
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0143",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S3-021"
-            ],
-            "sourcePages": [
-              11
-            ]
-          }
-        ]
-      },
       {
         "scope": "T4",
         "target": "Physical Plausibility",
         "label": "Physical Plausibility",
         "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0244",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-083"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
         "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0275",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-028"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
         "sourcePages": [
           16
         ],
@@ -4337,192 +3011,16 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0203",
+            "id": "EC0350",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S4-088"
+              "S6-065"
             ],
             "sourcePages": [
               16
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "S6",
-        "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Interactive Action Fidelity",
-        "table": "S6",
-        "sourcePage": 20,
-        "sourcePages": [
-          23
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0348",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S6-067"
-            ],
-            "sourcePages": [
-              23
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "crashtwin",
-    "shortName": "CrashTwin",
-    "title": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models",
-    "ref": 108,
-    "year": 2026,
-    "venue": "arXiv",
-    "domains": [
-      "driving",
-      "video"
-    ],
-    "protocols": [
-      "OL"
-    ],
-    "metrics": [
-      "P"
-    ],
-    "evaluationData": [
-      "HCP"
-    ],
-    "targets": [
-      "Visual & Temporal Quality",
-      "Spatial & State Consistency",
-      "Physical Plausibility"
-    ],
-    "subtargets": [
-      "Temporal Quality"
-    ],
-    "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2606.28757",
-    "arxivId": "2606.28757",
-    "reference": "A Physics-Grounded Benchmark for Multi-Agent Dynamics in World Models, arXiv:2606.28757, 2026.",
-    "releaseYear": 2026,
-    "evaluationTracks": [
-      {
-        "scope": "T1",
-        "target": "Visual & Temporal Quality",
-        "label": "Visual & Temporal Quality",
-        "table": "S1",
-        "sourcePage": 4,
-        "sourcePages": [
-          5
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0058",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S1-032"
-            ],
-            "sourcePages": [
-              5
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T2",
-        "target": "Spatial & State Consistency",
-        "label": "Spatial & State Consistency",
-        "table": "S2",
-        "sourcePage": 7,
-        "sourcePages": [
-          8
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0108",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S2-034"
-            ],
-            "sourcePages": [
-              8
-            ]
-          }
-        ]
-      },
-      {
-        "scope": "T4",
-        "target": "Physical Plausibility",
-        "label": "Physical Plausibility",
-        "table": "S4",
-        "sourcePage": 13,
-        "sourcePages": [
-          15
-        ],
-        "protocols": [
-          "OL"
-        ],
-        "metrics": [
-          "P"
-        ],
-        "evaluationData": [
-          "HCP"
-        ],
-        "hasUnresolvedData": false,
-        "combinations": [
-          {
-            "id": "EC0204",
-            "protocol": "OL",
-            "metric": "P",
-            "data": "HCP",
-            "dataStatus": "classified",
-            "taskIds": [
-              "S4-053"
-            ],
-            "sourcePages": [
-              15
             ]
           }
         ]
@@ -4533,7 +3031,7 @@
     "id": "eva-bench",
     "shortName": "EVA-Bench",
     "title": "EVA: An embodied world model for future video anticipation",
-    "ref": 109,
+    "ref": 115,
     "year": 2024,
     "venue": "arXiv",
     "domains": [
@@ -4570,9 +3068,9 @@
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
         "table": "S1",
-        "sourcePage": 4,
+        "sourcePage": 5,
         "sourcePages": [
-          4
+          5
         ],
         "protocols": [
           "OL",
@@ -4596,7 +3094,7 @@
               "S1-002"
             ],
             "sourcePages": [
-              4
+              5
             ]
           },
           {
@@ -4609,7 +3107,7 @@
               "S1-003"
             ],
             "sourcePages": [
-              4
+              5
             ]
           }
         ]
@@ -4668,9 +3166,9 @@
         "target": "Functional Utility",
         "label": "Planner",
         "table": "S7",
-        "sourcePage": 24,
+        "sourcePage": 16,
         "sourcePages": [
-          24
+          17
         ],
         "protocols": [
           "OL",
@@ -4694,7 +3192,7 @@
               "S7-005"
             ],
             "sourcePages": [
-              24
+              17
             ]
           },
           {
@@ -4707,7 +3205,7 @@
               "S7-006"
             ],
             "sourcePages": [
-              24
+              17
             ]
           }
         ]
@@ -4715,44 +3213,36 @@
     ]
   },
   {
-    "id": "wr-arena",
-    "shortName": "WR-Arena",
-    "title": "World reasoning arena",
-    "ref": 110,
+    "id": "rigidbench",
+    "shortName": "RigidBench",
+    "title": "Rigidbench: Evaluating rigid-body physics in video generation models",
+    "ref": 116,
     "year": 2026,
-    "venue": "arXiv",
+    "venue": "ICLR Workshop",
     "domains": [
-      "driving",
-      "embodied"
+      "video"
     ],
     "protocols": [
-      "OL",
-      "CL"
+      "OL"
     ],
     "metrics": [
-      "P",
-      "O"
+      "P"
     ],
     "evaluationData": [
-      "HCP"
+      "SBG"
     ],
     "targets": [
       "Visual & Temporal Quality",
-      "Long-Horizon Memory & State Persistence",
-      "Causal & Counterfactual Reasoning",
-      "Control Fidelity & Interactive Dynamics",
-      "Functional Utility"
+      "Spatial & State Consistency",
+      "Physical Plausibility"
     ],
     "subtargets": [
-      "Temporal Quality",
-      "Observation-Grounded Evaluation",
-      "Interactive Action Fidelity",
-      "Planner"
+      "Visual Quality"
     ],
     "crossCategory": true,
-    "paperUrl": "https://arxiv.org/abs/2603.25887",
-    "arxivId": "2603.25887",
-    "reference": "Q. Gao, K. Zhou, J. Xiang, Z. Liu, D. Yang, J. Chen, A. Ahmad, C. Zeng, G. Bannur, X. Huang, Z. Liu, Y. Gu, Y. Yang, G. Liu, Z. Hu, Z. Liu, and E. Xing, “World reasoning arena,” arXiv:2603.25887, 2026.",
+    "paperUrl": "https://scholar.google.com/scholar?q=Rigidbench%3A%20Evaluating%20rigid-body%20physics%20in%20video%20generation%20models",
+    "arxivId": null,
+    "reference": "S. Jain and S. Wu, “Rigidbench: Evaluating rigid-body physics in video generation models,” in ICLR Workshop on Multimodal Intelligence, 2026.",
     "releaseYear": 2026,
     "evaluationTracks": [
       {
@@ -4760,7 +3250,330 @@
         "target": "Visual & Temporal Quality",
         "label": "Visual & Temporal Quality",
         "table": "S1",
-        "sourcePage": 4,
+        "sourcePage": 5,
+        "sourcePages": [
+          6
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0040",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-049"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0097",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-055"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0191",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-084"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ewmbench",
+    "shortName": "EWMBench",
+    "title": "EWMBench: Evaluating scene, motion, and semantic quality in embodied world models",
+    "ref": 117,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "RWD"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Visual Quality",
+      "Temporal Quality",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2505.09694",
+    "arxivId": "2505.09694",
+    "reference": "H. Yue, S. Huang, Y. Liao, S. Chen, P. Zhou, L. Chen, M. Yao, and G. Ren, “EWMBench: Evaluating scene, motion, and semantic quality in embodied world models,” arXiv:2505.09694, 2025.",
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
+        "sourcePages": [
+          5
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0009",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-014"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0070",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-014"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          11
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0165",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-022"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          14
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "RWD"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0284",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "RWD",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-012"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "robotrustbench",
+    "shortName": "RoboTrustBench",
+    "title": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation",
+    "ref": 118,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Visual Quality",
+      "Temporal Quality",
+      "Observation-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.01600",
+    "arxivId": "2606.01600",
+    "reference": "RoboTrustBench: Benchmarking the Trustworthiness of Video World Models for Robotic Manipulation, arXiv:2606.01600, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
         "sourcePages": [
           6
         ],
@@ -4776,13 +3589,13 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0061",
+            "id": "EC0028",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S1-066"
+              "S1-050"
             ],
             "sourcePages": [
               6
@@ -4791,11 +3604,46 @@
         ]
       },
       {
-        "scope": "T3",
-        "target": "Long-Horizon Memory & State Persistence",
-        "label": "Long-Horizon Memory & State Persistence",
-        "table": "S3",
-        "sourcePage": 11,
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0088",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-056"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
         "sourcePages": [
           12
         ],
@@ -4811,13 +3659,13 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0144",
+            "id": "EC0182",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S3-028"
+              "S4-085"
             ],
             "sourcePages": [
               12
@@ -4830,9 +3678,9 @@
         "target": "Causal & Counterfactual Reasoning",
         "label": "Causal & Counterfactual Reasoning",
         "table": "S5",
-        "sourcePage": 18,
+        "sourcePage": 13,
         "sourcePages": [
-          19
+          14
         ],
         "protocols": [
           "OL"
@@ -4846,28 +3694,28 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0258",
+            "id": "EC0253",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S5-035"
+              "S5-029"
             ],
             "sourcePages": [
-              19
+              14
             ]
           }
         ]
       },
       {
-        "scope": "S6",
+        "scope": "S5",
         "target": "Control Fidelity & Interactive Dynamics",
-        "label": "Interactive Action Fidelity",
+        "label": "Pre-specified Control Fidelity",
         "table": "S6",
-        "sourcePage": 20,
+        "sourcePage": 14,
         "sourcePages": [
-          23
+          15
         ],
         "protocols": [
           "OL"
@@ -4881,31 +3729,170 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0349",
+            "id": "EC0297",
             "protocol": "OL",
             "metric": "P",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S6-075"
+              "S6-043"
             ],
             "sourcePages": [
-              23
+              15
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "exphy",
+    "shortName": "ExPhy",
+    "title": "ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting",
+    "ref": 119,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility"
+    ],
+    "subtargets": [],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2608.20009",
+    "arxivId": "2608.20009",
+    "reference": "R. Wang et al., “ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting,” arXiv:2608.20009, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": "S3",
+        "sourcePage": 9,
+        "sourcePages": [
+          9
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0155",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-010"
+            ],
+            "sourcePages": [
+              9
             ]
           }
         ]
       },
       {
-        "scope": "S9",
-        "target": "Functional Utility",
-        "label": "Planner",
-        "table": "S7",
-        "sourcePage": 24,
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
         "sourcePages": [
-          25
+          11
         ],
         "protocols": [
-          "CL"
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0219",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-057"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "robowm-bench",
+    "shortName": "RoboWM-Bench",
+    "title": "RoboWM-Bench: A benchmark for evaluating world models in robotic manipulation",
+    "ref": 120,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "O"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Long-Horizon Memory & State Persistence",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics",
+      "Functional Utility"
+    ],
+    "subtargets": [
+      "Interactive Action Fidelity",
+      "Planner"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2604.19092",
+    "arxivId": "2604.19092",
+    "reference": "F. Jiang, Y. Chen, K. Xu, Y. Liu, H. Wang, Z. Shen, J. Lu, S. Huang, Y. Wang, C. Xie, and R. Wu, “RoboWM-Bench: A benchmark for evaluating world models in robotic manipulation,” arXiv:2604.19092, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": "S3",
+        "sourcePage": 9,
+        "sourcePages": [
+          9
+        ],
+        "protocols": [
+          "OL"
         ],
         "metrics": [
           "O"
@@ -4916,17 +3903,802 @@
         "hasUnresolvedData": false,
         "combinations": [
           {
-            "id": "EC0365",
-            "protocol": "CL",
+            "id": "EC0129",
+            "protocol": "OL",
             "metric": "O",
             "data": "HCP",
             "dataStatus": "classified",
             "taskIds": [
-              "S7-020",
-              "S7-021"
+              "S3-019"
             ],
             "sourcePages": [
-              25
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          12
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0156",
+            "protocol": "OL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-086"
+            ],
+            "sourcePages": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S6",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Interactive Action Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          16
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0331",
+            "protocol": "OL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-066"
+            ],
+            "sourcePages": [
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S9",
+        "target": "Functional Utility",
+        "label": "Planner",
+        "table": "S7",
+        "sourcePage": 16,
+        "sourcePages": [
+          17
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "O"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0355",
+            "protocol": "OL",
+            "metric": "O",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S7-015"
+            ],
+            "sourcePages": [
+              17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ezs-bench",
+    "shortName": "EZS-Bench",
+    "title": "ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment (introduces EZS-Bench)",
+    "ref": 121,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "embodied"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Visual Quality",
+      "Temporal Quality",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2603.23376",
+    "arxivId": "2603.23376",
+    "reference": "Y. Chen et al., “ABot-PhysWorld: Interactive World Foundation Model for Robotic Manipulation with Physics Alignment,” arXiv:2603.23376, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
+        "sourcePages": [
+          5
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0025",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-035"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0085",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-037"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          11
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0179",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-058"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0295",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-030"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "prowbench",
+    "shortName": "PROWBench",
+    "title": "PROWBench: Do Video Models Render What the Program Specifies?",
+    "ref": 122,
+    "year": 2026,
+    "releaseYear": 2026,
+    "venue": "arXiv",
+    "publicationYear": 2026,
+    "domains": [
+      "game"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Visual Quality",
+      "Temporal Quality",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2610.02205v2",
+    "arxivId": "2610.02205",
+    "reference": "PROWBench: Do Video Models Render What the Program Specifies?, 2026.",
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "HCP"
+    ],
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
+        "sourcePages": [
+          6
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0056",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R368.01",
+              "ADD28:R368.02"
+            ],
+            "sourcePages": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0057",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R369.01",
+              "ADD28:R369.02"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "HCP"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "ADD28-EC0055",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "HCP",
+            "dataStatus": "classified",
+            "taskIds": [
+              "ADD28:R367.01",
+              "ADD28:R367.02"
+            ],
+            "sourcePages": [
+              15
+            ]
+          }
+        ]
+      }
+    ],
+    "codeUrl": "https://github.com/AlayaLab/PROWBench",
+    "projectUrl": "https://alaya-lab.github.io/PROWBench/"
+  },
+  {
+    "id": "gameworld-score",
+    "shortName": "GameWorld Score",
+    "title": "Matrix-Game: Interactive world foundation model",
+    "ref": 123,
+    "year": 2025,
+    "venue": "arXiv",
+    "domains": [
+      "game"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Visual & Temporal Quality",
+      "Spatial & State Consistency",
+      "Physical Plausibility",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Visual Quality",
+      "Temporal Quality",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2506.18701",
+    "arxivId": "2506.18701",
+    "reference": "Y. Zhang, C. Peng, B. Wang, P. Wang, Q. Zhu, F. Kang, B. Jiang, Z. Gao, E. Li, Y. Liu, and Y. Zhou, “Matrix-Game: Interactive world foundation model,” arXiv:2506.18701, 2025.",
+    "releaseYear": 2025,
+    "evaluationTracks": [
+      {
+        "scope": "T1",
+        "target": "Visual & Temporal Quality",
+        "label": "Visual & Temporal Quality",
+        "table": "S1",
+        "sourcePage": 5,
+        "sourcePages": [
+          5
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0010",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S1-015"
+            ],
+            "sourcePages": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          7
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0071",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-015"
+            ],
+            "sourcePages": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T4",
+        "target": "Physical Plausibility",
+        "label": "Physical Plausibility",
+        "table": "S4",
+        "sourcePage": 10,
+        "sourcePages": [
+          11
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0166",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S4-023"
+            ],
+            "sourcePages": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          14
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0285",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-013"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scratchworld",
+    "shortName": "ScratchWorld",
+    "title": "ScratchWorld: Evaluating if World Models Compute Executable Consequences",
+    "ref": 124,
+    "year": 2026,
+    "venue": "arXiv",
+    "domains": [
+      "game"
+    ],
+    "protocols": [
+      "OL"
+    ],
+    "metrics": [
+      "P"
+    ],
+    "evaluationData": [
+      "SBG"
+    ],
+    "targets": [
+      "Spatial & State Consistency",
+      "Long-Horizon Memory & State Persistence",
+      "Causal & Counterfactual Reasoning",
+      "Control Fidelity & Interactive Dynamics"
+    ],
+    "subtargets": [
+      "Intervention-Grounded Evaluation",
+      "Pre-specified Control Fidelity"
+    ],
+    "crossCategory": true,
+    "paperUrl": "https://arxiv.org/abs/2606.31689",
+    "arxivId": "2606.31689",
+    "reference": "ScratchWorld: Evaluating if World Models Compute Executable Consequences, arXiv:2606.31689, 2026.",
+    "releaseYear": 2026,
+    "evaluationTracks": [
+      {
+        "scope": "T2",
+        "target": "Spatial & State Consistency",
+        "label": "Spatial & State Consistency",
+        "table": "S2",
+        "sourcePage": 7,
+        "sourcePages": [
+          8
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0122",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S2-057"
+            ],
+            "sourcePages": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T3",
+        "target": "Long-Horizon Memory & State Persistence",
+        "label": "Long-Horizon Memory & State Persistence",
+        "table": "S3",
+        "sourcePage": 9,
+        "sourcePages": [
+          9
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0151",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S3-020"
+            ],
+            "sourcePages": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "T5",
+        "target": "Causal & Counterfactual Reasoning",
+        "label": "Causal & Counterfactual Reasoning",
+        "table": "S5",
+        "sourcePage": 13,
+        "sourcePages": [
+          14
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0264",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S5-030"
+            ],
+            "sourcePages": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "scope": "S5",
+        "target": "Control Fidelity & Interactive Dynamics",
+        "label": "Pre-specified Control Fidelity",
+        "table": "S6",
+        "sourcePage": 14,
+        "sourcePages": [
+          15
+        ],
+        "protocols": [
+          "OL"
+        ],
+        "metrics": [
+          "P"
+        ],
+        "evaluationData": [
+          "SBG"
+        ],
+        "hasUnresolvedData": false,
+        "combinations": [
+          {
+            "id": "EC0317",
+            "protocol": "OL",
+            "metric": "P",
+            "data": "SBG",
+            "dataStatus": "classified",
+            "taskIds": [
+              "S6-044"
+            ],
+            "sourcePages": [
+              15
             ]
           }
         ]

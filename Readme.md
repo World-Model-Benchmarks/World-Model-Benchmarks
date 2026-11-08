@@ -1,14 +1,14 @@
 # A Survey of World Model Benchmarks
 
-[![Project Page](https://img.shields.io/badge/Project-Page-5965d8)](https://world-model-benchmarks.github.io/World-Model-Benchmarks/) [![Benchmarks](https://img.shields.io/badge/Benchmarks-102-2f8f63)](https://world-model-benchmarks.github.io/World-Model-Benchmarks/#benchmarks)
+[![Project Page](https://img.shields.io/badge/Project-Page-5965d8)](https://world-model-benchmarks.github.io/World-Model-Benchmarks/) [![Benchmarks](https://img.shields.io/badge/Benchmarks-130-2f8f63)](https://world-model-benchmarks.github.io/World-Model-Benchmarks/#benchmarks)
 
-This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **102 representative benchmarks** released from **2018–2026**; **85** span more than one evaluation-target category. The corpus was last checked on August 31, 2026.
+This repository accompanies **A Survey of World Model Benchmarks**. The latest manuscript covers **130 representative benchmarks** released from **2018–2026**; **108** span more than one evaluation-target category. The corpus was last checked on October 18, 2026.
 
-The classification below follows Supplementary Figure S1 and Tables S1–S7 of the final PDF. Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. `△` marks a benchmark assigned to more than one top-level evaluation target.
+The classification below follows the survey taxonomy and the task-level evidence summarized in Supplementary Tables S1–S7. Rows are intentionally repeated when a benchmark belongs to multiple evaluation targets or sub-targets. `△` marks a benchmark assigned to more than one top-level evaluation target.
 
 Each table is a literature index with **Article**, **Release Year**, **Venue**, **Code**, and **Project Page**. Release Year follows the final manuscript's corpus coding, not the formal publication year; the latter is shown separately with the venue where recorded. `-` means that no verified public link is currently recorded.
 
-Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 401 fully classified task-level Protocol–Metrics–Data records and 369 distinct display combinations so joint filters never form unsupported cross-products.
+Protocol and Metrics are coded for the target or role of each section, not inherited from other tracks. The machine-readable manifest additionally preserves 808 fully classified task-level Protocol–Metrics–Data records and 482 distinct display combinations so joint filters never form unsupported cross-products.
 
 ## Contents
 
@@ -24,13 +24,13 @@ Protocol and Metrics are coded for the target or role of each section, not inher
 
 | Evaluation target | Benchmarks |
 |:--|--:|
-| Visual & Temporal Quality | 46 |
-| Spatial & State Consistency | 55 |
-| Long-Horizon Memory & State Persistence | 24 |
-| Physical Plausibility | 77 |
-| Causal & Counterfactual Reasoning | 33 |
-| Control Fidelity & Interactive Dynamics | 55 |
-| Functional Utility | 13 |
+| Visual & Temporal Quality | 63 |
+| Spatial & State Consistency | 76 |
+| Long-Horizon Memory & State Persistence | 34 |
+| Physical Plausibility | 92 |
+| Causal & Counterfactual Reasoning | 39 |
+| Control Fidelity & Interactive Dynamics | 74 |
+| Functional Utility | 15 |
 
 Counts overlap because cross-category benchmarks appear in more than one top-level target.
 
@@ -80,6 +80,19 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WorldModelBench △**](https://arxiv.org/abs/2502.20694) | 2025 | arXiv | - | - | OL | P |
 | [**WorldSimBench △**](https://arxiv.org/abs/2410.18072) | 2024 | arXiv | - | - | OL | P |
 | [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - | OL | P |
+| [**WorldReasonBench △**](https://arxiv.org/abs/2605.10434v1) | 2026 | NeurIPS E&D 2026 | [Code](https://github.com/UniX-AI-Lab/WorldReasonBench) | [Project](https://unix-ai-lab.github.io/WorldReasonBench/) | OL | P |
+| [**TailOR △**](https://arxiv.org/abs/2606.24256v1) | 2026 | arXiv 2026 | [Code](https://github.com/tailor-bench/code) | [Project](https://tailor-bench.github.io/) | OL | P |
+| [**StateBench △**](https://arxiv.org/abs/2609.03673v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/StateAgent) | - | OL | P |
+| [**VWG-Bench △**](https://arxiv.org/abs/2609.11242v1) | 2026 | ECCV 2026 | - | [Dataset](https://huggingface.co/datasets/KlingTeam/VWG-Bench) | OL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**TriWorldBench △**](https://arxiv.org/abs/2609.26314v1) | 2026 | arXiv 2026 | [Code](https://github.com/TriWorldBench/TriWorldBench) | - | OL | P |
+| [**WROP △**](https://arxiv.org/abs/2609.28654v1) | 2026 | arXiv 2026 | - | [Project](https://object-permanence.world) | OL | P |
+| [**VehDyn △**](https://arxiv.org/abs/2609.33264v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**PROWBench △**](https://arxiv.org/abs/2610.02205v2) | 2026 | arXiv 2026 | [Code](https://github.com/AlayaLab/PROWBench) | [Project](https://alaya-lab.github.io/PROWBench/) | OL | P |
+| [**WorldOracle △**](https://arxiv.org/html/2610.18826v2) | 2026 | arXiv 2026 | [Code](https://github.com/WorldOracle-benchmark/WorldOracle) | [Project](https://worldoracle-benchmark.github.io/) | OL | P |
+| [**CausalCascade △**](https://arxiv.org/html/2610.15562v1) | 2026 | arXiv 2026 | [Code](https://github.com/SJTU-DeepDeltaLab/CausalCascade) | - | OL | P |
+| [**Orbia △**](https://arxiv.org/html/2610.20693v2) | 2026 | arXiv 2026 | [Code](https://github.com/worldbench/Orbia) | [Project](https://orbia-bench.github.io/) | OL | P |
+| [**WorldMemBench △**](https://arxiv.org/html/2610.19063v1) | 2026 | arXiv 2026 | [Code](https://github.com/ZJU-REAL/WorldMemBench) | [Project](https://zju-real.github.io/WorldMemBench/) | OL | P |
 
 ### Temporal Quality
 
@@ -125,6 +138,19 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WorldModelBench △**](https://arxiv.org/abs/2502.20694) | 2025 | arXiv | - | - | OL | P |
 | [**WR-Arena △**](https://arxiv.org/abs/2603.25887) | 2026 | arXiv | - | - | OL | P |
 | [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - | OL | P |
+| [**WorldReasonBench △**](https://arxiv.org/abs/2605.10434v1) | 2026 | NeurIPS E&D 2026 | [Code](https://github.com/UniX-AI-Lab/WorldReasonBench) | [Project](https://unix-ai-lab.github.io/WorldReasonBench/) | OL | P |
+| [**TailOR △**](https://arxiv.org/abs/2606.24256v1) | 2026 | arXiv 2026 | [Code](https://github.com/tailor-bench/code) | [Project](https://tailor-bench.github.io/) | OL | P |
+| [**VWG-Bench △**](https://arxiv.org/abs/2609.11242v1) | 2026 | ECCV 2026 | - | [Dataset](https://huggingface.co/datasets/KlingTeam/VWG-Bench) | OL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**TriWorldBench △**](https://arxiv.org/abs/2609.26314v1) | 2026 | arXiv 2026 | [Code](https://github.com/TriWorldBench/TriWorldBench) | - | OL | P |
+| [**WROP △**](https://arxiv.org/abs/2609.28654v1) | 2026 | arXiv 2026 | - | [Project](https://object-permanence.world) | OL | P |
+| [**VehDyn △**](https://arxiv.org/abs/2609.33264v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**CoDrive-Bench △**](https://arxiv.org/abs/2609.34749v1) | 2026 | arXiv 2026 | - | [Project](https://codrive-project-page.github.io/) | OL | P |
+| [**PROWBench △**](https://arxiv.org/abs/2610.02205v2) | 2026 | arXiv 2026 | [Code](https://github.com/AlayaLab/PROWBench) | [Project](https://alaya-lab.github.io/PROWBench/) | OL | P |
+| [**AffectWorld △**](https://arxiv.org/html/2610.18305v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**Orbia △**](https://arxiv.org/html/2610.20693v2) | 2026 | arXiv 2026 | [Code](https://github.com/worldbench/Orbia) | [Project](https://orbia-bench.github.io/) | OL | P |
+| [**R2M-Bench △**](https://arxiv.org/html/2608.27328v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/R2MBench) | - | OL | P |
+| [**WRBench △**](https://arxiv.org/html/2606.20545v1) | 2026 | arXiv 2026 | [Code](https://github.com/JinPLu/WRBench) | [Project](https://jinplu.github.io/WRBench/) | OL | P |
 
 ## Spatial and State Consistency
 
@@ -185,6 +211,27 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WorldBench △**](https://arxiv.org/abs/2601.21282) | 2026 | arXiv | - | - | OL | P |
 | [**WorldSimBench △**](https://arxiv.org/abs/2410.18072) | 2024 | arXiv | - | - | OL | P |
 | [**Apple-π △**](https://arxiv.org/abs/2607.16401) | 2026 | arXiv | - | - | OL | P |
+| [**ICAT △**](https://arxiv.org/pdf/2604.16405v2) | 2026 | arXiv 2026 | - | - | OL+CL | P |
+| [**WorldReasonBench △**](https://arxiv.org/abs/2605.10434v1) | 2026 | NeurIPS E&D 2026 | [Code](https://github.com/UniX-AI-Lab/WorldReasonBench) | [Project](https://unix-ai-lab.github.io/WorldReasonBench/) | OL | P |
+| [**TailOR △**](https://arxiv.org/abs/2606.24256v1) | 2026 | arXiv 2026 | [Code](https://github.com/tailor-bench/code) | [Project](https://tailor-bench.github.io/) | OL | P |
+| [**StateBench △**](https://arxiv.org/abs/2609.03673v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/StateAgent) | - | OL | P |
+| [**VWG-Bench △**](https://arxiv.org/abs/2609.11242v1) | 2026 | ECCV 2026 | - | [Dataset](https://huggingface.co/datasets/KlingTeam/VWG-Bench) | OL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**TriWorldBench △**](https://arxiv.org/abs/2609.26314v1) | 2026 | arXiv 2026 | [Code](https://github.com/TriWorldBench/TriWorldBench) | - | OL | P |
+| [**VehDyn △**](https://arxiv.org/abs/2609.33264v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**CoDrive-Bench △**](https://arxiv.org/abs/2609.34749v1) | 2026 | arXiv 2026 | - | [Project](https://codrive-project-page.github.io/) | OL | P |
+| [**OPIS**](https://arxiv.org/html/2609.35052v2) | 2026 | arXiv 2026 | [Code](https://github.com/SSStarain/OPIS) | - | OL | P |
+| [**Ego2Act △**](https://arxiv.org/abs/2610.01092v1) | 2026 | arXiv 2026 | [Code](https://github.com/ego2act/ego2act) | [Project](https://ego2act.github.io) | OL | P |
+| [**PROWBench △**](https://arxiv.org/abs/2610.02205v2) | 2026 | arXiv 2026 | [Code](https://github.com/AlayaLab/PROWBench) | [Project](https://alaya-lab.github.io/PROWBench/) | OL | P |
+| [**WorldOracle △**](https://arxiv.org/html/2610.18826v2) | 2026 | arXiv 2026 | [Code](https://github.com/WorldOracle-benchmark/WorldOracle) | [Project](https://worldoracle-benchmark.github.io/) | OL | P |
+| [**AffectWorld △**](https://arxiv.org/html/2610.18305v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**CausalCascade △**](https://arxiv.org/html/2610.15562v1) | 2026 | arXiv 2026 | [Code](https://github.com/SJTU-DeepDeltaLab/CausalCascade) | - | OL | P |
+| [**WorldCast △**](https://arxiv.org/html/2610.20731v1) | 2026 | arXiv 2026 | - | [Project](https://teal024.github.io/WorldCast) | OL+CL | P |
+| [**Orbia △**](https://arxiv.org/html/2610.20693v2) | 2026 | arXiv 2026 | [Code](https://github.com/worldbench/Orbia) | [Project](https://orbia-bench.github.io/) | OL | P |
+| [**MultiWorldBench △**](https://arxiv.org/html/2610.11723v4) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**R2M-Bench △**](https://arxiv.org/html/2608.27328v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/R2MBench) | - | OL | P |
+| [**WRBench △**](https://arxiv.org/html/2606.20545v1) | 2026 | arXiv 2026 | [Code](https://github.com/JinPLu/WRBench) | [Project](https://jinplu.github.io/WRBench/) | OL | P |
+| [**LiveBench △**](https://arxiv.org/html/2603.07145v2) | 2026 | arXiv 2026 | [LiveWorld model code](https://github.com/ZichengDuan/LiveWorld) | [Project](https://zichengduan.github.io/pages/LiveWorld/index.html) | OL | P |
 
 ## Long-Horizon Memory and State Persistence
 
@@ -214,6 +261,16 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**LoopNav △**](https://arxiv.org/abs/2505.22976) | 2025 | arXiv | - | - | OL | P |
 | [**ExPhy △**](https://arxiv.org/abs/2608.20009) | 2026 | arXiv | - | - | OL | P |
 | [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
+| [**StateBench △**](https://arxiv.org/abs/2609.03673v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/StateAgent) | - | OL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**WROP △**](https://arxiv.org/abs/2609.28654v1) | 2026 | arXiv 2026 | - | [Project](https://object-permanence.world) | OL | P |
+| [**WorldOracle △**](https://arxiv.org/html/2610.18826v2) | 2026 | arXiv 2026 | [Code](https://github.com/WorldOracle-benchmark/WorldOracle) | [Project](https://worldoracle-benchmark.github.io/) | OL | P |
+| [**Orbia △**](https://arxiv.org/html/2610.20693v2) | 2026 | arXiv 2026 | [Code](https://github.com/worldbench/Orbia) | [Project](https://orbia-bench.github.io/) | OL | P |
+| [**WorldMemBench △**](https://arxiv.org/html/2610.19063v1) | 2026 | arXiv 2026 | [Code](https://github.com/ZJU-REAL/WorldMemBench) | [Project](https://zju-real.github.io/WorldMemBench/) | OL | P |
+| [**MultiWorldBench △**](https://arxiv.org/html/2610.11723v4) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**R2M-Bench △**](https://arxiv.org/html/2608.27328v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/R2MBench) | - | OL | P |
+| [**WRBench △**](https://arxiv.org/html/2606.20545v1) | 2026 | arXiv 2026 | [Code](https://github.com/JinPLu/WRBench) | [Project](https://jinplu.github.io/WRBench/) | OL | P |
+| [**LiveBench △**](https://arxiv.org/html/2603.07145v2) | 2026 | arXiv 2026 | [LiveWorld model code](https://github.com/ZichengDuan/LiveWorld) | [Project](https://zichengduan.github.io/pages/LiveWorld/index.html) | OL | P |
 
 ## Physical Plausibility
 
@@ -296,6 +353,21 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**WorldSimBench △**](https://arxiv.org/abs/2410.18072) | 2024 | arXiv | - | - | OL+CL | P+O |
 | [**DrivingGen △**](https://arxiv.org/abs/2601.01528) | 2026 | arXiv | - | - | OL | P |
 | [**EWMBench △**](https://arxiv.org/abs/2505.09694) | 2025 | arXiv | - | - | OL | P |
+| [**ICAT △**](https://arxiv.org/pdf/2604.16405v2) | 2026 | arXiv 2026 | - | - | OL+CL | P |
+| [**WorldReasonBench △**](https://arxiv.org/abs/2605.10434v1) | 2026 | NeurIPS E&D 2026 | [Code](https://github.com/UniX-AI-Lab/WorldReasonBench) | [Project](https://unix-ai-lab.github.io/WorldReasonBench/) | OL | P |
+| [**TailOR △**](https://arxiv.org/abs/2606.24256v1) | 2026 | arXiv 2026 | [Code](https://github.com/tailor-bench/code) | [Project](https://tailor-bench.github.io/) | OL | P |
+| [**Principia**](https://arxiv.org/abs/2609.04200v1) | 2026 | arXiv 2026 | [Code](https://github.com/PrincipiaBench/Principia) | [Project](https://principiabench.github.io/) | OL | P |
+| [**VWG-Bench △**](https://arxiv.org/abs/2609.11242v1) | 2026 | ECCV 2026 | - | [Dataset](https://huggingface.co/datasets/KlingTeam/VWG-Bench) | OL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**TriWorldBench △**](https://arxiv.org/abs/2609.26314v1) | 2026 | arXiv 2026 | [Code](https://github.com/TriWorldBench/TriWorldBench) | - | OL | P |
+| [**WROP △**](https://arxiv.org/abs/2609.28654v1) | 2026 | arXiv 2026 | - | [Project](https://object-permanence.world) | OL | P |
+| [**VehDyn △**](https://arxiv.org/abs/2609.33264v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**Ego2Act △**](https://arxiv.org/abs/2610.01092v1) | 2026 | arXiv 2026 | [Code](https://github.com/ego2act/ego2act) | [Project](https://ego2act.github.io) | OL | P |
+| [**PhysicsLENS △**](https://arxiv.org/abs/2610.01162v1) | 2026 | arXiv 2026 | [Code](https://github.com/Isaiah-Milkey/PhysicsLENS-benchmark) | - | OL | P |
+| [**Last Exam in Physics**](https://arxiv.org/abs/2610.08791v1) | 2026 | arXiv 2026 | [Code](https://github.com/Einsia/phys-last-exam) | [Project](https://lab.einsia.ai/phys-last-exam/) | OL | P |
+| [**CausalCascade △**](https://arxiv.org/html/2610.15562v1) | 2026 | arXiv 2026 | [Code](https://github.com/SJTU-DeepDeltaLab/CausalCascade) | - | OL | P |
+| [**WorldCast △**](https://arxiv.org/html/2610.20731v1) | 2026 | arXiv 2026 | - | [Project](https://teal024.github.io/WorldCast) | OL+CL | P |
+| [**WorldMemBench △**](https://arxiv.org/html/2610.19063v1) | 2026 | arXiv 2026 | [Code](https://github.com/ZJU-REAL/WorldMemBench) | [Project](https://zju-real.github.io/WorldMemBench/) | OL | P |
 
 ## Causal and Counterfactual Reasoning
 
@@ -329,6 +401,11 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**ContPhy △**](https://scholar.google.com/scholar?q=ContPhy%3A%20Continuum%20physical%20concept%20learning%20and%20reasoning%20from%20videos) | 2024 | ICML | - | - | OL | P |
 | [**PhysicsMind △**](https://arxiv.org/abs/2601.16007) | 2026 | arXiv | - | - | OL | P |
 | [**WorldExam △**](https://arxiv.org/abs/2608.02603) | 2026 | arXiv | - | - | OL | P |
+| [**ICAT △**](https://arxiv.org/pdf/2604.16405v2) | 2026 | arXiv 2026 | - | - | OL+CL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**Ego2Act △**](https://arxiv.org/abs/2610.01092v1) | 2026 | arXiv 2026 | [Code](https://github.com/ego2act/ego2act) | [Project](https://ego2act.github.io) | OL | P |
+| [**AffectWorld △**](https://arxiv.org/html/2610.18305v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**CausalCascade △**](https://arxiv.org/html/2610.15562v1) | 2026 | arXiv 2026 | [Code](https://github.com/SJTU-DeepDeltaLab/CausalCascade) | - | OL | P |
 
 ### Intervention-Grounded Evaluation
 
@@ -344,6 +421,8 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**ScratchWorld △**](https://arxiv.org/abs/2606.31689) | 2026 | arXiv | - | - | OL | P |
 | [**ReactSim-Bench △**](https://arxiv.org/abs/2606.14058) | 2026 | arXiv | - | - | OL | P |
 | [**WorldSimProbe △**](https://arxiv.org/abs/2608.09298) | 2026 | arXiv | - | - | OL | P |
+| [**VehDyn △**](https://arxiv.org/abs/2609.33264v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**CausalCascade △**](https://arxiv.org/html/2610.15562v1) | 2026 | arXiv 2026 | [Code](https://github.com/SJTU-DeepDeltaLab/CausalCascade) | - | OL | P |
 
 ## Control Fidelity and Interactive Dynamics
 
@@ -391,6 +470,22 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**STEVO-Bench △**](https://arxiv.org/abs/2603.13215) | 2026 | arXiv | - | - | OL | P |
 | [**VACT △**](https://arxiv.org/abs/2503.06163) | 2025 | arXiv | - | - | OL | P |
 | [**WorldArena △**](https://arxiv.org/abs/2602.08971) | 2026 | arXiv | - | - | OL | P |
+| [**ICAT △**](https://arxiv.org/pdf/2604.16405v2) | 2026 | arXiv 2026 | - | - | OL+CL | P |
+| [**TailOR △**](https://arxiv.org/abs/2606.24256v1) | 2026 | arXiv 2026 | [Code](https://github.com/tailor-bench/code) | [Project](https://tailor-bench.github.io/) | OL | P |
+| [**StateBench △**](https://arxiv.org/abs/2609.03673v1) | 2026 | arXiv 2026 | [Code](https://github.com/AMAP-ML/StateAgent) | - | OL | P |
+| [**VWG-Bench △**](https://arxiv.org/abs/2609.11242v1) | 2026 | ECCV 2026 | - | [Dataset](https://huggingface.co/datasets/KlingTeam/VWG-Bench) | OL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**WROP △**](https://arxiv.org/abs/2609.28654v1) | 2026 | arXiv 2026 | - | [Project](https://object-permanence.world) | OL | P |
+| [**VehDyn △**](https://arxiv.org/abs/2609.33264v1) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**CoDrive-Bench △**](https://arxiv.org/abs/2609.34749v1) | 2026 | arXiv 2026 | - | [Project](https://codrive-project-page.github.io/) | OL | P |
+| [**Ego2Act △**](https://arxiv.org/abs/2610.01092v1) | 2026 | arXiv 2026 | [Code](https://github.com/ego2act/ego2act) | [Project](https://ego2act.github.io) | OL | P |
+| [**PhysicsLENS △**](https://arxiv.org/abs/2610.01162v1) | 2026 | arXiv 2026 | [Code](https://github.com/Isaiah-Milkey/PhysicsLENS-benchmark) | - | OL | P |
+| [**PROWBench △**](https://arxiv.org/abs/2610.02205v2) | 2026 | arXiv 2026 | [Code](https://github.com/AlayaLab/PROWBench) | [Project](https://alaya-lab.github.io/PROWBench/) | OL | P |
+| [**WorldCast △**](https://arxiv.org/html/2610.20731v1) | 2026 | arXiv 2026 | - | [Project](https://teal024.github.io/WorldCast) | OL+CL | P |
+| [**Orbia △**](https://arxiv.org/html/2610.20693v2) | 2026 | arXiv 2026 | [Code](https://github.com/worldbench/Orbia) | [Project](https://orbia-bench.github.io/) | OL | P |
+| [**WorldMemBench △**](https://arxiv.org/html/2610.19063v1) | 2026 | arXiv 2026 | [Code](https://github.com/ZJU-REAL/WorldMemBench) | [Project](https://zju-real.github.io/WorldMemBench/) | OL | P |
+| [**WRBench △**](https://arxiv.org/html/2606.20545v1) | 2026 | arXiv 2026 | [Code](https://github.com/JinPLu/WRBench) | [Project](https://jinplu.github.io/WRBench/) | OL | P |
+| [**LiveBench △**](https://arxiv.org/html/2603.07145v2) | 2026 | arXiv 2026 | [LiveWorld model code](https://github.com/ZichengDuan/LiveWorld) | [Project](https://zichengduan.github.io/pages/LiveWorld/index.html) | OL | P |
 
 ### Interactive Action Fidelity
 
@@ -411,6 +506,13 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**PlayWorld △**](https://arxiv.org/abs/2608.13552) | 2026 | arXiv | - | - | CL | P |
 | [**HTEWorld △**](https://arxiv.org/abs/2605.19957) | 2026 | arXiv | - | - | OL | P |
 | [**WMBench △**](https://arxiv.org/abs/2607.02642) | 2026 | arXiv | - | - | OL+CL | P |
+| [**HappyWorld-Bench △**](https://arxiv.org/abs/2609.24308v1) | 2026 | arXiv 2026 | - | [Arena](https://skyeval.com/sla/arena/happyworld) | OL | P |
+| [**TriWorldBench △**](https://arxiv.org/abs/2609.26314v1) | 2026 | arXiv 2026 | [Code](https://github.com/TriWorldBench/TriWorldBench) | - | OL | P |
+| [**WorldOracle △**](https://arxiv.org/html/2610.18826v2) | 2026 | arXiv 2026 | [Code](https://github.com/WorldOracle-benchmark/WorldOracle) | [Project](https://worldoracle-benchmark.github.io/) | OL | P |
+| [**Orbia △**](https://arxiv.org/html/2610.20693v2) | 2026 | arXiv 2026 | [Code](https://github.com/worldbench/Orbia) | [Project](https://orbia-bench.github.io/) | OL | P |
+| [**WorldMemBench △**](https://arxiv.org/html/2610.19063v1) | 2026 | arXiv 2026 | [Code](https://github.com/ZJU-REAL/WorldMemBench) | [Project](https://zju-real.github.io/WorldMemBench/) | OL | P |
+| [**MultiWorldBench △**](https://arxiv.org/html/2610.11723v4) | 2026 | arXiv 2026 | - | - | OL | P |
+| [**WRBench △**](https://arxiv.org/html/2606.20545v1) | 2026 | arXiv 2026 | [Code](https://github.com/JinPLu/WRBench) | [Project](https://jinplu.github.io/WRBench/) | OL | P |
 
 ## Functional Utility
 
@@ -444,17 +546,20 @@ Counts overlap because cross-category benchmarks appear in more than one top-lev
 | [**AutumnBench △**](https://arxiv.org/abs/2510.19788) | 2025 | ICML | - | - | CL | O |
 | [**ContactWorld △**](https://arxiv.org/abs/2606.13877) | 2026 | arXiv | - | - | CL | O |
 | [**KineBench △**](https://arxiv.org/abs/2607.19876) | 2026 | arXiv | - | - | CL | O |
+| [**Compositional continual learning**](https://arxiv.org/abs/2609.22055v1) | 2026 | arXiv 2026 | - | [Project](https://object814.github.io/Compositional-Continual-Learning/) | CL | O |
+| [**MapShift**](https://aaravsinha.dev/data/mapshift-neurips-2026.pdf) | 2026 | NeurIPS 2026 | [Code](https://github.com/aaravsinhaofficial/MapShift) | - | CL | O |
 
 ### World Model as Interactive Training Environment
 
 | Article | Release Year | Venue | Code | Project Page | Protocol | Metrics |
 |:--|:--:|:--:|:--:|:--:|:--:|:--:|
 | [**WorldArena 2.0 △**](https://arxiv.org/abs/2605.17912) | 2026 | arXiv | - | - | CL | O |
+| [**Compositional continual learning**](https://arxiv.org/abs/2609.22055v1) | 2026 | arXiv 2026 | - | [Project](https://object814.github.io/Compositional-Continual-Learning/) | CL | O |
 
 ## Machine-readable data
 
 - [`docs/assets/benchmarks.json`](docs/assets/benchmarks.json): canonical taxonomy manifest and compact record coding
 - [`docs/assets/benchmarks-1.json`](docs/assets/benchmarks-1.json)–[`benchmarks-4.json`](docs/assets/benchmarks-4.json): normalized benchmark records used by the explorer
 - [`docs/assets/metadata.json`](docs/assets/metadata.json): taxonomy labels, counts, and release-window definitions
-- [`scripts/task_records_20260915.json`](scripts/task_records_20260915.json): 401 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7
+- [`scripts/task_records_20261108.json`](scripts/task_records_20261108.json): 808 target-task records plus two explicitly excluded auxiliary records transcribed from Supplementary Tables S1–S7
 - [Interactive project page](https://world-model-benchmarks.github.io/World-Model-Benchmarks/)

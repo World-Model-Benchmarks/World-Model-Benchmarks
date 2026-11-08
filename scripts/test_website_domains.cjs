@@ -23,11 +23,11 @@ const corpus = api.normalizeCorpus(shards, manifest);
 api.state.benchmarks = corpus;
 api.state.metadata = manifest;
 
-assert.equal(corpus.length, 102);
-assert.equal(corpus.filter(item => item.crossCategory).length, 85);
+assert.equal(corpus.length, 130);
+assert.equal(corpus.filter(item => item.crossCategory).length, 108);
 assert.deepEqual(plain(api.uniqueValues('domains')), ['driving', 'embodied', 'game', 'video']);
 const counts = Object.fromEntries(api.uniqueValues('domains').map(domain => [domain, api.countForValue('domains', domain)]));
-assert.deepEqual(counts, {driving: 8, embodied: 25, game: 9, video: 68});
+assert.deepEqual(counts, {driving: 10, embodied: 35, game: 12, video: 86});
 assert.equal(api.countForValue('domains', 'image'), 0);
 
 // Check all eight manuscript-coded fields directly against the final manifest.
@@ -44,7 +44,7 @@ for (const item of corpus) {
 }
 
 api.state.filters.domains.add('video');
-assert.equal(api.visibleItems().length, 68);
+assert.equal(api.visibleItems().length, 86);
 assert.ok(api.visibleItems().some(item => item.shortName === 'CausalSpatial'));
 api.state.search = 'CausalSpatial';
 assert.deepEqual(plain(api.visibleItems().map(item => item.shortName)), ['CausalSpatial']);
@@ -55,7 +55,7 @@ api.state.filters.domains.clear();
 location.search = '?domain=image%7Cvideo';
 api.readUrl();
 assert.deepEqual([...api.state.filters.domains], ['video']);
-assert.equal(api.visibleItems().length, 68);
+assert.equal(api.visibleItems().length, 86);
 api.state.filters.domains.clear();
 
 // The added-record path uses the same final coding and never mutates inputs.
@@ -63,6 +63,6 @@ const added = {...manifest, added: {CausalSpatial: {shortName: 'CausalSpatial'}}
 assert.deepEqual(plain(api.buildAddedRecord('CausalSpatial', added).domains), ['video']);
 assert.equal(manifest.records.CausalSpatial[2], 'video');
 assert.equal(JSON.stringify({manifest, shards}), before);
-console.log('PASS: website domains Driving=8, Embodied=25, Game=9, Video=68; Image absent.');
-console.log('PASS: CausalSpatial is included by Video; 102 benchmarks / 85 cross-category unchanged.');
+console.log('PASS: website domains Driving=10, Embodied=35, Game=12, Video=86; Image absent.');
+console.log('PASS: CausalSpatial is included by Video; 130 benchmarks / 108 cross-category unchanged.');
 console.log('PASS: CausalSpatial raw and exported domains are both Video; legacy Image URLs remain compatible.');

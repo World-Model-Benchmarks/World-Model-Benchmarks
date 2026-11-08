@@ -1,0 +1,4923 @@
+[
+  {
+    "taskId": "ADD28:R308.01",
+    "benchmark": "ICAT",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "η_init"
+  },
+  {
+    "taskId": "ADD28:R309.01",
+    "benchmark": "ICAT",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "η_trg"
+  },
+  {
+    "taskId": "ADD28:R310.01",
+    "benchmark": "ICAT",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "gated η_out; conditional strict-outcome rate; conditional mean outcome"
+  },
+  {
+    "taskId": "ADD28:R311.01",
+    "benchmark": "ICAT",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "best/mean/worst-of-eight RCCC; FST; prerequisite-gated outcome and conditional chain diagnostics"
+  },
+  {
+    "taskId": "ADD28:R308.02",
+    "benchmark": "ICAT",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "η_init"
+  },
+  {
+    "taskId": "ADD28:R309.02",
+    "benchmark": "ICAT",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "η_trg"
+  },
+  {
+    "taskId": "ADD28:R310.02",
+    "benchmark": "ICAT",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "gated η_out; conditional strict-outcome rate; conditional mean outcome"
+  },
+  {
+    "taskId": "ADD28:R311.02",
+    "benchmark": "ICAT",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "best/mean/worst-of-eight RCCC; FST; prerequisite-gated outcome and conditional chain diagnostics"
+  },
+  {
+    "taskId": "ADD28:R311.03",
+    "benchmark": "ICAT",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "paired risky-minus-safe hazard-rate discrimination (b−c)/n; risky/safe qualifying hazard rates; paired bootstrap interval/McNemar diagnostic"
+  },
+  {
+    "taskId": "ADD28:R312.01",
+    "benchmark": "WorldReasonBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "factual/state QA accuracy; detail/fidelity QA accuracy; coupled Acc_QA/Score_PR"
+  },
+  {
+    "taskId": "ADD28:R313.01",
+    "benchmark": "WorldReasonBench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "temporal/process QA accuracy; physical mechanism QA accuracy; coupled Score_PR"
+  },
+  {
+    "taskId": "ADD28:R312.02",
+    "benchmark": "WorldReasonBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "factual/state QA accuracy; detail/fidelity QA accuracy; coupled Acc_QA/Score_PR"
+  },
+  {
+    "taskId": "ADD28:R312.04",
+    "benchmark": "WorldReasonBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "factual/state QA accuracy; detail/fidelity QA accuracy; coupled Acc_QA/Score_PR"
+  },
+  {
+    "taskId": "ADD28:R313.02",
+    "benchmark": "WorldReasonBench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "temporal/process QA accuracy; physical mechanism QA accuracy; coupled Score_PR"
+  },
+  {
+    "taskId": "ADD28:R312.05",
+    "benchmark": "WorldReasonBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "factual/state QA accuracy; detail/fidelity QA accuracy; coupled Acc_QA/Score_PR"
+  },
+  {
+    "taskId": "ADD28:R316.01",
+    "benchmark": "WorldReasonBench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Aesthetics"
+  },
+  {
+    "taskId": "ADD28:R316.02",
+    "benchmark": "WorldReasonBench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Aesthetics"
+  },
+  {
+    "taskId": "ADD28:R317.01",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.01",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R320.01",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.02",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.02",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R320.02",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.03",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.03",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R320.03",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.04",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.04",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; IntAcc: Motion Plausibility (video only); Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R320.04",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.05",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.05",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; IntAcc: Motion Plausibility (video only); Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R320.05",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.06",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.06",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; IntAcc: Motion Plausibility (video only); Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R320.06",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.07",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.07",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; IntAcc: Motion Plausibility (video only); Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R319.07",
+    "benchmark": "TailOR",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Interaction Accuracy: supplied state-change correctness; Interaction Accuracy: supplied interaction-process/motion realization"
+  },
+  {
+    "taskId": "ADD28:R320.07",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.08",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.08",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; IntAcc: Motion Plausibility (video only); Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R319.08",
+    "benchmark": "TailOR",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Interaction Accuracy: supplied state-change correctness; Interaction Accuracy: supplied interaction-process/motion realization"
+  },
+  {
+    "taskId": "ADD28:R320.08",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R317.09",
+    "benchmark": "TailOR",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Instruction Adherence: Entity Completeness; Instruction Adherence: Attribute Fidelity; Instruction Adherence: Scene Validity; Interaction Accuracy: State Change Correctness"
+  },
+  {
+    "taskId": "ADD28:R318.09",
+    "benchmark": "TailOR",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "IntAcc: Affordance Grounding; IntAcc: Motion Plausibility (video only); Physical Realism"
+  },
+  {
+    "taskId": "ADD28:R319.09",
+    "benchmark": "TailOR",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Interaction Accuracy: supplied state-change correctness; Interaction Accuracy: supplied interaction-process/motion realization"
+  },
+  {
+    "taskId": "ADD28:R320.09",
+    "benchmark": "TailOR",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Perceptual Quality"
+  },
+  {
+    "taskId": "ADD28:R321.01",
+    "benchmark": "StateBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SC; HR; SCS_cond; SCS-All"
+  },
+  {
+    "taskId": "ADD28:R322.01",
+    "benchmark": "StateBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SCS_cond; SCS-All"
+  },
+  {
+    "taskId": "ADD28:R323.01",
+    "benchmark": "StateBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SES"
+  },
+  {
+    "taskId": "ADD28:R321.02",
+    "benchmark": "StateBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SC; HR; SCS_cond; SCS-All"
+  },
+  {
+    "taskId": "ADD28:R322.02",
+    "benchmark": "StateBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SCS_cond; SCS-All"
+  },
+  {
+    "taskId": "ADD28:R323.02",
+    "benchmark": "StateBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SES"
+  },
+  {
+    "taskId": "ADD28:R321.03",
+    "benchmark": "StateBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SC; HR; SCS_cond; SCS-All"
+  },
+  {
+    "taskId": "ADD28:R322.03",
+    "benchmark": "StateBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SCS_cond; SCS-All"
+  },
+  {
+    "taskId": "ADD28:R323.03",
+    "benchmark": "StateBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SES"
+  },
+  {
+    "taskId": "ADD28:R325.01",
+    "benchmark": "StateBench",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "human aesthetic-quality preference"
+  },
+  {
+    "taskId": "ADD28:R326.01",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Principia Consistency Score (S_phi); Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.02",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Principia Consistency Score (S_phi); Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.03",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Principia Consistency Score (S_phi); Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.04",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Principia Consistency Score (S_phi); Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.05",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Ordering-satisfaction fraction; Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.06",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Ordering-satisfaction fraction; Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.07",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Ordering-satisfaction fraction; Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.08",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Principia Consistency Score (S_phi); Directional Consistency Score (DCS)"
+  },
+  {
+    "taskId": "ADD28:R326.09",
+    "benchmark": "Principia",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "S_phi on first-oscillation maximum-extension ratio versus inferred mass ratio; DCS gate (score zero if DCS<0.8)"
+  },
+  {
+    "taskId": "ADD28:R327.01",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R328.01",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.01",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.02",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R328.02",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.02",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.03",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R328.03",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.03",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.04",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R330.01",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.04",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.05",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R328.04",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.05",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.06",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R328.05",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.06",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.07",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R330.02",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.07",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R331.02",
+    "benchmark": "VWG-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal for explicitly physical/natural-law transition"
+  },
+  {
+    "taskId": "ADD28:R327.08",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R329.08",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.09",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R329.09",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.10",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R329.10",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R327.11",
+    "benchmark": "VWG-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal; Progress Consistency"
+  },
+  {
+    "taskId": "ADD28:R329.11",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R330.03",
+    "benchmark": "VWG-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Last-Frame Goal"
+  },
+  {
+    "taskId": "ADD28:R329.12",
+    "benchmark": "VWG-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Video Quality"
+  },
+  {
+    "taskId": "ADD28:R332.01.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S10",
+    "navigation": [
+      "S10"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R332.01.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S10",
+    "navigation": [
+      "S10"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.01.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.01.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.02.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.02.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R332.02.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S10",
+    "navigation": [
+      "S10"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R332.02.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S10",
+    "navigation": [
+      "S10"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.03.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.03.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.04.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.04.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R332.03.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S10",
+    "navigation": [
+      "S10"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R332.03.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S10",
+    "navigation": [
+      "S10"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.05.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.05.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.06.s01",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R333.06.s02",
+    "benchmark": "Compositional continual learning",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Oracle-normalized discounted return; FWT; BWT"
+  },
+  {
+    "taskId": "ADD28:R334.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "VQ (MUSIQ); HPS (HPSv3); IS; Dyn (RAFT)"
+  },
+  {
+    "taskId": "ADD28:R335.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BC; GC; TC; SC; SuC"
+  },
+  {
+    "taskId": "ADD28:R336.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "IF"
+  },
+  {
+    "taskId": "ADD28:R334.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "VQ (MUSIQ); HPS (HPSv3); IS; Dyn (RAFT)"
+  },
+  {
+    "taskId": "ADD28:R335.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BC; GC; TC; SC; SuC"
+  },
+  {
+    "taskId": "ADD28:R337.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PC; IP"
+  },
+  {
+    "taskId": "ADD28:R338.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "CC"
+  },
+  {
+    "taskId": "ADD28:R339.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TA; AE"
+  },
+  {
+    "taskId": "ADD28:R336.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "IF"
+  },
+  {
+    "taskId": "ADD28:R334.03",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "VQ (MUSIQ); HPS (HPSv3); IS; Dyn (RAFT)"
+  },
+  {
+    "taskId": "ADD28:R335.03",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BC; GC; TC; SC; SuC"
+  },
+  {
+    "taskId": "ADD28:R340.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BC; SC; SuC"
+  },
+  {
+    "taskId": "ADD28:R337.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PC; IP"
+  },
+  {
+    "taskId": "ADD28:R338.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "CC"
+  },
+  {
+    "taskId": "ADD28:R339.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TA; AE"
+  },
+  {
+    "taskId": "ADD28:R336.03",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "IF"
+  },
+  {
+    "taskId": "ADD28:R334.04",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "VQ (MUSIQ); HPS (HPSv3); IS; Dyn (RAFT)"
+  },
+  {
+    "taskId": "ADD28:R335.04",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BC; GC; TC; SC; SuC; SF (preservation component)"
+  },
+  {
+    "taskId": "ADD28:R337.03",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PC; IP; IV"
+  },
+  {
+    "taskId": "ADD28:R341.01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "CC"
+  },
+  {
+    "taskId": "ADD28:R339.03.s01",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF achievement (with coupled SF composite where reported)"
+  },
+  {
+    "taskId": "ADD28:R339.03.s02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF achievement (with coupled SF composite where reported)"
+  },
+  {
+    "taskId": "ADD28:R336.04",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "IF"
+  },
+  {
+    "taskId": "ADD28:R334.05",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PQ (MUSIQ-SPAQ); SR; TC; MS"
+  },
+  {
+    "taskId": "ADD28:R335.05",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF (Scene Fidelity); SuF; SAC; GC; SSC"
+  },
+  {
+    "taskId": "ADD28:R337.04",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PP"
+  },
+  {
+    "taskId": "ADD28:R338.03",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TCO; CTV"
+  },
+  {
+    "taskId": "ADD28:R336.05",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "GSA; AAC; FIS"
+  },
+  {
+    "taskId": "ADD28:R334.06",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PQ (MUSIQ-SPAQ); SR; TC; MS"
+  },
+  {
+    "taskId": "ADD28:R335.06",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF (Scene Fidelity); SuF; SAC; GC; SSC"
+  },
+  {
+    "taskId": "ADD28:R337.05",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PP"
+  },
+  {
+    "taskId": "ADD28:R338.04",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TCO; CTV"
+  },
+  {
+    "taskId": "ADD28:R336.06",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "GSA; AAC; FIS; MAO"
+  },
+  {
+    "taskId": "ADD28:R340.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SSC; SAC"
+  },
+  {
+    "taskId": "ADD28:R334.07",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PQ (MUSIQ-SPAQ); SR; TC; MS"
+  },
+  {
+    "taskId": "ADD28:R335.07",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF (Scene Fidelity); SuF; SAC; GC; SSC"
+  },
+  {
+    "taskId": "ADD28:R337.06",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PP"
+  },
+  {
+    "taskId": "ADD28:R338.05",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TCO; CTV"
+  },
+  {
+    "taskId": "ADD28:R336.07",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "GSA; FIS; CBF"
+  },
+  {
+    "taskId": "ADD28:R341.02",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "CBF"
+  },
+  {
+    "taskId": "ADD28:R334.08",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PQ (MUSIQ-SPAQ); SR; TC; MS"
+  },
+  {
+    "taskId": "ADD28:R335.08",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF (Scene Fidelity); SuF; SAC; GC; SSC"
+  },
+  {
+    "taskId": "ADD28:R337.07",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PP"
+  },
+  {
+    "taskId": "ADD28:R338.06",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TCO; CTV"
+  },
+  {
+    "taskId": "ADD28:R336.08",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "GSA; FIS; CBF"
+  },
+  {
+    "taskId": "ADD28:R341.03",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "CBF"
+  },
+  {
+    "taskId": "ADD28:R340.04",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "SF persistence; SC"
+  },
+  {
+    "taskId": "ADD28:R336.09",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TA; AE"
+  },
+  {
+    "taskId": "ADD28:R336.10",
+    "benchmark": "HappyWorld-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "TA; AE"
+  },
+  {
+    "taskId": "ADD28:R342.01",
+    "benchmark": "TriWorldBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Normalized PSNR; SSIM; VLM Consistency I/II/III; VQA Consistency; JEPA Similarity; Subject/Background Consistency; Perspective"
+  },
+  {
+    "taskId": "ADD28:R343.01",
+    "benchmark": "TriWorldBench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Interaction Quality"
+  },
+  {
+    "taskId": "ADD28:R344.01",
+    "benchmark": "TriWorldBench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Instruction Following; State Alignment; Trajectory Accuracy; Semantic Alignment"
+  },
+  {
+    "taskId": "ADD28:R345.01",
+    "benchmark": "TriWorldBench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Image Quality; Aesthetic Quality; Photometric Smoothness; Flow Score"
+  },
+  {
+    "taskId": "ADD28:R346.01",
+    "benchmark": "WROP",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R346.02",
+    "benchmark": "WROP",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R346.03",
+    "benchmark": "WROP",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R346.04",
+    "benchmark": "WROP",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R346.05",
+    "benchmark": "WROP",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R346.06",
+    "benchmark": "WROP",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R347.01",
+    "benchmark": "WROP",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R347.02",
+    "benchmark": "WROP",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R347.03",
+    "benchmark": "WROP",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R347.04",
+    "benchmark": "WROP",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R347.05",
+    "benchmark": "WROP",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R347.06",
+    "benchmark": "WROP",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Within-family Bradley-Terry Elo/rank; Overall blind preference Elo"
+  },
+  {
+    "taskId": "ADD28:R348.01",
+    "benchmark": "WROP",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "MSE; MAE; PSNR; SSIM; MS-SSIM; LPIPS; Temporal-difference L1; Final-frame variants; CLIP similarity; FID"
+  },
+  {
+    "taskId": "ADD28:R349.01",
+    "benchmark": "WROP",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Joint blind text-alignment/physical-permanence preference"
+  },
+  {
+    "taskId": "ADD28:R348.02",
+    "benchmark": "WROP",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "MSE; MAE; PSNR; SSIM; MS-SSIM; LPIPS; Temporal-difference L1; Final-frame variants; CLIP similarity; FID"
+  },
+  {
+    "taskId": "ADD28:R349.02",
+    "benchmark": "WROP",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Joint blind text-alignment/physical-permanence preference"
+  },
+  {
+    "taskId": "ADD28:R350.01",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R351.01",
+    "benchmark": "VehDyn",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Longitudinal velocity RMSE (v_x); Pitch RMSE; FCCR"
+  },
+  {
+    "taskId": "ADD28:R352.01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag"
+  },
+  {
+    "taskId": "ADD28:R352.02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.03",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R350.02.s01",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R350.02.s02",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R351.02.s01",
+    "benchmark": "VehDyn",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Lateral velocity RMSE (v_y); Roll RMSE; Yaw RMSE; FCCR"
+  },
+  {
+    "taskId": "ADD28:R351.02.s02",
+    "benchmark": "VehDyn",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Lateral velocity RMSE (v_y); Roll RMSE; Yaw RMSE; FCCR"
+  },
+  {
+    "taskId": "ADD28:R352.04.s01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag"
+  },
+  {
+    "taskId": "ADD28:R352.04.s02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag"
+  },
+  {
+    "taskId": "ADD28:R352.05.s01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.05.s02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.06.s01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.06.s02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R353.01",
+    "benchmark": "VehDyn",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "FVD; Video Consistency; Trajectory Consistency; Photometric Consistency; Style Consistency; Subjective Quality"
+  },
+  {
+    "taskId": "ADD28:R350.03",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "3D Consistency (WorldScore)"
+  },
+  {
+    "taskId": "ADD28:R350.04",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R351.03",
+    "benchmark": "VehDyn",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Longitudinal velocity RMSE (v_x); Pitch RMSE; FCCR"
+  },
+  {
+    "taskId": "ADD28:R354.01",
+    "benchmark": "VehDyn",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R352.07",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag"
+  },
+  {
+    "taskId": "ADD28:R352.08",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.09",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R350.05.s01",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R350.05.s02",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R351.04.s01",
+    "benchmark": "VehDyn",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Lateral velocity RMSE (v_y); Roll RMSE; Yaw RMSE; FCCR"
+  },
+  {
+    "taskId": "ADD28:R351.04.s02",
+    "benchmark": "VehDyn",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Lateral velocity RMSE (v_y); Roll RMSE; Yaw RMSE; FCCR"
+  },
+  {
+    "taskId": "ADD28:R354.02.s01",
+    "benchmark": "VehDyn",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R354.02.s02",
+    "benchmark": "VehDyn",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; FDE"
+  },
+  {
+    "taskId": "ADD28:R352.10.s01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag"
+  },
+  {
+    "taskId": "ADD28:R352.10.s02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag"
+  },
+  {
+    "taskId": "ADD28:R352.11.s01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.11.s02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.12.s01",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R352.12.s02",
+    "benchmark": "VehDyn",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CDC_Dir; CDC_Mag; CDC_Trend"
+  },
+  {
+    "taskId": "ADD28:R353.02",
+    "benchmark": "VehDyn",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "FVD; Video Consistency; Trajectory Consistency; Photometric Consistency; Style Consistency; Subjective Quality"
+  },
+  {
+    "taskId": "ADD28:R350.06",
+    "benchmark": "VehDyn",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "3D Consistency (WorldScore)"
+  },
+  {
+    "taskId": "ADD28:R355.01",
+    "benchmark": "CoDrive-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "ADE; DTW"
+  },
+  {
+    "taskId": "ADD28:R356.01",
+    "benchmark": "CoDrive-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Chamfer Distance; Relative Reprojection Depth Error"
+  },
+  {
+    "taskId": "ADD28:R356.02",
+    "benchmark": "CoDrive-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Soft Hit Rate; 3D Localization Error"
+  },
+  {
+    "taskId": "ADD28:R357.01",
+    "benchmark": "CoDrive-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "FVD"
+  },
+  {
+    "taskId": "ADD28:R355.02",
+    "benchmark": "CoDrive-Bench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "ADE; DTW"
+  },
+  {
+    "taskId": "ADD28:R356.03",
+    "benchmark": "CoDrive-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Chamfer Distance; Relative Reprojection Depth Error"
+  },
+  {
+    "taskId": "ADD28:R356.04",
+    "benchmark": "CoDrive-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Soft Hit Rate; 3D Localization Error"
+  },
+  {
+    "taskId": "ADD28:R357.02",
+    "benchmark": "CoDrive-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "FVD"
+  },
+  {
+    "taskId": "ADD28:R358.01",
+    "benchmark": "OPIS",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Presence; Identity"
+  },
+  {
+    "taskId": "ADD28:R358.02",
+    "benchmark": "OPIS",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Static Structure; Normalized Reprojection Error; Structure Coverage"
+  },
+  {
+    "taskId": "ADD28:R358.03",
+    "benchmark": "OPIS",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Dynamic Structure; Structure Coverage"
+  },
+  {
+    "taskId": "ADD28:R358.04",
+    "benchmark": "OPIS",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Presence; Identity"
+  },
+  {
+    "taskId": "ADD28:R358.05",
+    "benchmark": "OPIS",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Static Structure; Normalized Reprojection Error; Structure Coverage"
+  },
+  {
+    "taskId": "ADD28:R358.06",
+    "benchmark": "OPIS",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Dynamic Structure; Structure Coverage"
+  },
+  {
+    "taskId": "ADD28:R360.01",
+    "benchmark": "Ego2Act",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Task T (three sequential gates, 0–3); T3 completion level; Final geometric composite"
+  },
+  {
+    "taskId": "ADD28:R361.01",
+    "benchmark": "Ego2Act",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physics P1 continuity decision; Physics level P0 / passed-gate trace; Physics aggregate"
+  },
+  {
+    "taskId": "ADD28:R362.01",
+    "benchmark": "Ego2Act",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physics P2 causation decision conditional on P1; Physics sequential gate trace; Physics aggregate"
+  },
+  {
+    "taskId": "ADD28:R363.01",
+    "benchmark": "Ego2Act",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physics P3 interaction decision; Physics P4 persistence decision; Physics P (0–4); Final geometric composite"
+  },
+  {
+    "taskId": "ADD28:R364.01",
+    "benchmark": "PhysicsLENS",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical plausibility P; P≥3 rate"
+  },
+  {
+    "taskId": "ADD28:R365.01",
+    "benchmark": "PhysicsLENS",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Task completion A"
+  },
+  {
+    "taskId": "ADD28:R364.02",
+    "benchmark": "PhysicsLENS",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Physical plausibility P; P≥3 rate; Hidden-property adherence H; H≥3 rate; H≤2 among P≥3"
+  },
+  {
+    "taskId": "ADD28:R365.02",
+    "benchmark": "PhysicsLENS",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Task completion A"
+  },
+  {
+    "taskId": "ADD28:R366.01",
+    "benchmark": "PhysicsLENS",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Matched observable–unobservable plausibility difference (ΔP); Scenario-level paired/sign-flip comparison of physical plausibility"
+  },
+  {
+    "taskId": "ADD28:R367.01",
+    "benchmark": "PROWBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Camera rotation/translation error; CamMC; ISR; LRA"
+  },
+  {
+    "taskId": "ADD28:R368.01",
+    "benchmark": "PROWBench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Imaging quality; Aesthetic quality; Warping error; Motion smoothness"
+  },
+  {
+    "taskId": "ADD28:R367.02",
+    "benchmark": "PROWBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Camera rotation/translation error; CamMC; ISR; LRA"
+  },
+  {
+    "taskId": "ADD28:R368.02",
+    "benchmark": "PROWBench",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Imaging quality; Aesthetic quality; Warping error; Motion smoothness"
+  },
+  {
+    "taskId": "ADD28:R369.01",
+    "benchmark": "PROWBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BBox IoU; normalized box-center error"
+  },
+  {
+    "taskId": "ADD28:R369.02",
+    "benchmark": "PROWBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "BBox IoU; normalized box-center error"
+  },
+  {
+    "taskId": "ADD28:R370.01",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "bounce height/time restitution consistency; passive restitution/energy residuals; free-fall acceleration consistency; projectile range/parabola/initial-speed relationships; Equal-mass collision momentum residual; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.02",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "matched sliding onset; hanging-chain equilibrium/shape; pure-rolling displacement/rotation residual; ring-to-sphere travel-time ratio; support-edge pivot/contact/shape residual; rough-incline acceleration ratio; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.03",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "mass-invariant pendulum period ratio; finite-amplitude period ratio; period–length relation; period coefficient of variation; small-angle isochronism/sinusoid residual; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.04",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "projective cross-ratio/collinearity residual; Snell-law residual; ray–interface intersection error; reflection-angle residual; point-light shadow concurrence; refractive-index coefficient of variation; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.05",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "communicating-vessel level difference/residual motion; floating-ice submerged fraction; left/right waterline agreement; liquid-surface orthogonality to gravity; surface and ball-trajectory fit residuals; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.06",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "freezing expansion ratio; vessel-width stability; before/after liquid-level change; stone-release water-level direction; saltwater melt direction/residual-solid evidence; sustained crushed-ice liquid-level lead; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.07",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "eddy-current braking arrival/speed ratio; magnet-entry/indicator event evidence; charged-ball equilibrium symmetry; compass final-direction opposition; closed/split ring relative rise; solid/slotted plate cycle-count relation; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.08",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "sand-pile repose-angle ratio; left/right slope asymmetry; water/sand discharge-head exponent residual; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R370.09",
+    "benchmark": "Last Exam in Physics",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "capillary rise ordering; terminal settling velocity/radius-squared ratio; soap-bubble partition curvature residual; droplet-coalescence volume conservation; droplet roundness relation; task physical score P; gated composite score S"
+  },
+  {
+    "taskId": "ADD28:R371.09",
+    "benchmark": "MapShift",
+    "scope": "S9",
+    "navigation": [
+      "S9"
+    ],
+    "protocol": "CL",
+    "metric": "O",
+    "data": "SBG",
+    "actualMetric": "Semantic navigation success; Post-change reference path efficiency; Paired changed-versus-unchanged system differences"
+  },
+  {
+    "taskId": "ADD28:N10.01.01",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.02",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.03",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.04",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.05",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.06",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.07",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.08",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.09",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.10",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.11",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.12",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.13",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.14",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.15",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.16",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.17",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.18",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.19",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.20",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.21",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.22",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.23",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.24",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.25",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.26",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.27",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.28",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.29",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.30",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.31",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.32",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout)"
+  },
+  {
+    "taskId": "ADD28:N10.01.33",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.34",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.35",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.36",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout)"
+  },
+  {
+    "taskId": "ADD28:N10.01.37",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.38",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.39",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.40",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout)"
+  },
+  {
+    "taskId": "ADD28:N10.01.41",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.42",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.43",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.44",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout)"
+  },
+  {
+    "taskId": "ADD28:N10.01.45",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.46",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.47",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.48",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.49",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.50",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.51",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.52",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.53",
+    "benchmark": "WorldOracle",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Key interaction area fidelity; normalized PSNR; normalized LPIPS; normalized V-JEPA similarity"
+  },
+  {
+    "taskId": "ADD28:N10.01.54",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment"
+  },
+  {
+    "taskId": "ADD28:N10.01.55",
+    "benchmark": "WorldOracle",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Physical state correctness"
+  },
+  {
+    "taskId": "ADD28:N10.01.56",
+    "benchmark": "WorldOracle",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Interaction spatial alignment (action-following readout); Multi-view action coherence (multi-view models only)"
+  },
+  {
+    "taskId": "ADD28:N10.01.57",
+    "benchmark": "WorldOracle",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "cumulative-horizon physical state correctness; cumulative-horizon spatial alignment; cumulative-horizon key-area fidelity; cumulative-horizon multi-view action coherence; WorldOracle-SV horizon curve"
+  },
+  {
+    "taskId": "ADD28:N10.01.58",
+    "benchmark": "WorldOracle",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "cumulative-horizon physical state correctness; cumulative-horizon spatial alignment; cumulative-horizon key-area fidelity; cumulative-horizon multi-view action coherence; WorldOracle-SV horizon curve"
+  },
+  {
+    "taskId": "ADD28:N10.01.59",
+    "benchmark": "WorldOracle",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "cumulative-horizon physical state correctness; cumulative-horizon spatial alignment; cumulative-horizon key-area fidelity; WorldOracle-SV horizon curve"
+  },
+  {
+    "taskId": "ADD28:N10.02.01",
+    "benchmark": "AffectWorld",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "S_id; S_depth"
+  },
+  {
+    "taskId": "ADD28:N10.02.02",
+    "benchmark": "AffectWorld",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "S_temp"
+  },
+  {
+    "taskId": "ADD28:N10.02.03",
+    "benchmark": "AffectWorld",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "M_emo; S_action; Score_T2"
+  },
+  {
+    "taskId": "ADD28:N10.02.04",
+    "benchmark": "AffectWorld",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "S_must; S_not; S_dir; S_exists; S_causal / Score_T3"
+  },
+  {
+    "taskId": "ADD28:N10.02.05",
+    "benchmark": "AffectWorld",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "R_oo; R_cc; emotion selectivity; S_counter / mean counterfactual sensitivity"
+  },
+  {
+    "taskId": "ADD28:N10.02.06",
+    "benchmark": "AffectWorld",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "S_id; S_depth"
+  },
+  {
+    "taskId": "ADD28:N10.02.07",
+    "benchmark": "AffectWorld",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "S_temp"
+  },
+  {
+    "taskId": "ADD28:N10.02.08",
+    "benchmark": "AffectWorld",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "M_emo; S_action; Score_T2"
+  },
+  {
+    "taskId": "ADD28:N10.02.09",
+    "benchmark": "AffectWorld",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "S_must; S_not; S_dir; S_exists; S_causal / Score_T3"
+  },
+  {
+    "taskId": "ADD28:N10.02.10",
+    "benchmark": "AffectWorld",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "R_oo; R_cc; emotion selectivity; S_counter / mean counterfactual sensitivity"
+  },
+  {
+    "taskId": "ADD28:N10.03.01",
+    "benchmark": "CausalCascade",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "motion-masked MSE; SSIM"
+  },
+  {
+    "taskId": "ADD28:N10.03.02",
+    "benchmark": "CausalCascade",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Spatial IoU; Strict ST-IoU; Weighted Spatial IoU; VQA scene consistency"
+  },
+  {
+    "taskId": "ADD28:N10.03.03",
+    "benchmark": "CausalCascade",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "VQA event occurrence; VQA causal pathway; VQA temporal ordering; VQA outcome and termination; VQA Overall"
+  },
+  {
+    "taskId": "ADD28:N10.03.04",
+    "benchmark": "CausalCascade",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Spatial IoU; Strict ST-IoU; VQA scene consistency"
+  },
+  {
+    "taskId": "ADD28:N10.03.05",
+    "benchmark": "CausalCascade",
+    "scope": "T5",
+    "navigation": [
+      "S3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "VQA event occurrence; VQA causal pathway; VQA temporal ordering; VQA outcome and termination; VQA Overall"
+  },
+  {
+    "taskId": "ADD28:N10.03.06",
+    "benchmark": "CausalCascade",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CF Spatial Effect IoU; CF Weighted Effect IoU; CF Preserve Spatial IoU; CF Preserve Weighted IoU"
+  },
+  {
+    "taskId": "ADD28:N10.03.07",
+    "benchmark": "CausalCascade",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CF Spatial Effect IoU; CF Weighted Effect IoU; CF Preserve Spatial IoU; CF Preserve Weighted IoU"
+  },
+  {
+    "taskId": "ADD28:N10.03.08",
+    "benchmark": "CausalCascade",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CF Spatial Effect IoU; CF Weighted Effect IoU; CF Preserve Spatial IoU; CF Preserve Weighted IoU"
+  },
+  {
+    "taskId": "ADD28:N10.03.09",
+    "benchmark": "CausalCascade",
+    "scope": "T5",
+    "navigation": [
+      "S4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "CF Spatial Effect IoU; CF Weighted Effect IoU; CF Preserve Spatial IoU; CF Preserve Weighted IoU"
+  },
+  {
+    "taskId": "ADD28:N10.03.10",
+    "benchmark": "CausalCascade",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "human-coded spontaneous/unsupported-motion rate; human-coded incorrect-physical-response rate"
+  },
+  {
+    "taskId": "ADD28:N10.03.11",
+    "benchmark": "CausalCascade",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "human-coded spontaneous/unsupported-motion rate; human-coded incorrect-physical-response rate"
+  },
+  {
+    "taskId": "ADD28:N10.04.01",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.02",
+    "benchmark": "WorldCast",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Progress Alignment; Outcome Completion; Task Completion"
+  },
+  {
+    "taskId": "ADD28:N10.04.03",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.04",
+    "benchmark": "WorldCast",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Causal Plausibility"
+  },
+  {
+    "taskId": "ADD28:N10.04.05",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.06",
+    "benchmark": "WorldCast",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Causal Plausibility"
+  },
+  {
+    "taskId": "ADD28:N10.04.07",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.08",
+    "benchmark": "WorldCast",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Progress Alignment; Outcome Completion; Task Completion"
+  },
+  {
+    "taskId": "ADD28:N10.04.09",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.10",
+    "benchmark": "WorldCast",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Causal Plausibility"
+  },
+  {
+    "taskId": "ADD28:N10.04.11",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.12",
+    "benchmark": "WorldCast",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Causal Plausibility"
+  },
+  {
+    "taskId": "ADD28:N10.04.13",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.14",
+    "benchmark": "WorldCast",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Progress Alignment; Outcome Completion; Task Completion"
+  },
+  {
+    "taskId": "ADD28:N10.04.15",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.16",
+    "benchmark": "WorldCast",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Causal Plausibility"
+  },
+  {
+    "taskId": "ADD28:N10.04.17",
+    "benchmark": "WorldCast",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Visual Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.04.18",
+    "benchmark": "WorldCast",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "CL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "Causal Plausibility"
+  },
+  {
+    "taskId": "ADD28:N10.05.01",
+    "benchmark": "Orbia",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Aesthetic; MUSIQ; Temporal Flicker; AMT smoothness; HPSv3"
+  },
+  {
+    "taskId": "ADD28:N10.05.02",
+    "benchmark": "Orbia",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Scene/Anchor Appearance Fidelity; Scene/Anchor Geometry Fidelity; Anchor Identity Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.05.03",
+    "benchmark": "Orbia",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Revisit Appearance Consistency; Revisit Depth Consistency; Revisit Surface Agreement"
+  },
+  {
+    "taskId": "ADD28:N10.05.04",
+    "benchmark": "Orbia",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Cross-View Depth/Feature Consistency; Regional Scale Agreement; Held-out Reconstruction"
+  },
+  {
+    "taskId": "ADD28:N10.05.05",
+    "benchmark": "Orbia",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Translation/Rotation Error; Move/Look Accuracy"
+  },
+  {
+    "taskId": "ADD28:N10.05.06",
+    "benchmark": "Orbia",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "RWD",
+    "actualMetric": "Move Accuracy; Look Accuracy"
+  },
+  {
+    "taskId": "ADD28:N10.05.07",
+    "benchmark": "Orbia",
+    "scope": "T1",
+    "navigation": [
+      "S1",
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Aesthetic; MUSIQ; Temporal Flicker; AMT smoothness; HPSv3"
+  },
+  {
+    "taskId": "ADD28:N10.05.08",
+    "benchmark": "Orbia",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Scene/Anchor Appearance Fidelity; Scene/Anchor Geometry Fidelity; Anchor Identity Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.05.09",
+    "benchmark": "Orbia",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Revisit Appearance Consistency; Revisit Depth Consistency; Revisit Surface Agreement"
+  },
+  {
+    "taskId": "ADD28:N10.05.10",
+    "benchmark": "Orbia",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Cross-View Depth/Feature Consistency; Regional Scale Agreement; Held-out Reconstruction"
+  },
+  {
+    "taskId": "ADD28:N10.05.11",
+    "benchmark": "Orbia",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Translation/Rotation Error; Move/Look Accuracy"
+  },
+  {
+    "taskId": "ADD28:N10.05.12",
+    "benchmark": "Orbia",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Move Accuracy; Look Accuracy"
+  },
+  {
+    "taskId": "ADD28:N10.06.01",
+    "benchmark": "WorldMemBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Human Identity; Human Appearance"
+  },
+  {
+    "taskId": "ADD28:N10.06.02",
+    "benchmark": "WorldMemBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Object Appearance; Object Geometry"
+  },
+  {
+    "taskId": "ADD28:N10.06.03",
+    "benchmark": "WorldMemBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Environment Visible; Depth Spearman; Spherical Reconstruction"
+  },
+  {
+    "taskId": "ADD28:N10.06.04",
+    "benchmark": "WorldMemBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Return Progress; Persistence/Reset; Final State; Dynamic Overall"
+  },
+  {
+    "taskId": "ADD28:N10.06.05",
+    "benchmark": "WorldMemBench",
+    "scope": "T4",
+    "navigation": [
+      "T4"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Causal/Physics consistency"
+  },
+  {
+    "taskId": "ADD28:N10.06.06",
+    "benchmark": "WorldMemBench",
+    "scope": "T1",
+    "navigation": [
+      "S1"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Imaging Quality; Aesthetic Quality"
+  },
+  {
+    "taskId": "ADD28:N10.06.07",
+    "benchmark": "WorldMemBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Translation RPE; Rotation RPE"
+  },
+  {
+    "taskId": "ADD28:N10.06.08",
+    "benchmark": "WorldMemBench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Translation RPE; Rotation RPE"
+  },
+  {
+    "taskId": "ADD28:N10.06.09",
+    "benchmark": "WorldMemBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Translation RPE; Rotation RPE"
+  },
+  {
+    "taskId": "ADD28:N10.07.01",
+    "benchmark": "MultiWorldBench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Control Isolation; Coordination Fairness"
+  },
+  {
+    "taskId": "ADD28:N10.07.02",
+    "benchmark": "MultiWorldBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Cross-view Motion Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.07.03",
+    "benchmark": "MultiWorldBench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Cross-view Motion Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.07.04",
+    "benchmark": "MultiWorldBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Shared-state Synchronization"
+  },
+  {
+    "taskId": "ADD28:N10.07.05",
+    "benchmark": "MultiWorldBench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Intended Action Success (within synchronization)"
+  },
+  {
+    "taskId": "ADD28:N10.07.06",
+    "benchmark": "MultiWorldBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Shared-state Persistence"
+  },
+  {
+    "taskId": "ADD28:N10.07.07",
+    "benchmark": "MultiWorldBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Structural Consistency; Spatial Reasoning"
+  },
+  {
+    "taskId": "ADD28:N10.07.08",
+    "benchmark": "MultiWorldBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Race-condition Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.07.09",
+    "benchmark": "MultiWorldBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SBG",
+    "actualMetric": "Style Consistency; Building ID Consistency"
+  },
+  {
+    "taskId": "ADD28:N10.08.01",
+    "benchmark": "R2M-Bench",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "PSNR MG/NMR; SSIM MG/NMR; LPIPS MG/NMR"
+  },
+  {
+    "taskId": "ADD28:N10.08.02",
+    "benchmark": "R2M-Bench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "DINOv2/BoQ/MutualVPR MG/NMR; Object appearance/semantic persistence MG/NMR; SuperPoint-LightGlue match and RANSAC-inlier MG/NMR; VLM persistent-state MG/NMR"
+  },
+  {
+    "taskId": "ADD28:N10.08.03",
+    "benchmark": "R2M-Bench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "MemoryGain across five families; Normalized Memory Ratio across five families; Overall NMR"
+  },
+  {
+    "taskId": "ADD28:N10.09.01",
+    "benchmark": "WRBench",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Visual Integrity"
+  },
+  {
+    "taskId": "ADD28:N10.09.02",
+    "benchmark": "WRBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Visible Spatial; Visible State"
+  },
+  {
+    "taskId": "ADD28:N10.09.03",
+    "benchmark": "WRBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Re-observation Support; Re-observed Spatial; Re-observed State"
+  },
+  {
+    "taskId": "ADD28:N10.09.04",
+    "benchmark": "WRBench",
+    "scope": "T1",
+    "navigation": [
+      "S2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Visual Integrity"
+  },
+  {
+    "taskId": "ADD28:N10.09.05",
+    "benchmark": "WRBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Visible Spatial; Visible State"
+  },
+  {
+    "taskId": "ADD28:N10.09.06",
+    "benchmark": "WRBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Re-observation Support; Re-observed Spatial; Re-observed State"
+  },
+  {
+    "taskId": "ADD28:N10.09.07",
+    "benchmark": "WRBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Strict Requested-Camera Precision"
+  },
+  {
+    "taskId": "ADD28:N10.09.08",
+    "benchmark": "WRBench",
+    "scope": "S6",
+    "navigation": [
+      "S6"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Requested-control Precision (Act row)"
+  },
+  {
+    "taskId": "ADD28:N10.09.09",
+    "benchmark": "WRBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "SPTC",
+    "actualMetric": "Prompt-Camera Alignment; Static-Hold Diagnostic"
+  },
+  {
+    "taskId": "ADD28:N10.10.01",
+    "benchmark": "LiveBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "PSNR_bg; SSIM_bg; LPIPS_bg; CD_fg; DINO_fg"
+  },
+  {
+    "taskId": "ADD28:N10.10.02",
+    "benchmark": "LiveBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "1st/2nd revisit PSNR_bg/SSIM_bg/LPIPS_bg; 1st/2nd revisit CD_fg/DINO_fg; 1st/2nd revisit VQA-Acc"
+  },
+  {
+    "taskId": "ADD28:N10.10.03",
+    "benchmark": "LiveBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "VQA-Acc"
+  },
+  {
+    "taskId": "ADD28:N10.10.04",
+    "benchmark": "LiveBench",
+    "scope": "T2",
+    "navigation": [
+      "T2"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "DINO_fg"
+  },
+  {
+    "taskId": "ADD28:N10.10.05",
+    "benchmark": "LiveBench",
+    "scope": "T3",
+    "navigation": [
+      "T3"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "1st/2nd revisit DINO_fg; 1st/2nd revisit VQA-Acc"
+  },
+  {
+    "taskId": "ADD28:N10.10.06",
+    "benchmark": "LiveBench",
+    "scope": "S5",
+    "navigation": [
+      "S5"
+    ],
+    "protocol": "OL",
+    "metric": "P",
+    "data": "HCP",
+    "actualMetric": "VQA-Acc"
+  }
+]

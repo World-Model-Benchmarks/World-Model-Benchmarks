@@ -1,17 +1,17 @@
 {
   "title": "A Survey of World Model Benchmarks",
   "schemaVersion": 12,
-  "version": "August 31, 2026 corpus; joint task-level coding finalized September 15, 2026",
-  "snapshotDate": "2026-08-31",
-  "sourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
-  "sourceSupplementaryPdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
-  "sourceArchive": "Main_Manuscript_LaTeX.zip",
-  "sourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
-  "codingChecklist": "网页逐项修改清单(1).md",
-  "codingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4",
+  "version": "October 18, 2026 corpus; joint task-level coding finalized November 8, 2026",
+  "snapshotDate": "2026-10-18",
+  "sourcePdfSha256": "950eb41ec9e26e9181502e3d2e87837daf3d783301db5f546e45d3d83fdc369c",
+  "sourceSupplementaryPdfSha256": "42180ccbb41a01508d6a8bb79059e414c0dd8d99dd8d79412cce77b1d26cdd8d",
+  "sourceArchive": "Survey_130_final_30p_20261108.zip",
+  "sourceArchiveSha256": "6a069825f606d7f13563c02e807358ef9c9db270b52c0fdad4324edc6a0420ef",
+  "codingChecklist": "scripts/task_navigation_20261108.json",
+  "codingChecklistSha256": "85b79ec1ed29213c7e32dc243a6b125ed4861d418f1a25908ac2af6c1647de07",
   "framework": "Target–Protocol–Metrics–Data",
-  "total": 102,
-  "crossCategory": 85,
+  "total": 130,
+  "crossCategory": 108,
   "protocolLabels": {
     "OL": "Open-Loop Evaluation",
     "CL": "Closed-Loop Interaction"
@@ -67,50 +67,50 @@
     "2022–2023": 4,
     "2024": 10,
     "2025": 30,
-    "2026": 52
+    "2026": 80
   },
   "targetCounts": {
-    "Visual & Temporal Quality": 46,
-    "Spatial & State Consistency": 55,
-    "Long-Horizon Memory & State Persistence": 24,
-    "Physical Plausibility": 77,
-    "Causal & Counterfactual Reasoning": 33,
-    "Control Fidelity & Interactive Dynamics": 55,
-    "Functional Utility": 13
+    "Visual & Temporal Quality": 63,
+    "Spatial & State Consistency": 76,
+    "Long-Horizon Memory & State Persistence": 34,
+    "Physical Plausibility": 92,
+    "Causal & Counterfactual Reasoning": 39,
+    "Control Fidelity & Interactive Dynamics": 74,
+    "Functional Utility": 15
   },
   "subtargetCounts": {
-    "Visual Quality": 40,
-    "Temporal Quality": 40,
-    "Observation-Grounded Evaluation": 26,
-    "Intervention-Grounded Evaluation": 10,
-    "Pre-specified Control Fidelity": 40,
-    "Interactive Action Fidelity": 15,
+    "Visual Quality": 53,
+    "Temporal Quality": 53,
+    "Observation-Grounded Evaluation": 31,
+    "Intervention-Grounded Evaluation": 12,
+    "Pre-specified Control Fidelity": 56,
+    "Interactive Action Fidelity": 22,
     "Data Engine": 2,
     "Policy Evaluator": 2,
-    "Planner": 12,
-    "Interactive Training Environment": 1
+    "Planner": 14,
+    "Interactive Training Environment": 2
   },
-  "classificationFingerprint": "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf",
-  "recordFingerprint": "a6b483658d12cbbf8012d795b7fc828edee6f025f177537393236e65baf51caf",
-  "evaluationRecordFingerprint": "1a1b225a2d62e0d70637aef1e9c283b2a532b8f90e8152d62e864228ef7efc8e",
-  "taskRecordFingerprint": "e81cb0fb6c38954457cb903f73d207c9e734a8f72108e6b9b6a15f2aace8e27d",
+  "classificationFingerprint": "af6a8bc9e9bca01c2b35e2cbf65c2ef1104739fa3a38061237f55da7923ac4c3",
+  "recordFingerprint": "af6a8bc9e9bca01c2b35e2cbf65c2ef1104739fa3a38061237f55da7923ac4c3",
+  "evaluationRecordFingerprint": "f81b8d1fe159572b989f83dded31c8215c56098ec12e496216fe2e660978b18e",
+  "taskRecordFingerprint": "77ccd907cc2d2b5a44dfa38888738fff12d65db43f589bbf25baa6fb43b0bc7a",
   "taskRecordCounts": {
-    "targetTasks": 401,
+    "targetTasks": 808,
     "auxiliary": 2,
-    "displayCombinations": 369,
-    "classifiedData": 401,
+    "displayCombinations": 482,
+    "classifiedData": 808,
     "unresolvedData": 0,
     "protocolMetric": {
-      "OL/P": 346,
-      "OL/O": 12,
-      "CL/P": 17,
-      "CL/O": 26
+      "OL/P": 718,
+      "CL/P": 33,
+      "CL/O": 45,
+      "OL/O": 12
     },
     "data": {
-      "RWD": 89,
-      "SBG": 88,
-      "SPTC": 71,
-      "HCP": 153
+      "SPTC": 131,
+      "HCP": 311,
+      "RWD": 172,
+      "SBG": 194
     }
   },
   "fingerprintFields": [
@@ -136,13 +136,14 @@
     "Control Fidelity & Interactive Dynamics",
     "Functional Utility"
   ],
-  "yearBasis": "Benchmark release year as coded in Figure 2 of the final September 15, 2026 manuscript; distinct from formal publication year.",
+  "yearBasis": "Benchmark first-public-release year; distinct from formal publication year.",
   "releaseYearRevision": {
+    "date": "2026-11-08",
+    "corpusCutoff": "2026-10-18",
     "sourcePdf": "main.pdf",
-    "sourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
-    "date": "2026-09-15",
-    "changedRecords": 0,
-    "preservedFromPreviousAudit": 102
+    "sourcePdfSha256": "950eb41ec9e26e9181502e3d2e87837daf3d783301db5f546e45d3d83fdc369c",
+    "preservedFromPreviousRelease": 102,
+    "addedRecords": 28
   },
   "publicationMetadata": {
     "CLEVRER": {
@@ -166,7 +167,7 @@
       "publicationYear": 2026
     }
   },
-  "sourceNote": "The 102-benchmark corpus remains checked through August 31, 2026. Taxonomy membership follows Supplementary Fig. S1; 401 target-task records and their fully classified joint Protocol-Metrics-Data coding follow Supplementary Tables S1-S7 and the final September 15, 2026 consistency checklist. Two auxiliary records are retained for traceability and excluded from target-task statistics.",
+  "sourceNote": "Benchmark targets and task combinations follow the final manuscript and Supplementary Tables S1–S7; navigation subtargets follow the primary-source review finalized November 8, 2026.",
   "categoryRecords": {
     "T1": {
       "MIND": [
@@ -350,6 +351,74 @@
         "P"
       ],
       "WR-Arena": [
+        "OL",
+        "P"
+      ],
+      "Orbia": [
+        "OL",
+        "P"
+      ],
+      "WRBench": [
+        "OL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "TriWorldBench": [
+        "OL",
+        "P"
+      ],
+      "CausalCascade": [
+        "OL",
+        "P"
+      ],
+      "WorldMemBench": [
+        "OL",
+        "P"
+      ],
+      "PROWBench": [
+        "OL",
+        "P"
+      ],
+      "R2M-Bench": [
+        "OL",
+        "P"
+      ],
+      "WorldReasonBench": [
+        "OL",
+        "P"
+      ],
+      "StateBench": [
+        "OL",
+        "P"
+      ],
+      "WorldOracle": [
+        "OL",
+        "P"
+      ],
+      "AffectWorld": [
+        "OL",
+        "P"
+      ],
+      "TailOR": [
+        "OL",
+        "P"
+      ],
+      "CoDrive-Bench": [
+        "OL",
+        "P"
+      ],
+      "VehDyn": [
+        "OL",
+        "P"
+      ],
+      "WROP": [
+        "OL",
+        "P"
+      ],
+      "VWG-Bench": [
         "OL",
         "P"
       ]
@@ -574,6 +643,90 @@
       "WorldBench": [
         "OL",
         "P"
+      ],
+      "WRBench": [
+        "OL",
+        "P"
+      ],
+      "ICAT": [
+        "OL+CL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "CausalCascade": [
+        "OL",
+        "P"
+      ],
+      "WorldReasonBench": [
+        "OL",
+        "P"
+      ],
+      "TailOR": [
+        "OL",
+        "P"
+      ],
+      "VehDyn": [
+        "OL",
+        "P"
+      ],
+      "LiveBench": [
+        "OL",
+        "P"
+      ],
+      "WorldCast": [
+        "OL+CL",
+        "P"
+      ],
+      "R2M-Bench": [
+        "OL",
+        "P"
+      ],
+      "AffectWorld": [
+        "OL",
+        "P"
+      ],
+      "Ego2Act": [
+        "OL",
+        "P"
+      ],
+      "MultiWorldBench": [
+        "OL",
+        "P"
+      ],
+      "Orbia": [
+        "OL",
+        "P"
+      ],
+      "TriWorldBench": [
+        "OL",
+        "P"
+      ],
+      "PROWBench": [
+        "OL",
+        "P"
+      ],
+      "WorldOracle": [
+        "OL",
+        "P"
+      ],
+      "StateBench": [
+        "OL",
+        "P"
+      ],
+      "CoDrive-Bench": [
+        "OL",
+        "P"
+      ],
+      "OPIS": [
+        "OL",
+        "P"
+      ],
+      "VWG-Bench": [
+        "OL",
+        "P"
       ]
     },
     "T3": {
@@ -670,6 +823,46 @@
         "P"
       ],
       "ExPhy": [
+        "OL",
+        "P"
+      ],
+      "Orbia": [
+        "OL",
+        "P"
+      ],
+      "WRBench": [
+        "OL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "LiveBench": [
+        "OL",
+        "P"
+      ],
+      "WorldMemBench": [
+        "OL",
+        "P"
+      ],
+      "R2M-Bench": [
+        "OL",
+        "P"
+      ],
+      "WorldOracle": [
+        "OL",
+        "P"
+      ],
+      "StateBench": [
+        "OL",
+        "P"
+      ],
+      "MultiWorldBench": [
+        "OL",
+        "P"
+      ],
+      "WROP": [
         "OL",
         "P"
       ]
@@ -982,6 +1175,66 @@
       "WorldSimProbe": [
         "OL",
         "P"
+      ],
+      "ICAT": [
+        "OL+CL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "TriWorldBench": [
+        "OL",
+        "P"
+      ],
+      "CausalCascade": [
+        "OL",
+        "P"
+      ],
+      "WorldMemBench": [
+        "OL",
+        "P"
+      ],
+      "WorldReasonBench": [
+        "OL",
+        "P"
+      ],
+      "WorldCast": [
+        "OL+CL",
+        "P"
+      ],
+      "Ego2Act": [
+        "OL",
+        "P"
+      ],
+      "TailOR": [
+        "OL",
+        "P"
+      ],
+      "PhysicsLENS": [
+        "OL",
+        "P"
+      ],
+      "VehDyn": [
+        "OL",
+        "P"
+      ],
+      "Last Exam in Physics": [
+        "OL",
+        "P"
+      ],
+      "Principia": [
+        "OL",
+        "P"
+      ],
+      "WROP": [
+        "OL",
+        "P"
+      ],
+      "VWG-Bench": [
+        "OL",
+        "P"
       ]
     },
     "T5": {
@@ -1114,6 +1367,30 @@
         "P"
       ],
       "CausalVQA": [
+        "OL",
+        "P"
+      ],
+      "ICAT": [
+        "OL+CL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "CausalCascade": [
+        "OL",
+        "P"
+      ],
+      "AffectWorld": [
+        "OL",
+        "P"
+      ],
+      "Ego2Act": [
+        "OL",
+        "P"
+      ],
+      "VehDyn": [
         "OL",
         "P"
       ]
@@ -1278,6 +1555,70 @@
       "ACT-Bench": [
         "OL",
         "P"
+      ],
+      "Orbia": [
+        "OL",
+        "P"
+      ],
+      "ICAT": [
+        "OL+CL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "WRBench": [
+        "OL",
+        "P"
+      ],
+      "WorldMemBench": [
+        "OL",
+        "P"
+      ],
+      "LiveBench": [
+        "OL",
+        "P"
+      ],
+      "PROWBench": [
+        "OL",
+        "P"
+      ],
+      "StateBench": [
+        "OL",
+        "P"
+      ],
+      "WorldCast": [
+        "OL+CL",
+        "P"
+      ],
+      "Ego2Act": [
+        "OL",
+        "P"
+      ],
+      "TailOR": [
+        "OL",
+        "P"
+      ],
+      "PhysicsLENS": [
+        "OL",
+        "P"
+      ],
+      "CoDrive-Bench": [
+        "OL",
+        "P"
+      ],
+      "VehDyn": [
+        "OL",
+        "P"
+      ],
+      "WROP": [
+        "OL",
+        "P"
+      ],
+      "VWG-Bench": [
+        "OL",
+        "P"
       ]
     },
     "S6": {
@@ -1338,6 +1679,34 @@
         "P"
       ],
       "ReactSim-Bench": [
+        "OL",
+        "P"
+      ],
+      "Orbia": [
+        "OL",
+        "P"
+      ],
+      "WRBench": [
+        "OL",
+        "P"
+      ],
+      "HappyWorld-Bench": [
+        "OL",
+        "P"
+      ],
+      "TriWorldBench": [
+        "OL",
+        "P"
+      ],
+      "WorldMemBench": [
+        "OL",
+        "P"
+      ],
+      "WorldOracle": [
+        "OL",
+        "P"
+      ],
+      "MultiWorldBench": [
         "OL",
         "P"
       ]
@@ -1410,10 +1779,22 @@
       "KineBench": [
         "CL",
         "O"
+      ],
+      "MapShift": [
+        "CL",
+        "O"
+      ],
+      "Compositional continual learning": [
+        "CL",
+        "O"
       ]
     },
     "S10": {
       "WorldArena 2.0": [
+        "CL",
+        "O"
+      ],
+      "Compositional continual learning": [
         "CL",
         "O"
       ]
@@ -1434,88 +1815,88 @@
   },
   "codingScope": "Each evaluationRecords item is one observed Protocol-Metrics-Data combination within a target or downstream role. Filters match all selected evidence dimensions within the same combination; selections within a filter group use OR and selections across groups use AND. Benchmark-level records contain unions for overview only.",
   "codingRevision": {
+    "date": "2026-11-08",
+    "corpusCutoff": "2026-10-18",
     "mainSourcePdf": "main.pdf",
-    "mainSourcePdfSha256": "53ae5b5247d71cd832f95c19f7644653b579fb6cef0451ed57f1c4745188e2de",
-    "mainSourceArchive": "Main_Manuscript_LaTeX.zip",
-    "mainSourceArchiveSha256": "dad0477f487c44f847dd7a988677178f65025329d491810fe0ad76bb6738bd9a",
-    "supplementarySourcePdf": "A Survey of World Model Benchmarks - Supplementary Material.pdf",
-    "supplementarySourcePdfSha256": "af6a8440614fe85d9505d5c6ec2b9283c16ea32d0078ed8b7be3492b26923d41",
-    "codingChecklist": "网页逐项修改清单(1).md",
-    "codingChecklistSha256": "b6ec17d6c68186f62aab9edb4194be8377ea6d71e232a1a5bf53a1ff815be1a4",
-    "date": "2026-09-15",
-    "targetRoleParentRows": 307,
-    "targetTaskRecords": 401,
+    "mainSourcePdfSha256": "950eb41ec9e26e9181502e3d2e87837daf3d783301db5f546e45d3d83fdc369c",
+    "supplementarySourcePdf": "supplementary.pdf",
+    "supplementarySourcePdfSha256": "42180ccbb41a01508d6a8bb79059e414c0dd8d99dd8d79412cce77b1d26cdd8d",
+    "mainSourceArchive": "Survey_130_final_30p_20261108.zip",
+    "mainSourceArchiveSha256": "6a069825f606d7f13563c02e807358ef9c9db270b52c0fdad4324edc6a0420ef",
+    "targetRoleParentRows": 402,
+    "targetTaskRecords": 808,
     "auxiliaryRecords": 2,
-    "displayCombinations": 369,
-    "changedTargetRoleRows": 23,
-    "changedBenchmarkOverviewRecords": 31,
-    "preservedReleaseYears": 102
+    "displayCombinations": 482,
+    "preservedReleaseYears": 102,
+    "addedBenchmarks": 28,
+    "taskEvidenceFile": "scripts/task_records_20261108.json",
+    "navigationEvidenceFile": "scripts/task_navigation_20261108.json"
   },
-  "evaluationTrackFingerprint": "57506b97cd7eb30d66632bb51fef231635ad01661311b674294139332d4b9808",
+  "evaluationTrackFingerprint": "477f9552a6ecefab926182ddb70f35864f7b5c0f7c66cd0ada72b7427e43dafa",
   "targetCoverage": {
     "T1": {
-      "n": 46,
-      "olOnly": 43,
+      "n": 63,
+      "olOnly": 60,
       "includesCL": 3,
-      "pOnly": 46,
+      "pOnly": 63,
       "includesO": 0
     },
     "T2": {
-      "n": 55,
-      "olOnly": 50,
-      "includesCL": 5,
-      "pOnly": 53,
+      "n": 76,
+      "olOnly": 69,
+      "includesCL": 7,
+      "pOnly": 74,
       "includesO": 2
     },
     "T3": {
-      "n": 24,
-      "olOnly": 20,
+      "n": 34,
+      "olOnly": 30,
       "includesCL": 4,
-      "pOnly": 21,
+      "pOnly": 31,
       "includesO": 3
     },
     "T4": {
-      "n": 77,
-      "olOnly": 71,
-      "includesCL": 6,
-      "pOnly": 71,
+      "n": 92,
+      "olOnly": 84,
+      "includesCL": 8,
+      "pOnly": 86,
       "includesO": 6
     },
     "T5": {
-      "n": 33,
-      "olOnly": 31,
-      "includesCL": 2,
-      "pOnly": 33,
+      "n": 39,
+      "olOnly": 36,
+      "includesCL": 3,
+      "pOnly": 39,
       "includesO": 0
     },
     "T6": {
-      "n": 55,
-      "olOnly": 51,
-      "includesCL": 4,
-      "pOnly": 51,
+      "n": 74,
+      "olOnly": 68,
+      "includesCL": 6,
+      "pOnly": 70,
       "includesO": 4
     },
     "T7": {
-      "n": 13,
+      "n": 15,
       "olOnly": 2,
-      "includesCL": 11,
+      "includesCL": 13,
       "pOnly": 0,
-      "includesO": 13
+      "includesO": 15
     }
   },
   "subtargetCoverage": {
     "S5": {
-      "n": 40,
-      "olOnly": 39,
-      "includesCL": 1,
-      "pOnly": 38,
+      "n": 56,
+      "olOnly": 53,
+      "includesCL": 3,
+      "pOnly": 54,
       "includesO": 2
     },
     "S6": {
-      "n": 15,
-      "olOnly": 12,
+      "n": 22,
+      "olOnly": 19,
       "includesCL": 3,
-      "pOnly": 13,
+      "pOnly": 20,
       "includesO": 2
     },
     "S7": {
@@ -1533,48 +1914,48 @@
       "includesO": 2
     },
     "S9": {
-      "n": 12,
+      "n": 14,
       "olOnly": 2,
-      "includesCL": 10,
+      "includesCL": 12,
       "pOnly": 0,
-      "includesO": 12
+      "includesO": 14
     },
     "S10": {
-      "n": 1,
+      "n": 2,
       "olOnly": 0,
-      "includesCL": 1,
+      "includesCL": 2,
       "pOnly": 0,
-      "includesO": 1
+      "includesO": 2
     }
   },
   "table4": {
     "T6": {
-      "n": 55,
-      "olOnly": 51,
-      "includesCL": 4,
-      "pOnly": 51,
+      "n": 74,
+      "olOnly": 68,
+      "includesCL": 6,
+      "pOnly": 70,
       "includesO": 4
     },
     "S5": {
-      "n": 40,
-      "olOnly": 39,
-      "includesCL": 1,
-      "pOnly": 38,
+      "n": 56,
+      "olOnly": 53,
+      "includesCL": 3,
+      "pOnly": 54,
       "includesO": 2
     },
     "S6": {
-      "n": 15,
-      "olOnly": 12,
+      "n": 22,
+      "olOnly": 19,
       "includesCL": 3,
-      "pOnly": 13,
+      "pOnly": 20,
       "includesO": 2
     },
     "T7": {
-      "n": 13,
+      "n": 15,
       "olOnly": 2,
-      "includesCL": 11,
+      "includesCL": 13,
       "pOnly": 0,
-      "includesO": 13
+      "includesO": 15
     }
   }
 }
